@@ -1,5 +1,5 @@
 class RouteName {
-  final login = '/login';
+  final String login = '/login';
   final String home = '/home';
   final String onBoarding = '/onBoarding';
   final String changeTheme = '/changeTheme';

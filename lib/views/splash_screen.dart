@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/common/app_screen_util.dart';
-import 'package:multikart/common/assets/index.dart';
 import 'package:multikart/config.dart';
 import 'package:multikart/controllers/spalsh_controller.dart';
 

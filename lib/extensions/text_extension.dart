@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:multikart/config.dart';
 
 extension StyledText<T extends Text> on T {
   T copyWith({
@@ -16,7 +17,7 @@ extension StyledText<T extends Text> on T {
     double? textScaleFactor,
     int? maxLines,
     String? semanticsLabel,
-    TextWidthBasis? textWidthBasis,
+    TextWidthBasis? textWidthBasis, TextDecoration? textDecoration,
   }) =>
       Text(
         data ?? this.data ?? "",
@@ -31,6 +32,8 @@ extension StyledText<T extends Text> on T {
         textDirection: textDirection ?? this.textDirection,
         textScaleFactor: textScaleFactor ?? this.textScaleFactor,
         textWidthBasis: textWidthBasis ?? this.textWidthBasis,
+
+
       ) as T;
 
   T textStyle(TextStyle style) => copyWith(
@@ -158,6 +161,8 @@ extension StyledText<T extends Text> on T {
       );
 
   T textAlignment(TextAlign align) => copyWith(textAlign: align);
+
+  T textDecoration(TextDecoration textDecoration) => copyWith(textDecoration: textDecoration);
 
   T textDirection(TextDirection direction) => copyWith(textDirection: direction);
 

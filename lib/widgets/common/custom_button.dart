@@ -1,16 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/common/theme/app_css.dart';
-import 'package:multikart/controllers/common/app_controller.dart';
-import 'package:multikart/extensions/spacing.dart';
-import 'package:multikart/extensions/textstyle_extensions.dart';
-import 'package:get/get.dart';
+import 'package:multikart/config.dart';
 
 class CustomButton extends StatelessWidget {
-  final appCtrl = Get.isRegistered<AppController>() ? Get.find<AppController>() : Get.put(AppController());
+  final appCtrl = Get.isRegistered<AppController>()
+      ? Get.find<AppController>()
+      : Get.put(AppController());
 
   final String title;
   final double padding;
   final double radius;
+  final double height;
   final GestureTapCallback? onTap;
   final TextStyle? style;
   final Color? color;
@@ -22,7 +20,8 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.title,
     this.padding = 15,
-    this.radius = 10,
+    this.radius = 5,
+    this.height = 45,
     this.onTap,
     this.style,
     this.color,
@@ -33,41 +32,32 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(radius),
-      child: Container(
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
+      height: AppScreenUtil().screenHeight(45),
+      decoration: BoxDecoration(
         color: color ?? appCtrl.appTheme.primary,
-        child: Material(
-          color: Colors.transparent,
-          child: InkWell(
-            onTap: onTap,
-            child: Container(
-              padding: EdgeInsets.all(padding),
-              width: width ?? MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                border: border,
-                borderRadius: radius > 0 ? BorderRadius.circular(radius) : null,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  if (icon != null)
-                    Row(
-                      children: [
-                        icon ?? const HSpace(0),
-                        const HSpace(10),
-                      ],
-                    ),
-                  Text(
-                    title,
-                    style: style ?? AppCss.h2.textColor(Colors.white),
-                    textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
+        border: border,
+        borderRadius: radius > 0 ? BorderRadius.circular(radius) : null,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          if (icon != null)
+            Row(
+              children: [
+                icon ?? const HSpace(0),
+                const HSpace(10),
+              ],
             ),
-          ),
-        ),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+          )
+              .fontSize(AppScreenUtil().fontSize(14))
+              .textColor(appCtrl.appTheme.white)
+              .fontFamily(GoogleFonts.lato().fontFamily.toString()).fontWeight(FontWeight.w700).letterSpacing(1),
+        ],
       ),
     );
   }

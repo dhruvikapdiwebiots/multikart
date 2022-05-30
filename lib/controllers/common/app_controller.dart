@@ -10,6 +10,7 @@ class AppController extends GetxController {
 
 
 
+
   updateTheme(theme) {
     _appTheme = theme;
     Get.forceAppUpdate();

@@ -10,14 +10,6 @@ String trans(String val) {
   return val;
 }
 
-void showLoading() {
-  return loadingCtrl.showLoading();
-}
-
-void hideLoading() {
-  return loadingCtrl.hideLoading();
-}
-
 List arrayFilter(List val) {
   if (val.isNotEmpty) {
     List newArray = [];

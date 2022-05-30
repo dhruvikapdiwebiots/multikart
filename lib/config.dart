@@ -12,4 +12,6 @@ export 'package:multikart/common/app_screen_util.dart';
 export 'package:multikart/common/assets/index.dart';
 export 'package:flutter/material.dart';
 export 'package:google_fonts/google_fonts.dart';
+export 'package:multikart/utilities/app_array.dart';
 export '../routes/common_screen_list.dart';
+export 'package:multikart/views/authentication_page/onbaording/onboard_page_list.dart';

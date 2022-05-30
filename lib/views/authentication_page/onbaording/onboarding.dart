@@ -1,6 +1,5 @@
-import 'package:flutter/foundation.dart';
-import 'package:introduction_screen/introduction_screen.dart';
 import 'package:multikart/config.dart';
+
 
 
 class OnBoardingScreen extends StatefulWidget {
@@ -12,24 +11,35 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen>
     with TickerProviderStateMixin {
-  final onBoardingCtrl = Get.isRegistered<AppController>()
-      ? Get.find<AppController>()
-      : Get.put(AppController());
-  final introKey = GlobalKey<IntroductionScreenState>();
+  var onBoardingCtrl = Get.put(OnBoardingController());
 
-  
   @override
   Widget build(BuildContext context) {
+    return GetBuilder<OnBoardingController>(builder: (_) {
 
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children:  [
-            AuthenticationAppBar(),
-
+      return Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            SizedBox(
+              height: AppScreenUtil().screenHeight( 580),
+              child: Stack(
+                children:  [
+                  AuthenticationAppBar(isDone: onBoardingCtrl.current ==  onBoardingCtrl.imgList.length -1 ? true :false,),
+                  const OnBoardList(),
+                ],
+              ),
+            ),
+            const Space(0, 5),
+            CustomButton(
+              title: OnBoardFont().startShopping.toUpperCase(),
+            ),
+            const Space(0, 5),
+            const AlreadyAccountText(),
+        const Space(0, 5),
           ],
         ),
-      ),
-    );
+      );
+    });
   }
 }

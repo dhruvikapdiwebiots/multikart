@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:multikart/extensions/textstyle_extensions.dart';
 
+import '../../config.dart';
+
 part 'scale.dart';
 
 class AppCss {
@@ -10,6 +12,7 @@ class AppCss {
     letterSpacing: 0,
     height: 1,
   );
+
 
   //Text Style
   static TextStyle get h1 => poppins.bold.size(FontSizes.f18).letterSpace(.7);

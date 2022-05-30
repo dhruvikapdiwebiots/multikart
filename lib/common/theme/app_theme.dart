@@ -29,6 +29,8 @@ class AppTheme {
   Color white;
   Color whiteColor;
   Color blackText;
+  Color blackColor;
+  Color textColor;
   Color contentColor;
   Color borderColor;
   Color greenColor;
@@ -55,6 +57,8 @@ class AppTheme {
     required this.white,
     required this.whiteColor,
     required this.blackText,
+    required this.blackColor,
+    required this.textColor,
     required this.contentColor,
     required this.borderColor,
     required this.greenColor,
@@ -85,11 +89,13 @@ class AppTheme {
           white: Colors.white,
           whiteColor: Colors.white,
           blackText: const Color(0xFF222222),
+          blackColor: Colors.black,
           contentColor: const Color(0xFF777777),
           borderColor: const Color(0xFFDDDDDD),
           greenColor: const Color(0xFF198754),
           darkContentColor: const Color(0xFFBABABA),
           ratingColor: const Color(0xFFFFBA49),
+          textColor: Colors.white,
         );
 
       case ThemeType.dark:
@@ -112,11 +118,13 @@ class AppTheme {
           white: Colors.white,
           whiteColor: Colors.black,
           blackText: const Color(0xFF262626),
+          blackColor: Colors.white,
           contentColor: const Color(0xFF777777),
           borderColor: const Color(0xFFDDDDDD),
           greenColor: const Color(0xFF198754),
           darkContentColor: const Color(0xFFBABABA),
           ratingColor: const Color(0xFFFFBA49),
+          textColor: const Color(0xFF636363),
         );
     }
   }

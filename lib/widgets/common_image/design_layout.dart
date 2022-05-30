@@ -7,7 +7,7 @@ class DesignLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       imageAssets.design,
-      height: AppScreenUtil().screenHeight(120),
+      height: AppScreenUtil().screenHeight(130),
     );
   }
 }

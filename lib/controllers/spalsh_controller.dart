@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
+
+import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
 
 class SplashController extends GetxController {
   bool isTapped = false;
-
+final storage = GetStorage();
   @override
   void onInit() async {
     await Future.delayed(Durations.s1);
@@ -16,8 +17,8 @@ class SplashController extends GetxController {
 
   void checkLogin() async {
     //#region set Language
-    String? languageCode = getStorage(Session.languageCode);
-    String? countryCode = getStorage(Session.countryCode);
+    String? languageCode = storage.read(Session.languageCode);
+    String? countryCode = storage.read(Session.countryCode);
     if (languageCode != null && countryCode != null) {
       var locale = Locale(languageCode, countryCode);
       Get.updateLocale(locale);
