@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:multikart/config.dart';
 
 class ImagePreview extends StatelessWidget {

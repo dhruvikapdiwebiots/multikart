@@ -18,4 +18,32 @@ final dynamic hi = {
   "hey": 'अरे',
   "loginNow": 'अभी लॉगिन करें',
   "signInCapital": 'साइन इन करें',
+  'userNameOrEmail':"उपयोगकर्ता का नाम या ईमेल",
+  'password':"पासवर्ड",
+  'userFieldError': "ईमेल आवश्यक है",
+  'passwordFieldError': "पासवर्ड आवश्यक है",
+  'inCorrectUsername': "गलत ईमेल",
+  'passwordMininumValueEnter': "कृपया न्यूनतम 8 वर्ण दर्ज करें",
+  "forgotPassword":"पासवर्ड भूल गए ?",
+  "orSignWith":"या इसके साथ साइन इन करें",
+  "ifYouAreNew" : 'यदि आप नए हैं ,',
+  "createNow" : 'अब बनाओ',
+  "done" : 'किया हुआ',
+
+  //signup font
+  "name" : 'नाम',
+  "signUp" : 'साइन अप करें',
+  "emailPhone" : 'ईमेल/फोन',
+
+  //forgot password font
+  "emailAddress" : "ईमेल पता",
+  "sendOtp" : "OTP भेजें",
+  "backTo" : "वापस",
+  "forgotPasswordTitle":"पासवर्ड भूल गए",
+
+  //otp font
+  "codeVerification" : "कोड सत्यापन:",
+  "enterYourVerificationCode" : "अपना सत्यापन कोड यहाँ दर्ज करें:",
+  "notGetCode" : "कोड नहीं मिला?",
+  "resend" : "फिर से भेजें",
 };

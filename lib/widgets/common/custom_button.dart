@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/utilities/responsive_layout.dart';
 
 class CustomButton extends StatelessWidget {
   final appCtrl = Get.isRegistered<AppController>()
@@ -32,32 +33,39 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
-      height: AppScreenUtil().screenHeight(45),
-      decoration: BoxDecoration(
-        color: color ?? appCtrl.appTheme.primary,
-        border: border,
-        borderRadius: radius > 0 ? BorderRadius.circular(radius) : null,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          if (icon != null)
-            Row(
-              children: [
-                icon ?? const HSpace(0),
-                const HSpace(10),
-              ],
-            ),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-          )
-              .fontSize(AppScreenUtil().fontSize(14))
-              .textColor(appCtrl.appTheme.white)
-              .fontFamily(GoogleFonts.lato().fontFamily.toString()).fontWeight(FontWeight.w700).letterSpacing(1),
-        ],
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        margin:
+            EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
+        height: AppScreenUtil()
+            .screenHeight(ResponsiveWidget.isSmallScreen(context) ? 45 : 35),
+        decoration: BoxDecoration(
+          color: color ?? appCtrl.appTheme.primary,
+          border: border,
+          borderRadius: radius > 0 ? BorderRadius.circular(radius) : null,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (icon != null)
+              Row(
+                children: [
+                  icon ?? const HSpace(0),
+                  const HSpace(10),
+                ],
+              ),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+            )
+                .fontSize(AppScreenUtil().fontSize(CommonTextFontSize.textSizeSMedium))
+                .textColor(appCtrl.appTheme.white)
+                .fontFamily(GoogleFonts.lato().fontFamily.toString())
+                .fontWeight(FontWeight.w700)
+                .letterSpacing(1),
+          ],
+        ),
       ),
     );
   }

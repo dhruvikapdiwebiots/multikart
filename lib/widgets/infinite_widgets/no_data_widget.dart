@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/common/assets/index.dart';
 import 'package:multikart/config.dart';
 
 class NoDataWidget extends StatelessWidget {

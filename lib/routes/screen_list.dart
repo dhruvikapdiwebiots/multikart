@@ -5,3 +5,5 @@ export '../widgets/common_image/logo_image.dart';
 export '../widgets/common_text_widget/skip_text_widget.dart';
 export '../../../widgets/common_app_bar/authentication_app_bar.dart';
 export '../views/authentication_page/login/login.dart';
+export '../views/authentication_page/sign_up/sign_up.dart';
+export '../views/authentication_page/forgot_password/forgot_password.dart';

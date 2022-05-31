@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/extensions/textstyle_extensions.dart';
-
 import '../../config.dart';
 
 part 'scale.dart';

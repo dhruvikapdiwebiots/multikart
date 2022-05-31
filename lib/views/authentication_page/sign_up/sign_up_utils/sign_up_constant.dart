@@ -1,15 +1,16 @@
 //text constants
 import 'package:get/get.dart';
 
-class LoginFont{
-  String hey= 'hey'.tr;
-  String loginNow= 'loginNow'.tr;
-  String signInCapital= 'signInCapital'.tr;
+class SignUpFont{
+  String name= 'name'.tr;
+  String hey = 'hey'.tr;
+  String signUp = 'signUp'.tr;
+  String emailPhone = 'emailPhone'.tr;
 }
 
 
 //font size
-class LoginFontSize{
+class SignUpFontSize{
   static const double textSizeSmall = 12.0;
   static const double textSizeSMedium = 14.0;
   static const double textSizeMedium = 16.0;

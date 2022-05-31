@@ -18,4 +18,32 @@ final dynamic kr = {
   "hey": '여기요',
   "loginNow": '지금 로그인하십시오',
   "signInCapital": '로그인',
+  'userNameOrEmail':"아이디 또는 이메일",
+  'password':"비밀번호",
+  'userFieldError': "이메일은 필수 항목입니다",
+  'passwordFieldError': "비밀번호가 필요합니다",
+  'inCorrectUsername': "잘못된 이메일",
+  'passwordMininumValueEnter': "최소 8자를 입력하십시오",
+  "forgotPassword":"비밀번호를 잊으 셨나요 ?",
+  "orSignWith":"또는 다음으로 로그인",
+  "ifYouAreNew" : '당신이 새로운 경우 ,',
+  "createNow" : '지금 만들기',
+  "done" : '완료',
+
+  //signup font
+  "name" : '이름',
+  "signUp" : '가입하기',
+  "emailPhone" : '이메일/전화',
+
+  //forgot password font
+  "emailAddress" : "이메일 주소",
+  "sendOtp" : "OTP 보내기",
+  "backTo" : "돌아가다",
+  "forgotPasswordTitle":"비밀번호를 잊으 셨나요",
+
+  //otp font
+  "codeVerification" : "코드 확인:",
+  "enterYourVerificationCode" : "여기에 인증 코드를 입력하십시오:",
+  "notGetCode" : "코드를 받지 못하셨습니까?",
+  "resend" : "재전송",
 };

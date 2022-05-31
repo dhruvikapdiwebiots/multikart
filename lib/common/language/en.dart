@@ -18,4 +18,32 @@ final dynamic en = {
   "hey": 'Hey',
   "loginNow": 'Login Now',
   "signInCapital": 'SIGN IN',
+  'userNameOrEmail':"Username or Email",
+  'password':"Password",
+  "userFieldError" : "Email is Required",
+  "passwordFieldError" : "Password is Required",
+  "inCorrectUsername" : "Incorrect Email",
+  "passwordMininumValueEnter" : "Please enter minimum 8 characters",
+  "forgotPassword":"Forgot Password ?",
+  "orSignWith":"Or sign in with",
+  "ifYouAreNew" : 'If you are new, ',
+  "createNow" : 'Create Now',
+  "done" : 'DONE',
+
+  //signup font
+  "name" : 'Name',
+  "signUp" : 'Sign Up',
+  "emailPhone" : 'Email/phone',
+
+  //forgot password font
+  "emailAddress" : "Email Address",
+  "sendOtp" : "Send Otp",
+  "backTo" : "Back To",
+  "forgotPasswordTitle":"Forgot Password",
+
+  //otp font
+  "codeVerification" : "Code Verification:",
+  "enterYourVerificationCode" : "Enter your verification code here:",
+  "notGetCode" : "Don’t get code?",
+  "resend" : "Resend",
 };

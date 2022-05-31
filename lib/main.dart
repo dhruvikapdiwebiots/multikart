@@ -36,8 +36,8 @@ class MyApp extends StatelessWidget {
         translations: Language(),
         locale: const Locale('en', 'US'),
         fallbackLocale: const Locale('en', 'US'), // tran
-        title: "My App",
-        home: SplashScreen(),
+        title: "Multikart",
+        home: const SplashScreen(),
         getPages: appRoute.getPages,
         theme: AppTheme.fromType(ThemeType.light).themeData,
         darkTheme: AppTheme.fromType(ThemeType.dark).themeData,

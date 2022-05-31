@@ -10,7 +10,7 @@ final storage = GetStorage();
     await Future.delayed(Durations.s1);
     isTapped = true;
     update();
-    await Future.delayed(Durations.s3);
+    await Future.delayed(Durations.s2);
     checkLogin();
     super.onInit();
   }

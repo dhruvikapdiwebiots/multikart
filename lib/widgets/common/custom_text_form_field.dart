@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/common/theme/app_css.dart';
-import 'package:multikart/controllers/common/app_controller.dart';
-import 'package:get/get.dart';
+
+import 'package:multikart/config.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final appCtrl = Get.isRegistered<AppController>() ? Get.find<AppController>() : Get.put(AppController());
+  final appCtrl = Get.isRegistered<AppController>()
+      ? Get.find<AppController>()
+      : Get.put(AppController());
 
   final TextEditingController? controller;
   final String? hint;
@@ -32,6 +32,7 @@ class CustomTextFormField extends StatelessWidget {
   final bool showBoarder;
   final TextAlignVertical? textAlignVertical;
   final FocusNode? focusNode;
+  final TextStyle? hintStyle;
 
   CustomTextFormField({
     Key? key,
@@ -61,74 +62,54 @@ class CustomTextFormField extends StatelessWidget {
     this.showBoarder = true,
     this.textAlignVertical = TextAlignVertical.center,
     this.focusNode,
+    this.hintStyle,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     InputBorder inputBorder = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(radius ?? 12),
-      borderSide: const BorderSide(style: BorderStyle.none),
+      borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(radius ?? 12)),
+      borderSide: BorderSide(
+          style: BorderStyle.solid, color: appCtrl.appTheme.borderColor),
     );
 
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(radius ?? 12),
-        border: Border.all(
-          color: appCtrl.appTheme.borderGray,
-          width: 1,
-          style: showBoarder ? BorderStyle.solid : BorderStyle.none,
-        ),
-      ),
-      child: Row(
-        children: [
-          if (prefixIcon != null)
-            Padding(
-              padding: const EdgeInsets.only(left: 12),
-              child: prefixIcon,
-            ),
-          Expanded(
-            child: TextFormField(
-              controller: controller,
-              style: style ?? AppCss.body1,
-              obscureText: obscureText,
-              validator: validator,
-              keyboardType: keyboardType ?? TextInputType.text,
-              maxLines: maxLines,
-              minLines: minLines,
-              enabled: enabled,
-              maxLength: maxLength,
-              onTap: onTap,
-              onEditingComplete: onEditingComplete,
-              onFieldSubmitted: onFieldSubmitted,
-              onChanged: onChanged,
-              textAlign: TextAlign.justify,
-              textAlignVertical: textAlignVertical,
-              focusNode: focusNode,
-              decoration: InputDecoration(
-                enabledBorder: inputBorder,
-                disabledBorder: inputBorder,
-                border: inputBorder,
-                focusedBorder: inputBorder,
-                errorBorder: inputBorder,
-                focusedErrorBorder: inputBorder,
-                filled: true,
-                fillColor: fillColor ?? appCtrl.appTheme.bg1,
-                contentPadding: padding,
-                hintText: hintText,
-                labelText: labelText,
-                errorText: errorText,
-                errorMaxLines: 2,
-                counterText: showCounter ? null : '',
-              ),
-            ),
-          ),
-          if (suffixIcon != null)
-            Padding(
-              padding: const EdgeInsets.only(right: 12),
-              child: suffixIcon,
-            ),
-        ],
-      ),
+    return TextFormField(
+      controller: controller,
+      style: style ?? AppCss.body1,
+      obscureText: obscureText,
+      validator: validator,
+      keyboardType: keyboardType ?? TextInputType.text,
+      maxLines: maxLines,
+      minLines: minLines,
+      enabled: enabled,
+      maxLength: maxLength,
+      onTap: onTap,
+      onEditingComplete: onEditingComplete,
+      onFieldSubmitted: onFieldSubmitted,
+      onChanged: onChanged,
+      textAlign: TextAlign.justify,
+      textAlignVertical: textAlignVertical,
+      focusNode: focusNode,
+      decoration: InputDecoration(
+          floatingLabelBehavior: FloatingLabelBehavior.always,
+          enabledBorder: inputBorder,
+          disabledBorder: inputBorder,
+          border: inputBorder,
+          focusedBorder: inputBorder,
+          errorBorder: inputBorder,
+          focusedErrorBorder: inputBorder,
+          labelStyle: TextStyle(color: appCtrl.appTheme.contentColor,fontSize: AppScreenUtil().fontSize(16),letterSpacing: .4),
+          filled: true,
+          fillColor: fillColor ?? appCtrl.appTheme.bg1,
+          contentPadding: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(20),vertical: AppScreenUtil().screenHeight(0)),
+          hintText: hintText,
+          labelText: labelText,
+          errorText: errorText,
+          hintStyle: TextStyle(color: appCtrl.appTheme.contentColor,fontSize: AppScreenUtil().fontSize(16),letterSpacing: .4),
+          errorMaxLines: 2,
+          counterText: showCounter ? null : '',
+          suffixIcon: suffixIcon,
+          prefixIcon: prefixIcon),
     );
   }
 }

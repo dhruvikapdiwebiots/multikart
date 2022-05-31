@@ -18,4 +18,32 @@ final dynamic ar = {
   "hey": 'مرحبًا',
   "loginNow": 'تسجيل الدخول الآن',
   "signInCapital": 'تسجيل الدخول',
+  'userNameOrEmail':"اسم المستخدم أو البريد الالكتروني",
+  'password':"كلمة المرور",
+  'userFieldError': "البريد الالكتروني مطلوب",
+  'passwordFieldError': "كلمة المرور مطلوبة",
+  'inCorrectUsername': "غير صحيح البريد الإلكتروني",
+  'passwordMininumValueEnter': "الرجاء إدخال الحد الأدنى 8 أحرف",
+  "forgotPassword":"هل نسيت كلمة السر ؟",
+  "orSignWith":"أو تسجيل الدخول باستخدام",
+  "ifYouAreNew" : 'إذا كنت جديدًا ،',
+  "createNow" : 'انشئ الأن',
+  "done" : 'فعله',
+
+  //signup font
+  "name" : 'اسم',
+  "signUp" : 'تسجيل',
+  "emailPhone" : 'البريد الإلكتروني / الهاتف',
+
+  //forgot password font
+  "emailAddress" : "عنوان البريد الالكترونى",
+  "sendOtp" : "إرسال Otp",
+  "backTo" : "ارجع الى",
+  "forgotPasswordTitle":"هل نسيت كلمة السر",
+
+  //otp font
+  "codeVerification" : "التحقق من الرمز:",
+  "enterYourVerificationCode" : "أدخل رمز التحقق الخاص بك هنا:",
+  "notGetCode" : "لا تحصل على رمز؟",
+  "resend" : "إعادة إرسال",
 };
