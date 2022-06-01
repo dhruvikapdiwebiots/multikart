@@ -21,3 +21,4 @@ export 'package:multikart/views/authentication_page/login/login_page_list.dart';
 export 'package:multikart/views/authentication_page/sign_up/sign_up_page_list.dart';
 export 'package:multikart/views/authentication_page/forgot_password/forgot_password_page_list.dart';
 export 'package:multikart/views/authentication_page/otp/otp_page_list.dart';
+export 'package:multikart/views/authentication_page/reset_password/reset_password_page_list.dart';

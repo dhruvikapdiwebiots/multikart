@@ -7,3 +7,5 @@ export '../../../widgets/common_app_bar/authentication_app_bar.dart';
 export '../views/authentication_page/login/login.dart';
 export '../views/authentication_page/sign_up/sign_up.dart';
 export '../views/authentication_page/forgot_password/forgot_password.dart';
+export '../views/authentication_page/reset_password/reset_password.dart';
+export '../views/home_and_product/dashboard/dashboard.dart';

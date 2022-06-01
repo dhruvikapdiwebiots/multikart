@@ -12,8 +12,9 @@ class ForgotPassWordScreen extends StatelessWidget {
         body: SingleChildScrollView(
             child: Column(
           children: [
-            const AuthenticationAppBar(
+             AuthenticationAppBar(
               isDone: false,
+               onTap: ()=> Get.toNamed(routeName.dashboard),
             ),
             const Space(0, 20),
             ForgotPasswordWidget().loginLayout(

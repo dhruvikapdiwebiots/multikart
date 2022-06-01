@@ -46,4 +46,14 @@ final dynamic kr = {
   "enterYourVerificationCode" : "여기에 인증 코드를 입력하십시오:",
   "notGetCode" : "코드를 받지 못하셨습니까?",
   "resend" : "재전송",
+
+  //reset password
+  "resetPassword" : '암호를 재설정',
+  "currentPassword" : '현재 비밀번호 *',
+  "newPassword" : '새 비밀번호 *',
+  "confirmPassword" : '비밀번호 확인 *',
+  "currentPasswordFieldError" : "현재 비밀번호가 필요합니다",
+  "newPasswordFieldError" : "새 비밀번호가 필요합니다",
+  "confirmPasswordFieldError" : "비밀번호 확인이 필요합니다",
+  "passwordNotMatch": "비밀번호는 위와 같아야 합니다.",
 };

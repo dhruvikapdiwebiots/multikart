@@ -26,6 +26,13 @@ final storage = GetStorage();
       Get.updateLocale(Get.deviceLocale ?? const Locale('en', 'US'));
     }
     //#endregion
-    Get.toNamed(routeName.onBoarding);
+
+    bool isIntro = await storage.read(Session.isIntro) ?? false;
+    print(isIntro);
+    if(isIntro == false) {
+      Get.toNamed(routeName.onBoarding);
+    }else{
+      Get.toNamed(routeName.login);
+    }
   }
 }

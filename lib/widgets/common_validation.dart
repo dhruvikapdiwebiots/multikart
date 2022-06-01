@@ -62,4 +62,37 @@ class CommonValidation {
       return null;
     }
   }
+
+// Check Current Password Validation
+  String? checkCurrentPasswordValidation(value) {
+    if (value.isEmpty) {
+      return CommonTextFont().currentPasswordFieldError;
+    } else {
+      return null;
+    }
+  }
+
+// Check New Password Validation
+  String? checkNewPasswordValidation(value) {
+    if (value.isEmpty) {
+      return CommonTextFont().newPasswordFieldError;
+    }else if (value.length <= 5) {
+      return CommonTextFont().passwordMininumValueEnter;
+    }  else {
+      return null;
+    }
+  }
+
+// Check Confirm Password Validation
+  String? checkConfirmPasswordValidation(value,newPassword) {
+    if (value.isEmpty) {
+      return CommonTextFont().confirmPasswordFieldError;
+    } else if (value.length <= 5) {
+      return CommonTextFont().passwordMininumValueEnter;
+    }else if (value.toString() != newPassword.toString()) {
+      return CommonTextFont().passwordNotMatch;
+    } else {
+      return null;
+    }
+  }
 }

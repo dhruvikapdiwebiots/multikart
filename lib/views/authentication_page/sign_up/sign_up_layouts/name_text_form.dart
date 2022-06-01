@@ -1,5 +1,3 @@
-
-
 import '../../../../config.dart';
 
 class SignupNameTextForm extends StatelessWidget {
@@ -10,7 +8,7 @@ class SignupNameTextForm extends StatelessWidget {
     return GetBuilder<SignUpController>(builder: (signUpCtrl) {
       return Padding(
         padding:
-        EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
+            EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
         child: CustomTextFormField(
           radius: 5,
           labelText: SignUpFont().name,

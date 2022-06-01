@@ -14,38 +14,43 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
   @override
   Widget build(BuildContext context) {
     return GetBuilder<OnBoardingController>(builder: (_) {
-      return Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            SizedBox(
-              height: AppScreenUtil().screenHeight(580),
-              child: Stack(
-                children: [
-                  AuthenticationAppBar(
-                    isDone: onBoardingCtrl.current ==
-                            onBoardingCtrl.imgList.length - 1
-                        ? true
-                        : false,
-                  ),
-                  const OnBoardList(),
-                ],
+      return WillPopScope(
+        onWillPop: () async {
+          return false;
+        },
+        child: Scaffold(
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(
+                height: AppScreenUtil().screenHeight(580),
+                child: Stack(
+                  children: [
+                    AuthenticationAppBar(
+                      onTap: () => onBoardingCtrl.readIntroPage(),
+                      isDone: onBoardingCtrl.current ==
+                              onBoardingCtrl.imgList.length - 1
+                          ? true
+                          : false,
+                    ),
+                    const OnBoardList(),
+                  ],
+                ),
               ),
-            ),
-            const Space(0, 5),
-            CustomButton(
-              title: OnBoardFont().startShopping.toUpperCase(),
-            ),
-            const Space(0, 5),
-            CommonAccountText(
-              text1: CommonTextFont().alreadyAccount,
-              text2: CommonTextFont().signIn,
-              textColor: onBoardingCtrl.appCtrl.appTheme.contentColor,
-              fontWeight: FontWeight.w700,
-              onTap:() => Get.toNamed(routeName.login),
-            ),
-            const Space(0, 5),
-          ],
+              const Space(0, 5),
+              CustomButton(
+                  title: OnBoardFont().startShopping.toUpperCase(),
+                  onTap: () => onBoardingCtrl.readIntroPage()),
+              const Space(0, 5),
+              CommonAccountText(
+                  text1: CommonTextFont().alreadyAccount,
+                  text2: CommonTextFont().signIn,
+                  textColor: onBoardingCtrl.appCtrl.appTheme.contentColor,
+                  fontWeight: FontWeight.w700,
+                  onTap: () => onBoardingCtrl.readIntroPage()),
+              const Space(0, 5),
+            ],
+          ),
         ),
       );
     });

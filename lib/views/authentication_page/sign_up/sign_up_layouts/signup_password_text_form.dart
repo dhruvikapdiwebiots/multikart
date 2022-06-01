@@ -7,6 +7,7 @@ class SignUpPasswordTextForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<SignUpController>(builder: (signUpController) {
       return PasswordTextForm(
+        label:  CommonTextFont().password,
         controller: signUpController.txtPassword,
         validator: (value) => CommonValidation().checkPasswordValidation(value),
         passwordVisible: signUpController.passwordVisible,

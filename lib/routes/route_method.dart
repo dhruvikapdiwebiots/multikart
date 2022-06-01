@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-
 //app file
+
 import 'route_name.dart';
 import 'screen_list.dart';
 
@@ -14,6 +14,9 @@ class AppRoute {
     GetPage(name: _routeName.onBoarding, page: () => const OnBoardingScreen()),
     GetPage(name: _routeName.login, page: () => LoginScreen()),
     GetPage(name: _routeName.signUp, page: () => SignUpScreen()),
-    GetPage(name: _routeName.forgotPassword, page: () => ForgotPassWordScreen()),
+    GetPage(
+        name: _routeName.forgotPassword, page: () => ForgotPassWordScreen()),
+    GetPage(name: _routeName.resetPassword, page: () => ResetPassword()),
+    GetPage(name: _routeName.dashboard, page: () => Dashboard()),
   ];
 }

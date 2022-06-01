@@ -1,5 +1,6 @@
 
 import 'package:carousel_slider/carousel_state.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
 
 class OnBoardingController extends GetxController {
@@ -11,6 +12,7 @@ class OnBoardingController extends GetxController {
   CarouselState? carouselState;
   PageController pageController =PageController(initialPage: 0, viewportFraction: 0.8);
   List imgList = [];
+  final storage = GetStorage();
 
   @override
   void onReady() async {
@@ -19,5 +21,12 @@ class OnBoardingController extends GetxController {
     pageController =
         PageController(initialPage: 0, viewportFraction: 0.8);
     super.onReady();
+  }
+  
+  //read intro 
+  readIntroPage()async{
+    await storage.write(Session.isIntro, true);
+    update();
+    Get.toNamed(routeName.login);
   }
 }

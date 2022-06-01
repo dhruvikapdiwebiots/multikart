@@ -46,4 +46,14 @@ final dynamic hi = {
   "enterYourVerificationCode" : "अपना सत्यापन कोड यहाँ दर्ज करें:",
   "notGetCode" : "कोड नहीं मिला?",
   "resend" : "फिर से भेजें",
+
+  //reset password
+  "resetPassword" : 'पासवर्ड रीसेट',
+  "currentPassword" : 'वर्तमान पासवर्ड *',
+  "newPassword" : 'नया पासवर्ड *',
+  "confirmPassword" : 'पासवर्ड की पुष्टि करें *',
+  "currentPasswordFieldError" : "वर्तमान पासवर्ड आवश्यक है",
+  "newPasswordFieldError" : "नया पासवर्ड आवश्यक है",
+  "confirmPasswordFieldError" : "पुष्टि पासवर्ड आवश्यक है",
+  "passwordNotMatch": "पासवर्ड ऊपर जैसा ही होना चाहिए",
 };

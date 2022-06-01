@@ -46,4 +46,14 @@ final dynamic en = {
   "enterYourVerificationCode" : "Enter your verification code here:",
   "notGetCode" : "Don’t get code?",
   "resend" : "Resend",
+
+  //reset password
+  "resetPassword" : 'Reset Password',
+  "currentPassword" : 'Current Password *',
+  "newPassword" : 'New Password *',
+  "confirmPassword" : 'Confirm Password *',
+  "currentPasswordFieldError" : "Current Password is Required",
+  "newPasswordFieldError" : "New Password is Required",
+  "confirmPasswordFieldError" : "Confirm Password is Required",
+  "passwordNotMatch": "Password must be same as above",
 };

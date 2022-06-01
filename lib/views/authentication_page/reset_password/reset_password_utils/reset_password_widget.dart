@@ -1,6 +1,6 @@
 import '../../../../config.dart';
 
-class SignUpWidget {
+class ResetPasswordWidget {
   //focus change
   fieldFocusChange(
       BuildContext context, FocusNode currentFocus, FocusNode nextFocus) {
@@ -8,7 +8,7 @@ class SignUpWidget {
     FocusScope.of(context).requestFocus(nextFocus);
   }
 
-  //layout
+  //layout layout
   Widget layout({Widget? child, context}) {
     return Padding(
       padding:

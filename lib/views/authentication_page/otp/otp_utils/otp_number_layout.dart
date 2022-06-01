@@ -8,14 +8,17 @@ class OtpNumberLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<OtpController>(builder: (otpCtrl) {
       return Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           OtpTextForm(
             controller: otpCtrl.fieldOne,
-            autoFocus: true,
+            autoFocus: false,
           ),
+          const Space(10, 0),
           OtpTextForm(controller: otpCtrl.fieldTwo, autoFocus: false),
+          const Space(10, 0),
           OtpTextForm(controller: otpCtrl.fieldThree, autoFocus: false),
+          const Space(10, 0),
           OtpTextForm(controller: otpCtrl.fieldFour, autoFocus: false)
         ],
       );

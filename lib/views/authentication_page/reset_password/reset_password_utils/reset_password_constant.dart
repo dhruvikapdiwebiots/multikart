@@ -1,16 +1,18 @@
-
-import 'package:get/get.dart';
 //text constants
-class OtpFont {
-  String done = "done".tr;
-  String codeVerification = "codeVerification".tr;
-  String enterYourVerificationCode = "enterYourVerificationCode".tr;
-  String notGetCode = "notGetCode".tr;
-  String resend = "resend".tr;
+import 'package:get/get.dart';
+
+class ResetPasswordFont{
+  String resetPassword= 'resetPassword'.tr;
+  String currentPassword = 'currentPassword'.tr;
+  String newPassword = 'newPassword'.tr;
+  String confirmPassword = 'confirmPassword'.tr;
+  String backTo = "backTo".tr;
+  String signIn = "signIn".tr;
 }
 
+
 //font size
-class OtpFontSize {
+class ResetPasswordFontSize{
   static const double textSizeSmall = 12.0;
   static const double textSizeSMedium = 14.0;
   static const double textSizeMedium = 16.0;

@@ -22,16 +22,12 @@ class LoginController extends GetxController {
 
   //sign in
   signIn() async {
-    if (loginformKey.currentState!.validate()) {
+    /*if (loginformKey.currentState!.validate()) {
       log('Validation');
     } else {
       log('No Valid');
-    }
+    }*/
+    Get.toNamed(routeName.dashboard);
   }
 
-/*
-  @override
-  void onReady() async {
-    super.onReady();
-  }*/
 }

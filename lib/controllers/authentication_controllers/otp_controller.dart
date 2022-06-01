@@ -15,4 +15,15 @@ class OtpController extends GetxController {
   TextEditingController fieldThree = TextEditingController();
   TextEditingController fieldFour = TextEditingController();
 
+
+  @override
+  void onReady() async {
+    fieldOne;
+    fieldTwo;
+    fieldThree;
+    fieldFour;
+    update();
+    super.onReady();
+  }
+
 }

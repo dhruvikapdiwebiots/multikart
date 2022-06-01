@@ -15,11 +15,12 @@ class SignUpScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const AuthenticationAppBar(
+                 AuthenticationAppBar(
                   isDone: false,
+                   onTap: ()=> Get.toNamed(routeName.dashboard),
                 ),
                 const Space(0, 20),
-                SignUpWidget().loginLayout(
+                SignUpWidget().layout(
                     child: AuthenticationTitleText(
                       text1: SignUpFont().hey,
                       text2: SignUpFont().signUp,
@@ -47,7 +48,7 @@ class SignUpScreen extends StatelessWidget {
                   text2: CommonTextFont().signIn,
                   textColor: signUpCtrl.appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.normal,
-                  onTap: () => Get.back(),
+                  onTap: () =>Get.back(),
                 ),
                 const Space(0, 20),
               ],

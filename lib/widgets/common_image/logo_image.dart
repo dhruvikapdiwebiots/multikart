@@ -8,7 +8,7 @@ class LogoImage extends StatelessWidget {
     return Image.asset(
       imageAssets.logo,
       fit: BoxFit.contain,
-      width: AppScreenUtil().screenWidth(100),
+      width: AppScreenUtil().screenWidth(110),
     );
   }
 }

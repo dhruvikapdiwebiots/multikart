@@ -46,4 +46,14 @@ final dynamic ar = {
   "enterYourVerificationCode" : "أدخل رمز التحقق الخاص بك هنا:",
   "notGetCode" : "لا تحصل على رمز؟",
   "resend" : "إعادة إرسال",
+
+  //reset password
+  "resetPassword" : 'إعادة تعيين كلمة المرور',
+  "currentPassword" : 'كلمة المرور الحالية *',
+  "newPassword" : 'كلمة السر الجديدة *',
+  "confirmPassword" : 'تأكيد كلمة المرور *',
+  "currentPasswordFieldError" : "كلمة المرور الحالية مطلوبة",
+  "newPasswordFieldError" : "كلمة المرور الجديدة مطلوبة",
+  "confirmPasswordFieldError" : "تأكيد كلمة المرور مطلوب",
+  "passwordNotMatch": "يجب أن تكون كلمة المرور هي نفسها المذكورة أعلاه",
 };

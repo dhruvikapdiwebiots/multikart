@@ -11,8 +11,12 @@ class CommonTextFont{
   String orSignWith= 'orSignWith'.tr;
   String userFieldError = "userFieldError".tr;
   String passwordFieldError = "passwordFieldError".tr;
+  String currentPasswordFieldError = "currentPasswordFieldError".tr;
+  String newPasswordFieldError = "newPasswordFieldError".tr;
+  String confirmPasswordFieldError = "confirmPasswordFieldError".tr;
   String inCorrectUsername = "inCorrectUsername".tr;
   String passwordMininumValueEnter = "passwordMininumValueEnter".tr;
+  String passwordNotMatch = "passwordNotMatch".tr;
 }
 
 

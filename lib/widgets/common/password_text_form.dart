@@ -6,7 +6,9 @@ class PasswordTextForm extends StatelessWidget {
   final FocusNode? passwordFocus;
   final FormFieldValidator<String>? validator;
   final Widget? suffixIcon;
-  const PasswordTextForm({Key? key,this.passwordVisible,this.controller,this.passwordFocus,this.suffixIcon,this.validator}) : super(key: key);
+  final ValueChanged<String>? onFieldSubmitted;
+  final String? label;
+  const PasswordTextForm({Key? key,this.passwordVisible,this.controller,this.passwordFocus,this.suffixIcon,this.validator,this.label,this.onFieldSubmitted}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,8 @@ class PasswordTextForm extends StatelessWidget {
           horizontal: AppScreenUtil().screenWidth(15)),
       child: CustomTextFormField(
         radius: 5,
-        labelText: CommonTextFont().password,
+        onFieldSubmitted: onFieldSubmitted,
+        labelText: label,
         controller: controller,
         obscureText: passwordVisible!,
         focusNode: passwordFocus,
