@@ -56,4 +56,11 @@ final dynamic hi = {
   "newPasswordFieldError" : "नया पासवर्ड आवश्यक है",
   "confirmPasswordFieldError" : "पुष्टि पासवर्ड आवश्यक है",
   "passwordNotMatch": "पासवर्ड ऊपर जैसा ही होना चाहिए",
+
+  //bottom navigation bar list
+  "home" : "घर",
+  "category" : "श्रेणी",
+  "cart" : "कार्ट",
+  "wishlist" : "इच्छा सूची",
+  "profile" : "प्रोफाइल",
 };

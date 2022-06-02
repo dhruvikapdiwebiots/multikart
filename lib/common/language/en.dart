@@ -56,4 +56,11 @@ final dynamic en = {
   "newPasswordFieldError" : "New Password is Required",
   "confirmPasswordFieldError" : "Confirm Password is Required",
   "passwordNotMatch": "Password must be same as above",
+
+  //bottom navigation bar list
+  "home" : "Home",
+  "category" : "Category",
+  "cart" : "Cart",
+  "wishlist" : "Wishlist",
+  "profile" : "Profile",
 };

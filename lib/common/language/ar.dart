@@ -56,4 +56,11 @@ final dynamic ar = {
   "newPasswordFieldError" : "كلمة المرور الجديدة مطلوبة",
   "confirmPasswordFieldError" : "تأكيد كلمة المرور مطلوب",
   "passwordNotMatch": "يجب أن تكون كلمة المرور هي نفسها المذكورة أعلاه",
+
+  //bottom navigation bar list
+  "home" : "مسكن",
+  "category" : "فئة",
+  "cart" : "عربة التسوق",
+  "wishlist" : "قائمة الرغبات",
+  "profile" : "الملف الشخصي",
 };

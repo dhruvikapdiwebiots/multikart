@@ -56,4 +56,11 @@ final dynamic kr = {
   "newPasswordFieldError" : "새 비밀번호가 필요합니다",
   "confirmPasswordFieldError" : "비밀번호 확인이 필요합니다",
   "passwordNotMatch": "비밀번호는 위와 같아야 합니다.",
+
+  //bottom navigation bar list
+  "home" : "집",
+  "category" : "카테고리",
+  "cart" : "장바구니",
+  "wishlist" : "위시리스트",
+  "profile" : "프로필",
 };

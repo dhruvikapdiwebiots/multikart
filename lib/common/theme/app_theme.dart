@@ -36,6 +36,7 @@ class AppTheme {
   Color greenColor;
   Color darkContentColor;
   Color ratingColor;
+  Color homeCategoryColor;
 
   /// Default constructor
   AppTheme({
@@ -64,6 +65,7 @@ class AppTheme {
     required this.greenColor,
     required this.darkContentColor,
     required this.ratingColor,
+    required this.homeCategoryColor,
   });
 
   /// fromType factory constructor
@@ -95,6 +97,7 @@ class AppTheme {
           greenColor: const Color(0xFF198754),
           darkContentColor: const Color(0xFFBABABA),
           ratingColor: const Color(0xFFFFBA49),
+          homeCategoryColor: const Color(0xFFEAEDF2),
           textColor: Colors.white,
         );
 
@@ -125,6 +128,7 @@ class AppTheme {
           darkContentColor: const Color(0xFFBABABA),
           ratingColor: const Color(0xFFFFBA49),
           textColor: const Color(0xFF636363),
+          homeCategoryColor: const Color(0xFFEAEDF2),
         );
     }
   }
