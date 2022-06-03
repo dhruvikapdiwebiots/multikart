@@ -27,8 +27,8 @@ final storage = GetStorage();
     }
     //#endregion
 
-    bool isIntro = await storage.read(Session.isIntro) ?? false;
-    print(isIntro);
+    bool isIntro = storage.read(Session.isIntro) ?? false;
+
     if(isIntro == false) {
       Get.toNamed(routeName.onBoarding);
     }else{

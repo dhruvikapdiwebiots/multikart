@@ -6,12 +6,10 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Text('ProfileScreen')
-          ],
-        ),
+      body: Column(
+        children: const [
+          Text('ProfileScreen')
+        ],
       ),
     );
   }

@@ -6,12 +6,10 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Text('Cart')
-          ],
-        ),
+      body: Column(
+        children: const [
+          Text('Cart')
+        ],
       ),
     );
   }

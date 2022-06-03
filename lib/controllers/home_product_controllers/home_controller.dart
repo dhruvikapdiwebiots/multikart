@@ -9,10 +9,12 @@ class HomeController extends GetxController {
 
   final storage = GetStorage();
   List homeCategoryList = [];
+  List bannerList = [];
 
   @override
   void onReady() async {
     homeCategoryList = AppArray().homeCategory;
+    bannerList = AppArray().homeBanner;
     update();
 
     super.onReady();

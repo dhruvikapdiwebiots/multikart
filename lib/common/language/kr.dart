@@ -63,4 +63,15 @@ final dynamic kr = {
   "cart" : "장바구니",
   "wishlist" : "위시리스트",
   "profile" : "프로필",
+
+  //home font
+  'Women':'여성',
+  'Men':'남자들',
+  'Kids':'어린이',
+  'Beauty':'아름다움',
+  'Footwear':'신발류',
+  'Jewelery':'보석류',
+
+  //drawer font
+  'userName' : '안녕하세요, 페이지 터너입니다.',
 };

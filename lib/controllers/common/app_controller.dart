@@ -11,10 +11,10 @@ class AppController extends GetxController {
   bool _isLoading = false;
   int selectedIndex = 0;
   List bottomList = [];
-  bool isSearch = false;
-  bool isNotification = false;
-  bool isCart = false;
-  bool isHeart = false;
+  bool isSearch = true;
+  bool isNotification = true;
+  bool isCart = true;
+  bool isHeart = true;
   bool isShare = false;
   double rightValue = 15;
   AppTheme get appTheme => _appTheme;
@@ -32,13 +32,6 @@ class AppController extends GetxController {
   @override
   void onReady() async {
     bottomList = AppArray().bottomSheet;
-    if (selectedIndex == 0) {
-      isSearch = true;
-      isNotification = true;
-      isCart = true;
-      isHeart = true;
-    }
-    update();
 
     super.onReady();
   }

@@ -1,9 +1,28 @@
 import 'package:multikart/config.dart';
 
-class Dashboard extends StatelessWidget {
+
+import 'package:multikart/views/home_and_product/drawer/drawer_screen.dart';
+
+class Dashboard extends StatefulWidget {
+ const Dashboard({Key? key}) : super(key: key);
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard>
+    with SingleTickerProviderStateMixin {
   final dashboardCtrl = Get.put(DashboardController());
 
-  Dashboard({Key? key}) : super(key: key);
+  @override
+  void initState() {
+    super.initState();
+
+    dashboardCtrl.drawerSlideController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 150),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +32,17 @@ class Dashboard extends StatelessWidget {
           return false;
         },
         child: Scaffold(
-          appBar: const HomeProductAppBar(),
+          key: dashboardCtrl.scaffoldKey,
+
+          drawer: const DrawerScreen(),
+          appBar: HomeProductAppBar(
+            onTap: () => dashboardCtrl.appBarLeadingAction(),
+          ),
+
           body: dashboardCtrl.appCtrl.widgetOptions
               .elementAt(dashboardCtrl.appCtrl.selectedIndex),
           bottomNavigationBar: CommonBottomNavigation(
-            onTap: (val) => dashboardCtrl.bottomNavigationChange(val,context),
+            onTap: (val) => dashboardCtrl.bottomNavigationChange(val, context),
           ),
         ),
       );

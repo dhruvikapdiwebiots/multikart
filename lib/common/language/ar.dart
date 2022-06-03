@@ -63,4 +63,15 @@ final dynamic ar = {
   "cart" : "عربة التسوق",
   "wishlist" : "قائمة الرغبات",
   "profile" : "الملف الشخصي",
+
+  //home font
+  'Women':'النساء',
+  'Men':'رجال',
+  'Kids':'أطفال',
+  'Beauty':'جمال',
+  'Footwear':'الأحذية',
+  'Jewelery':'مجوهرات',
+
+  //drawer font
+  'userName' : 'مرحبًا ، بيج تورنر',
 };

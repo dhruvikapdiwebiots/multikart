@@ -63,4 +63,15 @@ final dynamic hi = {
   "cart" : "कार्ट",
   "wishlist" : "इच्छा सूची",
   "profile" : "प्रोफाइल",
+
+  //home font
+  'Women':'महिलायें',
+  'Men':'पुरुष',
+  'Kids':'बच्चे',
+  'Beauty':'सौंदर्य',
+  'Footwear':'जूते',
+  'Jewelery':'आभूषण',
+
+  //drawer font
+  'userName' : 'हैलो, पैगे टर्नर',
 };

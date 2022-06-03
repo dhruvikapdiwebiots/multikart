@@ -15,6 +15,6 @@ class AppRoute {
     GetPage(
         name: _routeName.forgotPassword, page: () => ForgotPassWordScreen()),
     GetPage(name: _routeName.resetPassword, page: () => ResetPassword()),
-    GetPage(name: _routeName.dashboard, page: () => Dashboard()),
+    GetPage(name: _routeName.dashboard, page: () => const Dashboard()),
   ];
 }

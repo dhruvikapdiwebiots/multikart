@@ -3,6 +3,7 @@ class ImageAssets {
   final String logo = 'assets/logo/logo.png';
   final String design = 'assets/image/design.png';
   final String noInternet = 'assets/images/nointernet.png';
+  final String user = 'assets/image/user.png';
 
   //onBoarding Image
   final String onBoarding1 = 'assets/onBoarding/onBoarding1.png';
@@ -16,4 +17,8 @@ class ImageAssets {
   final String footwear = 'assets/home_images/home_category/footwear.png';
   final String beauty = 'assets/home_images/home_category/beauty.png';
   final String jewelery = 'assets/home_images/home_category/jewelry.png';
+
+  //home banner
+  final String banner1 = 'assets/home_images/home_banner/banner1.jpg';
+  final String banner2 = 'assets/home_images/home_banner/banner2.png';
 }

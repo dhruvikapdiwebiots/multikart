@@ -6,12 +6,10 @@ class WishlistScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Text('WishlistScreen')
-          ],
-        ),
+      body: Column(
+        children: const [
+          Text('WishlistScreen')
+        ],
       ),
     );
   }

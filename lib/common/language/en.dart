@@ -63,4 +63,15 @@ final dynamic en = {
   "cart" : "Cart",
   "wishlist" : "Wishlist",
   "profile" : "Profile",
+
+  //home font
+  'Women':'Women',
+  'Men':'Men',
+  'Kids':'Kids',
+  'Beauty':'Beauty',
+  'Footwear':'Footwear',
+  'Jewelery':'Jewelery',
+
+  //drawer font
+  'userName' : 'Hello, Paige Turner',
 };

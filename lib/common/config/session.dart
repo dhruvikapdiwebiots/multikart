@@ -12,4 +12,5 @@ class Session {
   static String get languageCode => 'languageCode';
   static String get countryCode => 'countryCode';
   static String get isIntro => 'isIntro';
+  static String get selectedIndex => 'selectedIndex';
 }

@@ -6,12 +6,22 @@ class DashboardController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
+  AnimationController? drawerSlideController;
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
+  List drawerList = [];
   final storage = GetStorage();
 
+  @override
+  void onReady() async {
+    drawerList = AppArray().drawerList;
+    update();
+    super.onReady();
+  }
+
   //bottom change
-  bottomNavigationChange(val,context) async {
-    await storage.write('selectedIndex', val);
+  bottomNavigationChange(val, context) async {
+    await storage.write(Session.selectedIndex, val);
     appCtrl.selectedIndex = val;
     appCtrl.rightValue = MediaQuery.of(context).size.width;
     if (appCtrl.selectedIndex == 0) {
@@ -48,4 +58,16 @@ class DashboardController extends GetxController {
     appCtrl.update();
     update();
   }
+
+  //app bar leading action
+  appBarLeadingAction() async {
+    if (appCtrl.selectedIndex == 0) {
+      scaffoldKey.currentState!.openDrawer();
+    } else {
+      await storage.write(Session.selectedIndex, 0);
+      appCtrl.selectedIndex = 0;
+      update();
+    }
+  }
+
 }

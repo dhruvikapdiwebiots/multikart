@@ -14,4 +14,10 @@ class SvgAssets {
   final String heartColor = 'assets/svg/heartColor.svg';
   final String profile = 'assets/svg/profile.svg';
   final String profileColor = 'assets/svg/profileColor.svg';
+  final String arrowLeft = 'assets/svg/arrowLeft.svg';
+  final String order = 'assets/svg/order.svg';
+  final String flags = 'assets/svg/flags.svg';
+  final String setting = 'assets/svg/setting.svg';
+  final String aboutUs = 'assets/svg/aboutUs.svg';
+  final String call = 'assets/svg/call.svg';
 }
