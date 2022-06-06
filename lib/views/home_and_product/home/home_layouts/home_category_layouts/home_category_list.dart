@@ -1,7 +1,5 @@
-import 'package:multikart/controllers/home_product_controllers/home_controller.dart';
-import 'package:multikart/views/home_and_product/home/home_utils/home_category_data.dart';
 
-import '../../../config.dart';
+import '../../../../../config.dart';
 
 class HomeCategoryList extends StatelessWidget {
   const HomeCategoryList({Key? key}) : super(key: key);

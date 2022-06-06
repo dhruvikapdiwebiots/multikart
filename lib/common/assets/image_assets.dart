@@ -19,6 +19,6 @@ class ImageAssets {
   final String jewelery = 'assets/home_images/home_category/jewelry.png';
 
   //home banner
-  final String banner1 = 'assets/home_images/home_banner/banner1.jpg';
-  final String banner2 = 'assets/home_images/home_banner/banner2.png';
+  final String banner1 = 'assets/home_images/home_banner/banner3.png';
+  final String banner2 = 'assets/home_images/home_banner/banner2.jpeg';
 }

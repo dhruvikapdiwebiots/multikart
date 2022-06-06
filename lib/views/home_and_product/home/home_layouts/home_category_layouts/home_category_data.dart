@@ -1,6 +1,4 @@
-import 'package:multikart/views/home_and_product/home/home_utils/home_constant.dart';
-
-import '../../../../config.dart';
+import '../../../../../config.dart';
 
 class HomeCategoryData extends StatelessWidget {
   final dynamic data;

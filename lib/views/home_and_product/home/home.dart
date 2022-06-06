@@ -1,6 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/controllers/home_product_controllers/home_controller.dart';
-import 'package:multikart/views/home_and_product/home/home_category_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,49 +15,36 @@ class _HomeScreenState extends State<HomeScreen> {
     return GetBuilder<HomeController>(builder: (_) {
       return Scaffold(
         body: Column(
-          children:  [
+          children: [
             //home category list layout
             const HomeCategoryList(),
             //banner list layout
-            Expanded(
+            const  HomeBannerList(),
+            //deals of the day
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      LatoFontStyle(
+                        text: 'Deals of the Day',
+                        color: homeCtrl.appCtrl.appTheme.blackColor,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16,
+                      ),
+                      LatoFontStyle(
+                        text: 'See All',
+                        color: homeCtrl.appCtrl.appTheme.primary,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 14,
+                      ),
+                    ],
+                  ),
 
-/*
-              child: ListView.builder(
-                itemCount: homeCtrl.bannerList.length,
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
-                    child: Stack(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(10)),
-                            child: Image.asset(homeCtrl.bannerList[index]['image'],fit: BoxFit.cover,))
-                      ],
-                    ),
-                  );
-                },
-              ),*/
-            child: CarouselSlider.builder(
-              options: CarouselOptions(
-                autoPlay: true,
-                aspectRatio: 1.7,
-                viewportFraction: 1,
-                enlargeStrategy: CenterPageEnlargeStrategy.height,
+                ],
               ),
-              itemCount: homeCtrl.bannerList.length,
-              itemBuilder:
-                  (BuildContext context, int index, int pageViewIndex) {
-                return Stack(
-                  children: [
-                    ClipRRect(
-                        borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(10)),
-                        child: Image.asset(homeCtrl.bannerList[index]['image'],fit: BoxFit.cover,))
-                  ],
-                );
-              },
-            ),
             )
           ],
         ),

@@ -25,3 +25,4 @@ export 'package:multikart/views/authentication_page/otp/otp_page_list.dart';
 export 'package:multikart/widgets/common_image/icon_list.dart';
 export 'package:multikart/views/authentication_page/reset_password/reset_password_page_list.dart';
 export 'package:multikart/views/home_and_product/drawer/drawer_page_list.dart';
+export 'package:multikart/views/home_and_product/home/home_page_list.dart';

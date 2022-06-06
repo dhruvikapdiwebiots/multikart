@@ -10,12 +10,14 @@ class CustomButton extends StatelessWidget {
   final double padding;
   final double radius;
   final double height;
+  final double fontSize;
   final GestureTapCallback? onTap;
   final TextStyle? style;
   final Color? color;
   final Widget? icon;
   final double? width;
   final Border? border;
+  final FontWeight? fontWeight;
 
   CustomButton({
     Key? key,
@@ -23,12 +25,14 @@ class CustomButton extends StatelessWidget {
     this.padding = 15,
     this.radius = 5,
     this.height = 45,
+    this.fontSize = CommonTextFontSize.textSizeSMedium,
     this.onTap,
     this.style,
     this.color,
     this.icon,
     this.width,
     this.border,
+    this.fontWeight = FontWeight.w700
   }) : super(key: key);
 
   @override
@@ -36,6 +40,7 @@ class CustomButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
+        width: width ?? MediaQuery.of(context).size.width,
         margin:
             EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
         height: AppScreenUtil()
@@ -59,10 +64,10 @@ class CustomButton extends StatelessWidget {
               title,
               textAlign: TextAlign.center,
             )
-                .fontSize(AppScreenUtil().fontSize(CommonTextFontSize.textSizeSMedium))
+                .fontSize(AppScreenUtil().fontSize(fontSize))
                 .textColor(appCtrl.appTheme.white)
                 .fontFamily(GoogleFonts.lato().fontFamily.toString())
-                .fontWeight(FontWeight.w700)
+                .fontWeight(fontWeight!)
                 .letterSpacing(1),
           ],
         ),

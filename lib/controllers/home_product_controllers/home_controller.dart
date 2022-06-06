@@ -10,6 +10,8 @@ class HomeController extends GetxController {
   final storage = GetStorage();
   List homeCategoryList = [];
   List bannerList = [];
+  int current = 0;
+  final CarouselController controller = CarouselController();
 
   @override
   void onReady() async {
