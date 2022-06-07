@@ -16,3 +16,5 @@ export 'package:multikart/widgets/common_icons/menu_rounded_icon.dart';
 export 'package:multikart/widgets/bottom_navigation/bottom_navigation_page_list.dart';
 export 'package:multikart/widgets/common_icons/back_arrow.dart';
 export 'package:multikart/widgets/common_image/user_icon.dart';
+export 'package:multikart/widgets/common/row_text_layout.dart';
+export 'package:multikart/widgets/common/border_line_layout.dart';

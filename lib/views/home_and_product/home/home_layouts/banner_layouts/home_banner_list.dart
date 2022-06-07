@@ -1,5 +1,3 @@
-
-
 import '../../../../../config.dart';
 
 class HomeBannerList extends StatelessWidget {
@@ -8,13 +6,16 @@ class HomeBannerList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
-      return Expanded(
+      return Container(
+        margin:
+            EdgeInsets.only(top: AppScreenUtil().screenHeight(18),bottom: AppScreenUtil().screenHeight(12)),
+        height: AppScreenUtil().screenHeight(178),
         child: Column(
           children: [
             CarouselSlider.builder(
               options: CarouselOptions(
                   autoPlay: true,
-                  aspectRatio: 1.6,
+                  aspectRatio: 2.05,
                   viewportFraction: 1,
                   enlargeStrategy: CenterPageEnlargeStrategy.height,
                   onPageChanged: (index, reason) {
@@ -31,7 +32,7 @@ class HomeBannerList extends StatelessWidget {
                     : Container();
               },
             ),
-            const Space(0, 20),
+            const Space(0, 10),
             HomeDotIndicator()
           ],
         ),

@@ -7,3 +7,6 @@ export 'package:multikart/views/home_and_product/home/home_utils/home_widget.dar
 export 'package:multikart/views/home_and_product/home/home_layouts/home_category_layouts/home_category_data.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/banner_layouts/home_banner_list.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/home_category_layouts/home_category_list.dart';
+export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/deals_of_the_day_content.dart';
+export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/deals_of_the_day_card.dart';
+export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/home_deals_of_the_days.dart';

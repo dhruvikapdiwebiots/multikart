@@ -1,0 +1,43 @@
+import '../../../../config.dart';
+
+class FindYourStyleCategoryCard extends StatelessWidget {
+  final int? selectedStyleCategory;
+  final int? index;
+  final dynamic data;
+  final GestureTapCallback? onTap;
+  const FindYourStyleCategoryCard({Key? key,this.index,this.selectedStyleCategory,this.data,this.onTap}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<AppController>(
+      builder: (appCtrl) {
+        return Container(
+          alignment: Alignment.center,
+          height: AppScreenUtil().screenHeight(20),
+          padding: EdgeInsets.symmetric(
+              horizontal:
+              AppScreenUtil().screenWidth(15)),
+          margin: EdgeInsets.only(
+              right: AppScreenUtil().screenWidth(15),
+              top: AppScreenUtil().screenHeight(10),
+              bottom: AppScreenUtil().screenHeight(10)),
+          decoration: BoxDecoration(
+            color: selectedStyleCategory == index
+                ? appCtrl.appTheme.primary
+                : appCtrl.appTheme.lightGray,
+            borderRadius: BorderRadius.circular(
+                AppScreenUtil().borderRadius(3)),
+          ),
+          child: LatoFontStyle(
+            text: data
+            ['title'],
+            color:  selectedStyleCategory == index
+                ? appCtrl.appTheme.whiteColor : appCtrl.appTheme.blackColor,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+          ),
+        ).gestures(onTap:onTap);
+      }
+    );
+  }
+}

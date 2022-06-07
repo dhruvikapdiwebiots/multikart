@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/views/home_and_product/home/find_your_style/find_your_style.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,39 +15,25 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (_) {
       return Scaffold(
-        body: Column(
-          children: [
-            //home category list layout
-            const HomeCategoryList(),
-            //banner list layout
-            const  HomeBannerList(),
-            //deals of the day
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      LatoFontStyle(
-                        text: 'Deals of the Day',
-                        color: homeCtrl.appCtrl.appTheme.blackColor,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16,
-                      ),
-                      LatoFontStyle(
-                        text: 'See All',
-                        color: homeCtrl.appCtrl.appTheme.primary,
-                        fontWeight: FontWeight.normal,
-                        fontSize: 14,
-                      ),
-                    ],
-                  ),
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: const [
+              //home category list layout
+              HomeCategoryList(),
+              // border line layout
+              BorderLineLayout(),
+              //banner list layout
+              HomeBannerList(),
+              //deals of the day
+              HomeDealsOfTheDayLayout(),
+              // border line layout
+              BorderLineLayout(),
 
-                ],
-              ),
-            )
-          ],
+              //find your style
+              FindYourStyle()
+            ],
+          ),
         ),
       );
     });

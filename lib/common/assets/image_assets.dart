@@ -21,4 +21,9 @@ class ImageAssets {
   //home banner
   final String banner1 = 'assets/home_images/home_banner/banner3.png';
   final String banner2 = 'assets/home_images/home_banner/banner2.jpeg';
+
+  //home deal of the day
+  final String dealOfTheDay1 = 'assets/home_images/home_deals/dealOfTheDay1.png';
+  final String dealOfTheDay2 = 'assets/home_images/home_deals/dealOfTheDay2.jpeg';
+  final String dealOfTheDay3 = 'assets/home_images/home_deals/dealOfTheDay3.png';
 }

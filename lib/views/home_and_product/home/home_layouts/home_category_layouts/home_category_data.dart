@@ -1,7 +1,9 @@
+import 'package:multikart/models/home_category_model.dart';
+
 import '../../../../../config.dart';
 
 class HomeCategoryData extends StatelessWidget {
-  final dynamic data;
+  final HomeCategoryModel? data;
   final int? index;
   const HomeCategoryData({Key? key,this.data,this.index}) : super(key: key);
 
@@ -27,15 +29,15 @@ class HomeCategoryData extends StatelessWidget {
                     ),
                   ),
                   Image.asset(
-                    data['image'].toString(),
+                    data!.image.toString(),
                     fit: BoxFit.cover,
                     height: AppScreenUtil().screenHeight(55),
                     width: AppScreenUtil().screenWidth(55),
                   )
                 ],
               ),
-              const Space(0, 10),
-              LatoFontStyle(text:data['title'].toString() ,fontWeight: FontWeight.w600,fontSize: HomeFontSize.textSizeSmall,)
+              const Space(0, 6),
+              LatoFontStyle(text:data!.title.toString() ,fontWeight: FontWeight.w600,fontSize: HomeFontSize.textSizeSmall,)
             ],
           ),
         );

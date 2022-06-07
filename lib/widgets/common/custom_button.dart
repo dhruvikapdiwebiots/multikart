@@ -44,7 +44,7 @@ class CustomButton extends StatelessWidget {
         margin:
             EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
         height: AppScreenUtil()
-            .screenHeight(ResponsiveWidget.isSmallScreen(context) ? 45 : 35),
+            .screenHeight(ResponsiveWidget.isSmallScreen(context) ? 45 : height),
         decoration: BoxDecoration(
           color: color ?? appCtrl.appTheme.primary,
           border: border,

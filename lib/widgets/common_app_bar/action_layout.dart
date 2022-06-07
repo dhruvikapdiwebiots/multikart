@@ -19,7 +19,7 @@ class AppBarActionLayout extends StatelessWidget {
           const NotificationIcon()
               .paddingSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
           if(appCtrl.isHeart)
-          const HeartIcon().paddingSymmetric(horizontal: AppScreenUtil().screenWidth(appCtrl.isHeart && appCtrl.isCart?0:10)),
+           HeartIcon(color: appCtrl.appTheme.blackColor,).paddingSymmetric(horizontal: AppScreenUtil().screenWidth(appCtrl.isHeart && appCtrl.isCart?0:10)),
           if(appCtrl.isCart)
           const BuyIcon().paddingSymmetric(
               horizontal: AppScreenUtil().screenWidth(15),

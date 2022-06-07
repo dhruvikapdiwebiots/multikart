@@ -14,14 +14,12 @@ class HomeDotIndicator extends StatelessWidget {
             return GestureDetector(
                 onTap: () => homeCtrl.controller.animateToPage(entry.key),
                 child: Container(
-                    padding:
-                        EdgeInsets.only(top: AppScreenUtil().screenHeight(10)),
                     height: AppScreenUtil()
-                        .screenHeight(homeCtrl.current == entry.key ? 6 : 8),
+                        .screenHeight(homeCtrl.current == entry.key ? 5 : 7),
                     width: homeCtrl.current == entry.key
-                        ? AppScreenUtil().screenWidth(40)
+                        ? AppScreenUtil().screenWidth(35)
                         : AppScreenUtil().screenHeight(
-                            homeCtrl.current == entry.key ? 6 : 8),
+                            homeCtrl.current == entry.key ? 5 : 7),
                     margin:
                         EdgeInsets.only(right: AppScreenUtil().screenWidth(5)),
                     decoration: BoxDecoration(

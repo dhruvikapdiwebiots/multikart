@@ -1,7 +1,8 @@
 import '../../config.dart';
 
 class HeartIcon extends StatelessWidget {
-  const HeartIcon({Key? key}) : super(key: key);
+  final Color? color;
+  const HeartIcon({Key? key,this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class HeartIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.heart,
-          color: appCtrl.appTheme.blackColor,
+          color: color ?? appCtrl.appTheme.contentColor,
         );
       }
     );
