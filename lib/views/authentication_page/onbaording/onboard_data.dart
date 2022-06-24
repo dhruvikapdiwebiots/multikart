@@ -15,7 +15,7 @@ class OnBoardData extends StatelessWidget {
                 children: [
                   OnBoardWidget().textLayout(
                       text: onBoardingCtrl.imgList[onBoardingCtrl.current]
-                              ['title']
+                              .title
                           .toString()
                           .tr,
                       fontSize: OnBoardFontSize.textSizeSMedium,
@@ -28,7 +28,7 @@ class OnBoardData extends StatelessWidget {
                         horizontal: AppScreenUtil().screenWidth(15)),
                     child: OnBoardWidget().textLayout(
                         text: onBoardingCtrl.imgList[onBoardingCtrl.current]
-                                ['description']
+                               .description
                             .toString()
                             .tr,
                         fontSize: OnBoardFontSize.textSizeSmall,

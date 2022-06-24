@@ -8,7 +8,7 @@ class HomeCategoryList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
       return SizedBox(
-        height: AppScreenUtil().size(90),
+        height: AppScreenUtil().size(100),
         child: ListView.builder(
           itemCount: homeCtrl.homeCategoryList.length,
           shrinkWrap: true,

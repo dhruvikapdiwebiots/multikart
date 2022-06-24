@@ -16,10 +16,8 @@ class HomeDotIndicator extends StatelessWidget {
                 child: Container(
                     height: AppScreenUtil()
                         .screenHeight(homeCtrl.current == entry.key ? 5 : 7),
-                    width: homeCtrl.current == entry.key
-                        ? AppScreenUtil().screenWidth(35)
-                        : AppScreenUtil().screenHeight(
-                            homeCtrl.current == entry.key ? 5 : 7),
+                    width: AppScreenUtil().screenWidth(
+                            homeCtrl.current == entry.key ? 35 : 7),
                     margin:
                         EdgeInsets.only(right: AppScreenUtil().screenWidth(5)),
                     decoration: BoxDecoration(

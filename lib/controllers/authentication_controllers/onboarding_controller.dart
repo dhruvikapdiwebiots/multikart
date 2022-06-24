@@ -2,6 +2,7 @@
 import 'package:carousel_slider/carousel_state.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
+import 'package:multikart/models/onboarding_model.dart';
 
 class OnBoardingController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
@@ -11,7 +12,7 @@ class OnBoardingController extends GetxController {
   final CarouselController controller = CarouselController();
   CarouselState? carouselState;
   PageController pageController =PageController(initialPage: 0, viewportFraction: 0.8);
-  List imgList = [];
+  List<OnBoardingModel> imgList = [];
   final storage = GetStorage();
 
   @override

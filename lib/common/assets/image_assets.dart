@@ -26,4 +26,10 @@ class ImageAssets {
   final String dealOfTheDay1 = 'assets/home_images/home_deals/dealOfTheDay1.png';
   final String dealOfTheDay2 = 'assets/home_images/home_deals/dealOfTheDay2.jpeg';
   final String dealOfTheDay3 = 'assets/home_images/home_deals/dealOfTheDay3.png';
+
+  //home find style
+  final String findStyle1 = 'assets/home_images/find_style/findStyle1.png';
+  final String findStyle2 = 'assets/home_images/find_style/findStyle2.jpeg';
+  final String findStyle3 = 'assets/home_images/find_style/findStyle3.jpeg';
+  final String findStyle4 = 'assets/home_images/find_style/findStyle4.jpeg';
 }

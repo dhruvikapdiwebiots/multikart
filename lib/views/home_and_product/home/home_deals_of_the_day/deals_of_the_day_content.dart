@@ -1,7 +1,9 @@
+import 'package:multikart/models/home_find_style.dart';
+
 import '../../../../config.dart';
 
 class DealsOfTheDayContent extends StatelessWidget {
-  final dynamic data;
+  final HomeDealOfTheDayModel? data;
 
   const DealsOfTheDayContent({Key? key, this.data}) : super(key: key);
 
@@ -13,14 +15,14 @@ class DealsOfTheDayContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           LatoFontStyle(
-            text: data['name'],
+            text: data!.name,
             fontWeight: FontWeight.w700,
             color: appCtrl.appTheme.blackColor,
             fontSize: HomeFontSize.textSizeSmall,
           ),
           const Space(0, 2),
           LatoFontStyle(
-            text: data['byWhom'],
+            text: data!.byWhom,
             fontWeight: FontWeight.w500,
             color: appCtrl.appTheme.contentColor,
             fontSize: HomeFontSize.textSizeSmall,
@@ -30,20 +32,20 @@ class DealsOfTheDayContent extends StatelessWidget {
           Row(
             children: [
               LatoFontStyle(
-                  text: '\$' + data['mrp'],
+                  text: '\$${data!.mrp}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.blackColor,
                   fontSize: HomeFontSize.textSizeSmall),
               const Space(8, 0),
               LatoFontStyle(
-                  text: '\$' + data['totalPrice'],
+                  text: '\$${data!.totalPrice}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.contentColor,
                   fontSize: HomeFontSize.textSizeSmall,
                   textDecoration: TextDecoration.lineThrough),
               const Space(8, 0),
               LatoFontStyle(
-                  text: data['discount'],
+                  text: data!.discount,
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.primary,
                   fontSize: HomeFontSize.textSizeSmall)

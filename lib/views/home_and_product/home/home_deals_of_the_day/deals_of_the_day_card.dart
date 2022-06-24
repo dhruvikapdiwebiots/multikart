@@ -1,8 +1,10 @@
+import 'package:multikart/models/home_find_style.dart';
+
 import '../../../../config.dart';
 
 class DealsOfTheDayCard extends StatelessWidget {
   final int? index;
-  final dynamic data;
+  final HomeDealOfTheDayModel? data;
 
   const DealsOfTheDayCard({Key? key, this.index, this.data}) : super(key: key);
 
@@ -19,7 +21,7 @@ class DealsOfTheDayCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                HomeWidget().imageLayout(data['image']),
+                HomeWidget().imageLayout(data!.image),
                 const Space(10, 0),
                 DealsOfTheDayContent(
                   data: data,
@@ -27,7 +29,7 @@ class DealsOfTheDayCard extends StatelessWidget {
               ],
             ),
             LinkHeartIcon(
-              isLiked: data['isFav'],
+              isLiked: data!.isFav,
               onTap: (val) => homeCtrl.addToWishList(index, val),
             )
           ],

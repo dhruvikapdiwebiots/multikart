@@ -21,7 +21,7 @@ class HomeCategoryData extends StatelessWidget {
                 alignment: Alignment.bottomCenter,
                 children: [
                   Container(
-                    height: AppScreenUtil().screenHeight(50),
+                    height: AppScreenUtil().screenHeight(60),
                     width: AppScreenUtil().screenWidth(55),
                     decoration: BoxDecoration(
                       color: appCtrl.appTheme.homeCategoryColor,
@@ -30,9 +30,9 @@ class HomeCategoryData extends StatelessWidget {
                   ),
                   Image.asset(
                     data!.image.toString(),
-                    fit: BoxFit.cover,
-                    height: AppScreenUtil().screenHeight(55),
-                    width: AppScreenUtil().screenWidth(55),
+                    fit: BoxFit.fill,
+                    height: AppScreenUtil().screenHeight(70),
+                    width: AppScreenUtil().screenWidth(60),
                   )
                 ],
               ),

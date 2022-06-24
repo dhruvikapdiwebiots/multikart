@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:multikart/views/home_and_product/home/find_your_style/find_your_style_category.dart';
 
 import '../../../../config.dart';
@@ -30,7 +31,30 @@ class FindYourStyle extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     color: homeCtrl.appCtrl.appTheme.contentColor,
                   ),
-                  const FindYourStyleCategory()
+                  const FindYourStyleCategory(),
+                  SizedBox(
+                    height: 500.w,
+                    child: GridView.builder(
+                      padding: EdgeInsets.zero,
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: homeCtrl.findStyleCategoryList.length,
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+                          Image.asset(homeCtrl.findStyleCategoryList[index].image.toString(),height: AppScreenUtil().screenHeight(150),fit: BoxFit.fill,),
+                          ],
+                        );
+                      },
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 1,
+                        mainAxisSpacing: 0,
+                        childAspectRatio: MediaQuery.of(context).size.width /
+                            (MediaQuery.of(context).size.height /(1.7)),
+                      ),
+                    ),
+                  )
                 ],
               )
             ],

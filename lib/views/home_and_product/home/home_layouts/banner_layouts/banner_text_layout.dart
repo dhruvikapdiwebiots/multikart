@@ -1,7 +1,9 @@
+import 'package:multikart/models/home_banner_model.dart';
+
 import '../../../../../config.dart';
 
 class BannerTextLayout extends StatelessWidget {
-  final dynamic data;
+  final HomeBannerModel? data;
   const BannerTextLayout({Key? key,this.data}) : super(key: key);
 
   @override
@@ -15,21 +17,21 @@ class BannerTextLayout extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               LatoFontStyle(
-                text: data['title'],
+                text: data!.title,
                 fontSize: HomeFontSize.textSizeSMedium,
                 color: appCtrl.appTheme.blackColor,
                 fontWeight: FontWeight.w700,
               ),
               const Space(0, 5),
               LatoFontStyle(
-                text: data['offer'],
+                text: data!.offers,
                 fontSize: HomeFontSize.textSizeNormal,
                 color: appCtrl.appTheme.primary,
                 fontWeight: FontWeight.bold,
               ),
               const Space(0, 5),
               LatoFontStyle(
-                text: data['subTitle'],
+                text: data!.subTitle,
                 fontSize: HomeFontSize.textXSizeSmall,
                 color: appCtrl.appTheme.contentColor,
                 fontWeight: FontWeight.w400,

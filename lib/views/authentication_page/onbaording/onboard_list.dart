@@ -26,7 +26,7 @@ class OnBoardList extends StatelessWidget {
                   .entries
                   .map((item) => GetBuilder<OnBoardingController>(builder: (_) {
                         return OnBoardWidget()
-                            .imageLayout(item.value['image'].toString());
+                            .imageLayout(item.value.image.toString());
                       }))
                   .toList()),
           const Space(0, 10),

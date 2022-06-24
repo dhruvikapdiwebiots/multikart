@@ -26,8 +26,10 @@ class AppScreenUtil {
   }
 
   double size(num size) {
-    double width = ScreenUtil().  screenWidth;
+    double width = ScreenUtil().screenWidth;
     double height = ScreenUtil().screenHeight;
-    return width < height ? ScreenUtil().setWidth(size) : ScreenUtil().setHeight(size);
+    return width < height
+        ? ScreenUtil().setWidth(size)
+        : ScreenUtil().setHeight(size);
   }
 }

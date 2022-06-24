@@ -88,6 +88,7 @@ flutter:
     - assets/home_images/home_category/
     - assets/home_images/home_banner/
     - assets/home_images/home_deals/
+    - assets/home_images/find_style/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,7 +1,11 @@
+
+
+import 'package:multikart/models/home_banner_model.dart';
+
 import '../../../../../config.dart';
 
 class HomeBannerData extends StatelessWidget {
-  final dynamic data;
+  final HomeBannerModel? data;
 
   const HomeBannerData({Key? key, this.data}) : super(key: key);
 
@@ -12,13 +16,13 @@ class HomeBannerData extends StatelessWidget {
         margin:
             EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(18)),
         decoration: BoxDecoration(
-            color: Colors.lightBlue,
+
             borderRadius:
                 BorderRadius.circular(AppScreenUtil().borderRadius(10))),
         child: Stack(
           alignment: Alignment.centerLeft,
           children: <Widget>[
-            HomeWidget().bannerImage(data['image'], context),
+            HomeWidget().bannerImage(data!.image, context),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +35,7 @@ class HomeBannerData extends StatelessWidget {
                   fontSize: HomeFontSize.textSizeSmall,
                   fontWeight: FontWeight.w500,
                   width: AppScreenUtil().screenWidth(100),
-                  title: data['buttonTitle'],
+                  title: data!.buttonTitle.toString(),
                 ),
               ],
             ),

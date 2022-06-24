@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../../config.dart';
 
 class HomeBannerList extends StatelessWidget {
@@ -8,8 +10,8 @@ class HomeBannerList extends StatelessWidget {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
       return Container(
         margin:
-            EdgeInsets.only(top: AppScreenUtil().screenHeight(18),bottom: AppScreenUtil().screenHeight(12)),
-        height: AppScreenUtil().screenHeight(178),
+            EdgeInsets.only(top: AppScreenUtil().screenHeight(16),bottom: AppScreenUtil().screenHeight(12)),
+        height: 200.w,
         child: Column(
           children: [
             CarouselSlider.builder(
