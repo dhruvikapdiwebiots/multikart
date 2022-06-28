@@ -11,6 +11,7 @@ class HomeFont {
 
 //font size
 class HomeFontSize {
+  static const double textXXSizeSmall = 8.0;
   static const double textXSizeSmall = 11.0;
   static const double textSizeSmall = 12.0;
   static const double textSizeSMedium = 14.0;

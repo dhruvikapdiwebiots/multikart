@@ -186,7 +186,10 @@ class AppArray {
   ];
 
   //home find style category list
-  var homeFindStyleCategoryList = <HomeFindStyleCategoryModel>[
+  var
+
+
+  homeFindStyleCategoryList = <HomeFindStyleCategoryModel>[
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
       image: imageAssets.findStyle1,
@@ -195,6 +198,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 0.5
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -204,6 +208,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 3
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -213,6 +218,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 1.2
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -222,6 +228,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 4
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -231,6 +238,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 3
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -240,6 +248,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 4
     ),
     HomeFindStyleCategoryModel(
       name: 'Blue Denim Jacket'.tr,
@@ -249,6 +258,7 @@ class AppArray {
       isFav: false,
       mrp: '32.00',
       totalPrice: "35.00",
+      rating: 2
     )
 
   ];

@@ -10,3 +10,6 @@ export 'package:multikart/views/home_and_product/home/home_layouts/home_category
 export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/deals_of_the_day_content.dart';
 export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/deals_of_the_day_card.dart';
 export 'package:multikart/views/home_and_product/home/home_deals_of_the_day/home_deals_of_the_days.dart';
+export 'package:multikart/views/home_and_product/home/find_your_style/find_style_list_card.dart';
+export 'package:multikart/views/home_and_product/home/find_your_style/find_your_style_category.dart';
+export 'package:multikart/views/home_and_product/home/find_your_style/find_your_style.dart';

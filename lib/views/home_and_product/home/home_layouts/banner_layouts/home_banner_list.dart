@@ -1,5 +1,3 @@
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../../config.dart';
 
 class HomeBannerList extends StatelessWidget {

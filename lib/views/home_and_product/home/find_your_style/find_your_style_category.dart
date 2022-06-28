@@ -20,10 +20,7 @@ class FindYourStyleCategory extends StatelessWidget {
                 index: index,
                 selectedStyleCategory: homeCtrl.selectedStyleCategory,
                 data: homeCtrl.findStyleCategory[index],
-                onTap:  (){
-                  homeCtrl.selectedStyleCategory = index;
-                  homeCtrl.update();
-                },
+                onTap:  () => homeCtrl.subCategoryList(index,homeCtrl.findStyleCategory[index]['id']),
               );
             },
           ),

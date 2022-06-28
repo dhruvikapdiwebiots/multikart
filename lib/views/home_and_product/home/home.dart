@@ -1,5 +1,5 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/views/home_and_product/home/find_your_style/find_your_style.dart';
+import 'package:multikart/views/home_and_product/home/offer_time/offer_time_layout.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,6 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (_) {
       return Scaffold(
+        resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -31,7 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
               BorderLineLayout(),
 
               //find your style
-              FindYourStyle()
+              FindYourStyle(),
+
+              //offer time banner
+             OfferTimeLayout()
             ],
           ),
         ),

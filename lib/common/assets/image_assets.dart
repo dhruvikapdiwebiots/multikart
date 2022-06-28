@@ -4,6 +4,7 @@ class ImageAssets {
   final String design = 'assets/image/design.png';
   final String noInternet = 'assets/images/nointernet.png';
   final String user = 'assets/image/user.png';
+  final String girl = 'assets/girls.png';
 
   //onBoarding Image
   final String onBoarding1 = 'assets/onBoarding/onBoarding1.png';
@@ -29,7 +30,7 @@ class ImageAssets {
 
   //home find style
   final String findStyle1 = 'assets/home_images/find_style/findStyle1.png';
-  final String findStyle2 = 'assets/home_images/find_style/findStyle2.jpeg';
-  final String findStyle3 = 'assets/home_images/find_style/findStyle3.jpeg';
-  final String findStyle4 = 'assets/home_images/find_style/findStyle4.jpeg';
+  final String findStyle2 = 'assets/home_images/find_style/findStyle2.png';
+  final String findStyle3 = 'assets/home_images/find_style/findStyle3.png';
+  final String findStyle4 = 'assets/home_images/find_style/findStyle4.png';
 }

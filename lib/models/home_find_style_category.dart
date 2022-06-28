@@ -6,8 +6,9 @@ class HomeFindStyleCategoryModel {
   String? totalPrice;
   String? discount;
   bool? isFav;
+  double? rating;
 
-  HomeFindStyleCategoryModel({required this.name, this.image,this.categoryId,this.totalPrice,this.mrp,this.discount,this.isFav});
+  HomeFindStyleCategoryModel({required this.name, this.image,this.categoryId,this.totalPrice,this.mrp,this.discount,this.isFav,this.rating});
 
   factory HomeFindStyleCategoryModel.fromJson(Map<dynamic, dynamic> json) {
     return HomeFindStyleCategoryModel(
@@ -18,6 +19,7 @@ class HomeFindStyleCategoryModel {
       mrp: json['mrp'] as String?,
       discount: json['discount'] as String?,
       isFav: json['isFav'] as bool?,
+      rating: json['rating'] as double?,
     );
   }
 }
