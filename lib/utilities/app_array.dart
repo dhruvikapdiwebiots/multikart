@@ -3,6 +3,10 @@ import 'package:multikart/models/home_banner_model.dart';
 import 'package:multikart/models/home_category_model.dart';
 import 'package:multikart/models/home_find_style.dart';
 import 'package:multikart/models/home_find_style_category.dart';
+import 'package:multikart/models/kids_corner_model.dart';
+import 'package:multikart/models/kids_corner_model.dart';
+import 'package:multikart/models/kids_corner_model.dart';
+import 'package:multikart/models/kids_corner_model.dart';
 import 'package:multikart/models/onboarding_model.dart';
 
 class AppArray {
@@ -134,6 +138,18 @@ class AppArray {
 
   var drawerList = [
     {
+      'title': 'Mode'.tr,
+      'icon': svgAssets.setting,
+      'subTitle': ''
+    }, {
+      'title': 'RTL'.tr,
+      'icon': svgAssets.setting,
+      'subTitle': ''
+    }, {
+      'title': 'Pages'.tr,
+      'icon': svgAssets.order,
+      'subTitle': 'Elements & Other Pages'.tr
+    }, {
       'title': 'Home'.tr,
       'icon': svgAssets.homeSvg,
       'subTitle': 'Offers, Top Deals, Top Brands'.tr
@@ -186,80 +202,132 @@ class AppArray {
   ];
 
   //home find style category list
-  var
-
-
-  homeFindStyleCategoryList = <HomeFindStyleCategoryModel>[
+  var homeFindStyleCategoryList = <HomeFindStyleCategoryModel>[
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle1,
-      categoryId: '1',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 0.5
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle1,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 0.5),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle2,
-      categoryId: '1',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 3
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle2,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 3),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle3,
-      categoryId: '1',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 1.2
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle3,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 1.2),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle4,
-      categoryId: '1',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 4
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle4,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 4),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle2,
-      categoryId: '2',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 3
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle2,
+        categoryId: '2',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 3),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle4,
-      categoryId: '2',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 4
-    ),
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle4,
+        categoryId: '2',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 4),
     HomeFindStyleCategoryModel(
-      name: 'Blue Denim Jacket'.tr,
-      image: imageAssets.findStyle3,
-      categoryId: '3',
-      discount: '20%',
-      isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
-      rating: 2
-    )
-
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle3,
+        categoryId: '3',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 2)
   ];
+
+  //biggest deal brand
+  var biggestDealBrandList = [{
+    "image": imageAssets.biggestDeal1,
+  },{
+    "image": imageAssets.biggestDeal2,
+  },{
+    "image": imageAssets.biggestDeal3,
+  },{
+    "image": imageAssets.biggestDeal4,
+  },{
+    "image": imageAssets.biggestDeal5,
+  }];
+
+  //offer corner
+  var offerCornerList =[ {
+    'id': 1,
+    'title': 'UNDER \$50.00'.tr,
+  },
+    {
+      'id': 2,
+      'title': 'Flat \$20 OFF'.tr,
+    },
+    {
+      'id': 3,
+      'title': 'buy 1 get 1'.tr,
+    },
+    {
+      'id': 4,
+      'title': 'upto 50% off'.tr,
+    }];
+
+  //home kids corner list
+  var homeKidsCornerList = <HomeFindStyleCategoryModel>[
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.kidsCorner1,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 0.5),
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.kidsCorner2,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 3),
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.kidsCorner3,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 1.2),
+  ];
+
 }

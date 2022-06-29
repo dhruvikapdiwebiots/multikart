@@ -14,6 +14,8 @@ class LinkHeartIcon extends StatelessWidget {
         return GetBuilder<HomeController>(
           builder: (homeCtrl) {
             return Container(
+              width: AppScreenUtil().screenWidth(25),
+              height: AppScreenUtil().screenHeight(28),
               padding: EdgeInsets.symmetric(
                   horizontal: AppScreenUtil().size(5),
                   vertical: AppScreenUtil().size(5)),

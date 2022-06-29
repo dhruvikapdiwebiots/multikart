@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/widgets/common/fade_in.dart';
 
 class HomeWidget {
   //banner image
@@ -30,14 +31,13 @@ class HomeWidget {
           child: child);
 
   //image layout
-  Widget imageLayout(image)=> ClipRRect(
-    borderRadius: BorderRadius.circular(
-        AppScreenUtil().borderRadius(3)),
-    child: Image.asset(
-      image,
-      fit: BoxFit.cover,
-      height: AppScreenUtil().size(80),
-      width: AppScreenUtil().size(82),
-    ),
-  );
+  Widget imageLayout(image) => ClipRRect(
+        borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(3)),
+        child: FadeInImageLayout(
+          image: image,
+          fit: BoxFit.cover,
+          height: AppScreenUtil().size(80),
+          width: AppScreenUtil().size(82),
+        ),
+      );
 }

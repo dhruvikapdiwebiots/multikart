@@ -1,4 +1,4 @@
-import '../../../../config.dart';
+import '../../../../../config.dart';
 
 class FindYourStyleCategoryCard extends StatelessWidget {
   final int? selectedStyleCategory;

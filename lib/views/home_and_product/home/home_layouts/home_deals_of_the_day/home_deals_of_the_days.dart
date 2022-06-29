@@ -1,4 +1,6 @@
-import '../../../../config.dart';
+
+
+import '../../../../../config.dart';
 
 class HomeDealsOfTheDayLayout extends StatelessWidget {
   const HomeDealsOfTheDayLayout({Key? key}) : super(key: key);

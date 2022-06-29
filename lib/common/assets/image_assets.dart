@@ -3,6 +3,7 @@ class ImageAssets {
   final String logo = 'assets/logo/logo.png';
   final String design = 'assets/image/design.png';
   final String noInternet = 'assets/images/nointernet.png';
+  final String offerCornerBG = 'assets/image/offerCornerBG.png';
   final String user = 'assets/image/user.png';
   final String girl = 'assets/girls.png';
 
@@ -33,4 +34,16 @@ class ImageAssets {
   final String findStyle2 = 'assets/home_images/find_style/findStyle2.png';
   final String findStyle3 = 'assets/home_images/find_style/findStyle3.png';
   final String findStyle4 = 'assets/home_images/find_style/findStyle4.png';
+
+  //home biggest deal
+  final String biggestDeal1 = 'assets/home_images/biggest_deal/biggestDeal1.png';
+  final String biggestDeal2 = 'assets/home_images/biggest_deal/biggestDeal2.png';
+  final String biggestDeal3 = 'assets/home_images/biggest_deal/biggestDeal3.png';
+  final String biggestDeal4 = 'assets/home_images/biggest_deal/biggestDeal4.png';
+  final String biggestDeal5 = 'assets/home_images/biggest_deal/biggestDeal5.png';
+
+  //home kids corner
+  final String kidsCorner1 = 'assets/home_images/kids_corner/kidsCorner1.jpeg';
+  final String kidsCorner2 = 'assets/home_images/kids_corner/kidsCorner2.jpeg';
+  final String kidsCorner3 = 'assets/home_images/kids_corner/kidsCorner3.jpeg';
 }

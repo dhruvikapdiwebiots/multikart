@@ -53,6 +53,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   animations: ^2.0.3
   like_button: ^2.0.4
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
@@ -92,6 +93,8 @@ flutter:
     - assets/home_images/home_banner/
     - assets/home_images/home_deals/
     - assets/home_images/find_style/
+    - assets/home_images/biggest_deal/
+    - assets/home_images/kids_corner/
     - assets/gif/
 
   # An image asset can refer to one or more resolution-specific "variants", see

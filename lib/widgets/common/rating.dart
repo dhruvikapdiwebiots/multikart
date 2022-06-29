@@ -5,31 +5,30 @@ import '../../config.dart';
 class Rating extends StatelessWidget {
   final double? val;
   final ValueChanged<double>? onRatingUpdate;
-  const Rating({Key? key,this.val,this.onRatingUpdate}) : super(key: key);
+
+  const Rating({Key? key, this.val, this.onRatingUpdate}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  GetBuilder<AppController>(
-      builder: (appCtrl) {
-        return RatingBar.builder(
-          itemSize: AppScreenUtil().size(20.0),
-          initialRating:val!,
-          minRating: 1,
-          direction: Axis.horizontal,
-          allowHalfRating: true,
-          itemCount: 5,
-          glowColor: appCtrl.appTheme.ratingColor,
-          itemPadding: EdgeInsets.symmetric(
-              horizontal: AppScreenUtil().screenWidth(1),
-              vertical: AppScreenUtil().screenHeight(5)),
-          unratedColor: appCtrl.appTheme.darkContentColor,
-          itemBuilder: (context, _) => const Icon(
-            Icons.star,
-            color: Colors.amber,
-          ),
-          onRatingUpdate:onRatingUpdate!,
-        );
-      }
-    );
+    return GetBuilder<AppController>(builder: (appCtrl) {
+      return RatingBar.builder(
+        itemSize: AppScreenUtil().size(20.0),
+        initialRating: val!,
+        minRating: 1,
+        direction: Axis.horizontal,
+        allowHalfRating: true,
+        itemCount: 5,
+        glowColor: appCtrl.appTheme.ratingColor,
+        itemPadding: EdgeInsets.symmetric(
+            horizontal: AppScreenUtil().screenWidth(1),
+            vertical: AppScreenUtil().screenHeight(5)),
+        unratedColor: appCtrl.appTheme.darkContentColor,
+        itemBuilder: (context, _) => const Icon(
+          Icons.star,
+          color: Colors.amber,
+        ),
+        onRatingUpdate: onRatingUpdate!,
+      );
+    });
   }
 }

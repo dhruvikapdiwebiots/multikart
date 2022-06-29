@@ -1,4 +1,4 @@
-import '../../../../config.dart';
+import '../../../../../config.dart';
 
 class FindYourStyle extends StatelessWidget {
   const FindYourStyle({Key? key}) : super(key: key);

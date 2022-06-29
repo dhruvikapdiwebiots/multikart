@@ -1,6 +1,6 @@
 import 'package:multikart/models/home_find_style.dart';
 
-import '../../../../config.dart';
+import '../../../../../config.dart';
 
 class DealsOfTheDayCard extends StatelessWidget {
   final int? index;

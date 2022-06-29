@@ -2,7 +2,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:multikart/models/home_banner_model.dart';
 import 'package:multikart/models/home_category_model.dart';
 import 'package:multikart/models/home_find_style.dart';
-import 'package:multikart/models/home_find_style_category.dart';
+import 'package:multikart/models/kids_corner_model.dart';
 
 import '../../config.dart';
 
@@ -18,17 +18,15 @@ class HomeController extends GetxController {
   List<HomeBannerModel> bannerList = [];
   List<HomeDealOfTheDayModel> dealOfTheDayList = [];
   List findStyleCategory = [];
+  List biggestDealBrandList = [];
+  List offerCornerList = [];
   List<HomeFindStyleCategoryModel> findStyleCategoryList = [];
   List<HomeFindStyleCategoryModel> findStyleCategoryCategoryWiseList = [];
+  List<HomeFindStyleCategoryModel> homeKidsCornerList = [];
   int current = 0;
   int selectedStyleCategory = 0;
   final CarouselController controller = CarouselController();
   bool selected = false;
-  int hours = 00;
-  int minutes = 00;
-  int secs = 00;
-  DateTime dt1 = DateTime.now();
-  DateTime dt2 = DateTime.now();
 
   @override
   void onReady() async {
@@ -37,25 +35,18 @@ class HomeController extends GetxController {
     dealOfTheDayList = AppArray().homeDealOfTheDayList;
     findStyleCategory = AppArray().homeFindStyleCategory;
     findStyleCategoryList = AppArray().homeFindStyleCategoryList;
+    biggestDealBrandList = AppArray().biggestDealBrandList;
+    homeKidsCornerList = AppArray().homeKidsCornerList;
+    offerCornerList = AppArray().offerCornerList;
     loginWidth = ScreenUtil().screenWidth;
     loginHeight = 500.w;
     update();
     subCategoryList(0, 1);
-    print(dt1.hour);
-    print(dt1.hour + 4);
-    dt2 = DateTime.utc(dt1.year, dt1.month, dt1.day +1, dt1.hour + 4, dt1.minute,
-        dt1.second, dt1.millisecond, dt1.microsecond);
-    print(dt2);
-    update();
-    Duration diff = dt2.difference(dt1);
-    hours = diff.inHours;
-    minutes = diff.inMinutes;
-    secs = diff.inSeconds;
 
-    print(hours);
     update();
     super.onReady();
   }
+
 
   //add to wishlist
   Future<bool?> addToWishList(index, val) async {
@@ -70,7 +61,6 @@ class HomeController extends GetxController {
 
     update();
     await Future.delayed(Durations.s1);
-    print(loginHeight);
     selected = !selected;
     findStyleCategoryCategoryWiseList = [];
     selectedStyleCategory = index;

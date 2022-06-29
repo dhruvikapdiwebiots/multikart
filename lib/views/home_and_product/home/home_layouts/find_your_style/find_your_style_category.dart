@@ -1,6 +1,8 @@
-import 'package:multikart/views/home_and_product/home/find_your_style/find_your_style_category_card.dart';
 
-import '../../../../config.dart';
+
+
+
+import '../../../../../config.dart';
 
 class FindYourStyleCategory extends StatelessWidget {
   const FindYourStyleCategory({Key? key}) : super(key: key);

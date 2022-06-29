@@ -28,12 +28,11 @@ class HomeCategoryData extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                   ),
-                  Image.asset(
-                    data!.image.toString(),
-                    fit: BoxFit.fill,
-                    height: AppScreenUtil().screenHeight(70),
-                    width: AppScreenUtil().screenWidth(60),
-                  )
+                  FadeInImageLayout(
+                    image: data!.image.toString(),
+                    height:AppScreenUtil().screenHeight(70),
+                    width: AppScreenUtil().screenWidth(60),fit: BoxFit.fill),
+
                 ],
               ),
               const Space(0, 6),
