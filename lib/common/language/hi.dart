@@ -97,6 +97,13 @@ final dynamic hi = {
   'salesStartIn':'बिक्री शुरू होती है',
   'exploreNow':'अभी एक्सप्लोर करें',
   'biggestDeal': "शीर्ष ब्रांडों पर सबसे बड़ी डील",
+  'theKidsCorner': "द किड्स कॉर्नर",
+  'clothingForYourLilOne': "आपके Li'l One's के लिए वस्त्र",
+  'offerCorner': "ऑफर कॉर्नर",
+  'UNDER \$50.00': "\$50.00 के तहत",
+  'Flat \$20 OFF': "फ्लैट \$20 की छूट",
+  'buy 1 get 1': "एक खरीदें, दूसरी मुफ़्त पाएं",
+  'upto 50% off': "50% तक की छूट",
 
   //drawer font
   'userName' : 'हैलो, पैगे टर्नर',

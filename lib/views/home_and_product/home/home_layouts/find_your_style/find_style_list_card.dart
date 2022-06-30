@@ -2,9 +2,10 @@ import '../../../../../config.dart';
 
 class FindStyleListCard extends StatelessWidget {
   final HomeFindStyleCategoryModel? data;
-  final bool isDiscountShow;
+  final bool isDiscountShow,isFit;
 
-  const FindStyleListCard({Key? key, this.data, this.isDiscountShow = true})
+
+  const FindStyleListCard({Key? key, this.data, this.isDiscountShow = true,this.isFit = true})
       : super(key: key);
 
   @override
@@ -18,6 +19,7 @@ class FindStyleListCard extends StatelessWidget {
             children: [
               ProductImage(
                 image: data!.image.toString(),
+                isFit: isFit,
               ),
               LinkHeartIcon(
                 isLiked: data!.isFav,

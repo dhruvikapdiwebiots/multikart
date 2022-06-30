@@ -40,6 +40,7 @@ class DealsBrands extends StatelessWidget {
                     child: Image.asset(
                       e.value['image'].toString(),
                       fit: BoxFit.contain,
+                      color: homeCtrl.appCtrl.isTheme ? homeCtrl.appCtrl.appTheme.contentColor :homeCtrl.appCtrl.appTheme.blackColor ,
                       width: AppScreenUtil().screenHeight(150),
                       height: AppScreenUtil().screenHeight(50),
                     ),

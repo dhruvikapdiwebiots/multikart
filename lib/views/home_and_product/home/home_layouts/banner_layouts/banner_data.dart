@@ -1,7 +1,3 @@
-
-
-import 'package:multikart/models/home_banner_model.dart';
-
 import '../../../../../config.dart';
 
 class HomeBannerData extends StatelessWidget {
@@ -16,7 +12,6 @@ class HomeBannerData extends StatelessWidget {
         margin:
             EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(18)),
         decoration: BoxDecoration(
-
             borderRadius:
                 BorderRadius.circular(AppScreenUtil().borderRadius(10))),
         child: Stack(

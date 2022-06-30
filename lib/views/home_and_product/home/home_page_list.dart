@@ -13,10 +13,20 @@ export 'package:multikart/views/home_and_product/home/home_layouts/home_deals_of
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/find_style_list_card.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/find_your_style_category.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/find_your_style.dart';
-export 'package:multikart/views/home_and_product/home/offer_time/time_layout.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/offer_time/time_layout.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/kids_corner/kids_corner.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/offer_corner/offer_corner.dart';
 export 'package:multikart/models/home_find_style_category.dart';
-export 'package:multikart/views/home_and_product/home/offer_time/offer_time_layout.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/offer_time/offer_time_layout.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/find_your_style_category_card.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/biggest_deal_brands/biggest_deal_brands.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/price_layout.dart';
 export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/product_image.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/find_your_style/find_style_sub_category.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/offer_corner/offer_corner_layout.dart';
+export 'package:multikart/views/home_and_product/home/home_layouts/offer_time/offer_time_data.dart';
+
+//home model
+export 'package:multikart/models/home_banner_model.dart';
+export 'package:multikart/models/home_category_model.dart';
+export 'package:multikart/models/home_find_style.dart';

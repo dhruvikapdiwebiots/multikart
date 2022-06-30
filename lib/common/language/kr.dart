@@ -96,6 +96,13 @@ final dynamic kr = {
   'salesStartIn':'판매 시작',
   'exploreNow':'지금 탐색',
   'biggestDeal': "최고의 브랜드에 대한 가장 큰 거래",
+  'theKidsCorner': "키즈 코너",
+  'clothingForYourLilOne': "당신을 위한 릴리 원스",
+  'offerCorner': "제안 코너",
+  'UNDER \$50.00': "아래에 \$50.00",
+  'Flat \$20 OFF': "평평한 \$20 OFF",
+  'buy 1 get 1': "1 구매 1",
+  'upto 50% off': "최대 50% 할인",
 
   //drawer font
   'userName' : '안녕하세요, 페이지 터너입니다.',

@@ -14,7 +14,8 @@ class DrawerDataListLayout extends StatefulWidget {
       this.animationController,
       this.duration,
       this.index,
-      this.lastIndex,this.onTap})
+      this.lastIndex,
+      this.onTap})
       : super(key: key);
 
   @override
@@ -32,6 +33,8 @@ class _DrawerDataListLayoutState extends State<DrawerDataListLayout> {
     super.initState();
     start = (widget.duration! * widget.index!).toDouble();
     end = start! + widget.duration!;
+    print("start : $start");
+    print("end : $end");
     animation = DrawerWidget().animation(
         animationController: widget.animationController!,
         duration: widget.duration!,
@@ -45,6 +48,7 @@ class _DrawerDataListLayoutState extends State<DrawerDataListLayout> {
         end: end,
         start: start,
         index: widget.index!);
+    setState(() {});
   }
 
   Future<void> reverse() async {

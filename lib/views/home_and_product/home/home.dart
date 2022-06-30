@@ -1,7 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/views/home_and_product/home/home_layouts/kids_corner/kids_corner.dart';
-import 'package:multikart/views/home_and_product/home/home_layouts/offer_corner/offer_corner.dart';
-
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -26,11 +23,15 @@ class _HomeScreenState extends State<HomeScreen> {
               //home category list layout
               HomeCategoryList(),
               // border line layout
+
               BorderLineLayout(),
               //banner list layout
+
               HomeBannerList(),
+
               //deals of the day
               HomeDealsOfTheDayLayout(),
+
               // border line layout
               BorderLineLayout(),
 
@@ -42,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               //biggest deal of brands
               DealsBrands(),
+
               // border line layout
               BorderLineLayout(),
 

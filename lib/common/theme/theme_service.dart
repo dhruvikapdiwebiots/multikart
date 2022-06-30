@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/controllers/common/app_controller.dart';
-import 'package:get/get.dart';
+
 import 'package:get_storage/get_storage.dart';
 
-import 'app_theme.dart';
+import '../../config.dart';
+
 
 class ThemeService {
   var appCtrl = Get.isRegistered<AppController>()
@@ -24,18 +23,7 @@ class ThemeService {
       _getStorage.write(_storageKey, isDarkMode);
 
   /// Switch theme and save to local storage
-  void switchTheme() {
-    if (_loadThemeFromStorage()) {
-      Get.changeThemeMode(ThemeMode.light);
-      appCtrl.updateTheme(AppTheme.fromType(ThemeType.light));
-    } else {
-      Get.changeThemeMode(ThemeMode.dark);
-      appCtrl.updateTheme(AppTheme.fromType(ThemeType.dark));
-    }
-    _saveThemeToStorage(!_loadThemeFromStorage());
-  }
-
-  /*switchTheme(_loadThemeFromStorage) async {
+  switchTheme(_loadThemeFromStorage) async {
     if (_loadThemeFromStorage) {
       Get.changeThemeMode(ThemeMode.dark);
       await appCtrl.updateTheme(AppTheme.fromType(ThemeType.dark));
@@ -53,7 +41,6 @@ class ThemeService {
 
     appCtrl.update();
   }
-*/
 
   AppTheme get appTheme => Get.isDarkMode
       ? AppTheme.fromType(ThemeType.dark)

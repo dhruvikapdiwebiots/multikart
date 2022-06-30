@@ -8,7 +8,6 @@ RouteName _routeName = RouteName();
 
 class AppRoute {
   final List<GetPage> getPages = [
-    GetPage(name: _routeName.changeTheme, page: () => ChangeTheme()),
     GetPage(name: _routeName.onBoarding, page: () => const OnBoardingScreen()),
     GetPage(name: _routeName.login, page: () => LoginScreen()),
     GetPage(name: _routeName.signUp, page: () => SignUpScreen()),

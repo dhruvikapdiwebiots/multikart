@@ -2,7 +2,8 @@ import '../../../../../config.dart';
 
 class ProductImage extends StatelessWidget {
   final String? image;
-  const ProductImage({Key? key,this.image}) : super(key: key);
+  final bool isFit;
+  const ProductImage({Key? key,this.image,this.isFit = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class ProductImage extends StatelessWidget {
           BorderRadius.circular(AppScreenUtil().borderRadius(5)),
           child: FadeInImageLayout(
             image: image,
-            fit: BoxFit.fill,
+            fit: isFit ? BoxFit.cover : BoxFit.fill,
             width: AppScreenUtil().screenWidth(160),
             height: AppScreenUtil().screenHeight(200),
           ),

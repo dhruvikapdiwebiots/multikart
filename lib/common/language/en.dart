@@ -97,6 +97,14 @@ final dynamic en = {
   'salesStartIn':'Sales Starts In',
   'exploreNow':'Explore Now',
   'biggestDeal': "Biggest Deals on Top Brands",
+  'theKidsCorner': "The Kids Corner",
+  'clothingForYourLilOne': "Clothing for your Li’l One’s ",
+  'offerCorner': "Offer Corner",
+  'UNDER \$50.00': "UNDER \$50.00",
+  'Flat \$20 OFF': "Flat \$20 OFF",
+  'buy 1 get 1': "buy 1 get 1",
+  'upto 50% off': "upto 50% off",
+
 
   //drawer font
   'userName' : 'Hello, Paige Turner',

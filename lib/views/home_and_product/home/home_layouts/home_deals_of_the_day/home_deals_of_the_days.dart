@@ -1,5 +1,3 @@
-
-
 import '../../../../../config.dart';
 
 class HomeDealsOfTheDayLayout extends StatelessWidget {

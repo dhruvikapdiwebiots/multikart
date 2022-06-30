@@ -1,4 +1,3 @@
-
 import '../../../../../config.dart';
 
 class HomeCategoryList extends StatelessWidget {
@@ -14,7 +13,10 @@ class HomeCategoryList extends StatelessWidget {
           shrinkWrap: true,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return HomeCategoryData(data: homeCtrl.homeCategoryList[index],index: index,);
+            return HomeCategoryData(
+              data: homeCtrl.homeCategoryList[index],
+              index: index,
+            );
           },
         ),
       );

@@ -13,6 +13,9 @@ class HomeFont {
   String salesStartIn = "salesStartIn".tr;
   String exploreNow = "exploreNow".tr;
   String biggestDeal = "biggestDeal".tr;
+  String theKidsCorner = "theKidsCorner".tr;
+  String clothingForYourLilOne = "clothingForYourLilOne".tr;
+  String offerCorner = "offerCorner".tr;
 }
 
 //font size

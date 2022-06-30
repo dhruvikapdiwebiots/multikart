@@ -1,5 +1,3 @@
-import 'package:multikart/models/home_find_style.dart';
-
 import '../../../../../config.dart';
 
 class DealsOfTheDayContent extends StatelessWidget {
@@ -26,7 +24,6 @@ class DealsOfTheDayContent extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: appCtrl.appTheme.contentColor,
             fontSize: HomeFontSize.textSizeSmall,
-
           ),
           const Space(0, 5),
           Row(

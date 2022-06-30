@@ -19,7 +19,7 @@ class _DrawerScreenState extends State<DrawerScreen>
     const int totalDuration = 1000;
     _animationController = AnimationController(
         vsync: this, duration: const Duration(milliseconds: totalDuration));
-    animationDuration = totalDuration / (100 * (totalDuration / (totalItems)));
+    animationDuration = totalDuration / (150 * (totalDuration / (totalItems)));
     _animationController!.forward();
   }
 
@@ -34,6 +34,8 @@ class _DrawerScreenState extends State<DrawerScreen>
     return GetBuilder<AppController>(builder: (appCtrl) {
       return GetBuilder<DashboardController>(builder: (dashboardCtrl) {
         return Drawer(
+
+          backgroundColor: appCtrl.appTheme.bgColor,
           child: ListView(
             children: [
               const DrawerUserLayout(),

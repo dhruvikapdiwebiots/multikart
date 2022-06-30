@@ -17,13 +17,13 @@ class KidsCorner extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 LatoFontStyle(
-                  text: "The Kids Corner",
+                  text: HomeFont().theKidsCorner,
                   fontSize: HomeFontSize.textSizeSMedium,
                   fontWeight: FontWeight.w700,
                   color: homeCtrl.appCtrl.appTheme.blackColor,
                 ),
                 LatoFontStyle(
-                  text: "Clothing for your Li’l One’s ",
+                  text: HomeFont().clothingForYourLilOne,
                   fontSize: HomeFontSize.textSizeSMedium,
                   fontWeight: FontWeight.w400,
                   color: homeCtrl.appCtrl.appTheme.contentColor,
@@ -36,6 +36,7 @@ class KidsCorner extends StatelessWidget {
                     children: homeCtrl.homeKidsCornerList.asMap().entries.map((e){
                       return FindStyleListCard(
                         data: homeCtrl.homeKidsCornerList[e.key],
+                        isFit: false,
                       ).paddingOnly(right: AppScreenUtil().screenWidth(10));
                     }).toList(),
                   ),
