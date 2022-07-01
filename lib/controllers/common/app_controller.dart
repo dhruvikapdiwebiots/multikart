@@ -1,9 +1,9 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:multikart/views/home_and_product/cart/cart.dart';
-import 'package:multikart/views/home_and_product/category/category.dart';
-import 'package:multikart/views/home_and_product/home/home.dart';
-import 'package:multikart/views/home_and_product/profile/profile.dart';
-import 'package:multikart/views/home_and_product/wishlist/wishlist.dart';
+import 'package:multikart/views/bottom_navigate_page/cart/cart.dart';
+import 'package:multikart/views/bottom_navigate_page/category/category.dart';
+import 'package:multikart/views/bottom_navigate_page/home/home.dart';
+import 'package:multikart/views/bottom_navigate_page/profile/profile.dart';
+import 'package:multikart/views/bottom_navigate_page/wishlist/wishlist.dart';
 
 import '../../config.dart';
 

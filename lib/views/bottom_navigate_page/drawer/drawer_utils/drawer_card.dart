@@ -1,5 +1,5 @@
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:multikart/views/home_and_product/drawer/switcher/theme_switcher.dart';
+import 'package:multikart/views/bottom_navigate_page/drawer/switcher/theme_switcher.dart';
 
 import '../../../../config.dart';
 

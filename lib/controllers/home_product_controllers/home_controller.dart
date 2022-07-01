@@ -1,7 +1,4 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:multikart/models/home_banner_model.dart';
-import 'package:multikart/models/home_category_model.dart';
-import 'package:multikart/models/home_find_style.dart';
 
 import '../../config.dart';
 
@@ -45,7 +42,6 @@ class HomeController extends GetxController {
     update();
     super.onReady();
   }
-
 
   //add to wishlist
   Future<bool?> addToWishList(index, val) async {

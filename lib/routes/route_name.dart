@@ -6,5 +6,6 @@ class RouteName {
   final String forgotPassword = '/forgotPassword';
   final String resetPassword = '/resetPassword';
   final String dashboard = '/dashboard';
+  final String innerCategory = '/innerCategory';
   final noInternet = '/noInternet';
 }

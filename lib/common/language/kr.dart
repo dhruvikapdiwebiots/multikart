@@ -103,6 +103,10 @@ final dynamic kr = {
   'Flat \$20 OFF': "평평한 \$20 OFF",
   'buy 1 get 1': "1 구매 1",
   'upto 50% off': "최대 50% 할인",
+  "categories":"카테고리",
+  "myCart":"쇼핑 카트",
+  "shoppingCart":"위시리스트 (3)",
+  "steps":"3단계 중 1단계",
 
   //drawer font
   'userName' : '안녕하세요, 페이지 터너입니다.',
@@ -125,4 +129,14 @@ final dynamic kr = {
   'App settings, Dark mode' : 'App settings, Dark mode',
   'About Multikart' : 'About Multikart',
   'Customer Support, FAQs' : 'Customer Support, FAQs',
+
+  //category font
+  "Sale": "판매",
+  "upto 50% off on all products":"모든 제품 최대 50% 할인",
+  "t-shirts, tops,  bottoms..":"티셔츠, 상의, 하의..",
+  "jackets, jeans, denims..":"자켓, 청바지, 데님..",
+  "clothing, toys, books..":"의류, 장난감, 서적..",
+  "skincare, haircare, makeup..":"피부 관리, 헤어케어, 구성하다..",
+  "shoes, sandal, activewear..":"신발, 샌들, 활동복..",
+  "necklace, chains, earrings..":"목걸이, 쇠사슬, 귀걸이..",
 };

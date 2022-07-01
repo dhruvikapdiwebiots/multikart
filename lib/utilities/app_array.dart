@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/models/category_model.dart';
 import 'package:multikart/models/home_banner_model.dart';
 import 'package:multikart/models/home_category_model.dart';
 import 'package:multikart/models/home_find_style.dart';
@@ -10,6 +11,9 @@ import 'package:multikart/models/kids_corner_model.dart';
 import 'package:multikart/models/onboarding_model.dart';
 
 class AppArray {
+  final appCtrl = Get.isRegistered<AppController>()
+      ? Get.find<AppController>()
+      : Get.put(AppController());
   var onBoardingList = <OnBoardingModel>[
     OnBoardingModel(
         title: 'Welcome to Biggest Online Store'.tr,
@@ -137,19 +141,14 @@ class AppArray {
   ];
 
   var drawerList = [
+    {'title': 'Mode'.tr, 'icon': svgAssets.setting, 'subTitle': ''},
+    {'title': 'RTL'.tr, 'icon': svgAssets.setting, 'subTitle': ''},
     {
-      'title': 'Mode'.tr,
-      'icon': svgAssets.setting,
-      'subTitle': ''
-    }, {
-      'title': 'RTL'.tr,
-      'icon': svgAssets.setting,
-      'subTitle': ''
-    }, {
       'title': 'Pages'.tr,
       'icon': svgAssets.order,
       'subTitle': 'Elements & Other Pages'.tr
-    }, {
+    },
+    {
       'title': 'Home'.tr,
       'icon': svgAssets.homeSvg,
       'subTitle': 'Offers, Top Deals, Top Brands'.tr
@@ -269,23 +268,30 @@ class AppArray {
   ];
 
   //biggest deal brand
-  var biggestDealBrandList = [{
-    "image": imageAssets.biggestDeal1,
-  },{
-    "image": imageAssets.biggestDeal2,
-  },{
-    "image": imageAssets.biggestDeal3,
-  },{
-    "image": imageAssets.biggestDeal4,
-  },{
-    "image": imageAssets.biggestDeal5,
-  }];
+  var biggestDealBrandList = [
+    {
+      "image": imageAssets.biggestDeal1,
+    },
+    {
+      "image": imageAssets.biggestDeal2,
+    },
+    {
+      "image": imageAssets.biggestDeal3,
+    },
+    {
+      "image": imageAssets.biggestDeal4,
+    },
+    {
+      "image": imageAssets.biggestDeal5,
+    }
+  ];
 
   //offer corner
-  var offerCornerList =[ {
-    'id': 1,
-    'title': 'UNDER \$50.00'.tr,
-  },
+  var offerCornerList = [
+    {
+      'id': 1,
+      'title': 'UNDER \$50.00'.tr,
+    },
     {
       'id': 2,
       'title': 'Flat \$20 OFF'.tr,
@@ -297,7 +303,8 @@ class AppArray {
     {
       'id': 4,
       'title': 'upto 50% off'.tr,
-    }];
+    }
+  ];
 
   //home kids corner list
   var homeKidsCornerList = <HomeFindStyleCategoryModel>[
@@ -330,4 +337,161 @@ class AppArray {
         rating: 1.2),
   ];
 
+  //category list
+  var categoryList = <CategoryModel>[
+    CategoryModel(
+        title: "Sale".tr,
+        image: imageAssets.category1,
+        description: "upto 50% off on all products".tr,
+        bgColor: const Color(0xFFEDEFF4)),
+    CategoryModel(
+        title: "Women".tr,
+        image: imageAssets.category2,
+        description: "t-shirts, tops,  bottoms..".tr,
+        bgColor: const Color(0xFFDEDEDE)),
+    CategoryModel(
+        title: "Men".tr,
+        image: imageAssets.category3,
+        description: "jackets, jeans, denims..".tr,
+        bgColor: const Color(0xFFEDEFF4)),
+    CategoryModel(
+        title: "Kids".tr,
+        image: imageAssets.category4,
+        description: "clothing, toys, books..".tr,
+        bgColor: const Color(0xFFD6CBC9)),
+    CategoryModel(
+        title: "Beauty".tr,
+        image: imageAssets.category5,
+        description: "skincare, haircare, makeup..".tr,
+        bgColor: const Color(0xFFEDEFF4)),
+    CategoryModel(
+        title: "Footwear".tr,
+        image: imageAssets.category6,
+        description: "shoes, sandal, activewear..".tr,
+        bgColor: const Color(0xFFA8A9AB).withOpacity(.5)),
+    CategoryModel(
+        title: "Jewellery".tr,
+        image: imageAssets.category7,
+        description: "necklace, chains, earrings..".tr,
+        bgColor: const Color(0xFFEDEFF4)),
+  ];
+
+  //inner category
+  var innerCategoryList = [
+    {
+      "id": 1,
+      "name": "Fusion Wear",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+        {"id": 5, "name": "Halter Tops"},
+        {"id": 6, "name": "Spaghetti Kurtas"},
+        {"id": 7, "name": "Capes"},
+        {"id": 8, "name": "Fusion Gowns"},
+        {"id": 9, "name": "Nightwear"},
+        {"id": 10, "name": "Handbags"},
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Western Wear",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+        {"id": 5, "name": "Halter Tops"},
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lingerie & Sleepwear",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Footwear",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+        {"id": 5, "name": "Halter Tops"},
+        {"id": 6, "name": "Spaghetti Kurtas"},
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sports & Active Wear",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+        {"id": 5, "name": "Halter Tops"},
+        {"id": 6, "name": "Spaghetti Kurtas"},
+        {"id": 7, "name": "Capes"},
+        {"id": 8, "name": "Fusion Gowns"},
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Beauty & Personal Care",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Jewellery",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 8, "name": "Fusion Gowns"},
+        {"id": 9, "name": "Nightwear"},
+        {"id": 10, "name": "Handbags"},
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Gadgets",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 4, "name": "Tunics"},
+        {"id": 5, "name": "Halter Tops"},
+        {"id": 9, "name": "Nightwear"},
+        {"id": 10, "name": "Handbags"},
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Plus Size",
+      'child': [
+        {"id": 1, "name": "Maxi Dresses"},
+        {"id": 2, "name": "Skirts"},
+        {"id": 3, "name": "Crop Tops"},
+        {"id": 8, "name": "Fusion Gowns"},
+        {"id": 9, "name": "Nightwear"},
+        {"id": 10, "name": "Handbags"},
+      ]
+    }
+  ];
+
+  var innerCategoryProduct = [
+    {"image": imageAssets.flowerPrint, 'title': "Flowerprint"},
+    {"image": imageAssets.denim, 'title': "Denim"},
+    {"image": imageAssets.skirts, 'title': "Skirts"},
+  ];
 }

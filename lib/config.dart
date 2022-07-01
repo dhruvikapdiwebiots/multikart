@@ -22,5 +22,7 @@ export 'package:multikart/views/authentication_page/sign_up/sign_up_page_list.da
 export 'package:multikart/views/authentication_page/forgot_password/forgot_password_page_list.dart';
 export 'package:multikart/views/authentication_page/otp/otp_page_list.dart';
 export 'package:multikart/views/authentication_page/reset_password/reset_password_page_list.dart';
-export 'package:multikart/views/home_and_product/drawer/drawer_page_list.dart';
-export 'package:multikart/views/home_and_product/home/home_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/drawer/drawer_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/home/home_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/category/category_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_page_list.dart';

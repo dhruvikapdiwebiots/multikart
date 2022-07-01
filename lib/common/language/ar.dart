@@ -104,6 +104,11 @@ final dynamic ar = {
   'Flat \$20 OFF': "شقة \$ خصم 20 دولار",
   'buy 1 get 1': "أشتري 1 و أحصل على 1",
   'upto 50% off': "خصم بنسبة تصل إلى 50",
+  "categories":"فئات",
+  "myCart":"عربة التسوق",
+  "shoppingCart":"قائمة الرغبات الخاصة بك (3)",
+  "steps":"الخطوة 1 من 3",
+
 
   //drawer font
   'userName': 'مرحبًا ، بيج تورنر',
@@ -128,4 +133,15 @@ final dynamic ar = {
   'App settings, Dark mode': 'إعدادات التطبيق ، الوضع الداكن',
   'About Multikart': 'حول Multikart',
   'Customer Support, FAQs': 'دعم العملاء ، أسئلة وأجوبة',
+
+
+  //category font
+  "Sale": "تخفيض السعر",
+  "upto 50% off on all products":"خصم يصل إلى 50٪ على جميع المنتجات",
+  "t-shirts, tops,  bottoms..":"قمصان ، بلايز ، قيعان ..",
+  "jackets, jeans, denims..":"جاكيتات ، جينز ، جينز ..",
+  "clothing, toys, books..":"الملابس والألعاب والكتب ..",
+  "skincare, haircare, makeup..":"العناية بالبشرة والشعر والمكياج ..",
+  "shoes, sandal, activewear..":"أحذية ، صندل ، ملابس رياضية ..",
+  "necklace, chains, earrings..":"قلادة ، سلاسل ، أقراط ..",
 };

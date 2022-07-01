@@ -6,4 +6,5 @@ export '../views/authentication_page/login/login.dart';
 export '../views/authentication_page/sign_up/sign_up.dart';
 export '../views/authentication_page/forgot_password/forgot_password.dart';
 export '../views/authentication_page/reset_password/reset_password.dart';
-export '../views/home_and_product/dashboard/dashboard.dart';
+export '../views/bottom_navigate_page/dashboard/dashboard.dart';
+export '../views/bottom_navigate_page/inner_category/inner_category.dart';

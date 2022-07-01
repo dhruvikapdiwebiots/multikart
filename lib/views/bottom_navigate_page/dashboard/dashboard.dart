@@ -1,7 +1,8 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/views/bottom_navigate_page/dashboard/app_bar_title.dart';
 
 
-import 'package:multikart/views/home_and_product/drawer/drawer_screen.dart';
+import 'package:multikart/views/bottom_navigate_page/drawer/drawer_screen.dart';
 
 class Dashboard extends StatefulWidget {
  const Dashboard({Key? key}) : super(key: key);
@@ -37,6 +38,10 @@ class _DashboardState extends State<Dashboard>
           drawer: const DrawerScreen(),
           appBar: HomeProductAppBar(
             onTap: () => dashboardCtrl.appBarLeadingAction(),
+            titleChild: dashboardCtrl.appCtrl.selectedIndex == 0
+                ? const LogoImage()
+                : const AppBarTitle(),
+
           ),
 
           body: dashboardCtrl.appCtrl.widgetOptions

@@ -2,7 +2,9 @@ import '../../config.dart';
 
 class HomeProductAppBar extends StatelessWidget with PreferredSizeWidget {
   final GestureTapCallback? onTap;
-  const HomeProductAppBar({Key? key,this.onTap}) : super(key: key);
+  final Widget? titleChild;
+
+  const HomeProductAppBar({Key? key, this.onTap,this.titleChild}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,11 +12,15 @@ class HomeProductAppBar extends StatelessWidget with PreferredSizeWidget {
       return AppBar(
         elevation: 0,
         automaticallyImplyLeading: false,
-        leading: MenuRoundedIcon(onTap: onTap,),
+        leading: MenuRoundedIcon(
+          onTap: onTap,
+        ),
         backgroundColor: appCtrl.appTheme.whiteColor,
         titleSpacing: 0,
-        title: const LogoImage(),
-        actions:  const [AppBarActionLayout(),],
+        title: titleChild,
+        actions: const [
+          AppBarActionLayout(),
+        ],
       );
     });
   }

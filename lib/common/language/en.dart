@@ -104,6 +104,9 @@ final dynamic en = {
   'Flat \$20 OFF': "Flat \$20 OFF",
   'buy 1 get 1': "buy 1 get 1",
   'upto 50% off': "upto 50% off",
+  "categories":"Categories",
+  "myCart":"Shopping Cart",
+  "shoppingCart":"Your Wishlist (3)",
 
 
   //drawer font
@@ -127,4 +130,15 @@ final dynamic en = {
   'App settings, Dark mode' : 'App settings, Dark mode',
   'About Multikart' : 'About Multikart',
   'Customer Support, FAQs' : 'Customer Support, FAQs',
+
+  //category font
+  "Sale": "Sale",
+  "steps":"step 1 of 3",
+  "upto 50% off on all products":"upto 50% off on all products",
+  "t-shirts, tops,  bottoms..":"t-shirts, tops,  bottoms..",
+  "jackets, jeans, denims..":"jackets, jeans, denims..",
+  "clothing, toys, books..":"clothing, toys, books..",
+  "skincare, haircare, makeup..":"skincare, haircare, makeup..",
+  "shoes, sandal, activewear..":"shoes, sandal, activewear..",
+  "necklace, chains, earrings..":"necklace, chains, earrings..",
 };
