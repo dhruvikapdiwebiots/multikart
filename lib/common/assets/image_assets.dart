@@ -42,6 +42,10 @@ class ImageAssets {
   final String biggestDeal3 = 'assets/home_images/biggest_deal/biggestDeal3.png';
   final String biggestDeal4 = 'assets/home_images/biggest_deal/biggestDeal4.png';
   final String biggestDeal5 = 'assets/home_images/biggest_deal/biggestDeal5.png';
+  final String biggestDeal6 = 'assets/home_images/biggest_deal/biggestDeal6.png';
+  final String biggestDeal7 = 'assets/home_images/biggest_deal/biggestDeal7.png';
+  final String biggestDeal8 = 'assets/home_images/biggest_deal/biggestDeal8.png';
+  final String biggestDeal9 = 'assets/home_images/biggest_deal/biggestDeal9.png';
 
   //home kids corner
   final String kidsCorner1 = 'assets/home_images/kids_corner/kidsCorner1.jpeg';

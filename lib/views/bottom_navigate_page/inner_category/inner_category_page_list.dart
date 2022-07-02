@@ -1,5 +1,9 @@
 export 'package:multikart/controllers/home_product_controllers/inner_category_controller.dart';
-export 'package:multikart/views/bottom_navigate_page/inner_category/expandable_layout.dart';
-export 'package:multikart/views/bottom_navigate_page/inner_category/expandable_list.dart';
-export 'package:multikart/views/bottom_navigate_page/inner_category/expandable_child.dart';
-export 'package:multikart/views/bottom_navigate_page/inner_category/expandable_icon.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_layout.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_list.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_child.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_icon.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_layout.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_product.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/brand_card.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_brand.dart';

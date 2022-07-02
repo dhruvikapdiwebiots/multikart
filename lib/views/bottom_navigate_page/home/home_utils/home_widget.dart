@@ -1,5 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/widgets/common/fade_in.dart';
 
 class HomeWidget {
   //banner image

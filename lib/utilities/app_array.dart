@@ -1,13 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/models/category_model.dart';
-import 'package:multikart/models/home_banner_model.dart';
-import 'package:multikart/models/home_category_model.dart';
-import 'package:multikart/models/home_find_style.dart';
-import 'package:multikart/models/home_find_style_category.dart';
-import 'package:multikart/models/kids_corner_model.dart';
-import 'package:multikart/models/kids_corner_model.dart';
-import 'package:multikart/models/kids_corner_model.dart';
-import 'package:multikart/models/kids_corner_model.dart';
 import 'package:multikart/models/onboarding_model.dart';
 
 class AppArray {
@@ -283,6 +274,28 @@ class AppArray {
     },
     {
       "image": imageAssets.biggestDeal5,
+    }
+  ];
+
+  //inner category biggest deal brand
+  var innerCategoryBrandList = [
+    {
+      "image": imageAssets.biggestDeal6,
+    },
+    {
+      "image": imageAssets.biggestDeal7,
+    },
+    {
+      "image": imageAssets.biggestDeal8,
+    },
+    {
+      "image": imageAssets.biggestDeal1,
+    },
+    {
+      "image": imageAssets.biggestDeal2,
+    },
+    {
+      "image": imageAssets.biggestDeal9,
     }
   ];
 

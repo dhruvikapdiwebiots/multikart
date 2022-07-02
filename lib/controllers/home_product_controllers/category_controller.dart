@@ -1,5 +1,3 @@
-import 'package:multikart/models/category_model.dart';
-
 import '../../config.dart';
 
 class CategoryController extends GetxController {

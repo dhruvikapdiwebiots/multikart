@@ -23,7 +23,6 @@ class DrawerListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("val ${rotateY!.value}");
     return GetBuilder<AppController>(builder: (appCtrl) {
       return AnimatedBuilder(
         animation: animationController!,

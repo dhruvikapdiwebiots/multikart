@@ -25,7 +25,7 @@ class AppController extends GetxController {
   AppTheme get appTheme => _appTheme;
   bool get isLoading => _isLoading;
 
-//list of bottomnavigator page
+//list of bottommost page
   List<Widget> widgetOptions = <Widget>[
     const HomeScreen(),
     const CategoryScreen(),
@@ -55,14 +55,12 @@ class AppController extends GetxController {
     update();
 
     //theme check
-    bool _loadThemeFromStorage = storage.read('isDarkMode') ?? false;
-    if (_loadThemeFromStorage) {
+    bool loadThemeFromStorage = storage.read('isDarkMode') ?? false;
+    if (loadThemeFromStorage) {
       isTheme = true;
     } else {
       isTheme = false;
     }
-
-    print("isTheme : $isTheme");
 
     update();
     await storage.write("isDarkMode", isTheme);

@@ -10,6 +10,7 @@ class InnerCategoryController extends GetxController{
   int? tapped = 0;
   List innerCategoryList = [];
   List innerCategoryProduct = [];
+  List innerCategoryBrandList = [];
 
 
   @override
@@ -19,6 +20,7 @@ class InnerCategoryController extends GetxController{
     categoryModel = data['data'];
     innerCategoryList = AppArray().innerCategoryList;
     innerCategoryProduct = AppArray().innerCategoryProduct;
+    innerCategoryBrandList = AppArray().innerCategoryBrandList;
     index = data['index'];
     update();
     super.onReady();

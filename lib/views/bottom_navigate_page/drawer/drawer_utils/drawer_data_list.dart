@@ -33,8 +33,6 @@ class _DrawerDataListLayoutState extends State<DrawerDataListLayout> {
     super.initState();
     start = (widget.duration! * widget.index!).toDouble();
     end = start! + widget.duration!;
-    print("start : $start");
-    print("end : $end");
     animation = DrawerWidget().animation(
         animationController: widget.animationController!,
         duration: widget.duration!,

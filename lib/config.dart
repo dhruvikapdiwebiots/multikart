@@ -15,6 +15,8 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:multikart/utilities/app_array.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:flutter_svg/flutter_svg.dart';
+export 'package:multikart/views/bottom_navigate_page/drawer/switcher/theme_switcher.dart';
+export 'package:multikart/views/bottom_navigate_page/drawer/drawer_utils/drawer_leading_title.dart';
 export '../routes/common_screen_list.dart';
 export 'package:multikart/views/authentication_page/onbaording/onboard_page_list.dart';
 export 'package:multikart/views/authentication_page/login/login_page_list.dart';

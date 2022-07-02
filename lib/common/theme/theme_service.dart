@@ -23,8 +23,8 @@ class ThemeService {
       _getStorage.write(_storageKey, isDarkMode);
 
   /// Switch theme and save to local storage
-  switchTheme(_loadThemeFromStorage) async {
-    if (_loadThemeFromStorage) {
+  switchTheme(loadThemeFromStorage) async {
+    if (loadThemeFromStorage) {
       Get.changeThemeMode(ThemeMode.dark);
       await appCtrl.updateTheme(AppTheme.fromType(ThemeType.dark));
       _saveThemeToStorage(true);
