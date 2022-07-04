@@ -35,6 +35,7 @@ class ImageAssets {
   final String findStyle2 = 'assets/home_images/find_style/findStyle2.png';
   final String findStyle3 = 'assets/home_images/find_style/findStyle3.png';
   final String findStyle4 = 'assets/home_images/find_style/findStyle4.png';
+  final String findStyle5 = 'assets/home_images/find_style/findStyle5.jpg';
 
   //home biggest deal
   final String biggestDeal1 = 'assets/home_images/biggest_deal/biggestDeal1.png';

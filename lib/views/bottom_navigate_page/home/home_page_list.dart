@@ -27,6 +27,7 @@ export 'package:multikart/views/bottom_navigate_page/home/home_layouts/find_your
 export 'package:multikart/views/bottom_navigate_page/home/home_layouts/find_your_style/find_style_sub_category.dart';
 export 'package:multikart/views/bottom_navigate_page/home/home_layouts/offer_corner/offer_corner_layout.dart';
 export 'package:multikart/views/bottom_navigate_page/home/home_layouts/offer_time/offer_time_data.dart';
+export 'package:multikart/views/bottom_navigate_page/home/home_layouts/find_your_style/new_layout.dart';
 
 //home model
 export 'package:multikart/models/home_banner_model.dart';

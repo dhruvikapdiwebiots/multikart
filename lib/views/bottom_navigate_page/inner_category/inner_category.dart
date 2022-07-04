@@ -1,6 +1,5 @@
 import 'package:multikart/config.dart';
 
-
 class InnerCategory extends StatefulWidget {
   const InnerCategory({Key? key}) : super(key: key);
 
@@ -33,12 +32,12 @@ class _InnerCategoryState extends State<InnerCategory> {
                   categoryModel: innerCtrl.categoryModel,
                   index: innerCtrl.index,
                   isEven: true,
+                  onTap: () => innerCtrl.goToShopPage(innerCtrl.categoryModel!.title.toString()),
                 ),
               //inner category layout expandable
               const InnerCategoryLayout(),
               const Space(0, 10),
               const InnerCategoryProduct(),
-              const Space(0, 10),
               const InnerCategoryBrands()
             ],
           ),

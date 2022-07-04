@@ -21,8 +21,12 @@ class DashboardController extends GetxController {
 
   //bottom change
   bottomNavigationChange(val, context) async {
-    await storage.write(Session.selectedIndex, val);
     appCtrl.selectedIndex = val;
+    appCtrl.isLoading = true;
+    appCtrl.update();
+
+    await storage.write(Session.selectedIndex, val);
+
     appCtrl.rightValue = MediaQuery.of(context).size.width;
     if (appCtrl.selectedIndex == 0) {
       appCtrl.isHeart = true;
@@ -55,6 +59,7 @@ class DashboardController extends GetxController {
       appCtrl.isSearch = false;
       appCtrl.isNotification = false;
     }
+    appCtrl.isLoading = false;
     appCtrl.update();
     update();
   }

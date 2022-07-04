@@ -20,7 +20,7 @@ class ProductImage extends StatelessWidget {
             image: image,
             fit: isFit ? BoxFit.cover : BoxFit.fill,
             width: AppScreenUtil().screenWidth(160),
-            height: AppScreenUtil().screenHeight(200),
+            height: AppScreenUtil().screenHeight(160),
           ),
         ),
       ),

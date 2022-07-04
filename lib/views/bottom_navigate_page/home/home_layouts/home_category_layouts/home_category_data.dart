@@ -15,25 +15,26 @@ class HomeCategoryData extends StatelessWidget {
             left: AppScreenUtil().screenWidth(index == 0 ? 10 : 0)),
         child: Column(
           children: [
-            Stack(
-              alignment: Alignment.bottomCenter,
-              children: [
-                Container(
-                  height: AppScreenUtil().screenHeight(60),
-                  width: AppScreenUtil().screenWidth(55),
-                  decoration: BoxDecoration(
-                    color: appCtrl.appTheme.homeCategoryColor,
-                    shape: BoxShape.circle,
+            SizedBox(
+              height: AppScreenUtil().screenHeight(70),
+              child: Stack(
+                alignment: Alignment.topCenter,
+                children: [
+                  Container(
+                    width: AppScreenUtil().screenWidth(55),
+                    decoration: BoxDecoration(
+                      color: appCtrl.appTheme.homeCategoryColor,
+                      shape: BoxShape.circle,
+                    ),
                   ),
-                ),
-                FadeInImageLayout(
-                    image: data!.image.toString(),
-                    height: AppScreenUtil().screenHeight(70),
-                    width: AppScreenUtil().screenWidth(60),
-                    fit: BoxFit.fill),
-              ],
+                  FadeInImageLayout(
+                      image: data!.image.toString(),
+                      height: AppScreenUtil().screenHeight(60),
+                      width: AppScreenUtil().screenWidth(60),
+                      fit: BoxFit.fill),
+                ],
+              ),
             ),
-            const Space(0, 6),
             LatoFontStyle(
               text: data!.title.toString(),
               fontWeight: FontWeight.w600,

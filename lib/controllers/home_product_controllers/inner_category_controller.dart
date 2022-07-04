@@ -34,4 +34,11 @@ class InnerCategoryController extends GetxController{
     tapped = index;
     update();
   }
+
+  //go to shop page
+  goToShopPage(name){
+    appCtrl.isNotification = true;
+    appCtrl.update();
+    Get.toNamed(routeName.shopPage,arguments: name);
+  }
 }

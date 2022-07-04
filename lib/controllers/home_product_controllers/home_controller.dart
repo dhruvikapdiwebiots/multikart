@@ -7,6 +7,7 @@ class HomeController extends GetxController {
       ? Get.find<AppController>()
       : Get.put(AppController());
 
+
   final storage = GetStorage();
   double loginWidth = 40.0;
   double loginHeight = 40.0;

@@ -8,3 +8,4 @@ export '../views/authentication_page/forgot_password/forgot_password.dart';
 export '../views/authentication_page/reset_password/reset_password.dart';
 export '../views/bottom_navigate_page/dashboard/dashboard.dart';
 export '../views/bottom_navigate_page/inner_category/inner_category.dart';
+export '../views/bottom_navigate_page/shop/shop_page.dart';

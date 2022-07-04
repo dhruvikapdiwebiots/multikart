@@ -9,7 +9,7 @@ import '../../config.dart';
 
 class AppController extends GetxController {
   AppTheme _appTheme = AppTheme.fromType(ThemeType.light);
-  bool _isLoading = false;
+  bool isLoading = false;
   int selectedIndex = 0;
   bool isTheme = false;
   bool isRTL = false;
@@ -23,7 +23,6 @@ class AppController extends GetxController {
   double rightValue = 15;
   final storage = GetStorage();
   AppTheme get appTheme => _appTheme;
-  bool get isLoading => _isLoading;
 
 //list of bottommost page
   List<Widget> widgetOptions = <Widget>[
@@ -75,13 +74,4 @@ class AppController extends GetxController {
     Get.forceAppUpdate();
   }
 
-  void showLoading() {
-    _isLoading = true;
-    update();
-  }
-
-  void hideLoading() {
-    _isLoading = false;
-    update();
-  }
 }

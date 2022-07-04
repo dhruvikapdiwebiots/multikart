@@ -10,6 +10,8 @@ class NotificationIcon extends StatelessWidget {
         return SvgPicture.asset(
           svgAssets.notification,
           color: appCtrl.appTheme.blackColor,
+          fit: BoxFit.contain,
+          height: AppScreenUtil().size(20),
         );
       }
     );

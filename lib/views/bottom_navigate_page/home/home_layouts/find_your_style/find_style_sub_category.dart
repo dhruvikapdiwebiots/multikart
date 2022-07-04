@@ -23,7 +23,7 @@ class FindStyleSubCategory extends StatelessWidget {
             crossAxisSpacing: 15,
             mainAxisSpacing: 5,
             childAspectRatio: MediaQuery.of(context).size.width /
-                (MediaQuery.of(context).size.height / (1)),
+                (MediaQuery.of(context).size.height / (1.2)),
           ),
         );
       }

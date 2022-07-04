@@ -30,7 +30,7 @@ class CategoryCardLayout extends StatelessWidget {
               child: Hero(
                 tag: index.toString(),
                 child: Image.asset(categoryModel!.image.toString(),
-                    fit: BoxFit.fill, height: AppScreenUtil().size(132)),
+                    fit: BoxFit.fill, height: AppScreenUtil().screenHeight(124)),
               ),
             )
           ],

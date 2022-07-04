@@ -36,7 +36,7 @@ class InnerCategoryBrands extends StatelessWidget {
           )
         ],
       ).marginSymmetric(
-          vertical: AppScreenUtil().screenHeight(40),
+          vertical: AppScreenUtil().screenHeight(20),
           horizontal: AppScreenUtil().screenHeight(15));
     });
   }
