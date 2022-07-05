@@ -163,4 +163,9 @@ final dynamic hi = {
   "Fusion Gowns":"फ्यूजन गाउन",
   "Nightwear":"रात में पहनना",
   "Handbags":"हैंडबैग",
+
+  //shop font
+  "collection": "संग्रह",
+  "products": "उत्पादों",
+  "newText": "नया",
 };

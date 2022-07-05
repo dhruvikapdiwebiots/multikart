@@ -166,4 +166,9 @@ final dynamic ar = {
   "Fusion Gowns":"العباءات الانصهار",
   "Nightwear":"ملابس نوم",
   "Handbags":"حقائب اليد",
+
+  //shop font
+  "collection": "مجموعة",
+  "products": "منتجات",
+  "newText": "الجديد",
 };

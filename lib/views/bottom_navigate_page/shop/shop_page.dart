@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/views/bottom_navigate_page/shop/shop_constant.dart';
 
 class ShopPage extends StatelessWidget {
   final shopCtrl = Get.put(ShopController());
@@ -12,9 +13,9 @@ class ShopPage extends StatelessWidget {
         appBar: HomeProductAppBar(
           onTap: () => Get.back(),
           titleChild:  CommonAppBarTitle(
-            title: "${shopCtrl.name} Collection",
+            title: "${shopCtrl.name} ${ShopFont().collection}",
 
-            desc: "2050 Products",
+            desc: "2050 ${ShopFont().products}",
           ),
         ),
         body: SingleChildScrollView(
@@ -41,7 +42,7 @@ class ShopPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return FindStyleListCard(
                     data: shopCtrl.homeShopPageList[index],
-                    isFit: false,
+
                   );
                 },
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

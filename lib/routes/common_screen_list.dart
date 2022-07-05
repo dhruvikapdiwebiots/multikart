@@ -28,3 +28,4 @@ export 'package:multikart/widgets/common_image/camer_icon.dart';
 export 'package:multikart/widgets/common_image/search_text.dart';
 export 'package:multikart/widgets/common_image/filter_icon.dart';
 export 'package:multikart/widgets/common/filter_layout.dart';
+export 'package:multikart/widgets/common_image/close_square_icon.dart';

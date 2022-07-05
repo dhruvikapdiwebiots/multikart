@@ -5,7 +5,8 @@ class FindYourStyleCategoryCard extends StatelessWidget {
   final int? index;
   final dynamic data;
   final GestureTapCallback? onTap;
-  const FindYourStyleCategoryCard({Key? key,this.index,this.selectedStyleCategory,this.data,this.onTap}) : super(key: key);
+  final bool isHomePage;
+  const FindYourStyleCategoryCard({Key? key,this.index,this.selectedStyleCategory,this.data,this.onTap,this.isHomePage = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,15 +19,15 @@ class FindYourStyleCategoryCard extends StatelessWidget {
               horizontal:
               AppScreenUtil().screenWidth(15)),
           margin: EdgeInsets.only(
-              right: AppScreenUtil().screenWidth(15),
+              right: AppScreenUtil().screenWidth( isHomePage ? 15 : index!.isEven ? 15 :0),
               top: AppScreenUtil().screenHeight(10),
-              bottom: AppScreenUtil().screenHeight(10)),
+              bottom: AppScreenUtil().screenHeight(isHomePage ?10  :0)),
           decoration: BoxDecoration(
             color: selectedStyleCategory == index
                 ? appCtrl.appTheme.primary
                 : appCtrl.appTheme.lightGray,
             borderRadius: BorderRadius.circular(
-                AppScreenUtil().borderRadius(3)),
+                AppScreenUtil().borderRadius(5)),
           ),
           child: LatoFontStyle(
             text: data

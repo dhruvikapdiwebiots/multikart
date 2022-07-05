@@ -29,3 +29,5 @@ export 'package:multikart/views/bottom_navigate_page/drawer/drawer_page_list.dar
 export 'package:multikart/views/bottom_navigate_page/home/home_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/category/category_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/filter/filter_page_list.dart';
+

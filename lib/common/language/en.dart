@@ -163,4 +163,9 @@ final dynamic en = {
   "Fusion Gowns":"Fusion Gowns",
   "Nightwear":"Nightwear",
   "Handbags":"Handbags",
+
+  //shop font
+  "collection": "Collection",
+  "products": "Products",
+  "newText": "NEW",
 };

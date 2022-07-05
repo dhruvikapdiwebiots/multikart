@@ -593,4 +593,37 @@ class AppArray {
         totalPrice: "35.00",
         rating: 2)
   ];
+
+  //brand filter list
+  var brandFilterList =[{
+    'title': "Here & Now".tr
+  },{
+    'title': "Zara".tr
+  },{
+    'title': "Mast & harbour".tr
+  },{
+    'title': "Tokyo talkies".tr
+  },{
+    'title': "Vogue".tr
+  },{
+    'title': "gucci".tr
+  }];
+
+  //size  list
+  var sizeList =[{
+    'title': "Small".tr,
+    "isSelected": false
+  },{
+    'title': "Medium".tr,
+    "isSelected": false
+  },{
+    'title': "Large".tr,
+    "isSelected": false
+  },{
+    'title': "XL".tr,
+    "isSelected": false
+  },{
+    'title': "2XL".tr,
+    "isSelected": false
+  }];
 }

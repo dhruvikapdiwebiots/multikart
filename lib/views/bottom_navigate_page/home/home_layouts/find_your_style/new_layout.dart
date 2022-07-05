@@ -1,3 +1,5 @@
+
+
 import '../../../../../config.dart';
 
 class NewLayout extends StatelessWidget {
@@ -10,9 +12,9 @@ class NewLayout extends StatelessWidget {
         return Container(
           width: AppScreenUtil().screenWidth(40),
           alignment: Alignment.center,
-          height: AppScreenUtil().screenHeight(20),
+          height: AppScreenUtil().screenHeight(18),
           padding: EdgeInsets.symmetric(
-            horizontal: AppScreenUtil().screenWidth(8),
+            horizontal: AppScreenUtil().screenWidth(6),
           ),
           margin: EdgeInsets.symmetric(
             horizontal: AppScreenUtil().screenWidth(10),
@@ -24,7 +26,7 @@ class NewLayout extends StatelessWidget {
             BorderRadius.circular(AppScreenUtil().borderRadius(3)),
           ),
           child: LatoFontStyle(
-            text: "new",
+            text: ShopFont().newText,
             fontSize: 10,
             color: appCtrl.appTheme.white,
             fontWeight: FontWeight.w600,

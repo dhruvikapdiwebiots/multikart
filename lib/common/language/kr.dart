@@ -153,7 +153,6 @@ final dynamic kr = {
   "Gadgets":"가제트",
   "Plus Size":"플러스 크기",
   "Maxi Dresses":"맥시 드레스",
-  "Skirts":"스커트",
   "Crop Tops":"크롭 탑",
   "Tunics":"튜닉",
   "Halter Tops":"고삐 탑",
@@ -162,4 +161,9 @@ final dynamic kr = {
   "Fusion Gowns":"퓨전 가운",
   "Nightwear":"잠옷",
   "Handbags":"핸드백",
+
+  //shop font
+  "collection": "수집",
+  "products": "제품",
+  "newText": "새로운",
 };
