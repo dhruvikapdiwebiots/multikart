@@ -26,11 +26,11 @@ class CategoryCardLayout extends StatelessWidget {
               categoryModel: categoryModel,
             ),
             Positioned(
-              top: -5,
+              top: -4,
               child: Hero(
                 tag: index.toString(),
                 child: Image.asset(categoryModel!.image.toString(),
-                    fit: BoxFit.fill, height: AppScreenUtil().screenHeight(124)),
+                    fit: BoxFit.fill, height: AppScreenUtil().screenHeight(105)),
               ),
             )
           ],

@@ -1,5 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/views/bottom_navigate_page/shop/shop_constant.dart';
 
 class ShopPage extends StatelessWidget {
   final shopCtrl = Get.put(ShopController());

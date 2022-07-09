@@ -26,7 +26,7 @@ class OfferTimeLayout extends StatelessWidget {
             Image.asset(
               imageAssets.girl,
               fit: BoxFit.cover,
-              height: AppScreenUtil().screenHeight(220),
+              height: AppScreenUtil().size(180),
             )
           ],
         ),

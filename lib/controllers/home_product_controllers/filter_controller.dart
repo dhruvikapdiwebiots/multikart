@@ -4,11 +4,16 @@ class FilterController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
+  RangeValues currentRangeValues = const RangeValues(0, 100);
 
   List brandFilterList = [];
+  List occasionFilterList = [];
   List sizeList = [];
-  String dropDownVal = "Recommended";
+  List colorList = [];
+  String dropDownVal = "Recommended".tr;
   int selectedBrand = 0;
+  int selectedOccasion = 0;
+  int selectedColor = 0;
   var data = [
     {"val": "0.0"},
     {"val": "10.0"},
@@ -23,8 +28,15 @@ class FilterController extends GetxController {
     {"val": "100.0"}
   ];
 
+  //select brand
   selectBrandFunction(index) {
     selectedBrand = index;
+    update();
+  }
+
+  //select occasion
+  selectOccasionFunction(index) {
+    selectedOccasion   = index;
     update();
   }
 
@@ -35,7 +47,9 @@ class FilterController extends GetxController {
     // TODO: implement onReady
     brandFilterList = AppArray().brandFilterList;
     sizeList = AppArray().sizeList;
-    print(data.length);
+    occasionFilterList = AppArray().occasionFilterList;
+    colorList = AppArray().colorList;
+
     update();
     super.onReady();
   }

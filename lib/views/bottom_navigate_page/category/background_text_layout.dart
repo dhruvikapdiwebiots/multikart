@@ -13,8 +13,8 @@ class BackgroundTextLayout extends StatelessWidget {
         return Container(
           margin: EdgeInsets.only(
               top: AppScreenUtil().screenHeight(20),
-              bottom: AppScreenUtil().screenHeight(20)),
-          height: AppScreenUtil().size(110),
+              bottom: AppScreenUtil().screenHeight(10)),
+          height: AppScreenUtil().size(90),
           padding: EdgeInsets.only(
               left: AppScreenUtil().screenWidth(18),
               right: AppScreenUtil().screenWidth(18)),

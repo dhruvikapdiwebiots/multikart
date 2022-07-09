@@ -15,8 +15,8 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:multikart/utilities/app_array.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:flutter_svg/flutter_svg.dart';
-export 'package:multikart/views/bottom_navigate_page/drawer/switcher/theme_switcher.dart';
-export 'package:multikart/views/bottom_navigate_page/drawer/drawer_utils/drawer_leading_title.dart';
+export 'package:multikart/views/menu/drawer/switcher/theme_switcher.dart';
+export 'package:multikart/views/menu/drawer/drawer_utils/drawer_leading_title.dart';
 export '../routes/common_screen_list.dart';
 export 'package:multikart/controllers/home_product_controllers/shop_controller.dart';
 export 'package:multikart/views/authentication_page/onbaording/onboard_page_list.dart';
@@ -25,9 +25,9 @@ export 'package:multikart/views/authentication_page/sign_up/sign_up_page_list.da
 export 'package:multikart/views/authentication_page/forgot_password/forgot_password_page_list.dart';
 export 'package:multikart/views/authentication_page/otp/otp_page_list.dart';
 export 'package:multikart/views/authentication_page/reset_password/reset_password_page_list.dart';
-export 'package:multikart/views/bottom_navigate_page/drawer/drawer_page_list.dart';
+export 'package:multikart/views/menu/drawer/drawer_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/home/home_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/category/category_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_page_list.dart';
-export 'package:multikart/views/bottom_navigate_page/filter/filter_page_list.dart';
+export 'package:multikart/views/pages/filter/filter_page_list.dart';
 

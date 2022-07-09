@@ -21,12 +21,12 @@ class DealsBrands extends StatelessWidget {
                 children:
                     AppArray().biggestDealBrandList.asMap().entries.map((e) {
                   return Container(
-                    width: AppScreenUtil().screenWidth(150),
+                    width: AppScreenUtil().screenWidth(120),
                     alignment: Alignment.center,
-                    height: AppScreenUtil().screenHeight(60),
+                    height: AppScreenUtil().screenHeight(35),
                     padding: EdgeInsets.symmetric(
-                        horizontal: AppScreenUtil().screenWidth(15),
-                        vertical: AppScreenUtil().screenHeight(15)),
+
+                        vertical: AppScreenUtil().screenHeight(10)),
                     margin: EdgeInsets.only(
                         left: AppScreenUtil().screenWidth(e.key == 0 ? 15 : 0),
                         right: AppScreenUtil().screenWidth(15),
@@ -48,7 +48,7 @@ class DealsBrands extends StatelessWidget {
                 }).toList(),
               ))
         ],
-      ).marginOnly(top: AppScreenUtil().screenHeight(40),bottom: AppScreenUtil().screenHeight(40));
+      ).marginOnly(top: AppScreenUtil().screenHeight(40),bottom: AppScreenUtil().screenHeight(20));
     });
   }
 }

@@ -24,4 +24,5 @@ class SvgAssets {
   final String call = 'assets/svg/call.svg';
   final String camera = 'assets/svg/camera.svg';
   final String closeSquare = 'assets/svg/closeSquare.svg';
+  final String clock = 'assets/svg/clock.svg';
 }

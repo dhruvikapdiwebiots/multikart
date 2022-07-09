@@ -12,7 +12,6 @@ class BrandCard extends StatelessWidget {
         return Container(
           width: AppScreenUtil().screenWidth(180),
           alignment: Alignment.center,
-          height: AppScreenUtil().screenHeight(60),
           padding: EdgeInsets.symmetric(
             horizontal: AppScreenUtil().screenWidth(15),
           ),
@@ -21,7 +20,7 @@ class BrandCard extends StatelessWidget {
                   index != lastIndex && index !=2
                       ? 15
                       : 0),
-              top: AppScreenUtil().screenHeight(15),
+              top: AppScreenUtil().screenHeight(10),
               bottom: AppScreenUtil().screenHeight(10)),
           decoration: BoxDecoration(
             color: appCtrl.appTheme.greyLight25,
@@ -34,8 +33,6 @@ class BrandCard extends StatelessWidget {
             color: appCtrl.isTheme
                 ? appCtrl.appTheme.contentColor
                 : appCtrl.appTheme.blackColor,
-            width: AppScreenUtil().screenHeight(150),
-            height: AppScreenUtil().screenHeight(50),
           ),
         );
       }

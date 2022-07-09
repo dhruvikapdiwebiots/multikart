@@ -1,7 +1,7 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:multikart/views/bottom_navigate_page/filter/filter.dart';
 
 import '../../config.dart';
+import '../../views/pages/filter/filter.dart';
 
 class ShopController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()

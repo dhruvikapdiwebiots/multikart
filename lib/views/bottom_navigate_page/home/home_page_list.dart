@@ -1,4 +1,4 @@
-export 'package:multikart/views/bottom_navigate_page/dashboard/dashboard_constant.dart';
+export 'package:multikart/views/menu/dashboard/dashboard_constant.dart';
 export 'package:multikart/widgets/common_app_bar/common_app_bar_title.dart';
 export 'package:multikart/controllers/home_product_controllers/home_controller.dart';
 export 'package:multikart/views/bottom_navigate_page/home/home_layouts/banner_layouts/banner_data.dart';

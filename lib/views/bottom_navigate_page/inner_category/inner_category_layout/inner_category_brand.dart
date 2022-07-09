@@ -12,7 +12,7 @@ class InnerCategoryBrands extends StatelessWidget {
           LatoFontStyle(
             text: HomeFont().biggestDeal,
             fontSize: HomeFontSize.textSizeMedium,
-            fontWeight: FontWeight.normal,
+            fontWeight: FontWeight.w700,
             color: innerCtrl.appCtrl.appTheme.blackColor,
           ),
           GridView.builder(
@@ -31,12 +31,12 @@ class InnerCategoryBrands extends StatelessWidget {
               crossAxisCount: 3,
               crossAxisSpacing: 0,
               childAspectRatio: MediaQuery.of(context).size.width /
-                  (MediaQuery.of(context).size.height / (2.8)),
+                  (MediaQuery.of(context).size.height / (3.5)),
             ),
           )
         ],
       ).marginSymmetric(
-          vertical: AppScreenUtil().screenHeight(20),
+
           horizontal: AppScreenUtil().screenHeight(15));
     });
   }

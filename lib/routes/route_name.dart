@@ -8,5 +8,6 @@ class RouteName {
   final String dashboard = '/dashboard';
   final String innerCategory = '/innerCategory';
   final String shopPage = '/shopPage';
+  final String search = '/search';
   final noInternet = '/noInternet';
 }

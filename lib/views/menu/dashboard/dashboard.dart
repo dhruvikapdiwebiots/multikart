@@ -1,8 +1,6 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/views/bottom_navigate_page/dashboard/app_bar_title.dart';
-
-
-import 'package:multikart/views/bottom_navigate_page/drawer/drawer_screen.dart';
+import 'package:multikart/views/menu/drawer/drawer_screen.dart';
+import 'package:multikart/views/menu/dashboard/app_bar_title.dart';
 
 class Dashboard extends StatefulWidget {
  const Dashboard({Key? key}) : super(key: key);

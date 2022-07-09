@@ -609,6 +609,47 @@ class AppArray {
     'title': "gucci".tr
   }];
 
+
+  //occasion filter list
+  var occasionFilterList =[{
+    'title': "Casual".tr
+  },{
+    'title': "Sports".tr
+  },{
+    'title': "Beach Wear".tr
+  },{
+    'title': "Lounge Wear".tr
+  },{
+    'title': "Formal".tr
+  },{
+    'title': "Party".tr
+  }];
+
+  //color list
+  var colorList =[{
+    'color': const Color(0xFFE6E6FA)
+  },{
+    'color': const Color(0xFFF3F3F3)
+  },{
+    'color': const Color(0xFFB0C4DE)
+  },{
+    'color': const Color(0xFFEBACA2)
+  },{
+    'color': const Color(0xFFFFC0CB)
+  },{
+    'color': const Color(0xFFADD8E6)
+  },{
+    'color': const Color(0xFFBED3C3)
+  },{
+    'color': const Color(0xFF9FD9F2)
+  },{
+    'color': const Color(0xFFF5DEB3)
+  },{
+    'color': const Color(0xFFFFE4E1)
+  },{
+    'color': const Color(0xFFE6E6FA)
+  }];
+
   //size  list
   var sizeList =[{
     'title': "Small".tr,
@@ -625,5 +666,16 @@ class AppArray {
   },{
     'title': "2XL".tr,
     "isSelected": false
+  }];
+
+  //recent search list
+  var recentSearchList = [{
+    'title': "Party Wear Jumpsuit".tr
+  },{
+    'title': "Pink Hoodie t-shirt full".tr
+  },{
+    'title': "Blue Denim Jacket".tr
+  },{
+    'title': "Men Blue Denim Jacket".tr
   }];
 }

@@ -1,5 +1,3 @@
-
-
 import '../../../../config.dart';
 
 class DrawerCard extends StatelessWidget {
@@ -17,7 +15,9 @@ class DrawerCard extends StatelessWidget {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Column(
         children: [
-          DrawerLeadingTitle(data: data,),
+          DrawerLeadingTitle(
+            data: data,
+          ),
           if (index == 10)
             Container(
               height: 10,
