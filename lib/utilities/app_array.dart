@@ -678,4 +678,22 @@ class AppArray {
   },{
     'title': "Men Blue Denim Jacket".tr
   }];
+
+  //recommended list
+  var recommendedList = [{
+    'title': "Denim".tr,
+    "isSelected": false
+  },{
+    'title': "Skirts".tr,
+    "isSelected": false
+  },{
+    'title': "Flowerprint".tr,
+    "isSelected": false
+  },{
+    'title': "Jeans".tr,
+    "isSelected": false
+  },{
+    'title': "Jumpsuit".tr,
+    "isSelected": false
+  }];
 }

@@ -1,0 +1,1 @@
+export '../../common/array/product_array.dart';

@@ -66,9 +66,11 @@ class DashboardController extends GetxController {
 
   //app bar leading action
   appBarLeadingAction() async {
+
     if (appCtrl.selectedIndex == 0) {
       scaffoldKey.currentState!.openDrawer();
     } else {
+      appCtrl.goToHome();
       await storage.write(Session.selectedIndex, 0);
       appCtrl.selectedIndex = 0;
       update();

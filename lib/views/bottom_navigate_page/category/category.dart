@@ -27,6 +27,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                       'data':e.value,
                       'index':e.key
                     };
+
                     Get.toNamed(routeName.innerCategory, arguments: data);
                   },
                 );

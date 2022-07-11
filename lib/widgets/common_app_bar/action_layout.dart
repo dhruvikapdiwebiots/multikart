@@ -14,7 +14,7 @@ class AppBarActionLayout extends StatelessWidget {
           const ShareIcon()
               .paddingSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
           if(appCtrl.isSearch)
-          const SearchIcon(),
+          const SearchIcon().paddingSymmetric(horizontal: AppScreenUtil().screenWidth(appCtrl.isSearch ? appCtrl.isNotification ?0:10 :10)),
           if(appCtrl.isNotification)
           const NotificationIcon()
               .paddingSymmetric(horizontal: AppScreenUtil().screenWidth(15)),

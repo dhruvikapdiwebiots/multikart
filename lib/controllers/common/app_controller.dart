@@ -40,6 +40,35 @@ class AppController extends GetxController {
     super.onReady();
   }
 
+  //go to product detail screen
+  goToProductDetail(){
+    isNotification =false;
+    isSearch =false;
+    isCart  =true;
+    isShare = true;
+    isHeart = true;
+    update();
+    Get.toNamed(routeName.productDetail);
+  }
+
+  //go to shop page
+  goToShopPage(name){
+    isNotification = true;
+    update();
+    Get.toNamed(routeName.shopPage,arguments: name);
+  }
+
+  //go to home screen
+  goToHome(){
+    isHeart = true;
+    isCart = true;
+    isShare = false;
+    isSearch = true;
+    isNotification = true;
+    update();
+  }
+
+
   getData()async{
     String? languageCode = storage.read(Session.languageCode);
     languageVal = storage.read(Session.languageCode) ?? 'en';

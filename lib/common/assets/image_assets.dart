@@ -5,6 +5,8 @@ class ImageAssets {
   final String noInternet = 'assets/images/nointernet.png';
   final String offerCornerBG = 'assets/image/offerCornerBG.png';
   final String user = 'assets/image/user.png';
+  final String avtar = 'assets/image/avtar.png';
+  final String avtar1 = 'assets/image/avtar1.png';
   final String girl = 'assets/girls.png';
   final String sales = 'assets/sales.png';
 
@@ -64,4 +66,18 @@ class ImageAssets {
   final String flowerPrint = 'assets/category/flowerprint.png';
   final String denim = 'assets/category/denim.png';
   final String skirts = 'assets/category/skirts.png';
+
+  //product corner
+  final String product1 = 'assets/product/product1.png';
+  final String product2 = 'assets/product/product2.png';
+  final String product3 = 'assets/product/product3.jpg';
+  final String product4 = 'assets/product/product4.jpg';
+  final String product5 = 'assets/product/product5.jpg';
+  final String product6 = 'assets/product/product6.jpg';
+  final String product7 = 'assets/product/product7.jpg';
+  final String product8 = 'assets/product/product8.jpg';
+  final String product9 = 'assets/product/product9.jpg';
+  final String product10 = 'assets/product/product10.jpeg';
+  final String product11 = 'assets/product/product11.jpeg';
+  final String product12 = 'assets/product/product12.jpeg';
 }

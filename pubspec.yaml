@@ -92,6 +92,7 @@ flutter:
     - assets/icons/homeIcon/
     - assets/svg/
     - assets/category/
+    - assets/product/
     - assets/home_images/home_category/
     - assets/home_images/home_banner/
     - assets/home_images/home_deals/

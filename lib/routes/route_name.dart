@@ -9,5 +9,6 @@ class RouteName {
   final String innerCategory = '/innerCategory';
   final String shopPage = '/shopPage';
   final String search = '/search';
+  final String productDetail = '/productDetail';
   final noInternet = '/noInternet';
 }

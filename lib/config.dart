@@ -6,6 +6,8 @@ export 'package:multikart/env.dart';
 export 'package:multikart/routes/index.dart';
 export 'package:multikart/routes/index.dart';
 export 'package:multikart/utilities/index.dart';
+export '../../common/array/index.dart';
+export 'package:multikart/models/index.dart';
 export 'package:get/get.dart';
 export 'package:multikart/common/app_screen_util.dart';
 export 'package:multikart/common/assets/index.dart';

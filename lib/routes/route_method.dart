@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 //app file
+
 import 'route_name.dart';
 import 'screen_list.dart';
 
@@ -18,5 +19,6 @@ class AppRoute {
     GetPage(name: _routeName.innerCategory, page: () => const InnerCategory()),
     GetPage(name: _routeName.shopPage, page: () =>  ShopPage()),
     GetPage(name: _routeName.search, page: () =>  Search()),
+    GetPage(name: _routeName.productDetail, page: () =>  ProductDetail()),
   ];
 }

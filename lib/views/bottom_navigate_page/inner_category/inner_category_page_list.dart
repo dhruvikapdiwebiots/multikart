@@ -4,7 +4,6 @@ export 'package:multikart/views/bottom_navigate_page/inner_category/inner_catego
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_child.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/expandable_icon.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_layout.dart';
-export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_product.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/brand_card.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_brand.dart';
 export 'package:multikart/views/pages/shop/shop_constant.dart';

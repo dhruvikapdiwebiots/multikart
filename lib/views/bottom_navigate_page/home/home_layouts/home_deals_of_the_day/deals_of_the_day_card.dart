@@ -32,7 +32,7 @@ class DealsOfTheDayCard extends StatelessWidget {
             )
           ],
         ),
-      );
+      ).gestures(onTap: ()=> homeCtrl.appCtrl.goToProductDetail());
     });
   }
 }

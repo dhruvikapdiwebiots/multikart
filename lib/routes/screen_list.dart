@@ -10,3 +10,4 @@ export '../views/menu/dashboard/dashboard.dart';
 export '../views/bottom_navigate_page/inner_category/inner_category.dart';
 export '../views/pages/shop/shop_page.dart';
 export '../views/pages/search/search.dart';
+export '../views/pages/product_detail/product_detail.dart';
