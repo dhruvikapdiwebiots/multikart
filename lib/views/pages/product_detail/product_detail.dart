@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:multikart/config.dart';
-import 'package:multikart/controllers/pages_controller/product_detail_controller.dart';
+
 
 class ProductDetail extends StatelessWidget {
   final productCtrl = Get.put(ProductDetailController());
@@ -16,7 +16,7 @@ class ProductDetail extends StatelessWidget {
           elevation: 0,
           backgroundColor: productCtrl.appCtrl.appTheme.whiteColor,
           automaticallyImplyLeading: false,
-          leading:Icon(
+          leading: Icon(
             CupertinoIcons.arrow_left,
             size: AppScreenUtil().size(25),
             color: productCtrl.appCtrl.appTheme.blackColor,
@@ -25,34 +25,29 @@ class ProductDetail extends StatelessWidget {
             Get.back();
           }),
           title: LatoFontStyle(
-            text: productCtrl.product.title ?? "",
-            fontSize: CommonTextFontSize.textSizeMedium,
-            fontWeight: FontWeight.w700,
-          ),
+              text: productCtrl.product.title ?? "",
+              fontSize: CommonTextFontSize.textSizeMedium,
+              fontWeight: FontWeight.w700),
           actions: const [AppBarActionLayout()],
         ),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-               CarouselSlider.builder(
-                options: CarouselOptions(
-                    autoPlay: true,
-                    aspectRatio: .90,
-                    viewportFraction: 0.9,
-                    enlargeStrategy: CenterPageEnlargeStrategy.scale,
-                    onPageChanged: (index, reason) {
-                      productCtrl.current = index;
-                      productCtrl.update();
-                    }),
-                itemCount: productCtrl.imagesList != null ? productCtrl.imagesList.length :0,
-                itemBuilder:
-                    (BuildContext context, int index, int pageViewIndex) {
-                  return productCtrl.imagesList != null
-                      ? Image.asset(productCtrl.imagesList[index].image.toString(),fit: BoxFit.cover,).marginOnly(right: AppScreenUtil().screenWidth(5))
-                      : Container();
-                },
-              ),
+              //image list
+              const ImageListLayout(),
+              ProductDetailWidget().commonText(
+                  text: productCtrl.product.name.toString(), fontSize: 16),
+              ProductDetailWidget()
+                  .descriptionText(productCtrl.product.description.toString()),
+
+              //rating layout
+              const RatingLayout(),
+              //price layout
+              ProductPrice(product: productCtrl.product),
+              ProductDetailWidget().inclusiveTax("inclusive of all taxes"),
+
+              const BorderLineLayout(),
             ],
           ),
         ),

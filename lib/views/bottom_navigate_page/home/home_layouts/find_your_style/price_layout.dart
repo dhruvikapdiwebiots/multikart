@@ -3,7 +3,8 @@ import '../../../../../config.dart';
 class PriceLayout extends StatelessWidget {
   final String? totalPrice,mrp, discount;
   final bool isDiscountShow;
-  const PriceLayout({Key? key,this.discount,this.mrp,this.totalPrice,this.isDiscountShow = true}) : super(key: key);
+  final double fontSize;
+  const PriceLayout({Key? key,this.discount,this.mrp,this.totalPrice,this.isDiscountShow = true,this.fontSize = CommonTextFontSize.textSizeSmall}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +14,14 @@ class PriceLayout extends StatelessWidget {
           children: [
             LatoFontStyle(
               text: '\$$totalPrice',
-              fontSize: HomeFontSize.textSizeSmall,
+              fontSize: fontSize,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.blackColor,
             ),
             const Space(5, 0),
             LatoFontStyle(
               text: '\$$mrp',
-              fontSize: HomeFontSize.textSizeSmall,
+              fontSize: fontSize,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.contentColor,
               textDecoration: TextDecoration.lineThrough,
@@ -29,7 +30,7 @@ class PriceLayout extends StatelessWidget {
             if(isDiscountShow)
             LatoFontStyle(
               text: '($discount off)',
-              fontSize: HomeFontSize.textSizeSmall,
+              fontSize: fontSize,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.primary,
             ),

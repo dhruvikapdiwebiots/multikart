@@ -12,17 +12,14 @@ class Rating extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return RatingBar.builder(
-        itemSize: AppScreenUtil().size(20.0),
+        itemSize: AppScreenUtil().size(18.0),
         initialRating: val!,
         minRating: 1,
         direction: Axis.horizontal,
         allowHalfRating: true,
         itemCount: 5,
         glowColor: appCtrl.appTheme.ratingColor,
-        itemPadding: EdgeInsets.symmetric(
-            horizontal: AppScreenUtil().screenWidth(1),
-            vertical: AppScreenUtil().screenHeight(5)),
-        unratedColor: appCtrl.appTheme.darkContentColor,
+        unratedColor: appCtrl.appTheme.lightGray,
         itemBuilder: (context, _) => const Icon(
           Icons.star,
           color: Colors.amber,

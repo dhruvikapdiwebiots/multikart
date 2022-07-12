@@ -2,7 +2,7 @@ import '../../config.dart';
 
 
 var productList = Product(
-    name: "floral print skirt with white top",
+    name: "Floral Print Skirt With White Top",
     title: "Floral Skirts",
     description:
         "Black, off-white and peach-coloured printed flared skirt, has zip closure, attached lining",

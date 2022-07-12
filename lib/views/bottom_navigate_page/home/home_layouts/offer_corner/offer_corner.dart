@@ -11,7 +11,7 @@ class OfferCorner extends StatelessWidget {
         children: [
           LatoFontStyle(
             text: HomeFont().offerCorner,
-            fontSize: HomeFontSize.textSizeSMedium,
+            fontSize: CommonTextFontSize.textSizeSMedium,
             fontWeight: FontWeight.w700,
             color: homeCtrl.appCtrl.appTheme.blackColor,
           ),

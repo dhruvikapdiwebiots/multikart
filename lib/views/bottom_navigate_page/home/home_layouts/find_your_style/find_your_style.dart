@@ -18,13 +18,13 @@ class FindYourStyle extends StatelessWidget {
               children: [
                 LatoFontStyle(
                   text: HomeFont().findYourStyle,
-                  fontSize: HomeFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.textSizeSMedium,
                   fontWeight: FontWeight.w700,
                   color: homeCtrl.appCtrl.appTheme.blackColor,
                 ),
                 LatoFontStyle(
                   text: HomeFont().superSummerSale,
-                  fontSize: HomeFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.textSizeSMedium,
                   fontWeight: FontWeight.w400,
                   color: homeCtrl.appCtrl.appTheme.contentColor,
                 ),

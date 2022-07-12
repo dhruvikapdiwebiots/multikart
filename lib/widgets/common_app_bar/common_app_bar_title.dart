@@ -18,13 +18,13 @@ class CommonAppBarTitle extends StatelessWidget {
               children: [
                 LatoFontStyle(
                   text: title,
-                  fontSize: HomeFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.textSizeSMedium,
                   color: appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.w700,
                 ),
                 LatoFontStyle(
                   text: desc,
-                  fontSize: HomeFontSize.textSizeSmall,
+                  fontSize: CommonTextFontSize.textSizeSmall,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.normal,
                 ),
@@ -34,7 +34,7 @@ class CommonAppBarTitle extends StatelessWidget {
               children: [
                 LatoFontStyle(
                   text: title,
-                  fontSize: HomeFontSize.textSizeMedium,
+                  fontSize: CommonTextFontSize.textSizeMedium,
                   color: appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.w700,
                 ),
@@ -45,7 +45,7 @@ class CommonAppBarTitle extends StatelessWidget {
                 ),
                 LatoFontStyle(
                   text: desc,
-                  fontSize: HomeFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.textSizeSMedium,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.normal,
                 ),

@@ -13,13 +13,13 @@ class OfferTimeData extends StatelessWidget {
           children: [
             LatoFontStyle(
               text: HomeFont().denimWear,
-              fontSize: HomeFontSize.textSizeSmall,
+              fontSize: CommonTextFontSize.textSizeSmall,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.contentColor,
             ),
             LatoFontStyle(
               text: HomeFont().salesStartIn,
-              fontSize: HomeFontSize.textSizeMedium,
+              fontSize: CommonTextFontSize.textSizeMedium,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.blackColor,
             ),
@@ -43,7 +43,7 @@ class OfferTimeData extends StatelessWidget {
             ),
             LatoFontStyle(
               text: HomeFont().exploreNow,
-              fontSize: HomeFontSize.textSizeSMedium,
+              fontSize: CommonTextFontSize.textSizeSMedium,
               fontWeight: FontWeight.normal,
               textDecoration: TextDecoration.underline,
               color: appCtrl.appTheme.contentColor,

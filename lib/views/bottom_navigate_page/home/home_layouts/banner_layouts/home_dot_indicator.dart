@@ -1,9 +1,8 @@
 import '../../../../../config.dart';
 
 class HomeDotIndicator extends StatelessWidget {
-  final controller = PageController(viewportFraction: 0.8, keepPage: true);
 
-  HomeDotIndicator({Key? key}) : super(key: key);
+ const HomeDotIndicator({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

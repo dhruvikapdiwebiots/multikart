@@ -11,7 +11,7 @@ class DealsBrands extends StatelessWidget {
         children: [
           LatoFontStyle(
             text: HomeFont().biggestDeal,
-            fontSize: HomeFontSize.textSizeMedium,
+            fontSize: CommonTextFontSize.textSizeMedium,
             fontWeight: FontWeight.normal,
             color: homeCtrl.appCtrl.appTheme.blackColor,
           ).marginOnly(left: AppScreenUtil().screenWidth(15)),

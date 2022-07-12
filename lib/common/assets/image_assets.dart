@@ -70,7 +70,7 @@ class ImageAssets {
   //product corner
   final String product1 = 'assets/product/product1.png';
   final String product2 = 'assets/product/product2.png';
-  final String product3 = 'assets/product/product3.jpg';
+  final String product3 = 'assets/product/product3.png';
   final String product4 = 'assets/product/product4.jpg';
   final String product5 = 'assets/product/product5.jpg';
   final String product6 = 'assets/product/product6.jpg';

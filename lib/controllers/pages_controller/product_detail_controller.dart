@@ -9,12 +9,13 @@ class ProductDetailController extends GetxController {
   Product product = Product();
   List<Images> imagesList = [];
   int current =0;
+  int currentLast =0;
+  final CarouselController sliderController = CarouselController();
   int colorSelected = 1;
 
   @override
   void onReady() {
     // TODO: implement onReady
-    print('product : ${product.images}');
     product = productList;
 
     for(var i=0;i<product.images!.length;i++){
@@ -23,8 +24,6 @@ class ProductDetailController extends GetxController {
       }
     }
     update();
-    print('product : ${product.images}');
-    print('imagesList : ${imagesList}');
     super.onReady();
   }
 }
