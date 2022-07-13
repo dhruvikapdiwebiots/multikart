@@ -33,3 +33,4 @@ export 'package:multikart/widgets/common/gridview_three_layout.dart';
 export 'package:multikart/widgets/common/common_trending_category.dart';
 export 'package:multikart/widgets/common/category_card.dart';
 export 'package:multikart/widgets/common/common_brand_layout.dart';
+export 'package:multikart/widgets/common_image/no_data_image.dart';

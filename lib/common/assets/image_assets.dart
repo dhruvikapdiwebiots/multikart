@@ -9,6 +9,8 @@ class ImageAssets {
   final String avtar1 = 'assets/image/avtar1.png';
   final String girl = 'assets/girls.png';
   final String sales = 'assets/sales.png';
+  final String noData = 'assets/noData.png';
+  final String coupenCode = 'assets/coupenCode.png';
 
   //onBoarding Image
   final String onBoarding1 = 'assets/onBoarding/onBoarding1.png';

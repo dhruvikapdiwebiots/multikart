@@ -51,4 +51,16 @@ class ProductDetailWidget {
       color: appCtrl.appTheme.greenColor,
     ).marginOnly(left: AppScreenUtil().screenWidth(15),top: AppScreenUtil().screenHeight(5),bottom: AppScreenUtil().screenHeight(25));
   }
+
+  //size chart
+  Widget sizeChart(text){
+    return LatoFontStyle(
+      text: text,
+      fontWeight: FontWeight.w600,
+      fontSize: CommonTextFontSize.textSizeSmall,
+      color: appCtrl.appTheme.primary,
+    ).marginOnly(
+        right: AppScreenUtil().screenWidth(15),
+        top: AppScreenUtil().screenHeight(20));
+  }
 }

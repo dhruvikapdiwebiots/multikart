@@ -11,7 +11,7 @@ var productList = Product(
     price: 35,
     discountPrice: 32,
     discount: "20%",
-    quantity: 0,
+    quantity: 1,
     totalReview: 24,
     policy:
         "This product is eligible for returns and size replacements. Please initiate returns/replacements from the 'My Orders' section in the App within 7 days of delivery. Please ensure the product is in its original condition with all tags attached.",
@@ -35,12 +35,12 @@ var productList = Product(
       Images(image: imageAssets.product4, colorId: 2),
       Images(image: imageAssets.product5, colorId: 2),
       Images(image: imageAssets.product6, colorId: 2),
-      Images(image: imageAssets.product7, colorId: 3),
-      Images(image: imageAssets.product8, colorId: 3),
-      Images(image: imageAssets.product9, colorId: 3),
-      Images(image: imageAssets.product10, colorId: 4),
-      Images(image: imageAssets.product11, colorId: 4),
-      Images(image: imageAssets.product12, colorId: 4),
+      Images(image: imageAssets.product7, colorId: 4),
+      Images(image: imageAssets.product8, colorId: 4),
+      Images(image: imageAssets.product9, colorId: 4),
+      Images(image: imageAssets.product10, colorId: 5),
+      Images(image: imageAssets.product11, colorId: 5),
+      Images(image: imageAssets.product12, colorId: 5),
     ],
     detail: [
       Detail(

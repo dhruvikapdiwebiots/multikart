@@ -5,3 +5,11 @@ export 'package:multikart/views/pages/product_detail/product_detail_layouts/imag
 export 'package:multikart/views/pages/product_detail/product_detail_utils/product_detail_widget.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_price.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/rating_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_size_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/size_card.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/common_inc_dec_button.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_color_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/quantity_inc_dec.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_offer.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/detail_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/policy_layout.dart';
