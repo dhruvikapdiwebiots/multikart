@@ -1,7 +1,8 @@
 import '../../config.dart';
 
 class BuyIcon extends StatelessWidget {
-  const BuyIcon({Key? key}) : super(key: key);
+  final Color? color;
+  const BuyIcon({Key? key,this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class BuyIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.buy,
-          color: appCtrl.appTheme.blackColor,
+          color: color ?? appCtrl.appTheme.blackColor,
         );
       }
     );

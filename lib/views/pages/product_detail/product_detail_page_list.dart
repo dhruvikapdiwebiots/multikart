@@ -13,3 +13,15 @@ export 'package:multikart/views/pages/product_detail/product_detail_layouts/quan
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_offer.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/detail_layout.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/policy_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/review_card.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_size.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/review_name_date.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_like_dislike.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/delivery_offer_card.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/delivery_offer_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/offer_by_you.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_review_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_bottom.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_body.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/similar_product_layout.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_utils/product_detail_constant.dart';

@@ -19,8 +19,9 @@ class ProductSizeLayout extends StatelessWidget {
               ProductDetailWidget().sizeChart("Size Chart"),
             ],
           ),
+          if(product!.size != null)
           SingleChildScrollView(
-            child: Row(
+            child:  Row(
               children: [
                 ...product!.size!.asMap().entries.map((e) {
                   return SizeCard(

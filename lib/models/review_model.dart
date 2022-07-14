@@ -3,7 +3,7 @@ class Reviews {
   String? description;
   String? date;
   String? image;
-  int? rating;
+  double? rating;
   String? size;
   int? like;
   int? disLike;

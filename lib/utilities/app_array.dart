@@ -350,6 +350,38 @@ class AppArray {
         rating: 1.2),
   ];
 
+
+  //similar product list
+  var similarProductList = <HomeFindStyleCategoryModel>[
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.product13,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 0.5),
+    HomeFindStyleCategoryModel(
+        name: 'Party Wear Jumpshuit'.tr,
+        image: imageAssets.product14,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 3),
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.product15,
+        categoryId: '1',
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        rating: 1.2),
+  ];
+
   //category list
   var categoryList = <CategoryModel>[
     CategoryModel(

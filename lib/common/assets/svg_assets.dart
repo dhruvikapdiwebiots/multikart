@@ -25,4 +25,9 @@ class SvgAssets {
   final String camera = 'assets/svg/camera.svg';
   final String closeSquare = 'assets/svg/closeSquare.svg';
   final String clock = 'assets/svg/clock.svg';
+  final String thumbsUp = 'assets/svg/thumbsUp.svg';
+  final String thumbsDown = 'assets/svg/thumbsDown.svg';
+  final String truck = 'assets/svg/truck.svg';
+  final String payment = 'assets/svg/payment.svg';
+  final String refund = 'assets/svg/refund.svg';
 }

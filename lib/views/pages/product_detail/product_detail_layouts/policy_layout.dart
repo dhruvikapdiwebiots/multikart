@@ -14,7 +14,7 @@ class PolicyLayout extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ProductDetailWidget().commonText(
-                text: "Return & Exchange Policy",
+                text: ProductDetailFont().returnExchangePolicy,
                 fontSize: CommonTextFontSize.textSizeSMedium),
             LatoFontStyle(
               text: text,

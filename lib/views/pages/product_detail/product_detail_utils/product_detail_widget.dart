@@ -21,7 +21,7 @@ class ProductDetailWidget {
   Widget descriptionText(text) {
     return LatoFontStyle(
       text: text,
-      fontSize: 12,
+      fontSize: CommonTextFontSize.textSizeSmall,
       fontWeight: FontWeight.normal,
       color: appCtrl.appTheme.contentColor,
       overflow: TextOverflow.clip,

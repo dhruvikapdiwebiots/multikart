@@ -9,17 +9,19 @@ class ProductDetailController extends GetxController {
   Product product = Product();
   List<Images> imagesList = [];
   int current = 0;
+  List reviewList = [];
   int currentLast = 0;
   bool isNotData = false;
   int selectedColor = 0;
   final CarouselController sliderController = CarouselController();
+  List<HomeFindStyleCategoryModel> similarList = [];
   int colorSelected = 1;
 
   @override
   void onReady() {
     // TODO: implement onReady
     product = productList;
-
+  similarList = AppArray().similarProductList;
     for (var i = 0; i < product.images!.length; i++) {
       if (colorSelected == product.images![i].colorId) {
         imagesList.add(product.images![i]);

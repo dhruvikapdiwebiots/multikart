@@ -1,11 +1,11 @@
 import '../../config.dart';
 
-
 var productList = Product(
-    name: "Floral Print Skirt With White Top",
-    title: "Floral Skirts",
+    name: "Floral Print Skirt With White Top".tr,
+    title: "Floral Skirts".tr,
     description:
-        "Black, off-white and peach-coloured printed flared skirt, has zip closure, attached lining",
+        "productDescription"
+            .tr,
     rating: 4.5,
     ratingPoints: 20,
     price: 35,
@@ -14,12 +14,13 @@ var productList = Product(
     quantity: 1,
     totalReview: 24,
     policy:
-        "This product is eligible for returns and size replacements. Please initiate returns/replacements from the 'My Orders' section in the App within 7 days of delivery. Please ensure the product is in its original condition with all tags attached.",
+        "policy"
+            .tr,
     size: [
-      SizeModel(title: "S", isAvailable: true),
-      SizeModel(title: "M", isAvailable: true),
-      SizeModel(title: "L", isAvailable: true),
-      SizeModel(title: "XL", isAvailable: false),
+      SizeModel(title: "S".tr, isAvailable: true),
+      SizeModel(title: "M".tr, isAvailable: true),
+      SizeModel(title: "L".tr, isAvailable: true),
+      SizeModel(title: "XL".tr, isAvailable: false),
     ],
     color: [
       ColorModel(id: 1, color: const Color(0xFFE6E6FA), isAvailable: true),
@@ -44,42 +45,60 @@ var productList = Product(
     ],
     detail: [
       Detail(
-          title: "Product Details",
+          title: "Product Details".tr,
           description:
-              "Black, off-white and peach-coloured printed flared skirt, has zip closure, attached lining"),
+              "productDescription"
+                  .tr),
       Detail(
-          title: "Model Size & Fit",
-          description: "The model (height 5'8) is wearing a size 28"),
+          title: "Model Size & Fit".tr,
+          description: "The model (height 5'8) is wearing a size 28".tr),
       Detail(
-          title: "Material & Care",
-          description: "100% polyester, Machine-wash"),
-      Detail(title: "Product Code", description: "460356366_floral"),
+          title: "Material & Care".tr,
+          description: "100% polyester, Machine-wash".tr),
+      Detail(title: "Product Code".tr, description: "460356366_floral".tr),
     ],
     reviews: [
       Reviews(
-          name: "Mark Jacob",
+          name: "Mark Jacob".tr,
           description:
-              "It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly less bright than what is shown in the product description.",
-          size: "L",
+              "reviewDesc"
+                  .tr,
+          size: "L".tr,
           rating: 4,
           disLike: 20,
           like: 2,
-          date: "20 Aug, 2021",
+          date: "20 Aug, 2021".tr,
           image: imageAssets.avtar),
       Reviews(
-          name: "Mark Jacob",
+          name: "Mark Jacob".tr,
           description:
-              "Wow.. but it should have more flairs. mind-blowing purchase..🤗",
-          size: "XL",
+              "Wow.. but it should have more flairs. mind-blowing purchase..🤗"
+                  .tr,
+          size: "XL".tr,
           rating: 4,
           disLike: 20,
           like: 2,
-          date: "20 Aug, 2021",
+          date: "20 Aug, 2021".tr,
           image: imageAssets.avtar1)
     ],
     offer: Offer(
-      title: "Use code MULTIKART10 to get flat 10%",
-      code: "MULTIKART10",
+      title: "Use code MULTIKART10 to get flat 10%".tr,
+      code: "MULTIKART10".tr,
       desc:
-          "Use code MULTIKART10 to get flat 10% off on minimum order of \$200.00. Offer valid for first time users only",
-    ));
+          "productOffer"
+              .tr,
+    ),
+    deliverOfferModel: DeliverOfferModel(
+        title: "Check Delivery".tr,
+        description: "Enter Pincode to check delivery date / pickup option".tr,
+        deliveryOffer: [
+          DeliveryOffer(
+              title: 'Free Delivery on order above \$200.00'.tr,
+              icon: svgAssets.truck),
+          DeliveryOffer(
+              title: "Cash On delivery Available".tr,
+              icon: svgAssets.payment),
+          DeliveryOffer(
+              title: "Easy 21 days returns and exchanges".tr,
+              icon: svgAssets.refund)
+        ]));

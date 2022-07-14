@@ -31,7 +31,7 @@ class _ProductColorLayoutState extends State<ProductColorLayout>
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ProductDetailController>(builder: (productCtrl) {
-      return widget.product!.color!.isNotEmpty ? Wrap(
+      return widget.product!.color != null ? Wrap(
         children: [
           ...widget.product!.color!.asMap().entries.map((e) {
             return Container(
