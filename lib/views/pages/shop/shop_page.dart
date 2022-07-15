@@ -37,6 +37,8 @@ class ShopPage extends StatelessWidget {
                       Expanded(
                         child: SearchTextBox(
                           controller: shopCtrl.controller,
+                          suffixIcon: SearchWidget().suffixIcon(),
+                          prefixIcon: SearchWidget().prefixIcon(),
                         ),
                       ),
                       const FilterIconLayout().gestures(

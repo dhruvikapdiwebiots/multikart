@@ -13,7 +13,7 @@ class MobileNumberLayout extends StatelessWidget {
               text: '+981 215 1545',
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.contentColor,
-              fontSize: OtpFontSize.textSizeMedium,
+              fontSize: CommonTextFontSize.f16,
             ),
             const Space(15, 0),
             Image.asset(

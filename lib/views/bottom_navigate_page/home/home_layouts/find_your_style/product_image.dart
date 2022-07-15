@@ -9,9 +9,12 @@ class ProductImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius:
-      BorderRadius.circular(AppScreenUtil().borderRadius(5)),
+      BorderRadius.circular(AppScreenUtil().borderRadius(8)),
       child: Card(
         elevation: 3,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(5)),
+        ),
         shadowColor: Colors.grey.withOpacity(.5),
         child: ClipRRect(
           borderRadius:

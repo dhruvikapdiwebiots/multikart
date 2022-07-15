@@ -16,10 +16,10 @@ class DetailLayout extends StatelessWidget {
                     children: [
                       ProductDetailWidget().commonText(
                           text: e.title,
-                          fontSize: CommonTextFontSize.textSizeSMedium),
+                          fontSize: CommonTextFontSize.f14),
                       LatoFontStyle(
                         text: e.description,
-                        fontSize: CommonTextFontSize.textSizeSMedium,
+                        fontSize: CommonTextFontSize.f14,
                         fontWeight: FontWeight.normal,
                         color: productCtrl.appCtrl.appTheme.contentColor,
                       ).marginSymmetric(

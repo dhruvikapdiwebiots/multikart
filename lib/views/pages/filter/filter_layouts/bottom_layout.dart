@@ -30,7 +30,7 @@ class BottomLayout extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 2.5,
                 child: LatoFontStyle(
                   text: FilterFont().reset,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   textAlign: TextAlign.center,
                 ).gestures(onTap: ()=> Get.back()),
               ),

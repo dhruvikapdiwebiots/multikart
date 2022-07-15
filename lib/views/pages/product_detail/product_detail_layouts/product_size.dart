@@ -31,13 +31,13 @@ class ProductSize extends StatelessWidget {
                 LatoFontStyle(
                   text: ProductDetailFont().sizeBought,
                   color: appCtrl.appTheme.blackColor,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   fontWeight: FontWeight.w600,
                 ),
                 LatoFontStyle(
                   text: " ${reviews!.size}",
                   color: appCtrl.appTheme.contentColor,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   fontWeight: FontWeight.w600,
                 )
               ],

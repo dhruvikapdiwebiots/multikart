@@ -34,3 +34,6 @@ export 'package:multikart/widgets/common/common_trending_category.dart';
 export 'package:multikart/widgets/common/category_card.dart';
 export 'package:multikart/widgets/common/common_brand_layout.dart';
 export 'package:multikart/widgets/common_image/no_data_image.dart';
+export 'package:multikart/widgets/common/variants.dart';
+export 'package:multikart/widgets/common/variation_option.dart';
+export 'package:multikart/widgets/common/wishlsit_remove.dart';

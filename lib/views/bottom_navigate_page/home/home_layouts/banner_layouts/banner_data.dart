@@ -27,7 +27,7 @@ class HomeBannerData extends StatelessWidget {
                 ),
                 CustomButton(
                   height: 25,
-                  fontSize: CommonTextFontSize.textSizeSmall,
+                  fontSize: CommonTextFontSize.f12,
                   fontWeight: FontWeight.w500,
                   width: AppScreenUtil().screenWidth(100),
                   title: data!.buttonTitle.toString(),

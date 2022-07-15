@@ -10,5 +10,6 @@ class RouteName {
   final String shopPage = '/shopPage';
   final String search = '/search';
   final String productDetail = '/productDetail';
+  final String myCart = '/myCart';
   final noInternet = '/noInternet';
 }

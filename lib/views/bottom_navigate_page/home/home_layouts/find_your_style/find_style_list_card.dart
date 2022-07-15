@@ -30,7 +30,7 @@ class FindStyleListCard extends StatelessWidget {
         ),
         LatoFontStyle(
           text: data!.name,
-          fontSize: CommonTextFontSize.textSizeSMedium,
+          fontSize: CommonTextFontSize.f14,
           fontWeight: FontWeight.normal,
           color: appCtrl.appTheme.blackColor,
         ).paddingOnly(left: AppScreenUtil().screenWidth(5)),

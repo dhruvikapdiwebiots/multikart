@@ -18,13 +18,13 @@ class KidsCorner extends StatelessWidget {
               children: [
                 LatoFontStyle(
                   text: HomeFont().theKidsCorner,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   fontWeight: FontWeight.w700,
                   color: homeCtrl.appCtrl.appTheme.blackColor,
                 ),
                 LatoFontStyle(
                   text: HomeFont().clothingForYourLilOne,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   fontWeight: FontWeight.w400,
                   color: homeCtrl.appCtrl.appTheme.contentColor,
                 ),

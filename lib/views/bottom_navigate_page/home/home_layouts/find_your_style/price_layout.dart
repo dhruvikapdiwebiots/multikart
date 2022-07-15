@@ -4,7 +4,7 @@ class PriceLayout extends StatelessWidget {
   final String? totalPrice,mrp, discount;
   final bool isDiscountShow;
   final double fontSize;
-  const PriceLayout({Key? key,this.discount,this.mrp,this.totalPrice,this.isDiscountShow = true,this.fontSize = CommonTextFontSize.textSizeSmall}) : super(key: key);
+  const PriceLayout({Key? key,this.discount,this.mrp,this.totalPrice,this.isDiscountShow = true,this.fontSize = CommonTextFontSize.f12}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

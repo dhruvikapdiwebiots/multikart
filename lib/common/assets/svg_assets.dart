@@ -30,4 +30,6 @@ class SvgAssets {
   final String truck = 'assets/svg/truck.svg';
   final String payment = 'assets/svg/payment.svg';
   final String refund = 'assets/svg/refund.svg';
+  final String delete = 'assets/svg/delete.svg';
+  final String discount = 'assets/svg/discount.svg';
 }

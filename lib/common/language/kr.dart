@@ -252,4 +252,12 @@ final dynamic kr = {
   "Use code MULTIKART10 to get flat 10%":"플랫 10%를 얻으려면 코드 MULTIKART10을 사용하십시오.",
   "Wow.. but it should have more flairs. mind-blowing purchase..🤗":"와우..하지만 더 감각이 있어야합니다. 감동의 구매..🤗",
   "reviewDesc":"정말 귀여운 스커트에요! 폴리에스터 소재로 촉감이 이렇게 좋을 줄은 몰랐습니다. 제품 설명에 표시된 것보다 인쇄가 약간 덜 밝습니다.",
+
+  //cart
+  "moveToWishList": "위시리스트로 이동",
+  "remove":"제거하다",
+  "qty":"Qty:",
+  "youMayAlsoLike":"You May also Like",
+  "coupons":"Coupons:",
+  "applyCoupons":"Apply Coupons",
 };

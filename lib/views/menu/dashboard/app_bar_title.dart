@@ -13,14 +13,14 @@ class AppBarTitle extends StatelessWidget {
               text: appCtrl.selectedIndex == 1
                   ? DashboardFont().categories
                   : appCtrl.selectedIndex == 3
-                      ? DashboardFont().myCart
-                      : DashboardFont().dealsOfTheDay,
+                      ? DashboardFont().shoppingCart
+                      : DashboardFont().profile,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w700,
-              fontSize: CommonTextFontSize.textSizeMedium,
+              fontSize: CommonTextFontSize.f16,
             )
           : CommonAppBarTitle(
-              title: DashboardFont().shoppingCart,
+              title: DashboardFont().myCart,
               desc: DashboardFont().steps,
             );
     });

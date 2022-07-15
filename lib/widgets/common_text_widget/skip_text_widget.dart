@@ -14,7 +14,7 @@ class SkipTextWidget extends StatelessWidget {
      isDone! ? 'DONE'.tr : 'SKIP'.tr,
     )
         .fontFamily(GoogleFonts.lato().fontFamily.toString())
-        .fontSize(AppScreenUtil().fontSize(CommonTextFontSize.textSizeMedium))
+        .fontSize(AppScreenUtil().fontSize(CommonTextFontSize.f16))
         .fontFamily(FontWeight.w700.toString()).gestures(onTap: onTap);
   }
 }

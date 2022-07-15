@@ -26,7 +26,7 @@ class TimeLayout extends StatelessWidget {
               child: LatoFontStyle(
                 text: title,
                 textAlign: TextAlign.start,
-                fontSize: CommonTextFontSize.textXXSizeSmall,
+                fontSize: CommonTextFontSize.f8,
                 fontWeight: FontWeight.normal,
                 color: appCtrl.appTheme.white,
               ),
@@ -37,7 +37,7 @@ class TimeLayout extends StatelessWidget {
               ),
               child: LatoFontStyle(
                 text: value,
-                fontSize: CommonTextFontSize.textSizeNormal,
+                fontSize: CommonTextFontSize.f20,
                 fontWeight: FontWeight.w700,
                 color: appCtrl.appTheme.white,
               ),

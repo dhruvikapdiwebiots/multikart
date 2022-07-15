@@ -17,19 +17,19 @@ class ReviewNameDate extends StatelessWidget {
                 LatoFontStyle(
                   text: reviews!.name,
                   fontWeight: FontWeight.normal,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   color: appCtrl.appTheme.blackColor,
                 ),
                 LatoFontStyle(
                   text: "|",
                   fontWeight: FontWeight.normal,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   color: appCtrl.appTheme.blackColor,
                 ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(10)),
                 LatoFontStyle(
                   text: reviews!.date,
                   fontWeight: FontWeight.normal,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   color: appCtrl.appTheme.blackColor,
                 ),
               ],

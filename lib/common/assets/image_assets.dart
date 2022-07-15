@@ -85,4 +85,5 @@ class ImageAssets {
   final String product13 = 'assets/product/product13.jpg';
   final String product14 = 'assets/product/product14.jpg';
   final String product15 = 'assets/product/product15.jpg';
+  final String product16 = 'assets/product/product16.png';
 }

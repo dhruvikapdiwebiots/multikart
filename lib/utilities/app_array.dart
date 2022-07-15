@@ -350,7 +350,6 @@ class AppArray {
         rating: 1.2),
   ];
 
-
   //similar product list
   var similarProductList = <HomeFindStyleCategoryModel>[
     HomeFindStyleCategoryModel(
@@ -541,7 +540,6 @@ class AppArray {
     {"image": imageAssets.skirts, 'title': "Skirts".tr},
   ];
 
-
   //home shop page list
   var homeShopPageList = <HomeFindStyleCategoryModel>[
     HomeFindStyleCategoryModel(
@@ -583,7 +581,6 @@ class AppArray {
         mrp: '32.00',
         totalPrice: "35.00",
         rating: 3),
-
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
         image: imageAssets.kidsCorner1,
@@ -627,105 +624,93 @@ class AppArray {
   ];
 
   //brand filter list
-  var brandFilterList =[{
-    'title': "Here & Now".tr
-  },{
-    'title': "Zara".tr
-  },{
-    'title': "Mast & harbour".tr
-  },{
-    'title': "Tokyo talkies".tr
-  },{
-    'title': "Vogue".tr
-  },{
-    'title': "gucci".tr
-  }];
-
+  var brandFilterList = [
+    {'title': "Here & Now".tr},
+    {'title': "Zara".tr},
+    {'title': "Mast & harbour".tr},
+    {'title': "Tokyo talkies".tr},
+    {'title': "Vogue".tr},
+    {'title': "gucci".tr}
+  ];
 
   //occasion filter list
-  var occasionFilterList =[{
-    'title': "Casual".tr
-  },{
-    'title': "Sports".tr
-  },{
-    'title': "Beach Wear".tr
-  },{
-    'title': "Lounge Wear".tr
-  },{
-    'title': "Formal".tr
-  },{
-    'title': "Party".tr
-  }];
+  var occasionFilterList = [
+    {'title': "Casual".tr},
+    {'title': "Sports".tr},
+    {'title': "Beach Wear".tr},
+    {'title': "Lounge Wear".tr},
+    {'title': "Formal".tr},
+    {'title': "Party".tr}
+  ];
 
   //color list
-  var colorList =[{
-    'color': const Color(0xFFE6E6FA)
-  },{
-    'color': const Color(0xFFF3F3F3)
-  },{
-    'color': const Color(0xFFB0C4DE)
-  },{
-    'color': const Color(0xFFEBACA2)
-  },{
-    'color': const Color(0xFFFFC0CB)
-  },{
-    'color': const Color(0xFFADD8E6)
-  },{
-    'color': const Color(0xFFBED3C3)
-  },{
-    'color': const Color(0xFF9FD9F2)
-  },{
-    'color': const Color(0xFFF5DEB3)
-  },{
-    'color': const Color(0xFFFFE4E1)
-  },{
-    'color': const Color(0xFFE6E6FA)
-  }];
+  var colorList = [
+    {'color': const Color(0xFFE6E6FA)},
+    {'color': const Color(0xFFF3F3F3)},
+    {'color': const Color(0xFFB0C4DE)},
+    {'color': const Color(0xFFEBACA2)},
+    {'color': const Color(0xFFFFC0CB)},
+    {'color': const Color(0xFFADD8E6)},
+    {'color': const Color(0xFFBED3C3)},
+    {'color': const Color(0xFF9FD9F2)},
+    {'color': const Color(0xFFF5DEB3)},
+    {'color': const Color(0xFFFFE4E1)},
+    {'color': const Color(0xFFE6E6FA)}
+  ];
 
   //size  list
-  var sizeList =[{
-    'title': "Small".tr,
-    "isSelected": false
-  },{
-    'title': "Medium".tr,
-    "isSelected": false
-  },{
-    'title': "Large".tr,
-    "isSelected": false
-  },{
-    'title': "XL".tr,
-    "isSelected": false
-  },{
-    'title': "2XL".tr,
-    "isSelected": false
-  }];
+  var sizeList = [
+    {'title': "Small".tr, "isSelected": false},
+    {'title': "Medium".tr, "isSelected": false},
+    {'title': "Large".tr, "isSelected": false},
+    {'title': "XL".tr, "isSelected": false},
+    {'title': "2XL".tr, "isSelected": false}
+  ];
 
   //recent search list
-  var recentSearchList = [{
-    'title': "Party Wear Jumpsuit".tr
-  },{
-    'title': "Pink Hoodie t-shirt full".tr
-  },{
-    'title': "Blue Denim Jacket".tr
-  },{
-    'title': "Men Blue Denim Jacket".tr
-  }];
+  var recentSearchList = [
+    {'title': "Party Wear Jumpsuit".tr},
+    {'title': "Pink Hoodie t-shirt full".tr},
+    {'title': "Blue Denim Jacket".tr},
+    {'title': "Men Blue Denim Jacket".tr}
+  ];
 
   //recommended list
-  var recommendedList = [{
-    'title': "Denim".tr,
-    "isSelected": false
-  },{
-    'title': "Skirts".tr,
-    "isSelected": false
-  },{
-    'title': "Flowerprint".tr,
-    "isSelected": false
-  },{
-    'title': "Jeans".tr,
-    "isSelected": false
-  },{
-    'title': "Jumpsuit".tr,
-    "isSelected": false
-  }];
+  var recommendedList = [
+    {'title': "Denim".tr, "isSelected": false},
+    {'title': "Skirts".tr, "isSelected": false},
+    {'title': "Flowerprint".tr, "isSelected": false},
+    {'title': "Jeans".tr, "isSelected": false},
+    {'title': "Jumpsuit".tr, "isSelected": false}
+  ];
+
+  var cartList = <HomeDealOfTheDayModel>[
+    HomeDealOfTheDayModel(
+        name: 'Pink Hoodie t-shirt full'.tr,
+        image: imageAssets.product16,
+        byWhom: 'by Mango'.tr,
+        discount: '20%',
+        isFav: true,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        isTrending: true),
+    HomeDealOfTheDayModel(
+        name: 'Pink Hoodie t-shirt full'.tr,
+        image: imageAssets.product15,
+        byWhom: 'by Mango'.tr,
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        isTrending: false),
+    HomeDealOfTheDayModel(
+        name: 'Pink Hoodie t-shirt full'.tr,
+        image: imageAssets.product14,
+        byWhom: 'by Mango'.tr,
+        discount: '20%',
+        isFav: false,
+        mrp: '32.00',
+        totalPrice: "35.00",
+        isTrending: false)
+  ];
 }

@@ -31,6 +31,7 @@ export 'package:multikart/views/menu/drawer/drawer_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/home/home_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/category/category_page_list.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_page_list.dart';
+export 'package:multikart/views/bottom_navigate_page/cart/cart_page_list.dart';
 export 'package:multikart/views/pages/filter/filter_page_list.dart';
 export 'package:multikart/views/pages/search/search_page_list.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_page_list.dart';

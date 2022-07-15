@@ -6,8 +6,9 @@ class HomeDealOfTheDayModel {
   String? totalPrice;
   String? discount;
   bool? isFav;
+  bool isTrending;
 
-  HomeDealOfTheDayModel({required this.name, this.image,this.byWhom,this.totalPrice,this.mrp,this.discount,this.isFav});
+  HomeDealOfTheDayModel({required this.name, this.image,this.byWhom,this.totalPrice,this.mrp,this.discount,this.isFav,this.isTrending = false});
 
   factory HomeDealOfTheDayModel.fromJson(Map<dynamic, dynamic> json) {
     return HomeDealOfTheDayModel(
@@ -18,6 +19,7 @@ class HomeDealOfTheDayModel {
       mrp: json['mrp'] as String?,
       discount: json['discount'] as String?,
       isFav: json['isFav'] as bool?,
+      isTrending: json['isTrending'] as bool,
     );
   }
 }

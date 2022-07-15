@@ -28,7 +28,7 @@ class DeliveryOfferCard extends StatelessWidget {
                 const Space(10, 0),
                 LatoFontStyle(
                   text: e.title,
-                  fontSize: CommonTextFontSize.textSizeSMedium,
+                  fontSize: CommonTextFontSize.f14,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.w600,
                 )

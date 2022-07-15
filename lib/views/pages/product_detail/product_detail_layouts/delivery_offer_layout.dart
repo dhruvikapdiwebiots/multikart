@@ -14,7 +14,7 @@ class DeliveryOfferLayout extends StatelessWidget {
         children: [
           ProductDetailWidget().commonText(
               text: deliverOfferModel!.title ?? '',
-              fontSize: CommonTextFontSize.textSizeMedium),
+              fontSize: CommonTextFontSize.f16),
           ProductDetailWidget()
               .descriptionText(deliverOfferModel!.description ?? ''),
           const Space(0, 15),
@@ -25,7 +25,7 @@ class DeliveryOfferLayout extends StatelessWidget {
                 filled: true,
                 hintText: ProductDetailFont().pinCode,
                 hintStyle: TextStyle(
-                  fontSize: CommonTextFontSize.textSizeMedium,
+                  fontSize: CommonTextFontSize.f16,
                   color: appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.normal,
                 ),

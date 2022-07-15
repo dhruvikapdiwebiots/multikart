@@ -17,7 +17,7 @@ class ProductOffer extends StatelessWidget {
                   imageAssets.coupenCode,
                   width: AppScreenUtil().screenWidth(150),
                 ),
-                LatoFontStyle(text:text ,fontSize: CommonTextFontSize.textSizeSmall,color: appCtrl.appTheme.blackColor,)
+                LatoFontStyle(text:text ,fontSize: CommonTextFontSize.f12,color: appCtrl.appTheme.blackColor,)
               ],
             ),
             ProductDetailWidget().descriptionText("Tap to copy"),

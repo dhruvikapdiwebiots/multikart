@@ -15,11 +15,11 @@ class PolicyLayout extends StatelessWidget {
           children: [
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().returnExchangePolicy,
-                fontSize: CommonTextFontSize.textSizeSMedium),
+                fontSize: CommonTextFontSize.f14),
             LatoFontStyle(
               text: text,
               fontWeight: FontWeight.w600,
-              fontSize: CommonTextFontSize.textSizeSMedium,
+              fontSize: CommonTextFontSize.f14,
               color: appCtrl.appTheme.contentColor,
               overflow: TextOverflow.clip,
               textAlign: TextAlign.start,

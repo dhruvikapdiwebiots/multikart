@@ -12,11 +12,11 @@ class ProductLikeDislike extends StatelessWidget {
           children: [
             SvgPicture.asset(svgAssets.thumbsUp,height: AppScreenUtil().screenHeight(15)),
             const Space(5, 0),
-            LatoFontStyle(text: reviews!.like.toString(),fontSize: CommonTextFontSize.textSizeSmall,color: appCtrl.appTheme.contentColor,).marginOnly(right: AppScreenUtil().screenWidth(15)),
+            LatoFontStyle(text: reviews!.like.toString(),fontSize: CommonTextFontSize.f12,color: appCtrl.appTheme.contentColor,).marginOnly(right: AppScreenUtil().screenWidth(15)),
             const Space(10, 0),
             SvgPicture.asset(svgAssets.thumbsDown,height: AppScreenUtil().screenHeight(15)),
             const Space(5, 0),
-            LatoFontStyle(text: reviews!.disLike.toString(),fontSize: CommonTextFontSize.textSizeSmall,color: appCtrl.appTheme.contentColor,),
+            LatoFontStyle(text: reviews!.disLike.toString(),fontSize: CommonTextFontSize.f12,color: appCtrl.appTheme.contentColor,),
           ],
         );
       }

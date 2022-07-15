@@ -12,7 +12,7 @@ class ProductPrice extends StatelessWidget {
             totalPrice: product!.discountPrice.toString(),
             mrp: product!.price.toString(),
             discount: product!.discount,
-            fontSize: CommonTextFontSize.textSizeMedium,
+            fontSize: CommonTextFontSize.f16,
             isDiscountShow: true).marginOnly(
             left: AppScreenUtil().screenWidth(10),);
       }

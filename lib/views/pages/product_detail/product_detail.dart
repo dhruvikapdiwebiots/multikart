@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
-
 import 'dart:math' as math;
 import '../../../config.dart';
 
@@ -28,16 +27,13 @@ class ProductDetail extends StatelessWidget {
           }),
           title: LatoFontStyle(
               text: productCtrl.product.title ?? "",
-              fontSize: CommonTextFontSize.textSizeMedium,
+              fontSize: CommonTextFontSize.f16,
               fontWeight: FontWeight.w700),
           actions: const [AppBarActionLayout()],
         ),
         body: Stack(
           alignment: Alignment.bottomCenter,
-          children:const [
-             ProductBody(),
-             ProductBottom()
-          ],
+          children: const [ProductBody(), ProductBottom()],
         ),
       );
     });

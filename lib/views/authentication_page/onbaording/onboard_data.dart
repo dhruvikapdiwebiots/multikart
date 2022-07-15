@@ -18,7 +18,7 @@ class OnBoardData extends StatelessWidget {
                               .title
                           .toString()
                           .tr,
-                      fontSize: OnBoardFontSize.textSizeSMedium,
+                      fontSize: CommonTextFontSize.f14,
                       fontWeight: FontWeight.w700,
                       color: onBoardingCtrl.appCtrl.appTheme.blackColor,
                       textDecoration: TextDecoration.none),
@@ -31,7 +31,7 @@ class OnBoardData extends StatelessWidget {
                                .description
                             .toString()
                             .tr,
-                        fontSize: OnBoardFontSize.textSizeSmall,
+                        fontSize: CommonTextFontSize.f12,
                         fontWeight: FontWeight.normal,
                         color: onBoardingCtrl.appCtrl.appTheme.contentColor,
                         textDecoration: TextDecoration.none),

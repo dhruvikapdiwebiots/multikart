@@ -12,7 +12,7 @@ class InnerCategoryBrands extends StatelessWidget {
         children: [
           LatoFontStyle(
             text: HomeFont().biggestDeal,
-            fontSize: CommonTextFontSize.textSizeMedium,
+            fontSize: CommonTextFontSize.f16,
             fontWeight: FontWeight.w700,
             color: innerCtrl.appCtrl.appTheme.blackColor,
           ),

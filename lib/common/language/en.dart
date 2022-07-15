@@ -253,4 +253,12 @@ final dynamic en = {
   "Use code MULTIKART10 to get flat 10%":"Use code MULTIKART10 to get flat 10%",
   "Wow.. but it should have more flairs. mind-blowing purchase..🤗":"Wow.. but it should have more flairs. mind-blowing purchase..🤗",
   "reviewDesc":"It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly less bright than what is shown in the product description.",
+
+  //cart
+  "moveToWishList": "Move to wishlist",
+  "remove":"Remove",
+  "qty":"Qty:",
+  "youMayAlsoLike":"You May also Like",
+  "coupons":"Coupons:",
+  "applyCoupons":"Apply Coupons",
 };

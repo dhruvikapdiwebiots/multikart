@@ -1,5 +1,3 @@
-import 'package:multikart/views/pages/product_detail/product_detail_utils/product_detail_constant.dart';
-
 import '../../../../config.dart';
 
 class ProductBody extends StatelessWidget {
@@ -16,7 +14,7 @@ class ProductBody extends StatelessWidget {
             const ImageListLayout(),
             ProductDetailWidget().commonText(
                 text: productCtrl.product.name.toString(),
-                fontSize: CommonTextFontSize.textSizeMedium),
+                fontSize: CommonTextFontSize.f16),
             ProductDetailWidget()
                 .descriptionText(productCtrl.product.description.toString()),
 
@@ -24,17 +22,18 @@ class ProductBody extends StatelessWidget {
             const RatingLayout(),
             //price layout
             ProductPrice(product: productCtrl.product),
-            ProductDetailWidget().inclusiveTax(ProductDetailFont().inclusiveOfAllTaxes),
+            ProductDetailWidget()
+                .inclusiveTax(ProductDetailFont().inclusiveOfAllTaxes),
             const BorderLineLayout(),
             ProductSizeLayout(product: productCtrl.product),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().selectColor,
-                fontSize: CommonTextFontSize.textSizeSMedium),
+                fontSize: CommonTextFontSize.f14),
 
             ProductColorLayout(product: productCtrl.product),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().quantity,
-                fontSize: CommonTextFontSize.textSizeSMedium),
+                fontSize: CommonTextFontSize.f14),
 
             const QuantityIncDec(),
             const BorderLineLayout(),
@@ -60,8 +59,8 @@ class ProductBody extends StatelessWidget {
             const BorderLineLayout(),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().similarProducts,
-                fontSize: CommonTextFontSize.textSizeSMedium),
-            const SimilarProductLayout(),
+                fontSize: CommonTextFontSize.f14),
+             SimilarProductLayout(data: productCtrl.similarList,),
           ],
         ),
       );

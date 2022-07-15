@@ -2,7 +2,17 @@ import '../../config.dart';
 
 class SearchTextBox extends StatelessWidget {
   final TextEditingController? controller;
-  const SearchTextBox({Key? key,this.controller}) : super(key: key);
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  final String hinText;
+
+  const SearchTextBox(
+      {Key? key,
+      this.controller,
+      this.suffixIcon,
+      this.prefixIcon,
+      this.hinText = "Search"})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,15 +20,14 @@ class SearchTextBox extends StatelessWidget {
       return SizedBox(
         height: AppScreenUtil().screenHeight(40),
         child: TextFormField(
-          
           controller: controller,
           decoration: InputDecoration(
             filled: true,
-            hintText: "Search",
+            hintText: hinText,
             hintStyle: TextStyle(
-              fontSize: CommonTextFontSize.textSizeMedium,
+              fontSize: CommonTextFontSize.f16,
               color: appCtrl.appTheme.contentColor,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w500,
             ),
             border: OutlineInputBorder(
               borderRadius:
@@ -35,14 +44,8 @@ class SearchTextBox extends StatelessWidget {
               minHeight: AppScreenUtil().size(42),
               minWidth: AppScreenUtil().size(42),
             ),
-            prefixIcon: const SearchTextIcon().paddingDirectional(
-                start: AppScreenUtil().size(10),
-                end: AppScreenUtil().size(10),
-                bottom: AppScreenUtil().size(5)),
-            suffixIcon: const CameraIcon().paddingDirectional(
-                start: AppScreenUtil().size(5),
-                end: AppScreenUtil().size(10),
-                top: AppScreenUtil().size(4)),
+            prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
             fillColor: appCtrl.appTheme.greyLight25.withOpacity(.6),
           ),
         ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),

@@ -48,7 +48,7 @@ class SortByDropDown extends StatelessWidget {
             color: shopCtrl.appCtrl.appTheme.blackColor, //Font color
             fontFamily: GoogleFonts.mulish().fontFamily,
             fontSize: AppScreenUtil().fontSize(CommonTextFontSize
-                .textSizeSMedium) //font size on dropdown button
+                .f14) //font size on dropdown button
             ),
         underline: Container(),
         //remove underline

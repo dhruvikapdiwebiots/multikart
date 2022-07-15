@@ -30,7 +30,7 @@ class ExpandableListView extends StatelessWidget {
               children: <Widget>[
                 LatoFontStyle(
                     text: title,
-                    fontSize: CommonTextFontSize.textSizeSMedium,
+                    fontSize: CommonTextFontSize.f14,
                     fontWeight: FontWeight.w700),
                 ExpandableIcon(
                   onPressed: onPressed,

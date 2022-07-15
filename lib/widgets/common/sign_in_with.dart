@@ -21,7 +21,7 @@ class OrSignInWith extends StatelessWidget {
               )),
               LatoFontStyle(
                 text: CommonTextFont().orSignWith,
-                fontSize: CommonTextFontSize.textSizeSMedium,
+                fontSize: CommonTextFontSize.f14,
                 color: appCtrl.appTheme.contentColor,
               ),
               Expanded(
