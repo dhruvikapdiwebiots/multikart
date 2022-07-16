@@ -1,5 +1,5 @@
 import 'package:get_storage/get_storage.dart';
-
+import 'package:multikart/models/cart_model.dart';
 import '../../config.dart';
 
 class CartController extends GetxController {
@@ -8,13 +8,13 @@ class CartController extends GetxController {
       : Get.put(AppController());
 
   final storage = GetStorage();
-  List<HomeDealOfTheDayModel> cartList = [];
+  CartModel? cartModelList;
   List<HomeFindStyleCategoryModel> similarList = [];
 
   @override
   void onReady() {
     // TODO: implement onReady
-    cartList = AppArray().cartList;
+    cartModelList = cartList;
     similarList = AppArray().similarProductList;
     update();
     super.onReady();

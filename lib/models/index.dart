@@ -6,3 +6,7 @@ export 'offer_model.dart';
 export 'review_model.dart';
 export '../../models/product_model.dart';
 export 'delivery_offer.dart';
+export 'cartlist_model.dart';
+export 'order_detail_model.dart';
+export 'delivery_charges_instruct_model.dart';
+export 'delivery_instruction.dart';

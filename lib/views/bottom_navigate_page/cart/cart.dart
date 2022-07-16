@@ -16,26 +16,46 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<CartController>(builder: (_) {
       return Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const CartList(),
-              ProductDetailWidget().commonText(
-                  text: CartFont().youMayAlsoLike,
-                  fontSize: CommonTextFontSize.f14),
-              SimilarProductLayout(
-                data: cartCtrl.similarList,
-                bottom: 30,
+        body: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (cartCtrl.cartModelList != null) const CartList(),
+                  ProductDetailWidget().commonText(
+                      text: CartFont().youMayAlsoLike,
+                      fontSize: CommonTextFontSize.f14),
+                  SimilarProductLayout(
+                    data: cartCtrl.similarList,
+                    bottom: 30,
+                  ),
+                  const BorderLineLayout(),
+                  ProductDetailWidget().commonText(
+                      text: CartFont().coupons,
+                      fontSize: CommonTextFontSize.f14),
+                  const Space(0, 20),
+                  const CouponTextBox(),
+                  const BorderLineLayout(),
+                  ProductDetailWidget().commonText(
+                      text: CartFont().orderDetail,
+                      fontSize: CommonTextFontSize.f14),
+                  if (cartCtrl.cartModelList != null)
+                    const CartOrderDetailLayout(),
+                  const BorderLineLayout(),
+                  if (cartCtrl.cartModelList != null)
+                    DeliveryInstruction(
+                      deliveryInstruction:
+                          cartCtrl.cartModelList!.deliveryInstruction,
+                    )
+                ],
               ),
-              const BorderLineLayout(),
-              ProductDetailWidget().commonText(
-                  text: CartFont().coupons, fontSize: CommonTextFontSize.f14),
-              const Space(0, 20),
-              const CouponTextBox(),
-              const BorderLineLayout(),
-            ],
-          ),
+            ),
+            CartBottomLayout(
+              totalAmount: cartCtrl.cartModelList!.totalAmount.toString(),
+            )
+          ],
         ),
       );
     });

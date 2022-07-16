@@ -261,4 +261,7 @@ final dynamic en = {
   "youMayAlsoLike":"You May also Like",
   "coupons":"Coupons:",
   "applyCoupons":"Apply Coupons",
+  "orderDetail":"Order Details:",
+  "totalAmount":"Total Amount",
+  "viewDetail":"View Details",
 };

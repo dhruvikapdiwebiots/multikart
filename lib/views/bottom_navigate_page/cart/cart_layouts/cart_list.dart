@@ -8,9 +8,9 @@ class CartList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<CartController>(
       builder: (cartCtrl) {
-        return Column(
+        return cartCtrl.cartModelList != null ? Column(
           children: [
-            ...cartCtrl.cartList.asMap().entries.map((e) => Column(
+            ...cartCtrl.cartModelList!.cartList!.asMap().entries.map((e) => Column(
               children: [
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,7 +28,7 @@ class CartList extends StatelessWidget {
                             width: AppScreenUtil().size(110),
                           ),
                         ),
-                        if (e.value.isTrending)
+                        if (e.value.isTrending!)
                           const TrendingButton()
                       ],
                     ),
@@ -43,7 +43,7 @@ class CartList extends StatelessWidget {
               ],
             )),
           ],
-        );
+        ) : Container();
       }
     );
   }

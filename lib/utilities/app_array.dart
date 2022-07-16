@@ -108,8 +108,8 @@ class AppArray {
       byWhom: 'by Mango'.tr,
       discount: '20%',
       isFav: true,
-      mrp: '32.00',
-      totalPrice: "35.00",
+      mrp: 32.00,
+      totalPrice: 35.00,
     ),
     HomeDealOfTheDayModel(
       name: 'Men Blue Denim Jacket'.tr,
@@ -117,8 +117,8 @@ class AppArray {
       byWhom: 'by Zara'.tr,
       discount: '20%',
       isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
+      mrp: 32.00,
+      totalPrice: 35.00,
     ),
     HomeDealOfTheDayModel(
       name: 'Men Blue Denim Jacket'.tr,
@@ -126,8 +126,8 @@ class AppArray {
       byWhom: 'by H&M'.tr,
       discount: '20%',
       isFav: false,
-      mrp: '32.00',
-      totalPrice: "35.00",
+      mrp: 32.00,
+      totalPrice: 35.00,
     )
   ];
 
@@ -684,33 +684,5 @@ class AppArray {
     {'title': "Jumpsuit".tr, "isSelected": false}
   ];
 
-  var cartList = <HomeDealOfTheDayModel>[
-    HomeDealOfTheDayModel(
-        name: 'Pink Hoodie t-shirt full'.tr,
-        image: imageAssets.product16,
-        byWhom: 'by Mango'.tr,
-        discount: '20%',
-        isFav: true,
-        mrp: '32.00',
-        totalPrice: "35.00",
-        isTrending: true),
-    HomeDealOfTheDayModel(
-        name: 'Pink Hoodie t-shirt full'.tr,
-        image: imageAssets.product15,
-        byWhom: 'by Mango'.tr,
-        discount: '20%',
-        isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
-        isTrending: false),
-    HomeDealOfTheDayModel(
-        name: 'Pink Hoodie t-shirt full'.tr,
-        image: imageAssets.product14,
-        byWhom: 'by Mango'.tr,
-        discount: '20%',
-        isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
-        isTrending: false)
-  ];
+
 }
