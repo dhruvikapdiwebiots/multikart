@@ -21,6 +21,12 @@ class CommonTextFont{
   String remove = "remove".tr;
   String qty = "qty".tr;
   String size = "size".tr;
+  String addToCart = "addToCart".tr;
+  String email = "paigeturner@gmail.com".tr;
+  String profileName = "profileName".tr;
+  String edit = "edit".tr;
+  String logOut = "logOut".tr;
+
 }
 
 

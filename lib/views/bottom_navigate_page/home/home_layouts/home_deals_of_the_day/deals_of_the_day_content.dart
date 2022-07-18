@@ -1,10 +1,13 @@
+import 'package:multikart/views/bottom_navigate_page/wishlist/widget_layouts/wishlist_action.dart';
+
 import '../../../../../config.dart';
 
 class DealsOfTheDayContent extends StatelessWidget {
   final HomeDealOfTheDayModel? data;
   final bool isVariantsShow;
+  final bool isActionShow;
 
-  const DealsOfTheDayContent({Key? key, this.data, this.isVariantsShow = false})
+  const DealsOfTheDayContent({Key? key, this.data, this.isVariantsShow = false,this.isActionShow = false})
       : super(key: key);
 
   @override
@@ -49,7 +52,9 @@ class DealsOfTheDayContent extends StatelessWidget {
             ],
           ),
           const Space(0, 10),
-          if (isVariantsShow) const Variants()
+          if (isVariantsShow) const Variants(),
+          if (isActionShow)
+            const WishListAction()
         ],
       );
     });

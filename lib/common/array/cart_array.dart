@@ -1,5 +1,3 @@
-import 'package:multikart/models/cart_model.dart';
-
 import '../../config.dart';
 
 var cartList = CartModel(
@@ -15,7 +13,7 @@ var cartList = CartModel(
           isTrending: true),
       HomeDealOfTheDayModel(
           name: "Pink Hoodie t-shirt full".tr,
-          image: imageAssets.product16,
+          image: imageAssets.product14,
           byWhom: "by Mango".tr,
           discount: "20%",
           isFav: true,
@@ -24,7 +22,7 @@ var cartList = CartModel(
           isTrending: false),
       HomeDealOfTheDayModel(
           name: "Pink Hoodie t-shirt full".tr,
-          image: imageAssets.product16,
+          image: imageAssets.product15,
           byWhom: "by Mango".tr,
           discount: "20%",
           isFav: true,
@@ -39,7 +37,8 @@ var cartList = CartModel(
           icon: gifAssets.truckDelivery)
     ],
     deliveryInstruction: [
-      DeliveryInstructionModel(title: "7 Day Return", icon: svgAssets.returning),
+      DeliveryInstructionModel(
+          title: "7 Day Return", icon: svgAssets.returning),
       DeliveryInstructionModel(title: "24/7 Support", icon: svgAssets.support),
       DeliveryInstructionModel(title: "Secure Payment", icon: svgAssets.wallet),
     ],

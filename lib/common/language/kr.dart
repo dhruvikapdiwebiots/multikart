@@ -110,6 +110,7 @@ final dynamic kr = {
 
   //drawer font
   'userName' : '안녕하세요, 페이지 터너입니다.',
+  'profileName' : '페이지 터너입니다.',
   'Shop by Category' : 'Shop by Category',
   'Orders' : 'Orders',
   'Your Wishlist' : 'Your Wishlist',
@@ -260,4 +261,17 @@ final dynamic kr = {
   "youMayAlsoLike":"You May also Like",
   "coupons":"Coupons:",
   "applyCoupons":"Apply Coupons",
+  "orderDetail":"주문 세부정보:",
+  "totalAmount":"총액",
+  "viewDetail":"세부 정보보기",
+  "emptyTitle":"헉!! 장바구니가 비어 있습니다.",
+  "emptyDesc":"아직 장바구니에 아무것도 추가하지 않은 것 같습니다. '쇼핑' 페이지에서 흥미로운 제품을 많이 찾을 수 있습니다.",
+  "addToCart":"장바구니에 추가",
+  "edit":"편집하다",
+  "logOut":"로그 아웃",
+
+  //coupon list
+  "viewTAndC":"이용약관 보기",
+  "maximumSaving":"최대 절약:",
+  "apply":"적용하다",
 };

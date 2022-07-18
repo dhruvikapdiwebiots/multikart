@@ -33,7 +33,7 @@ class HomeBannerList extends StatelessWidget {
               },
             ),
             const Space(0, 10),
-            HomeDotIndicator()
+            const HomeDotIndicator()
           ],
         ),
       );

@@ -27,7 +27,7 @@ class VariantOptions extends StatelessWidget {
             )
                 .paddingSymmetric(
                 horizontal: AppScreenUtil().screenWidth(15),
-                vertical: AppScreenUtil().screenHeight(8))
+                vertical: AppScreenUtil().screenHeight(6))
                 .decorated(
                 color: appCtrl.appTheme.lightGray,
                 borderRadius: BorderRadius.circular(

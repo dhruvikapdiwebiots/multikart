@@ -110,6 +110,7 @@ final dynamic en = {
 
   //drawer font
   'userName': 'Hello, Paige Turner',
+  'profileName': 'Paige Turner',
   'Shop by Category': 'Shop by Category',
   'Orders': 'Orders',
   'Your Wishlist': 'Your Wishlist',
@@ -264,4 +265,14 @@ final dynamic en = {
   "orderDetail":"Order Details:",
   "totalAmount":"Total Amount",
   "viewDetail":"View Details",
+  "emptyTitle":"Whoops !! Cart is Empty",
+  "emptyDesc":"Looks like you haven’t added anything to your cart yet. You will find a lot of interesting products on our “Shop” page",
+  "addToCart":"Add to Cart",
+  "edit":"Edit",
+  "logOut":"LOG OUT",
+
+  //coupon list
+  "viewTAndC":"View T&C",
+  "maximumSaving":"Maximum savings:",
+  "apply":"APPLY",
 };

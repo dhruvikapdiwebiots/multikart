@@ -18,9 +18,9 @@ export 'package:multikart/utilities/app_array.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:multikart/views/menu/drawer/switcher/theme_switcher.dart';
-export 'package:multikart/views/menu/drawer/drawer_utils/drawer_leading_title.dart';
+export 'package:multikart/views/menu/drawer/drawer_layouts/drawer_leading_title.dart';
 export '../routes/common_screen_list.dart';
-export 'package:multikart/controllers/home_product_controllers/shop_controller.dart';
+export 'package:multikart/controllers/pages_controller/shop_controller.dart';
 export 'package:multikart/views/authentication_page/onbaording/onboard_page_list.dart';
 export 'package:multikart/views/authentication_page/login/login_page_list.dart';
 export 'package:multikart/views/authentication_page/sign_up/sign_up_page_list.dart';
@@ -35,4 +35,5 @@ export 'package:multikart/views/bottom_navigate_page/cart/cart_page_list.dart';
 export 'package:multikart/views/pages/filter/filter_page_list.dart';
 export 'package:multikart/views/pages/search/search_page_list.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_page_list.dart';
+export 'package:multikart/views/pages/coupons/coupon_page_list.dart';
 

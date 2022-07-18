@@ -684,5 +684,62 @@ class AppArray {
     {'title': "Jumpsuit".tr, "isSelected": false}
   ];
 
+  //wishlist
+  var wishlist = <HomeDealOfTheDayModel>[
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.product16,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: true),
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.product14,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: false),
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.findStyle2,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: false),
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.kidsCorner2,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: false),
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.dealOfTheDay3,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: false),
+    HomeDealOfTheDayModel(
+        name: "Pink Hoodie t-shirt full".tr,
+        image: imageAssets.dealOfTheDay1,
+        byWhom: "by Mango".tr,
+        discount: "20%",
+        isFav: true,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        isTrending: false),
+  ];
 
 }

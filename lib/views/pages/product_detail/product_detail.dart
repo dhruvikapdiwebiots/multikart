@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-
-import 'dart:math' as math;
 import '../../../config.dart';
 
 class ProductDetail extends StatelessWidget {

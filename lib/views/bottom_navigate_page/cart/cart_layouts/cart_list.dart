@@ -34,7 +34,7 @@ class CartList extends StatelessWidget {
                     ),
                     const Space(10, 0),
                     DealsOfTheDayContent(
-                        data: e.value, isVariantsShow: true),
+                        data: e.value, isVariantsShow: true, isActionShow: false),
                   ],
                 ).marginSymmetric(
                     horizontal: AppScreenUtil().screenWidth(15),

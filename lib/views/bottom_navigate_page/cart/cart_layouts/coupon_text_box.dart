@@ -1,7 +1,8 @@
 import '../../../../config.dart';
 
 class CouponTextBox extends StatelessWidget {
-  const CouponTextBox({Key? key}) : super(key: key);
+  final bool isSuffixIcon;
+  const CouponTextBox({Key? key,this.isSuffixIcon = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class CouponTextBox extends StatelessWidget {
             hintText: CartFont().applyCoupons,
             hintStyle: TextStyle(
               fontSize: CommonTextFontSize.f16,
-              color: appCtrl.appTheme.contentColor,
+              color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w500,
             ),
             border: OutlineInputBorder(
@@ -23,11 +24,11 @@ class CouponTextBox extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
             contentPadding: EdgeInsets.zero,
-            suffixIcon: Icon(
+            suffixIcon:isSuffixIcon ? Icon(
               Icons.arrow_forward_ios,
               size: AppScreenUtil().size(16),
-              color: appCtrl.appTheme.blackColor,
-            ),
+              color:appCtrl.appTheme.blackColor ,
+            ) : null,
             prefixIcon: SvgPicture.asset(svgAssets.discount)
                 .paddingSymmetric(horizontal: AppScreenUtil().screenWidth(10)),
             fillColor: appCtrl.appTheme.greyLight25.withOpacity(.6),

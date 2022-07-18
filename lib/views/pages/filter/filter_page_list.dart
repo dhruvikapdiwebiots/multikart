@@ -1,4 +1,4 @@
-export 'package:multikart/controllers/home_product_controllers/filter_controller.dart';
+export 'package:multikart/controllers/pages_controller/filter_controller.dart';
 export 'package:multikart/views/pages/filter/filter_layouts/sortby_layout.dart';
 export 'package:multikart/views/pages/filter/filter_utils/filter_constant.dart';
 export 'package:multikart/views/pages/filter/filter_layouts/brand_layout.dart';

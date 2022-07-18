@@ -1,8 +1,11 @@
 import 'package:multikart/config.dart';
 
 class Variants extends StatelessWidget {
-  final GestureTapCallback? qtyTap,sizeTap;
-  const Variants({Key? key,this.sizeTap,this.qtyTap}) : super(key: key);
+  final GestureTapCallback? qtyTap, sizeTap;
+  final bool isActionShow;
+
+  const Variants({Key? key, this.sizeTap, this.qtyTap, this.isActionShow = false})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +14,7 @@ class Variants extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            children:  [
+            children: [
               VariantOptions(
                 text: "${CommonTextFont().qty} 1",
                 onTap: qtyTap,
@@ -30,10 +33,10 @@ class Variants extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 1.8,
           ),
           const Space(0, 10),
-          const WishlistAndRemove()
+           ActionLayout(firstActionIcon:  HeartIcon(color: appCtrl.appTheme.blackColor)
+              .height(AppScreenUtil().screenHeight(14)),firstActionName: CommonTextFont().moveToWishList,secondAction: CommonTextFont().remove,)
         ],
       );
     });
   }
 }
-

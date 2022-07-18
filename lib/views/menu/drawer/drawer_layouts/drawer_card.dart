@@ -32,7 +32,7 @@ class DrawerCard extends StatelessWidget {
               indent: 15,
             )
         ],
-      );
+      ).gestures(onTap: onTap);
     });
   }
 }

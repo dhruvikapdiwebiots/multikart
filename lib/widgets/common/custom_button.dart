@@ -8,6 +8,7 @@ class CustomButton extends StatelessWidget {
 
   final String title;
   final double padding;
+  final double margin;
   final double radius;
   final double height;
   final double fontSize;
@@ -23,6 +24,7 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.title,
     this.padding = 15,
+    this.margin = 15,
     this.radius = 5,
     this.height = 45,
     this.fontSize = CommonTextFontSize.f14,
@@ -42,7 +44,7 @@ class CustomButton extends StatelessWidget {
       child: Container(
         width: width ?? MediaQuery.of(context).size.width,
         margin:
-            EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15)),
+            EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(margin)),
         height: AppScreenUtil()
             .screenHeight(ResponsiveWidget.isSmallScreen(context) ? 45 : height),
         decoration: BoxDecoration(

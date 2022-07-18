@@ -8,4 +8,6 @@ class CartFont {
   String orderDetail = "orderDetail".tr;
   String totalAmount = "totalAmount".tr;
   String viewDetail = "viewDetail".tr;
+  String emptyTitle = "emptyTitle".tr;
+  String emptyDesc = "emptyDesc".tr;
 }

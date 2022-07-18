@@ -1,5 +1,3 @@
-import 'package:multikart/controllers/pages_controller/search_controller.dart';
-
 import '../../../../config.dart';
 
 class RecommendedLayout extends StatelessWidget {

@@ -112,6 +112,7 @@ final dynamic ar = {
 
   //drawer font
   'userName': 'مرحبًا ، بيج تورنر',
+  'profileName': 'بيج تورنر',
   'Shop by Category': 'تسوق حسب الاقسام',
   'Orders': 'الطلب #٪ s',
   'Your Wishlist': 'قائمة امنياتك',
@@ -261,8 +262,21 @@ final dynamic ar = {
   //cart
   "moveToWishList": "الانتقال إلى قائمة الرغبات",
   "remove":"إزالة",
-  "qty":"Qty:",
-  "youMayAlsoLike":"You May also Like",
-  "coupons":"Coupons:",
-  "applyCoupons":"Apply Coupons",
+  "qty":"الكمية:",
+  "youMayAlsoLike":"ربما يعجبك أيضا",
+  "coupons":"كوبونات:",
+  "applyCoupons":"تطبيق القسائم",
+  "orderDetail":"تفاصيل الطلب:",
+  "totalAmount":"المبلغ الإجمالي",
+  "viewDetail":"عرض التفاصيل",
+  "emptyTitle":"يصيح !! السلة فارغة",
+  "emptyDesc":"يبدو أنك لم تضف أي شيء إلى سلة التسوق الخاصة بك حتى الآن. سوف تجد الكثير من المنتجات الشيقة على صفحة 'التسوق' الخاصة بنا",
+  "addToCart":"أضف إلى السلة",
+  "edit":"يحرر",
+  "logOut":"تسجيل خروج",
+
+  //coupon list
+  "viewTAndC":"مشاهدة ملف T&C",
+  "maximumSaving":"المدخرات القصوى:",
+  "apply":"يتقدم",
 };

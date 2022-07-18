@@ -11,5 +11,6 @@ class RouteName {
   final String search = '/search';
   final String productDetail = '/productDetail';
   final String myCart = '/myCart';
+  final String coupons = '/coupons';
   final noInternet = '/noInternet';
 }

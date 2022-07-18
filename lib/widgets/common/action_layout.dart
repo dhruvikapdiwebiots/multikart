@@ -1,7 +1,11 @@
+
+
 import '../../config.dart';
 
-class WishlistAndRemove extends StatelessWidget {
-  const WishlistAndRemove({Key? key}) : super(key: key);
+class ActionLayout extends StatelessWidget {
+  final String? firstActionName,secondAction;
+  final Widget? firstActionIcon;
+  const ActionLayout({Key? key,this.firstActionName,this.secondAction,this.firstActionIcon}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +16,10 @@ class WishlistAndRemove extends StatelessWidget {
           children: [
             Row(
               children: [
-                HeartIcon(color: appCtrl.appTheme.blackColor)
-                    .height(AppScreenUtil().screenHeight(14)),
+               firstActionIcon!,
                 const Space(5, 0),
                 LatoFontStyle(
-                  text: CommonTextFont().moveToWishList,
+                  text: firstActionName,
                   fontSize: CommonTextFontSize.f12,
                   fontWeight: FontWeight.w600,
                   color: appCtrl.appTheme.blackColor,
@@ -28,13 +31,10 @@ class WishlistAndRemove extends StatelessWidget {
             ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(10)),
             Row(
               children: [
-                SvgPicture.asset(
-                  svgAssets.delete,
-                  height: AppScreenUtil().screenHeight(18),
-                ),
+                const DeleteIcon(),
                 const Space(5, 0),
                 LatoFontStyle(
-                  text: CommonTextFont().remove,
+                  text: secondAction,
                   fontSize: CommonTextFontSize.f12,
                   fontWeight: FontWeight.w600,
                   color: appCtrl.appTheme.blackColor,

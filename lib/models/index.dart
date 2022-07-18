@@ -10,3 +10,4 @@ export 'cartlist_model.dart';
 export 'order_detail_model.dart';
 export 'delivery_charges_instruct_model.dart';
 export 'delivery_instruction.dart';
+export 'coupon_model.dart';

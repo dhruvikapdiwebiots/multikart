@@ -112,6 +112,7 @@ final dynamic hi = {
 
   //drawer font
   'userName': 'हैलो, पैगे टर्नर',
+  'profileName': 'पैगे टर्नर',
   'Shop by Category': 'वर्गों के अनुसार खरीदारी',
   'Orders': 'ऑर्डर',
   'Your Wishlist': 'आपकी इच्छा सूची',
@@ -258,8 +259,21 @@ final dynamic hi = {
   //cart
   "moveToWishList": "इच्छा सूची की ओर बदें",
   "remove":"हटाना",
-  "qty":"Qty:",
-  "youMayAlsoLike":"You May also Like",
-  "coupons":"Coupons:",
-  "applyCoupons":"Apply Coupons",
+  "qty":"मात्रा:",
+  "youMayAlsoLike":"आपको यह भी पसंद आ सकता हैं",
+  "coupons":"कूपन:",
+  "applyCoupons":"कूपन लागू करें",
+  "orderDetail":"ऑर्डर का विवरण:",
+  "totalAmount":"कुल राशि",
+  "viewDetail":"विवरण देखें",
+  "emptyTitle":"ओह !! कार्ट खाली है",
+  "emptyDesc":"ऐसा लगता है कि आपने अभी तक अपने कार्ट में कुछ भी नहीं जोड़ा है। आपको हमारे 'शॉप' पेज पर बहुत सारे दिलचस्प उत्पाद मिलेंगे",
+  "addToCart":"कार्ट में डालें",
+  "edit":"संपादन करना",
+  "logOut":"लॉग आउट",
+
+  //coupon list
+  "viewTAndC":"नियम और शर्तें देखें",
+  "maximumSaving":"अधिकतम बचत:",
+  "apply":"लागू",
 };

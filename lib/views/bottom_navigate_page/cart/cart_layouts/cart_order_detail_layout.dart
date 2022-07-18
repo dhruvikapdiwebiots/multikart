@@ -11,6 +11,8 @@ class CartOrderDetailLayout extends StatelessWidget {
           String val;
           if ((e.title == "Bag savings")) {
             val = "-\$${e.value}";
+          } else if ((e.value == "Apply Coupon")) {
+            val = e.value;
           } else {
             val = "\$${e.value}";
           }
@@ -18,42 +20,36 @@ class CartOrderDetailLayout extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               LatoFontStyle(
-                text: e.title,
-                fontSize: CommonTextFontSize.f14,
-                color: cartCtrl.appCtrl.appTheme.contentColor,
-              ),
+                  text: e.title,
+                  fontSize: CommonTextFontSize.f14,
+                  color: cartCtrl.appCtrl.appTheme.contentColor),
               LatoFontStyle(
-                text: val,
-                fontSize: CommonTextFontSize.f14,
-                color: e.title == "Bag savings"
-                    ? cartCtrl.appCtrl.appTheme.greenColor
-                    : e.title == "Coupon Discount"
-                        ? cartCtrl.appCtrl.appTheme.primary
-                        : cartCtrl.appCtrl.appTheme.contentColor,
-              ),
+                      text: val,
+                      fontSize: CommonTextFontSize.f14,
+                      color: e.title == "Bag savings"
+                          ? cartCtrl.appCtrl.appTheme.greenColor
+                          : e.title == "Coupon Discount"
+                              ? cartCtrl.appCtrl.appTheme.primary
+                              : cartCtrl.appCtrl.appTheme.contentColor)
+                  .gestures(onTap: () {
+                if (e.value == "Apply Coupon") Get.toNamed(routeName.coupons,arguments: cartCtrl.cartModelList!.totalAmount);
+              }),
             ],
           ).marginOnly(bottom: AppScreenUtil().screenHeight(10));
         }).toList(),
-        Divider(
-          color: cartCtrl.appCtrl.appTheme.greyLight25,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            LatoFontStyle(
+        Divider(color: cartCtrl.appCtrl.appTheme.greyLight25),
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          LatoFontStyle(
               text: CartFont().totalAmount,
               fontSize: CommonTextFontSize.f14,
               color: cartCtrl.appCtrl.appTheme.blackColor,
-              fontWeight: FontWeight.w600,
-            ),
-            LatoFontStyle(
+              fontWeight: FontWeight.w600),
+          LatoFontStyle(
               text: "\$${cartCtrl.cartModelList!.totalAmount}",
               fontSize: CommonTextFontSize.f14,
               color: cartCtrl.appCtrl.appTheme.blackColor,
-              fontWeight: FontWeight.w600,
-            ),
-          ],
-        ).marginOnly(bottom: AppScreenUtil().screenHeight(10)),
+              fontWeight: FontWeight.w600)
+        ]).marginOnly(bottom: AppScreenUtil().screenHeight(10)),
         if (cartCtrl.cartModelList != null)
           DeliveryCharges(
               deliveryChargesInstruction:
