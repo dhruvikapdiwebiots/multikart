@@ -56,7 +56,7 @@ class Filter extends StatelessWidget {
                   const Space(0, 20)
                 ],
               ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15))),
-              const BottomLayout()
+               BottomLayout(firstButtonText: FilterFont().reset,secondButtonText: FilterFont().applyFilter,)
             ],
           ));
     });

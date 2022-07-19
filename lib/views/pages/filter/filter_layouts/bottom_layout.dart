@@ -1,7 +1,8 @@
 import '../../../../config.dart';
 
 class BottomLayout extends StatelessWidget {
-  const BottomLayout({Key? key}) : super(key: key);
+  final String? firstButtonText, secondButtonText;
+  const BottomLayout({Key? key,this.firstButtonText,this.secondButtonText}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +30,12 @@ class BottomLayout extends StatelessWidget {
               SizedBox(
                 width: MediaQuery.of(context).size.width / 2.5,
                 child: LatoFontStyle(
-                  text: FilterFont().reset,
+                  text: firstButtonText,
                   fontSize: CommonTextFontSize.f14,
                   textAlign: TextAlign.center,
                 ).gestures(onTap: ()=> Get.back()),
               ),
-              CustomButton(title: FilterFont().applyFilter, height: 35, width: 150,onTap: ()=> Get.back(),)
+              CustomButton(title: secondButtonText!, height: 35, width: 150,onTap: ()=> Get.back(),)
             ],
           ),
         );

@@ -54,9 +54,14 @@ class _CartScreenState extends State<CartScreen> {
                   if (cartCtrl.cartModelList != null)
                     CartBottomLayout(
                       desc: CartFont().viewDetail,
-                      buttonName: FilterFont().applyFilter,
+                      buttonName: CartFont().placeOrder,
                       totalAmount:
                           cartCtrl.cartModelList!.totalAmount.toString(),
+                      onTap: () {
+                        cartCtrl.appCtrl.isHeart = false;
+                        cartCtrl.update();
+                        Get.toNamed(routeName.deliveryDetail,arguments: cartCtrl.cartModelList!.totalAmount);
+                      },
                     )
                 ],
               )

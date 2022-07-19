@@ -35,6 +35,7 @@ class Coupons extends StatelessWidget {
               CartBottomLayout(
                 desc: CouponFont().maximumSaving,
                 buttonName: CouponFont().apply,
+                isPrimaryDesc: false,
                 totalAmount: couponCtrl.cartModelList!.totalAmount.toString(),
               )
           ],

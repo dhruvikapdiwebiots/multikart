@@ -15,6 +15,7 @@ class CustomButton extends StatelessWidget {
   final GestureTapCallback? onTap;
   final TextStyle? style;
   final Color? color;
+  final Color? fontColor;
   final Widget? icon;
   final double? width;
   final Border? border;
@@ -31,6 +32,7 @@ class CustomButton extends StatelessWidget {
     this.onTap,
     this.style,
     this.color,
+    this.fontColor,
     this.icon,
     this.width,
     this.border,
@@ -67,7 +69,7 @@ class CustomButton extends StatelessWidget {
               textAlign: TextAlign.center,
             )
                 .fontSize(AppScreenUtil().fontSize(fontSize))
-                .textColor(appCtrl.appTheme.white)
+                .textColor(fontColor ??appCtrl.appTheme.white)
                 .fontFamily(GoogleFonts.lato().fontFamily.toString())
                 .fontWeight(fontWeight!)
                 .letterSpacing(1),

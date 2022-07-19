@@ -1,6 +1,7 @@
 export 'package:multikart/app_extensions.dart';
 export 'package:multikart/common/config.dart';
 export 'package:multikart/common/theme/index.dart';
+export 'package:multikart/common/array/index.dart';
 export 'package:multikart/controllers/common/app_controller.dart';
 export 'package:multikart/env.dart';
 export 'package:multikart/routes/index.dart';
@@ -36,4 +37,6 @@ export 'package:multikart/views/pages/filter/filter_page_list.dart';
 export 'package:multikart/views/pages/search/search_page_list.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_page_list.dart';
 export 'package:multikart/views/pages/coupons/coupon_page_list.dart';
+export 'package:multikart/views/pages/delivery_detail/delivery_detail_page_list.dart';
+export 'package:multikart/views/pages/add_address/add_address_page_list.dart';
 

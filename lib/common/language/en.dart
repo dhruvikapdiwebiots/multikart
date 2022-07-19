@@ -255,7 +255,7 @@ final dynamic en = {
   "Wow.. but it should have more flairs. mind-blowing purchase..🤗":"Wow.. but it should have more flairs. mind-blowing purchase..🤗",
   "reviewDesc":"It's a really cute skirt! I didn't expect to feel so good in a polyester material. The print is slightly less bright than what is shown in the product description.",
 
-  //cart
+  //cart font
   "moveToWishList": "Move to wishlist",
   "remove":"Remove",
   "qty":"Qty:",
@@ -270,9 +270,34 @@ final dynamic en = {
   "addToCart":"Add to Cart",
   "edit":"Edit",
   "logOut":"LOG OUT",
+  "placeOrder":"PLACE ORDER",
 
-  //coupon list
+  //coupon font
   "viewTAndC":"View T&C",
   "maximumSaving":"Maximum savings:",
   "apply":"APPLY",
+  "couponTitle":"Coupons",
+
+  //delivery detail font
+  "deliveryDetails":"Delivery Details",
+  "steps2Of3":"Step 2 of 3",
+  "addNewAddress":"Add New Address",
+  "phoneNo":"Phone No:",
+  "expectedDelivery":"Expected Delivery",
+  "proceedToPayment":"Proceed To Payment",
+
+  //add address font
+  "addANewAddress":"Add a new address",
+  "areaColonyStreet":"Area, Colony, Street",
+  "fullName":"Full Name",
+  "mobileNumber":"Mobile Number",
+  "pinCodeText":"Pin Code",
+  "flatHouseBuilding":"Flat, House No., Building..",
+  "countryRegion":"Country/Region",
+  "landmark":"Landmark",
+  "townCity":"Town/City",
+  "selectCountry":"Select country",
+  "selectState":"Select state",
+  "typeOfAddress":"Type Of Address",
+  "addAddress":"Add Address",
 };

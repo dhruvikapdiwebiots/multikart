@@ -11,3 +11,6 @@ export 'order_detail_model.dart';
 export 'delivery_charges_instruct_model.dart';
 export 'delivery_instruction.dart';
 export 'coupon_model.dart';
+export 'address_list_model.dart';
+export 'expected_delivery_model.dart';
+export '../../models/delivery_detail_model.dart';

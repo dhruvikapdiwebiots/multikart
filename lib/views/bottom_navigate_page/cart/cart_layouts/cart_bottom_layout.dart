@@ -3,13 +3,14 @@ import '../../../../config.dart';
 class CartBottomLayout extends StatelessWidget {
   final String? totalAmount, buttonName, desc;
   final bool isPrimaryDesc;
+  final GestureTapCallback? onTap;
 
   const CartBottomLayout(
       {Key? key,
       this.totalAmount,
       this.buttonName,
       this.desc,
-      this.isPrimaryDesc = true})
+      this.isPrimaryDesc = true,this.onTap})
       : super(key: key);
 
   @override
@@ -58,7 +59,7 @@ class CartBottomLayout extends StatelessWidget {
                 title: buttonName!,
                 height: AppScreenUtil().screenHeight(30),
                 width: AppScreenUtil().screenWidth(180),
-                onTap: () => Get.back(),
+                onTap: onTap,
                 margin: 0)
           ]));
     });

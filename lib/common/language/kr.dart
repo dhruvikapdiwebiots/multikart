@@ -274,4 +274,12 @@ final dynamic kr = {
   "viewTAndC":"이용약관 보기",
   "maximumSaving":"최대 절약:",
   "apply":"적용하다",
+
+  //delivery detail font
+  "deliveryDetails":"배송 세부 정보",
+  "steps2Of3":"3/2단계",
+  "addNewAddress":"새 주소 추가",
+  "phoneNo":"전화 번호:",
+  "expectedDelivery":"예상 배송",
+  "proceedToPayment":"결제 진행",
 };

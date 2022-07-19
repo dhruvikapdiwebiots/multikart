@@ -12,3 +12,5 @@ export '../views/pages/shop/shop_page.dart';
 export '../views/pages/search/search.dart';
 export '../views/pages/product_detail/product_detail.dart';
 export '../views/pages/coupons/coupons.dart';
+export '../views/pages/delivery_detail/delivery_detail.dart';
+export '../views/pages/add_address/add_address.dart';

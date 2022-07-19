@@ -742,4 +742,6 @@ class AppArray {
         isTrending: false),
   ];
 
+  //address type
+  var addressType = [{"title":"Home".tr},{"title":"Office".tr},{"title":"Others".tr},];
 }

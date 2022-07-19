@@ -279,4 +279,12 @@ final dynamic ar = {
   "viewTAndC":"مشاهدة ملف T&C",
   "maximumSaving":"المدخرات القصوى:",
   "apply":"يتقدم",
+
+  //delivery detail font
+  "deliveryDetails":"تفاصيل التسليم",
+  "steps2Of3":"الخطوة 2 من 3",
+  "addNewAddress":"أضف عنوان جديد",
+  "phoneNo":"رقم الهاتف:",
+  "expectedDelivery":"توصيلة متوقعة",
+  "proceedToPayment":"الشروع في دفع",
 };

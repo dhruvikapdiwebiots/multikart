@@ -276,4 +276,12 @@ final dynamic hi = {
   "viewTAndC":"नियम और शर्तें देखें",
   "maximumSaving":"अधिकतम बचत:",
   "apply":"लागू",
+
+  //delivery detail font
+  "deliveryDetails":"वितरण विवरण",
+  "steps2Of3":"चरण 2 का 3",
+  "addNewAddress":"नया पता जोड़ें",
+  "phoneNo":"फोन नंबर:",
+  "expectedDelivery":"अपेक्षित सुपुर्दगी",
+  "proceedToPayment":"भुगतान करने के लिए आगे बढ़ें",
 };
