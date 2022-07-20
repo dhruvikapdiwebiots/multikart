@@ -12,10 +12,10 @@ class OfferByYou extends StatelessWidget {
       children: [
         ProductDetailWidget().commonText(
             text: ProductDetailFont().offersForYou,
-            fontSize: CommonTextFontSize.f14),
+            fontSize: FontSizes.f14),
         ProductDetailWidget().commonText(
             text: offer!.title ?? '',
-            fontSize: CommonTextFontSize.f14),
+            fontSize: FontSizes.f14),
         ProductDetailWidget().descriptionText(offer!.desc ?? ''),
         ProductOffer(
           text: offer!.code ?? '',

@@ -16,7 +16,7 @@ class ExpectedDeliveryLayout extends StatelessWidget {
           children: [
             LatoFontStyle(
               text: DeliveryDetailFont().expectedDelivery,
-              fontSize: CommonTextFontSize.f16,
+              fontSize: FontSizes.f16,
               fontWeight: FontWeight.w600,
               color: deliveryDetailCtrl.appCtrl.appTheme.blackColor,
             ),

@@ -16,7 +16,7 @@ class AddressDetail extends StatelessWidget {
         LatoFontStyle(
             text: addressList!.name,
             fontWeight: FontWeight.w600,
-            fontSize: CommonTextFontSize.f14,
+            fontSize: FontSizes.f14,
             color: appCtrl.appTheme.blackColor),
         const Space(0, 5),
         DeliveryDetailWidgets().addressCommonText(addressList!.address),
@@ -30,7 +30,7 @@ class AddressDetail extends StatelessWidget {
           LatoFontStyle(
               text: addressList!.city,
               fontWeight: FontWeight.normal,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
               color: appCtrl.appTheme.contentColor)
         ]),
         const Space(0, 10),

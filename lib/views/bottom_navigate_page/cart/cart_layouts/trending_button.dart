@@ -22,7 +22,7 @@ class TrendingButton extends StatelessWidget {
           ),
           child: LatoFontStyle(
             text: "TRENDING",
-            fontSize: CommonTextFontSize.f7,
+            fontSize: FontSizes.f7,
             color: appCtrl.appTheme.white,
             fontWeight: FontWeight.w600,
           ),

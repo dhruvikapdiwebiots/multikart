@@ -31,7 +31,7 @@ class DeliveryDetailWidgets {
     return LatoFontStyle(
         text: text,
         fontWeight: FontWeight.normal,
-        fontSize: CommonTextFontSize.f14,
+        fontSize: FontSizes.f14,
         color: appCtrl.appTheme.contentColor);
   }
 
@@ -40,7 +40,7 @@ class DeliveryDetailWidgets {
     return LatoFontStyle(
         text: text,
         fontWeight: FontWeight.w600,
-        fontSize: CommonTextFontSize.f14,
+        fontSize: FontSizes.f14,
         color: appCtrl.appTheme.blackColor);
   }
 }

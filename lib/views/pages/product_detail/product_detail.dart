@@ -25,7 +25,7 @@ class ProductDetail extends StatelessWidget {
           }),
           title: LatoFontStyle(
               text: productCtrl.product.title ?? "",
-              fontSize: CommonTextFontSize.f16,
+              fontSize: FontSizes.f16,
               fontWeight: FontWeight.w700),
           actions: const [AppBarActionLayout()],
         ),

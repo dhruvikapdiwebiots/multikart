@@ -21,7 +21,7 @@ class ProductDetailWidget {
   Widget descriptionText(text) {
     return LatoFontStyle(
       text: text,
-      fontSize: CommonTextFontSize.f12,
+      fontSize: FontSizes.f12,
       fontWeight: FontWeight.normal,
       color: appCtrl.appTheme.contentColor,
       overflow: TextOverflow.clip,
@@ -47,7 +47,7 @@ class ProductDetailWidget {
     return LatoFontStyle(
       text: text,
       fontWeight: FontWeight.w600,
-      fontSize: CommonTextFontSize.f12,
+      fontSize: FontSizes.f12,
       color: appCtrl.appTheme.greenColor,
     ).marginOnly(left: AppScreenUtil().screenWidth(15),top: AppScreenUtil().screenHeight(5),bottom: AppScreenUtil().screenHeight(25));
   }
@@ -57,7 +57,7 @@ class ProductDetailWidget {
     return LatoFontStyle(
       text: text,
       fontWeight: FontWeight.w600,
-      fontSize: CommonTextFontSize.f12,
+      fontSize: FontSizes.f12,
       color: appCtrl.appTheme.primary,
     ).marginOnly(
         right: AppScreenUtil().screenWidth(15),

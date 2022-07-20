@@ -31,11 +31,11 @@ class BottomLayout extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 2.5,
                 child: LatoFontStyle(
                   text: firstButtonText,
-                  fontSize: CommonTextFontSize.f14,
+                  fontSize: FontSizes.f14,
                   textAlign: TextAlign.center,
                 ).gestures(onTap: ()=> Get.back()),
               ),
-              CustomButton(title: secondButtonText!, height: 35, width: 150,onTap: ()=> Get.back(),)
+              CustomButton(title: secondButtonText!, height: 35, width: 160,onTap: ()=> Get.back(),)
             ],
           ),
         );

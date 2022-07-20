@@ -35,4 +35,7 @@ class SvgAssets {
   final String returning = 'assets/svg/returning.svg';
   final String support = 'assets/svg/support.svg';
   final String wallet = 'assets/svg/wallet.svg';
+  final String location = 'assets/svg/location.svg';
+  final String profileSetting = 'assets/svg/profileSetting.svg';
+
 }

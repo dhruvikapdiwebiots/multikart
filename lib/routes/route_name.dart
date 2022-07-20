@@ -14,5 +14,7 @@ class RouteName {
   final String coupons = '/coupons';
   final String deliveryDetail = '/deliveryDetail';
   final String addAddress = '/addAddress';
+  final String payment = '/payment';
+  final String orderSuccess = '/orderSuccess';
   final noInternet = '/noInternet';
 }

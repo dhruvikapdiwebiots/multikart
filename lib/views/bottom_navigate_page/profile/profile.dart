@@ -1,4 +1,5 @@
 import 'package:multikart/controllers/home_product_controllers/profile_controller.dart';
+import 'package:multikart/views/bottom_navigate_page/profile/profile_layouts/profile_card.dart';
 import 'package:multikart/views/bottom_navigate_page/profile/profile_layouts/profile_user.dart';
 
 import '../../../config.dart';
@@ -26,7 +27,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               children: [
                 const ProfileUser(),
                 ...profileCtrl.drawerList.asMap().entries.map((e) {
-                  return DrawerCard(
+                  return ProfileCard(
                     data: e.value,
                     index: e.key,
                     lastIndex: profileCtrl.drawerList.length -1,
@@ -41,7 +42,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     border: Border.all(color: profileCtrl.appCtrl.appTheme.contentColor,width: 1.5),
                     borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(5))
                   ),
-                  child: LatoFontStyle(text: CommonTextFont().logOut,fontSize: CommonTextFontSize.f16,),
+                  child: LatoFontStyle(text: CommonTextFont().logOut,fontSize: FontSizes.f16,),
                 )
               ],
             ),

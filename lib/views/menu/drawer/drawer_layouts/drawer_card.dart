@@ -18,7 +18,7 @@ class DrawerCard extends StatelessWidget {
           DrawerLeadingTitle(
             data: data,
           ),
-          if (index == 10)
+          if (index == 7)
             Container(
               height: 10,
               color: appCtrl.appTheme.lightGray,

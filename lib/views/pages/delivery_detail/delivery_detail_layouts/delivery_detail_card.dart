@@ -35,7 +35,7 @@ class DeliveryDetailCard extends StatelessWidget {
                   LatoFontStyle(
                     text: expectedDelivery!.name,
                     fontWeight: FontWeight.w600,
-                    fontSize: CommonTextFontSize.f14,
+                    fontSize: FontSizes.f14,
                     color: appCtrl.appTheme.contentColor
                   ),
                   Row(
@@ -43,14 +43,14 @@ class DeliveryDetailCard extends StatelessWidget {
                       LatoFontStyle(
                         text: "Delivery by",
                         fontWeight: FontWeight.w700,
-                        fontSize: CommonTextFontSize.f13,
+                        fontSize: FontSizes.f13,
                         color: appCtrl.appTheme.blackColor
                       ),
                       const Space(5,0),
                       LatoFontStyle(
                         text: expectedDelivery!.date,
                         fontWeight: FontWeight.w700,
-                        fontSize: CommonTextFontSize.f13,
+                        fontSize: FontSizes.f13,
                         color: appCtrl.appTheme.greenColor
                       )
                     ],

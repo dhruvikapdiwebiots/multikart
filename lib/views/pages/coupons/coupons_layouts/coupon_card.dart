@@ -16,7 +16,7 @@ class CouponCard extends StatelessWidget {
             children: [
               LatoFontStyle(
                   text: couponModel!.code,
-                  fontSize: CommonTextFontSize.f14,
+                  fontSize: FontSizes.f14,
                   color: appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.w600),
               CouponTitle(
@@ -27,7 +27,7 @@ class CouponCard extends StatelessWidget {
           LatoFontStyle(
               text: CouponFont().apply,
               color: appCtrl.appTheme.primary,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
               fontWeight: FontWeight.w600)
         ]),
         const Space(0, 12),
@@ -35,12 +35,12 @@ class CouponCard extends StatelessWidget {
             text: couponModel!.description,
             overflow: TextOverflow.clip,
             color: appCtrl.appTheme.contentColor,
-            fontSize: CommonTextFontSize.f12),
+            fontSize: FontSizes.f12),
         const Space(0, 10),
         LatoFontStyle(
             text: CouponFont().viewTAndC,
             color: appCtrl.appTheme.greenColor,
-            fontSize: CommonTextFontSize.f12,
+            fontSize: FontSizes.f12,
             fontWeight: FontWeight.w600),
         const Space(0, 15),
         if (index != lastIndex)

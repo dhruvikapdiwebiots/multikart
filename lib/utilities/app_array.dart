@@ -744,4 +744,59 @@ class AppArray {
 
   //address type
   var addressType = [{"title":"Home".tr},{"title":"Office".tr},{"title":"Others".tr},];
+
+  //var offer & promotion list
+  var offerAndPromotionList = [
+    {
+      "title":
+      "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards".tr
+    },{
+      "title":
+      "Enjoy upto 50% off & free delivery on online orders!".tr
+    },{
+      "title":
+      "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards".tr
+    },{
+      "title":
+      "Enjoy upto 50% off & free delivery on online orders!".tr
+    },
+  ];
+
+  //payment method list
+  var paymentMethodList = [
+    {
+      "title":
+      "Cash On Delivery".tr,
+      "image":iconAssets.cash,
+    },{
+      "title":
+      "Debit/Credit Card".tr,
+      "image":iconAssets.card,
+      'child': 'form'
+    },{
+      "title":
+      "Wallets".tr,
+      "image":iconAssets.wallet,
+      'child': [
+        {'title': 'Industrial & Commercial Bank', 'isSelect': false},
+        {'title': 'Construction Bank Corp.', 'isSelect': false},
+        {'title': 'Agricultural Bank', 'isSelect': false},
+        {'title': 'HSBC Holdings', 'isSelect': false},
+        {'title': 'Bank of America', 'isSelect': false},
+        {'title': 'JPMorgan Chase & Co.', 'isSelect': false},
+      ]
+    },{
+      "title":
+      "Net Banking".tr,
+      "image":iconAssets.netBanking,
+      'child': [
+        {'title': 'Adyen', 'isSelect': false},
+        {'title': 'Airtel Money', 'isSelect': false},
+        {'title': 'AlliedWallet', 'isSelect': false},
+        {'title': 'Apple Pay', 'isSelect': false},
+        {'title': 'Brinks', 'isSelect': false},
+        {'title': 'CardFree', 'isSelect': false},
+      ]
+    },
+  ];
 }

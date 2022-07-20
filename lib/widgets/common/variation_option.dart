@@ -14,7 +14,7 @@ class VariantOptions extends StatelessWidget {
               children: [
                 LatoFontStyle(
                   text: text,
-                  fontSize: CommonTextFontSize.f12,
+                  fontSize: FontSizes.f12,
                   color: appCtrl.appTheme.blackColor,
                   fontWeight: FontWeight.w600,
                 ),

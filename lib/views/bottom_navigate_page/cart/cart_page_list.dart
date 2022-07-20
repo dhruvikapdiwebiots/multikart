@@ -9,3 +9,4 @@ export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/cart_orde
 export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/delivery_instruction.dart';
 export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/empty_layout.dart';
 export 'package:multikart/models/cart_model.dart';
+export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/cart_detail.dart';

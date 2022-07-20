@@ -15,13 +15,13 @@ class AuthenticationTitleText extends StatelessWidget {
           LatoFontStyle(
               text: text1,
               fontWeight: FontWeight.w700,
-              fontSize: CommonTextFontSize.f24,
+              fontSize: FontSizes.f24,
               color: appCtrl.appTheme.blackColor),
           if(isTextShow!)
           LatoFontStyle(
               text: text2,
               fontWeight: FontWeight.w700,
-              fontSize: CommonTextFontSize.f24,
+              fontSize: FontSizes.f24,
               color: appCtrl.appTheme.blackColor),
         ],
       );

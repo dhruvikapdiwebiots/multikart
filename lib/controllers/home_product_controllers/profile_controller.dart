@@ -1,4 +1,5 @@
 import 'package:get_storage/get_storage.dart';
+
 import '../../config.dart';
 
 class ProfileController extends GetxController {
@@ -8,12 +9,13 @@ class ProfileController extends GetxController {
 
   final storage = GetStorage();
   CartModel? cartModelList;
-  List drawerList = [];
+  List<ProfileModel> drawerList = [];
 
   @override
   void onReady() {
     // TODO: implement onReady
-    drawerList = AppArray().drawerList;
+    drawerList = profileList;
+    print(drawerList);
     update();
     super.onReady();
   }

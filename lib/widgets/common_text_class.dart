@@ -29,19 +29,3 @@ class CommonTextFont{
 
 }
 
-
-//font size
-class CommonTextFontSize {
-  static const double f7 = 7.0;
-  static const double f8 = 8.0;
-  static const double f10 = 10.0;
-  static const double f11 = 11.0;
-  static const double f12 = 12.0;
-  static const double f14 = 14.0;
-  static const double f13 = 13.0;
-  static const double f16 = 16.0;
-  static const double f18 = 18.0;
-  static const double f20 = 20.0;
-  static const double f24 = 24.0;
-  static const double f34 = 34.0;
-}

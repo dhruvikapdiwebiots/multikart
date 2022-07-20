@@ -22,7 +22,7 @@ class CouponTitle extends StatelessWidget {
         child: LatoFontStyle(
           text: title,
           color: appCtrl.appTheme.contentColor,
-          fontSize: CommonTextFontSize.f12,
+          fontSize: FontSizes.f12,
         ),
       );
     });

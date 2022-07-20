@@ -20,7 +20,7 @@ class ActionLayout extends StatelessWidget {
                 const Space(5, 0),
                 LatoFontStyle(
                   text: firstActionName,
-                  fontSize: CommonTextFontSize.f12,
+                  fontSize: FontSizes.f12,
                   fontWeight: FontWeight.w600,
                   color: appCtrl.appTheme.blackColor,
                 )
@@ -35,7 +35,7 @@ class ActionLayout extends StatelessWidget {
                 const Space(5, 0),
                 LatoFontStyle(
                   text: secondAction,
-                  fontSize: CommonTextFontSize.f12,
+                  fontSize: FontSizes.f12,
                   fontWeight: FontWeight.w600,
                   color: appCtrl.appTheme.blackColor,
                 )

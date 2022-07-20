@@ -24,12 +24,12 @@ class ProfileUser extends StatelessWidget {
                 children: [
                   LatoFontStyle(
                       text: CommonTextFont().profileName,
-                      fontSize: CommonTextFontSize.f16,
+                      fontSize: FontSizes.f16,
                       fontWeight: FontWeight.w700,
                       color: appCtrl.appTheme.blackColor),
                   LatoFontStyle(
                       text: CommonTextFont().email,
-                      fontSize: CommonTextFontSize.f12,
+                      fontSize: FontSizes.f12,
                       fontWeight: FontWeight.normal,
                       color: appCtrl.appTheme.contentColor),
                   const Space(0, 10),
@@ -37,7 +37,7 @@ class ProfileUser extends StatelessWidget {
                       title: CommonTextFont().edit,
                       width: AppScreenUtil().screenWidth(60),
                       fontWeight: FontWeight.w600,
-                      fontSize: CommonTextFontSize.f14,
+                      fontSize: FontSizes.f14,
                       height: AppScreenUtil().screenHeight(25),
                       margin: 0)
                 ]),

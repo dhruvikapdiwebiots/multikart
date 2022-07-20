@@ -15,7 +15,7 @@ class AddAddressButton extends StatelessWidget {
             color: appCtrl.appTheme.primary,
           ),
           fontWeight: FontWeight.normal,
-          fontSize: CommonTextFontSize.f16,
+          fontSize: FontSizes.f16,
           color: appCtrl.appTheme.whiteColor,
           fontColor: appCtrl.appTheme.primary,
         );

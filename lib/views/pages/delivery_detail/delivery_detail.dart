@@ -41,9 +41,7 @@ class DeliveryDetail extends StatelessWidget {
                 buttonName: CartFont().proceedToPayment,
                 totalAmount: deliveryDetailCtrl.totalAmount.toString(),
                 onTap: () {
-                  deliveryDetailCtrl.appCtrl.isHeart = false;
-                  deliveryDetailCtrl.update();
-                  Get.toNamed(routeName.deliveryDetail,
+                  Get.toNamed(routeName.payment,
                       arguments: deliveryDetailCtrl.totalAmount.toString());
                 },
               )

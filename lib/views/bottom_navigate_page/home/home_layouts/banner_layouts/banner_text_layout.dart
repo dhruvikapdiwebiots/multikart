@@ -16,21 +16,21 @@ class BannerTextLayout extends StatelessWidget {
           children: [
             LatoFontStyle(
               text: data!.title,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w700,
             ),
             const Space(0, 5),
             LatoFontStyle(
               text: data!.offers,
-              fontSize: CommonTextFontSize.f20,
+              fontSize: FontSizes.f20,
               color: appCtrl.appTheme.primary,
               fontWeight: FontWeight.bold,
             ),
             const Space(0, 5),
             LatoFontStyle(
               text: data!.subTitle,
-              fontSize: CommonTextFontSize.f11,
+              fontSize: FontSizes.f11,
               color: appCtrl.appTheme.contentColor,
               fontWeight: FontWeight.w400,
             ),

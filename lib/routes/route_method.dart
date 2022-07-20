@@ -22,5 +22,7 @@ class AppRoute {
     GetPage(name: _routeName.coupons, page: () => Coupons()),
     GetPage(name: _routeName.deliveryDetail, page: () => DeliveryDetail()),
     GetPage(name: _routeName.addAddress, page: () => AddAddress()),
+    GetPage(name: _routeName.payment, page: () => Payment()),
+    GetPage(name: _routeName.orderSuccess, page: () => OrderSuccess()),
   ];
 }

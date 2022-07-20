@@ -18,13 +18,13 @@ class RowTextLayout extends StatelessWidget {
               text: text1,
               color: appCtrl.appTheme.blackColor,
               fontWeight: fontWeight1!,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
             ),
             LatoFontStyle(
               text: text2,
               color: appCtrl.appTheme.primary,
               fontWeight: fontWeight2!,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
             ),
           ],
         );

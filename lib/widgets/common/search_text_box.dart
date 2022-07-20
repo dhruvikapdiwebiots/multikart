@@ -25,7 +25,7 @@ class SearchTextBox extends StatelessWidget {
             filled: true,
             hintText: hinText,
             hintStyle: TextStyle(
-              fontSize: CommonTextFontSize.f16,
+              fontSize: FontSizes.f16,
               color: appCtrl.appTheme.contentColor,
               fontWeight: FontWeight.w500,
             ),

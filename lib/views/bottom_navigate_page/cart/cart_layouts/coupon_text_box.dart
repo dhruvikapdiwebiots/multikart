@@ -14,7 +14,7 @@ class CouponTextBox extends StatelessWidget {
             filled: true,
             hintText: CartFont().applyCoupons,
             hintStyle: TextStyle(
-              fontSize: CommonTextFontSize.f16,
+              fontSize: FontSizes.f16,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w500,
             ),

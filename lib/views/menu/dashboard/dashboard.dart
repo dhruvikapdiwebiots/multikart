@@ -30,22 +30,25 @@ class _DashboardState extends State<Dashboard>
         onWillPop: () async {
           return false;
         },
-        child: Scaffold(
-          key: dashboardCtrl.scaffoldKey,
+        child:  Directionality(
+          textDirection: dashboardCtrl.appCtrl.isRTL || dashboardCtrl.appCtrl.languageVal == "ar" ? TextDirection.rtl : TextDirection.ltr,
+          child: Scaffold(
+            key: dashboardCtrl.scaffoldKey,
 
-          drawer: const DrawerScreen(),
-          appBar: HomeProductAppBar(
-            onTap: () => dashboardCtrl.appBarLeadingAction(),
-            titleChild: dashboardCtrl.appCtrl.selectedIndex == 0
-                ? const LogoImage()
-                : const AppBarTitle(),
+            drawer: const DrawerScreen(),
+            appBar: HomeProductAppBar(
+              onTap: () => dashboardCtrl.appBarLeadingAction(),
+              titleChild: dashboardCtrl.appCtrl.selectedIndex == 0
+                  ? const LogoImage()
+                  : const AppBarTitle(),
 
-          ),
+            ),
 
-          body: dashboardCtrl.appCtrl.widgetOptions
-              .elementAt(dashboardCtrl.appCtrl.selectedIndex),
-          bottomNavigationBar: CommonBottomNavigation(
-            onTap: (val) => dashboardCtrl.bottomNavigationChange(val, context),
+            body: dashboardCtrl.appCtrl.widgetOptions
+                .elementAt(dashboardCtrl.appCtrl.selectedIndex),
+            bottomNavigationBar: CommonBottomNavigation(
+              onTap: (val) => dashboardCtrl.bottomNavigationChange(val, context),
+            ),
           ),
         ),
       );

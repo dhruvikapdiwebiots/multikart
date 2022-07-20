@@ -25,7 +25,7 @@ class DrawerUserLayout extends StatelessWidget {
             const Space(10, 0),
             LatoFontStyle(
               text: DrawerFont().userName,
-              fontSize: CommonTextFontSize.f14,
+              fontSize: FontSizes.f14,
               fontWeight: FontWeight.w700,
             ),
             const BackArrowIcon()

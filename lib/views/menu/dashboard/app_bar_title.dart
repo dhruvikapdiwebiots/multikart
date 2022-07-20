@@ -17,7 +17,7 @@ class AppBarTitle extends StatelessWidget {
                       : DashboardFont().profile,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w700,
-              fontSize: CommonTextFontSize.f16,
+              fontSize: FontSizes.f16,
             )
           : CommonAppBarTitle(
               title: DashboardFont().myCart,

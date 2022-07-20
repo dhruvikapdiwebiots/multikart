@@ -15,12 +15,12 @@ class ProductReviewLayout extends StatelessWidget {
               LatoFontStyle(
                 text: "${ProductDetailFont().customerReviews} (${productCtrl.product.totalReview})",
                 fontWeight: FontWeight.w700,
-                fontSize: CommonTextFontSize.f14,
+                fontSize: FontSizes.f14,
                 color: productCtrl.appCtrl.appTheme.blackColor,
               ),
               LatoFontStyle(
                 text: ProductDetailFont().allReviews,
-                fontSize: CommonTextFontSize.f12,
+                fontSize: FontSizes.f12,
                 color: productCtrl.appCtrl.appTheme.primary,
               )
             ],

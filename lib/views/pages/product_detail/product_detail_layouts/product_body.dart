@@ -14,7 +14,7 @@ class ProductBody extends StatelessWidget {
             const ImageListLayout(),
             ProductDetailWidget().commonText(
                 text: productCtrl.product.name.toString(),
-                fontSize: CommonTextFontSize.f16),
+                fontSize: FontSizes.f16),
             ProductDetailWidget()
                 .descriptionText(productCtrl.product.description.toString()),
 
@@ -28,12 +28,12 @@ class ProductBody extends StatelessWidget {
             ProductSizeLayout(product: productCtrl.product),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().selectColor,
-                fontSize: CommonTextFontSize.f14),
+                fontSize: FontSizes.f14),
 
             ProductColorLayout(product: productCtrl.product),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().quantity,
-                fontSize: CommonTextFontSize.f14),
+                fontSize: FontSizes.f14),
 
             const QuantityIncDec(),
             const BorderLineLayout(),
@@ -59,7 +59,7 @@ class ProductBody extends StatelessWidget {
             const BorderLineLayout(),
             ProductDetailWidget().commonText(
                 text: ProductDetailFont().similarProducts,
-                fontSize: CommonTextFontSize.f14),
+                fontSize: FontSizes.f14),
              SimilarProductLayout(data: productCtrl.similarList,),
           ],
         ),

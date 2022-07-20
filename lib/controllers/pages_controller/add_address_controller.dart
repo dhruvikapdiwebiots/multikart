@@ -9,6 +9,7 @@ class AddAddressController extends GetxController{
 
   List addressType =[];
   int selectRadio =0;
+  bool isChecked = false;
   String value = "home";
 
   var state = [
@@ -57,6 +58,7 @@ class AddAddressController extends GetxController{
   void onReady() {
     // TODO: implement onReady
     addressType = AppArray().addressType;
+    update();
     super.onReady();
   }
 }

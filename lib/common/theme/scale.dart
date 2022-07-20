@@ -25,11 +25,19 @@ class Insets {
 class FontSizes {
   static const double scale = 1;
 
-  static const double f11 = 11 * scale;
-  static const double f12 = 12 * scale;
-  static const double f14 = 14 * scale;
-  static const double f16 = 16 * scale;
-  static const double f18 = 18 * scale;
+  static const double f7 = 7.0 * scale;
+  static const double f8 = 8.0 * scale;
+  static const double f10 = 10.0 * scale;
+  static const double f11 = 11.0 * scale;
+  static const double f12 = 12.0 * scale;
+  static const double f14 = 14.0 * scale;
+  static const double f13 = 13.0 * scale;
+  static const double f16 = 16.0 * scale;
+  static const double f18 = 18.0 * scale;
+  static const double f20 = 20.0 * scale;
+  static const double f22 = 22.0 * scale;
+  static const double f24 = 24.0 * scale;
+  static const double f34 = 34.0 * scale;
 }
 
 class Sizes {

@@ -34,7 +34,7 @@ class DeliveryInstruction extends StatelessWidget {
                                 : Image.asset(e.icon!),
                           ),
                           const Space(0, 8),
-                          LatoFontStyle(text: e.title,fontSize: CommonTextFontSize.f10,color: appCtrl.appTheme.blackColor,)
+                          LatoFontStyle(text: e.title,fontSize: FontSizes.f10,color: appCtrl.appTheme.blackColor,)
                         ],
                       );
                     }).toList()

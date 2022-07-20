@@ -29,7 +29,7 @@ class LoginWidget {
       child: LatoFontStyle(
         text: text,
         onTap: onTap,
-        fontSize: CommonTextFontSize.f14,
+        fontSize: FontSizes.f14,
         color: color,
       ),
     );

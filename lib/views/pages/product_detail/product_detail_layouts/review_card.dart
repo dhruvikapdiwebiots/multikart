@@ -27,7 +27,7 @@ class ReviewCard extends StatelessWidget {
           LatoFontStyle(
             text: reviews!.description,
             fontWeight: FontWeight.normal,
-            fontSize: CommonTextFontSize.f14,
+            fontSize: FontSizes.f14,
             color: appCtrl.appTheme.contentColor,
             overflow: TextOverflow.clip,
           ),

@@ -30,7 +30,7 @@ class DeliveryCharges extends StatelessWidget {
                       text: e.title,
                       fontWeight: FontWeight.w600,
                       color: appCtrl.appTheme.blackColor,
-                      fontSize: CommonTextFontSize.f12,
+                      fontSize: FontSizes.f12,
                     )
                   ],
                 ),

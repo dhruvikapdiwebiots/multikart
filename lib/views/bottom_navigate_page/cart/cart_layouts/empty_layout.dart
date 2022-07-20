@@ -14,7 +14,7 @@ class EmptyLayout extends StatelessWidget {
           const Space(0, 30),
           LatoFontStyle(
             text: CartFont().totalAmount,
-            fontSize: CommonTextFontSize.f18,
+            fontSize: FontSizes.f18,
             fontWeight: FontWeight.w700,
             color: appCtrl.appTheme.blackColor,
           ),
@@ -22,14 +22,14 @@ class EmptyLayout extends StatelessWidget {
           LatoFontStyle(
             text:
                 CartFont().emptyDesc,
-            fontSize: CommonTextFontSize.f16,
+            fontSize: FontSizes.f16,
             textAlign: TextAlign.center,
             fontWeight: FontWeight.normal,
             overflow: TextOverflow.clip,
             color: appCtrl.appTheme.contentColor,
           ),
           const Space(0, 30),
-          CustomButton(title: CommonTextFont().startShopping.toUpperCase(),fontSize: CommonTextFontSize.f16,fontWeight: FontWeight.w600,)
+          CustomButton(title: CommonTextFont().startShopping.toUpperCase(),fontSize: FontSizes.f16,fontWeight: FontWeight.w600,)
         ],
       ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15));
     });

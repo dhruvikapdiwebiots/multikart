@@ -39,4 +39,6 @@ export 'package:multikart/views/pages/product_detail/product_detail_page_list.da
 export 'package:multikart/views/pages/coupons/coupon_page_list.dart';
 export 'package:multikart/views/pages/delivery_detail/delivery_detail_page_list.dart';
 export 'package:multikart/views/pages/add_address/add_address_page_list.dart';
+export 'package:multikart/views/checkout/payment/payment_page_list.dart';
+export 'package:multikart/views/order_page/order_success/order_success_page_list.dart';
 

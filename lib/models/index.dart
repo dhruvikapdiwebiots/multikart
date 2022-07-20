@@ -14,3 +14,5 @@ export 'coupon_model.dart';
 export 'address_list_model.dart';
 export 'expected_delivery_model.dart';
 export '../../models/delivery_detail_model.dart';
+export '../../models/profile_model.dart';
+export '../../models/order_summary_model.dart';

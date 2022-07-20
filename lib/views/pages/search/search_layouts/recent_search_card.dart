@@ -19,7 +19,7 @@ class RecentSearchCard extends StatelessWidget {
                 const Space(10, 0),
                 LatoFontStyle(
                   text: data['title'],
-                  fontSize: CommonTextFontSize.f14,
+                  fontSize: FontSizes.f14,
                   color: appCtrl.appTheme.contentColor,
                 ),
               ],

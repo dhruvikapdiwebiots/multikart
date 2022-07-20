@@ -37,13 +37,13 @@ class BackgroundTextLayout extends StatelessWidget {
               )
                   : LatoFontStyle(
                 text: categoryModel!.title.toString().toUpperCase(),
-                fontSize: CommonTextFontSize.f16,
+                fontSize: FontSizes.f16,
                 color: appCtrl.appTheme.blackColor,
                 fontWeight: FontWeight.w700,
               ),
               LatoFontStyle(
                 text: categoryModel!.description,
-                fontSize: CommonTextFontSize.f12,
+                fontSize: FontSizes.f12,
                 color: appCtrl.appTheme.contentColor,
                 fontWeight: FontWeight.normal,
               ),

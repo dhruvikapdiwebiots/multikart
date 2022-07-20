@@ -36,7 +36,7 @@ class ProductBottom extends StatelessWidget {
                      LatoFontStyle(
                       text: ProductDetailFont().wishList,
                       fontWeight: FontWeight.w600,
-                      fontSize: CommonTextFontSize.f14,
+                      fontSize: FontSizes.f14,
                     )
                   ],
                 ),
@@ -51,7 +51,7 @@ class ProductBottom extends StatelessWidget {
                       text: ProductDetailFont().addToBag,
                       fontWeight: FontWeight.w600,
                       color: appCtrl.appTheme.primary,
-                      fontSize: CommonTextFontSize.f14,
+                      fontSize: FontSizes.f14,
                     )
                   ],
                 ),

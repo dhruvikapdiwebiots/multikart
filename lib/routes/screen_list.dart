@@ -14,3 +14,5 @@ export '../views/pages/product_detail/product_detail.dart';
 export '../views/pages/coupons/coupons.dart';
 export '../views/pages/delivery_detail/delivery_detail.dart';
 export '../views/pages/add_address/add_address.dart';
+export '../views/checkout/payment/payment.dart';
+export '../views/order_page/order_success/order_success.dart';

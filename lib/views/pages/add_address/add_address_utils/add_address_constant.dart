@@ -11,4 +11,5 @@ class AddAddressFont {
   String landmark = "landmark".tr;
   String townCity = "townCity".tr;
   String stateProvision = "stateProvision".tr;
+  String makeDefaultAddress = "makeDefaultAddress".tr;
 }

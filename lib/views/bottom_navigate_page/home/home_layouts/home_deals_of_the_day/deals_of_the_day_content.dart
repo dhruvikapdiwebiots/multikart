@@ -21,13 +21,13 @@ class DealsOfTheDayContent extends StatelessWidget {
               text: data!.name,
               fontWeight: FontWeight.w700,
               color: appCtrl.appTheme.blackColor,
-              fontSize: CommonTextFontSize.f12),
+              fontSize: FontSizes.f12),
           const Space(0, 2),
           LatoFontStyle(
               text: data!.byWhom,
               fontWeight: FontWeight.w500,
               color: appCtrl.appTheme.contentColor,
-              fontSize: CommonTextFontSize.f12),
+              fontSize: FontSizes.f12),
           const Space(0, 5),
           Row(
             children: [
@@ -35,20 +35,20 @@ class DealsOfTheDayContent extends StatelessWidget {
                   text: '\$${data!.mrp}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.blackColor,
-                  fontSize: CommonTextFontSize.f12),
+                  fontSize: FontSizes.f12),
               const Space(8, 0),
               LatoFontStyle(
                   text: '\$${data!.totalPrice}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.contentColor,
-                  fontSize: CommonTextFontSize.f12,
+                  fontSize: FontSizes.f12,
                   textDecoration: TextDecoration.lineThrough),
               const Space(8, 0),
               LatoFontStyle(
                   text: data!.discount,
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.primary,
-                  fontSize: CommonTextFontSize.f12)
+                  fontSize: FontSizes.f12)
             ],
           ),
           const Space(0, 10),

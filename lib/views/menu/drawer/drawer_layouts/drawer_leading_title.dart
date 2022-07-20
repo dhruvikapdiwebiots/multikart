@@ -31,11 +31,11 @@ class DrawerLeadingTitle extends StatelessWidget {
                             ? "Dark"
                             : 'Light'
                         : data['title'],
-                    fontSize: CommonTextFontSize.f12,
+                    fontSize: FontSizes.f12,
                     fontWeight: FontWeight.w600),
                 LatoFontStyle(
                     text: data['subTitle'],
-                    fontSize: CommonTextFontSize.f12,
+                    fontSize: FontSizes.f12,
                     fontWeight: FontWeight.normal)
               ],
             )

@@ -40,7 +40,7 @@ class AddressListCard extends StatelessWidget {
                 title: addressList!.addressType.toString(),
                 width: AppScreenUtil().screenWidth(45),
                 height: AppScreenUtil().screenHeight(15),
-                fontSize: CommonTextFontSize.f8,
+                fontSize: FontSizes.f8,
                 radius: 2,
               )
             ],
