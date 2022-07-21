@@ -4,6 +4,7 @@ class ImageAssets {
   final String design = 'assets/image/design.png';
   final String noInternet = 'assets/images/nointernet.png';
   final String offerCornerBG = 'assets/image/offerCornerBG.png';
+  final String chip = 'assets/image/chip.png';
   final String user = 'assets/image/user.png';
   final String avtar = 'assets/image/avtar.png';
   final String avtar1 = 'assets/image/avtar1.png';
@@ -86,4 +87,14 @@ class ImageAssets {
   final String product14 = 'assets/product/product14.jpg';
   final String product15 = 'assets/product/product15.jpg';
   final String product16 = 'assets/product/product16.png';
+
+  //card corner
+  final String card1 = 'assets/card/blueCard.png';
+  final String card2 = 'assets/card/yellowCard.png';
+  final String card3 = 'assets/card/purpleCard.png';
+
+  //wallet corner
+  final String wallet1 = 'assets/wallet/paytm.png';
+  final String wallet2 = 'assets/wallet/cashApp.png';
+  final String wallet3 = 'assets/wallet/googleWallet.png';
 }

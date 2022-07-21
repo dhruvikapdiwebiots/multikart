@@ -16,5 +16,7 @@ class RouteName {
   final String addAddress = '/addAddress';
   final String payment = '/payment';
   final String orderSuccess = '/orderSuccess';
+  final String cardBalance = '/cardBalance';
+  final String profileSetting = '/profileSetting';
   final noInternet = '/noInternet';
 }

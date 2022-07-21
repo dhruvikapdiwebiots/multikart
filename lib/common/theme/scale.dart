@@ -25,6 +25,7 @@ class Insets {
 class FontSizes {
   static const double scale = 1;
 
+  static const double f5 = 5.0 * scale;
   static const double f7 = 7.0 * scale;
   static const double f8 = 8.0 * scale;
   static const double f10 = 10.0 * scale;

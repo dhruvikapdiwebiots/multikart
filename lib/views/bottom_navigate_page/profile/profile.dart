@@ -31,7 +31,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     data: e.value,
                     index: e.key,
                     lastIndex: profileCtrl.drawerList.length -1,
-                    onTap: () => Get.back(),
+                    onTap: () => profileCtrl.goToPage(e.key),
                   );
                 }).toList(),
                 Container(

@@ -327,4 +327,16 @@ final dynamic en = {
   "orderSummary":"Order Summary",
   "trackOrder":"Track Order",
   "continueShopping":"Continue Shopping",
+  "valid":"VALID\nTHRU",
+  "wallets":"Wallets",
+  "delink":"Delink",
+  "link":"link",
+
+  //profile setting font
+  "profileSetting":"Profile Setting",
+  "firstName":"First Name",
+  "lastName":"Last Name",
+  "dob":"Date of Birth",
+  "personalDetail":"Personal Details",
+
 };

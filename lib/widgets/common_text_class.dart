@@ -26,6 +26,10 @@ class CommonTextFont{
   String profileName = "profileName".tr;
   String edit = "edit".tr;
   String logOut = "logOut".tr;
+  String wallets = "wallets".tr;
+  String delink = "delink".tr;
+  String link = "link".tr;
+
 
 }
 

@@ -1,3 +1,4 @@
+import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
 
 class CartOrderDetailLayout extends StatelessWidget {
@@ -14,8 +15,9 @@ class CartOrderDetailLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
-      return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      return cartModelList!.orderDetail != null ? Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ...cartModelList!.orderDetail!.map((e) {
+          print("ff ${e.title}");
           String val;
           if ((e.title == "Bag savings")) {
             val = "-\$${e.value}";
@@ -24,11 +26,11 @@ class CartOrderDetailLayout extends StatelessWidget {
           } else {
             val = "\$${e.value}";
           }
-          return CartDetail(
+          return  CartDetail(
             isApplyText: isApplyText,
             totalAmount: cartModelList!.totalAmount.toString(),
             val: val,
-            orderDetail: e.value,
+            orderDetail: e,
           );
         }).toList(),
         Divider(color: appCtrl.appTheme.greyLight25),
@@ -51,7 +53,7 @@ class CartOrderDetailLayout extends StatelessWidget {
                     cartModelList!.deliveryChargesInstruction)
       ]).marginSymmetric(
           horizontal: AppScreenUtil().screenWidth(15),
-          vertical: AppScreenUtil().screenHeight(20));
+          vertical: AppScreenUtil().screenHeight(20)) : Container();
     });
   }
 }

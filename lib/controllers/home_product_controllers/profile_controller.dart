@@ -10,13 +10,41 @@ class ProfileController extends GetxController {
   final storage = GetStorage();
   CartModel? cartModelList;
   List<ProfileModel> drawerList = [];
+  String countrySelectedValue = "Male";
+
+  var gender = ["Male", "Female", "Other"];
+
+  TextEditingController txtFirstName = TextEditingController();
+  TextEditingController txtLastName = TextEditingController();
+  TextEditingController txtDob = TextEditingController();
+  TextEditingController txtPhone = TextEditingController();
+  TextEditingController txtPassword = TextEditingController();
+  final FocusNode firstNameFocus = FocusNode();
+  final FocusNode lastNameFocus = FocusNode();
+  final FocusNode dobFocus = FocusNode();
+  final FocusNode mobileNumberFocus = FocusNode();
 
   @override
   void onReady() {
     // TODO: implement onReady
     drawerList = profileList;
-    print(drawerList);
     update();
     super.onReady();
+  }
+
+  goToPage(index) async {
+    if (index == 4) {
+      DashboardController dashboardController = Get.find();
+      appCtrl.isCart = true;
+      dashboardController.bottomNavigationChange(3, Get.context);
+
+      await storage.write(Session.selectedIndex, index);
+      appCtrl.update();
+    } else if (index == 5) {
+      Get.toNamed(routeName.cardBalance);
+    } else if (index == 10) {
+      Get.toNamed(routeName.profileSetting);
+    }
+    update();
   }
 }

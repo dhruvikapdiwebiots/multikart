@@ -743,40 +743,42 @@ class AppArray {
   ];
 
   //address type
-  var addressType = [{"title":"Home".tr},{"title":"Office".tr},{"title":"Others".tr},];
+  var addressType = [
+    {"title": "Home".tr},
+    {"title": "Office".tr},
+    {"title": "Others".tr},
+  ];
 
   //var offer & promotion list
   var offerAndPromotionList = [
     {
       "title":
-      "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards".tr
-    },{
-      "title":
-      "Enjoy upto 50% off & free delivery on online orders!".tr
-    },{
-      "title":
-      "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards".tr
-    },{
-      "title":
-      "Enjoy upto 50% off & free delivery on online orders!".tr
+          "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards"
+              .tr
     },
+    {"title": "Enjoy upto 50% off & free delivery on online orders!".tr},
+    {
+      "title":
+          "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards"
+              .tr
+    },
+    {"title": "Enjoy upto 50% off & free delivery on online orders!".tr},
   ];
 
   //payment method list
   var paymentMethodList = [
     {
-      "title":
-      "Cash On Delivery".tr,
-      "image":iconAssets.cash,
-    },{
-      "title":
-      "Debit/Credit Card".tr,
-      "image":iconAssets.card,
+      "title": "Cash On Delivery".tr,
+      "image": iconAssets.cash,
+    },
+    {
+      "title": "Debit/Credit Card".tr,
+      "image": iconAssets.card,
       'child': 'form'
-    },{
-      "title":
-      "Wallets".tr,
-      "image":iconAssets.wallet,
+    },
+    {
+      "title": "Wallets".tr,
+      "image": iconAssets.wallet,
       'child': [
         {'title': 'Industrial & Commercial Bank', 'isSelect': false},
         {'title': 'Construction Bank Corp.', 'isSelect': false},
@@ -785,10 +787,10 @@ class AppArray {
         {'title': 'Bank of America', 'isSelect': false},
         {'title': 'JPMorgan Chase & Co.', 'isSelect': false},
       ]
-    },{
-      "title":
-      "Net Banking".tr,
-      "image":iconAssets.netBanking,
+    },
+    {
+      "title": "Net Banking".tr,
+      "image": iconAssets.netBanking,
       'child': [
         {'title': 'Adyen', 'isSelect': false},
         {'title': 'Airtel Money', 'isSelect': false},
@@ -798,5 +800,56 @@ class AppArray {
         {'title': 'CardFree', 'isSelect': false},
       ]
     },
+  ];
+
+  //card list
+  var cardList = [
+    {
+      "cardType": "Credit Card".tr,
+      "bankName": "Bank Name".tr,
+      "cardNo1": "12345678****9123".tr,
+      "name": "Paige Turner".tr,
+      "valid": "XX/XX".tr,
+      "image": imageAssets.card1
+    },
+    {
+      "cardType": "Credit Card".tr,
+      "bankName": "Bank Name".tr,
+      "cardNo1": "12345678****9123".tr,
+      "name": "Paige Turner".tr,
+      "valid": "XX/XX".tr,
+      "image": imageAssets.card2
+    },
+    {
+      "cardType": "Credit Card".tr,
+      "bankName": "Bank Name".tr,
+      "cardNo1": "12345678****9123".tr,
+      "name": "Paige Turner".tr,
+      "valid": "XX/XX".tr,
+      "image": imageAssets.card3
+    }
+  ];
+
+  //wallet list
+
+  var walletList = [
+    {
+      "image": imageAssets.wallet1,
+      "title": "Paytm Wallet",
+      "balance": 25.00,
+      "isLink": true
+    },
+    {
+      "image": imageAssets.wallet2,
+      "title": "Cash App",
+      "balance": 25.00,
+      "isLink": true
+    },
+    {
+      "image": imageAssets.wallet3,
+      "title": "Google Wallet",
+      "balance": 00,
+      "isLink": false
+    }
   ];
 }
