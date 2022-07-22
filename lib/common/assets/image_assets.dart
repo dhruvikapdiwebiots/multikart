@@ -8,6 +8,7 @@ class ImageAssets {
   final String user = 'assets/image/user.png';
   final String avtar = 'assets/image/avtar.png';
   final String avtar1 = 'assets/image/avtar1.png';
+  final String mapSection = 'assets/image/mapSection.png';
   final String girl = 'assets/girls.png';
   final String sales = 'assets/sales.png';
   final String noData = 'assets/noData.png';

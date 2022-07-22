@@ -5,7 +5,9 @@ import '../../config.dart';
 class ActionLayout extends StatelessWidget {
   final String? firstActionName,secondAction;
   final Widget? firstActionIcon;
-  const ActionLayout({Key? key,this.firstActionName,this.secondAction,this.firstActionIcon}) : super(key: key);
+  final GestureTapCallback? firstActionTap;
+  final GestureTapCallback? secondActionTap;
+  const ActionLayout({Key? key,this.firstActionName,this.secondAction,this.firstActionIcon,this.firstActionTap,this.secondActionTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class ActionLayout extends StatelessWidget {
                   color: appCtrl.appTheme.blackColor,
                 )
               ],
-            ),
+            ).gestures(onTap: firstActionTap),
             const LatoFontStyle(
               text: "|",
             ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(10)),
@@ -40,7 +42,7 @@ class ActionLayout extends StatelessWidget {
                   color: appCtrl.appTheme.blackColor,
                 )
               ],
-            )
+            ).gestures(onTap: secondActionTap)
           ],
         ).marginOnly(bottom: AppScreenUtil().screenHeight(5));
       }

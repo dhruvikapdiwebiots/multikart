@@ -29,6 +29,8 @@ class CommonTextFont{
   String wallets = "wallets".tr;
   String delink = "delink".tr;
   String link = "link".tr;
+  String moveToWishListDesc = "moveToWishListDesc".tr;
+  String removeDesc = "removeDesc".tr;
 
 
 }

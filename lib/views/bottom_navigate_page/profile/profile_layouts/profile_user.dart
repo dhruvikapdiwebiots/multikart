@@ -10,7 +10,7 @@ class ProfileUser extends StatelessWidget {
           alignment: Alignment.center,
           padding: EdgeInsets.only(left: AppScreenUtil().screenWidth(20)),
           color: appCtrl.appTheme.greyLight25,
-          height: AppScreenUtil().screenHeight(115),
+          height: AppScreenUtil().screenHeight(110),
           width: MediaQuery.of(context).size.width,
           child: Row(children: [
             Container(

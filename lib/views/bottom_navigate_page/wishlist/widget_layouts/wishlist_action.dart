@@ -1,7 +1,9 @@
 import 'package:multikart/config.dart';
 
 class WishListAction extends StatelessWidget {
-  const WishListAction({Key? key}) : super(key: key);
+  final GestureTapCallback? firstActionTap;
+  final GestureTapCallback? secondActionTap;
+  const WishListAction({Key? key,this.firstActionTap,this.secondActionTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class WishListAction extends StatelessWidget {
             ),
             const Space(0, 10),
             ActionLayout(firstActionIcon:  BuyIcon(color: appCtrl.appTheme.blackColor)
-                .height(AppScreenUtil().screenHeight(14)),firstActionName: CommonTextFont().addToCart,secondAction: CommonTextFont().remove,)
+                .height(AppScreenUtil().screenHeight(14)),firstActionName: CommonTextFont().addToCart,secondAction: CommonTextFont().remove,firstActionTap: firstActionTap,secondActionTap: firstActionTap,)
           ],
         );
       }

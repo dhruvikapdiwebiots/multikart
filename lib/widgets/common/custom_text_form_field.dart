@@ -33,6 +33,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextAlignVertical? textAlignVertical;
   final FocusNode? focusNode;
   final TextStyle? hintStyle;
+  final BoxConstraints? suffixIconConstraints;
 
   CustomTextFormField({
     Key? key,
@@ -60,7 +61,9 @@ class CustomTextFormField extends StatelessWidget {
     this.onFieldSubmitted,
     this.onChanged,
     this.showBoarder = true,
+    this.suffixIconConstraints,
     this.textAlignVertical = TextAlignVertical.center,
+
     this.focusNode,
     this.hintStyle,
   }) : super(key: key);
@@ -96,6 +99,7 @@ class CustomTextFormField extends StatelessWidget {
           disabledBorder: inputBorder,
           border: inputBorder,
           focusedBorder: inputBorder,
+          suffixIconConstraints: suffixIconConstraints,
           errorBorder: inputBorder,
           focusedErrorBorder: inputBorder,
           labelStyle: TextStyle(color: appCtrl.appTheme.contentColor,fontSize: AppScreenUtil().fontSize(16),letterSpacing: .4),

@@ -10,7 +10,7 @@ class ProfileController extends GetxController {
   final storage = GetStorage();
   CartModel? cartModelList;
   List<ProfileModel> drawerList = [];
-  String countrySelectedValue = "Male";
+  String genderSelectedValue = "Male";
 
   var gender = ["Male", "Female", "Other"];
 
@@ -23,6 +23,7 @@ class ProfileController extends GetxController {
   final FocusNode lastNameFocus = FocusNode();
   final FocusNode dobFocus = FocusNode();
   final FocusNode mobileNumberFocus = FocusNode();
+  final FocusNode passwordFocus = FocusNode();
 
   @override
   void onReady() {
@@ -33,7 +34,9 @@ class ProfileController extends GetxController {
   }
 
   goToPage(index) async {
-    if (index == 4) {
+    if (index == 3) {
+      Get.toNamed(routeName.orderHistory);
+    } else if (index == 4) {
       DashboardController dashboardController = Get.find();
       appCtrl.isCart = true;
       dashboardController.bottomNavigationChange(3, Get.context);

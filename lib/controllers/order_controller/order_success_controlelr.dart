@@ -1,8 +1,6 @@
-
-
 import '../../config.dart';
 
-class OrderSuccessController extends GetxController{
+class OrderSuccessController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
@@ -16,5 +14,4 @@ class OrderSuccessController extends GetxController{
     update();
     super.onReady();
   }
-
 }

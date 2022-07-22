@@ -1,56 +1,53 @@
 import 'package:multikart/config.dart';
 
-class CardBalanceWidget {
+class ProfileWidget {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
 
-  // card type and bank name
-  Widget cardTypeBanKName(cardType, bankName) {
-    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      CardBalanceWidget().commonFontText(cardType),
-      CardBalanceWidget().commonFontText(bankName)
-    ]);
-  }
-
-  // card no layout
-  Widget cardNoLayout(cardType, bankName) {
-    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      CardBalanceWidget().commonFontText(cardType),
-      CardBalanceWidget().commonFontText(bankName)
-    ]);
-  }
-
-  //common font text
-  Widget commonFontText(text, {double fontSize = FontSizes.f14}) {
+  //common title text layout
+  Widget commonTitleTextLayout(text) {
     return LatoFontStyle(
         text: text,
-        color: appCtrl.appTheme.white,
+        fontSize: FontSizes.f14,
         fontWeight: FontWeight.w700,
-        fontSize: fontSize);
+        color: appCtrl.appTheme.blackColor);
   }
 
-  //button layout
-  Widget buttonLayout(text, {isMargin = false}) {
-    return CustomButton(
-        title: text,
-        fontWeight: FontWeight.normal,
-        fontColor: appCtrl.appTheme.contentColor,
-        color: appCtrl.appTheme.greyLight25,
-        width: AppScreenUtil().screenWidth(80),
-        height: AppScreenUtil().screenHeight(25),
-        margin: isMargin ? 15:0,
-        radius: 5);
+  //common text box
+  Widget commonTextBox(label,
+      {TextEditingController? controller,
+      FocusNode? focusNode,
+      ValueChanged<String>? onFieldSubmitted}) {
+    return CustomTextFormField(
+        radius: 5,
+        labelText: label,
+        controller: controller,
+        focusNode: focusNode,
+        keyboardType: TextInputType.name,
+        onFieldSubmitted: onFieldSubmitted);
   }
 
-  //delink or link text
-  Widget deLinkOrLinkText(isLink){
-    return LatoFontStyle(
-        text: isLink == true
-            ? CommonTextFont().delink
-            : CommonTextFont().link,
-        color: appCtrl.appTheme.primary,
-        fontWeight: FontWeight.w700,
-        fontSize: FontSizes.f12);
+  //common security text box
+  Widget securityTextBox(label,
+      {TextEditingController? controller,
+      FocusNode? focusNode,
+      ValueChanged<String>? onFieldSubmitted,final TextInputType? keyboardType}) {
+    return CustomTextFormField(
+        radius: 5,
+        labelText: label,
+        controller: controller,
+        focusNode: focusNode,
+        keyboardType:keyboardType,
+        suffixIconConstraints: BoxConstraints(
+            minHeight: AppScreenUtil().size(18),
+            minWidth: AppScreenUtil().size(18)),
+        onFieldSubmitted: onFieldSubmitted,
+        suffixIcon: LatoFontStyle(
+                text: ProfileFont().change,
+                fontWeight: FontWeight.w600,
+                fontSize: FontSizes.f12,
+                color: appCtrl.appTheme.primary)
+            .marginOnly(right: AppScreenUtil().screenWidth(15)));
   }
 }

@@ -12,18 +12,26 @@ class WishlistScreen extends StatefulWidget {
 
 class _WishlistScreenState extends State<WishlistScreen> {
   final wishListCtrl = Get.put(WishlistController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GetBuilder<WishlistController>(
-        builder: (_) {
-          return ListView.builder(
-            itemCount: wishListCtrl.wishlist.length,
-            itemBuilder: (context, index) {
-            return WishListCard(homeDealOfTheDayModel: wishListCtrl.wishlist[index],index: index,lastIndex: wishListCtrl.wishlist.length -1,);
-          },);
-        }
-      ),
+      body: GetBuilder<WishlistController>(builder: (_) {
+        return ListView.builder(
+          itemCount: wishListCtrl.wishlist.length,
+          itemBuilder: (context, index) {
+            return WishListCard(
+              homeDealOfTheDayModel: wishListCtrl.wishlist[index],
+              index: index,
+              lastIndex: wishListCtrl.wishlist.length - 1,
+              firstActionTap: () =>
+                  wishListCtrl.bottomSheetLayout(CommonTextFont().addToCart),
+              secondActionTap: () =>
+                  wishListCtrl.bottomSheetLayout(CommonTextFont().remove),
+            );
+          },
+        );
+      }),
     );
   }
 }

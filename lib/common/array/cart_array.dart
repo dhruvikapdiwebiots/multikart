@@ -33,18 +33,18 @@ var cartList = CartModel(
     totalAmount: 270.00,
     deliveryChargesInstruction: [
       DeliveryChargesInstruction(
-          title: "No Delivery Charges applied on this order",
+          title: "noDeliveryCharges".tr,
           icon: gifAssets.truckDelivery)
     ],
     deliveryInstruction: [
       DeliveryInstructionModel(
-          title: "7 Day Return", icon: svgAssets.returning),
-      DeliveryInstructionModel(title: "24/7 Support", icon: svgAssets.support),
-      DeliveryInstructionModel(title: "Secure Payment", icon: svgAssets.wallet),
+          title: "7 Day Return".tr, icon: svgAssets.returning),
+      DeliveryInstructionModel(title: "24/7 Support".tr, icon: svgAssets.support),
+      DeliveryInstructionModel(title: "Secure Payment".tr, icon: svgAssets.wallet),
     ],
     orderDetail: [
-      OrderDetail(title: "Bag total", value: 220.00),
-      OrderDetail(title: "Bag savings", value: 20.00),
-      OrderDetail(title: "Coupon Discount", value: "Apply Coupon"),
-      OrderDetail(title: "Delivery", value: 50.00),
+      OrderDetail(title: "Bag total".tr, value: 220.00),
+      OrderDetail(title: "Bag savings".tr, value: 20.00),
+      OrderDetail(title: "Coupon Discount".tr, value: "Apply Coupon"),
+      OrderDetail(title: "Delivery".tr, value: 50.00),
     ]);

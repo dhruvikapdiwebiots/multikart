@@ -27,6 +27,7 @@ class ShopController extends GetxController {
     super.onReady();
   }
 
+  //filter page route
   Route createRoute() {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) => Filter(),

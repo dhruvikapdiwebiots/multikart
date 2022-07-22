@@ -17,34 +17,40 @@ class CardBalance extends StatelessWidget {
           backgroundColor: cardCtrl.appCtrl.appTheme.whiteColor,
           title: Text(CardBalanceFont().payments),
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CarouselSlider.builder(
-                options: CarouselOptions(
-                    autoPlay: false,
-                    aspectRatio: 10.2 / 8,
-                    viewportFraction: .90,
-                    onPageChanged: (index, reason) {
-                      cardCtrl.currentIndex = index;
-                      cardCtrl.update();
-                    }),
-                itemCount: AppArray().cardList.length,
-                itemBuilder:
-                    (BuildContext context, int index, int pageViewIndex) {
-                  return CardLayout(
-                    data: AppArray().cardList[index],
-                    index: index,
-                    currentIndex: cardCtrl.currentIndex,
-                  );
-                },
-              ),
-              const BorderLineLayout(),
-              const Space(0, 20),
-             const WalletLayout()
-            ],
-          ),
+        body:  Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CarouselSlider.builder(
+                    options: CarouselOptions(
+                        autoPlay: false,
+                        aspectRatio: 10.2 / 8,
+                        viewportFraction: .90,
+                        onPageChanged: (index, reason) {
+                          cardCtrl.currentIndex = index;
+                          cardCtrl.update();
+                        }),
+                    itemCount: AppArray().cardList.length,
+                    itemBuilder:
+                        (BuildContext context, int index, int pageViewIndex) {
+                      return CardLayout(
+                        data: AppArray().cardList[index],
+                        index: index,
+                        currentIndex: cardCtrl.currentIndex,
+                      );
+                    },
+                  ),
+                  const BorderLineLayout(),
+                  const Space(0, 20),
+                 const WalletLayout()
+                ],
+              ).marginOnly(bottom: AppScreenUtil().screenHeight(50)),
+            ),
+            BottomLayout(firstButtonText: CardBalanceFont().back,secondButtonText: CardBalanceFont().addNewCard,isBorderButton: false,)
+          ],
         ),
       );
     });

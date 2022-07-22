@@ -26,5 +26,8 @@ class AppRoute {
     GetPage(name: _routeName.orderSuccess, page: () => OrderSuccess()),
     GetPage(name: _routeName.cardBalance, page: () => CardBalance()),
     GetPage(name: _routeName.profileSetting, page: () => ProfileSetting()),
+    GetPage(name: _routeName.profileSetting, page: () => ProfileSetting()),
+    GetPage(name: _routeName.orderHistory, page: () => OrderHistory()),
+    GetPage(name: _routeName.orderDetail, page: () => OrderDetail()),
   ];
 }

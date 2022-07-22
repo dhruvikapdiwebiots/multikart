@@ -753,16 +753,16 @@ class AppArray {
   var offerAndPromotionList = [
     {
       "title":
-          "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards"
+          "offer1"
               .tr
     },
-    {"title": "Enjoy upto 50% off & free delivery on online orders!".tr},
+    {"title": "offer2".tr},
     {
       "title":
-          "Get upto 25% discount on Multikart Pay using ICICI Bank Net banking or Cards"
+          "offer1"
               .tr
     },
-    {"title": "Enjoy upto 50% off & free delivery on online orders!".tr},
+    {"title": "offer2".tr},
   ];
 
   //payment method list
@@ -780,24 +780,24 @@ class AppArray {
       "title": "Wallets".tr,
       "image": iconAssets.wallet,
       'child': [
-        {'title': 'Industrial & Commercial Bank', 'isSelect': false},
-        {'title': 'Construction Bank Corp.', 'isSelect': false},
-        {'title': 'Agricultural Bank', 'isSelect': false},
-        {'title': 'HSBC Holdings', 'isSelect': false},
-        {'title': 'Bank of America', 'isSelect': false},
-        {'title': 'JPMorgan Chase & Co.', 'isSelect': false},
+        {'title': 'Industrial & Commercial Bank'.tr, 'isSelect': false},
+        {'title': 'Construction Bank Corp.'.tr, 'isSelect': false},
+        {'title': 'Agricultural Bank'.tr, 'isSelect': false},
+        {'title': 'HSBC Holdings'.tr, 'isSelect': false},
+        {'title': 'Bank of America'.tr, 'isSelect': false},
+        {'title': 'JPMorgan Chase & Co.'.tr, 'isSelect': false},
       ]
     },
     {
       "title": "Net Banking".tr,
       "image": iconAssets.netBanking,
       'child': [
-        {'title': 'Adyen', 'isSelect': false},
-        {'title': 'Airtel Money', 'isSelect': false},
-        {'title': 'AlliedWallet', 'isSelect': false},
-        {'title': 'Apple Pay', 'isSelect': false},
-        {'title': 'Brinks', 'isSelect': false},
-        {'title': 'CardFree', 'isSelect': false},
+        {'title': 'Adyen'.tr, 'isSelect': false},
+        {'title': 'Airtel Money'.tr, 'isSelect': false},
+        {'title': 'AlliedWallet'.tr, 'isSelect': false},
+        {'title': 'Apple Pay'.tr, 'isSelect': false},
+        {'title': 'Brinks'.tr, 'isSelect': false},
+        {'title': 'CardFree'.tr, 'isSelect': false},
       ]
     },
   ];
@@ -835,19 +835,19 @@ class AppArray {
   var walletList = [
     {
       "image": imageAssets.wallet1,
-      "title": "Paytm Wallet",
+      "title": "Paytm Wallet".tr,
       "balance": 25.00,
       "isLink": true
     },
     {
       "image": imageAssets.wallet2,
-      "title": "Cash App",
+      "title": "Cash App".tr,
       "balance": 25.00,
       "isLink": true
     },
     {
       "image": imageAssets.wallet3,
-      "title": "Google Wallet",
+      "title": "Google Wallet".tr,
       "balance": 00,
       "isLink": false
     }

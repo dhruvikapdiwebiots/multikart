@@ -2,7 +2,8 @@ import '../../../../config.dart';
 
 class BottomLayout extends StatelessWidget {
   final String? firstButtonText, secondButtonText;
-  const BottomLayout({Key? key,this.firstButtonText,this.secondButtonText}) : super(key: key);
+  final bool isBorderButton;
+  const BottomLayout({Key? key,this.firstButtonText,this.secondButtonText,this.isBorderButton = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,9 @@ class BottomLayout extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ).gestures(onTap: ()=> Get.back()),
               ),
-              CustomButton(title: secondButtonText!, height: 35, width: 160,onTap: ()=> Get.back(),)
+              isBorderButton ?
+              CustomButton(title: secondButtonText!, height: 35, width: 160,onTap: ()=> Get.back(),) :
+              CustomButton(title: secondButtonText!, height: 35, width: 160,onTap: ()=> Get.back(),color: appCtrl.appTheme.whiteColor,border: Border.all(color: appCtrl.appTheme.primary),fontColor: appCtrl.appTheme.primary,)
             ],
           ),
         );

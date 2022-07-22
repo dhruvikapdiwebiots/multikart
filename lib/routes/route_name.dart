@@ -18,5 +18,7 @@ class RouteName {
   final String orderSuccess = '/orderSuccess';
   final String cardBalance = '/cardBalance';
   final String profileSetting = '/profileSetting';
+  final String orderHistory = '/orderHistory';
+  final String orderDetail = '/orderDetail';
   final noInternet = '/noInternet';
 }

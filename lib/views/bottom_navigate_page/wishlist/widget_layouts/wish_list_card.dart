@@ -3,7 +3,9 @@ import '../../../../config.dart';
 class WishListCard extends StatelessWidget {
   final HomeDealOfTheDayModel? homeDealOfTheDayModel;
   final int? index,lastIndex;
-  const WishListCard({Key? key,this.homeDealOfTheDayModel,this.lastIndex,this.index}) : super(key: key);
+  final GestureTapCallback? firstActionTap;
+  final GestureTapCallback? secondActionTap;
+  const WishListCard({Key? key,this.homeDealOfTheDayModel,this.lastIndex,this.index,this.firstActionTap,this.secondActionTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class WishListCard extends StatelessWidget {
             ),
             const Space(10, 0),
             DealsOfTheDayContent(
-              data: homeDealOfTheDayModel, isVariantsShow: false,isActionShow: true,),
+              data: homeDealOfTheDayModel, isVariantsShow: false,isActionShow: true,firstActionTap:firstActionTap,secondActionTap: secondActionTap,),
           ],
         ).marginSymmetric(
             horizontal: AppScreenUtil().screenWidth(15),

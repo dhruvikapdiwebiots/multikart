@@ -3,8 +3,16 @@ import 'package:multikart/config.dart';
 class Variants extends StatelessWidget {
   final GestureTapCallback? qtyTap, sizeTap;
   final bool isActionShow;
+  final GestureTapCallback? firstActionTap;
+  final GestureTapCallback? secondActionTap;
 
-  const Variants({Key? key, this.sizeTap, this.qtyTap, this.isActionShow = false})
+  const Variants(
+      {Key? key,
+      this.sizeTap,
+      this.qtyTap,
+      this.isActionShow = false,
+      this.firstActionTap,
+      this.secondActionTap})
       : super(key: key);
 
   @override
@@ -33,8 +41,14 @@ class Variants extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 1.8,
           ),
           const Space(0, 10),
-           ActionLayout(firstActionIcon:  HeartIcon(color: appCtrl.appTheme.blackColor)
-              .height(AppScreenUtil().screenHeight(14)),firstActionName: CommonTextFont().moveToWishList,secondAction: CommonTextFont().remove,)
+          ActionLayout(
+            firstActionIcon: HeartIcon(color: appCtrl.appTheme.blackColor)
+                .height(AppScreenUtil().screenHeight(14)),
+            firstActionName: CommonTextFont().moveToWishList,
+            secondAction: CommonTextFont().remove,
+            secondActionTap: secondActionTap,
+            firstActionTap:  firstActionTap,
+          )
         ],
       );
     });

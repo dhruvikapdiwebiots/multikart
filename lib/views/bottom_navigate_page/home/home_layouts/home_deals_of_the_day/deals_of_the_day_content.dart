@@ -6,8 +6,9 @@ class DealsOfTheDayContent extends StatelessWidget {
   final HomeDealOfTheDayModel? data;
   final bool isVariantsShow;
   final bool isActionShow;
-
-  const DealsOfTheDayContent({Key? key, this.data, this.isVariantsShow = false,this.isActionShow = false})
+  final GestureTapCallback? firstActionTap;
+  final GestureTapCallback? secondActionTap;
+  const DealsOfTheDayContent({Key? key, this.data, this.isVariantsShow = false,this.isActionShow = false,this.firstActionTap,this.secondActionTap})
       : super(key: key);
 
   @override
@@ -52,9 +53,9 @@ class DealsOfTheDayContent extends StatelessWidget {
             ],
           ),
           const Space(0, 10),
-          if (isVariantsShow) const Variants(),
+          if (isVariantsShow)  Variants(firstActionTap: firstActionTap,secondActionTap: secondActionTap,),
           if (isActionShow)
-            const WishListAction()
+             WishListAction(firstActionTap: firstActionTap,secondActionTap: secondActionTap,)
         ],
       );
     });
