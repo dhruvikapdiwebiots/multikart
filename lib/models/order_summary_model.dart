@@ -3,7 +3,7 @@ class OrderSummaryModel {
   String? image;
   String? size;
   int? qty;
-  int? price;
+  double? price;
 
   OrderSummaryModel({this.name, this.image, this.size, this.qty, this.price});
 

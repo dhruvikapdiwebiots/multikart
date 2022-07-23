@@ -3,8 +3,10 @@ import '../../../../config.dart';
 class OrderSuccessCard extends StatelessWidget {
   final OrderSummaryModel? orderSummaryModel;
   final int? index;
+  final bool isDivider;
 
-  const OrderSuccessCard({Key? key, this.orderSummaryModel, this.index})
+  const OrderSuccessCard(
+      {Key? key, this.orderSummaryModel, this.index, this.isDivider = true})
       : super(key: key);
 
   @override
@@ -54,16 +56,18 @@ class OrderSuccessCard extends StatelessWidget {
                       color: appCtrl.appTheme.greenColor),
                 ]),
                 LatoFontStyle(
-                    text: "\$${orderSummaryModel!.price}",
+                    text:
+                        "\$${double.parse(orderSummaryModel!.price.toString())}",
                     fontWeight: FontWeight.w600,
                     fontSize: FontSizes.f14,
                     color: appCtrl.appTheme.contentColor),
               ]).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15))
             ]),
-            const Space(0, 15),
-            if (index != orderSummaryArray.length - 1)
-              Divider(color: appCtrl.appTheme.blackColor),
-            const Space(0, 15),
+            if (isDivider)  const Space(0, 15),
+            if (isDivider)
+              if (index != orderSummaryArray.length - 1)
+                Divider(color: appCtrl.appTheme.blackColor),
+            if (isDivider) const Space(0, 15),
           ]));
     });
   }

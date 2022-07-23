@@ -10,6 +10,25 @@ class OrderDetailController extends GetxController {
   TextEditingController controller = TextEditingController();
   List<OrderHistoryModel> orderHistoryList =[];
 
+  var data = [{
+    "title":"Out For Delivery",
+    "date":"expected delivery on monday",
+    "isCompete":false,
+  },{
+    "title":"In Transit",
+    "date":"10.00 am, 21/05/2020",
+    "isCompete":true,
+  },{
+    "title":"Ready To Ship",
+    "date":"10.00 am, 21/05/2020",
+    "isCompete":true,
+  },
+    {
+      "title":"Ordered",
+      "date":"20/05/2020",
+      "isCompete":true,
+    }];
+
   @override
   void onReady() {
     // TODO: implement onReady

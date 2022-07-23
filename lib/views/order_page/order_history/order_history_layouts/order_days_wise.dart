@@ -1,3 +1,5 @@
+import 'package:multikart/views/order_page/order_history/order_history_layouts/order_rating.dart';
+
 import '../../../../config.dart';
 
 class OrderDaysWise extends StatelessWidget {
@@ -42,44 +44,17 @@ class OrderDaysWise extends StatelessWidget {
             Row(
               children: [
                 OrderDateDeliveryStatus(
-                    title: "Ordered:", value: daysWiseList!.date),
+                    title: OrderHistoryFont().ordered, value: daysWiseList!.date),
                 const Space(15, 0),
                 OrderDateDeliveryStatus(
-                    title: "Delivery Status:",
+                    title:OrderHistoryFont().deliveryStatus,
                     value: daysWiseList!.deliveryStatus)
               ],
             )
           ],
         ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
         if (isRatingShow)
-          Row(
-            children: [
-              Icon(
-                Icons.star_border,
-                color: appCtrl.appTheme.contentColor,
-                size: AppScreenUtil().size(16),
-              ),
-              LatoFontStyle(
-                  text: " Rate & Review Product",
-                  fontWeight: FontWeight.w600,
-                  fontSize: FontSizes.f12,
-                  color: appCtrl.appTheme.contentColor
-              ),
-              const Space(30, 0),
-              Icon(
-                Icons.help_outline,
-                color: appCtrl.appTheme.contentColor,
-                size: AppScreenUtil().size(16),
-              ),
-              const Space(10, 0),
-              LatoFontStyle(
-                  text: "Need Help?",
-                  fontWeight: FontWeight.w600,
-                  fontSize: FontSizes.f12,
-                  color: appCtrl.appTheme.contentColor
-              )
-            ],
-          ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
+          const OrderRating(),
         const Space(0, 15),
         if (index != lastIndex)
           Divider(

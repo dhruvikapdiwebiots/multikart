@@ -424,4 +424,15 @@ final dynamic en = {
 
   //order history
   "orderHistory": "Order History",
+  "View Detail": "View Detail",
+  "Dispatched": "Dispatched",
+  "OnGoing": "OnGoing",
+  "On the way": "On the way",
+  "Past Orders": "Past Orders",
+  "26th May, 2021": "26th May, 2021",
+  "Open Orders": "Open Orders",
+  "ordered": "Ordered:",
+  "deliveryStatus": "Delivery Status:",
+  "rateReview": "Rate & Review Product",
+  "needHelp": "Need Help?",
 };

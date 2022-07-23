@@ -14,6 +14,7 @@ class Fonts {
 class Insets {
   static const double scale = 1;
 
+  static const double i2 = 2 * scale;
   static const double i5 = 5 * scale;
   static const double i10 = 10 * scale;
   static const double i15 = 15 * scale;
