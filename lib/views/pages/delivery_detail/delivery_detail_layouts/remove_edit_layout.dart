@@ -20,7 +20,7 @@ class RemoveEditLayout extends StatelessWidget {
                   : appCtrl.appTheme.greyLight25,
               width: AppScreenUtil().screenWidth(80),
               height: AppScreenUtil().screenHeight(20),
-              fontSize: FontSizes.f14,
+              fontSize: FontSizes.f12,
               fontWeight: FontWeight.normal,
               fontColor: appCtrl.appTheme.contentColor),
           CustomButton(
@@ -30,7 +30,7 @@ class RemoveEditLayout extends StatelessWidget {
                   : appCtrl.appTheme.greyLight25,
               width: AppScreenUtil().screenWidth(80),
               height: AppScreenUtil().screenHeight(20),
-              fontSize: FontSizes.f14,
+              fontSize: FontSizes.f12,
               fontWeight: FontWeight.normal,
               fontColor: appCtrl.appTheme.contentColor)
         ],

@@ -96,6 +96,7 @@ flutter:
     - assets/product/
     - assets/card/
     - assets/wallet/
+    - assets/notification/
     - assets/home_images/home_category/
     - assets/home_images/home_banner/
     - assets/home_images/home_deals/

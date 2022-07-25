@@ -1,7 +1,8 @@
 import '../../../../config.dart';
 
 class EmptyLayout extends StatelessWidget {
-  const EmptyLayout({Key? key}) : super(key: key);
+final String? title,desc;
+  const EmptyLayout({Key? key,this.title,this.desc}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class EmptyLayout extends StatelessWidget {
               .marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
           const Space(0, 30),
           LatoFontStyle(
-            text: CartFont().totalAmount,
+            text: title,
             fontSize: FontSizes.f18,
             fontWeight: FontWeight.w700,
             color: appCtrl.appTheme.blackColor,
@@ -21,7 +22,7 @@ class EmptyLayout extends StatelessWidget {
           const Space(0, 15),
           LatoFontStyle(
             text:
-                CartFont().emptyDesc,
+                desc,
             fontSize: FontSizes.f16,
             textAlign: TextAlign.center,
             fontWeight: FontWeight.normal,

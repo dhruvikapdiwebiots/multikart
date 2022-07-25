@@ -1,3 +1,5 @@
+import 'package:multikart/views/bottom_navigate_page/home/home.dart';
+
 import '../../../config.dart';
 
 class CartScreen extends StatefulWidget {
@@ -58,10 +60,12 @@ class _CartScreenState extends State<CartScreen> {
                             cartCtrl.update();
                             Get.toNamed(routeName.deliveryDetail,
                                 arguments: cartCtrl.cartModelList!.totalAmount);
+
                           })
                   ],
                 )
-              : const EmptyLayout());
+              : EmptyLayout(
+                  title: CartFont().emptyTitle, desc: CartFont().emptyDesc));
     });
   }
 }

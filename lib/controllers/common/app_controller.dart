@@ -13,6 +13,7 @@ class AppController extends GetxController {
   int selectedIndex = 0;
   bool isTheme = false;
   bool isRTL = false;
+  bool isNotificationShow = false;
   String languageVal = "en";
   List bottomList = [];
   bool isSearch = true;

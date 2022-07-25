@@ -9,3 +9,4 @@ export 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/re
 export 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/add_address_button.dart';
 export 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/expected_delivery_layout.dart';
 export 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/delivery_detail_card.dart';
+export 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/delivery_data.dart';

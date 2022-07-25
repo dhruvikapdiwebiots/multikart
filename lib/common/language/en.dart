@@ -337,6 +337,7 @@ final dynamic en = {
   "makeDefaultAddress": "Make Default Address",
   "Office": "Office",
   "Others": "Others",
+  "savedAddress": "Saved Address",
 
   //payment font
   "paymentDetails": "Payment Details",
@@ -435,4 +436,26 @@ final dynamic en = {
   "deliveryStatus": "Delivery Status:",
   "rateReview": "Rate & Review Product",
   "needHelp": "Need Help?",
+
+  //order detail font
+  "shippingDetail": "Shipping Details",
+  "downloadInvoice": "Download Invoice",
+  "priceDetails": "Price Details",
+  "All":"All",
+  "Order Info":"Order Info",
+  "Offers":"Offers",
+  "10 July, 2021":"10 July, 2021",
+  "5 July, 2021":"5 July, 2021",
+  "20 April, 2021":"20 April, 2021",
+  "5 June, 2021":"5 June, 2021",
+  "Exclusive Brand Day Sale!! HURRY, LIMITED period offer!":"Exclusive Brand Day Sale!! HURRY, LIMITED period offer!",
+  "Order Placed successfully. It will be delivered on Mon 15 July, 2021":"Order Placed successfully. It will be delivered on Mon 15 July, 2021",
+  "We have got coupons. collect now and save extras !!!":"We have got coupons. collect now and save extras !!!",
+  "Payment Failed. You can retry making a payment on order sections.":"Payment Failed. You can retry making a payment on order sections.",
+  "Your order is delivered on time. for any further assistance please contact us.":"Your order is delivered on time. for any further assistance please contact us.",
+
+  //terms and condition font
+  "termsConditionForMultikart":"Terms and Conditions for Multikart",
+  "termsCondition":"Terms & Condition",
+
 };

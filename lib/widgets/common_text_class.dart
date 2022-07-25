@@ -31,6 +31,10 @@ class CommonTextFont{
   String link = "link".tr;
   String moveToWishListDesc = "moveToWishListDesc".tr;
   String removeDesc = "removeDesc".tr;
+  String savedAddress = "savedAddress".tr;
+  String settings = "Settings".tr;
+  String termsCondition = "termsCondition".tr;
+  String termsConditionForMultikart = "termsConditionForMultikart".tr;
 
 
 }

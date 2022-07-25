@@ -16,6 +16,7 @@ class PaymentMethod extends StatelessWidget {
               text: PaymentFont().paymentMethod,
               fontSize: FontSizes.f16,
               fontWeight: FontWeight.w700),
+          const Space(0, 10),
           ...AppArray().paymentMethodList.asMap().entries.map((e) {
             return GestureDetector(
               onTap: () => paymentCtrl.selectAddressType(e.value, e.key),

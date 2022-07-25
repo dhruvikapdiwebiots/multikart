@@ -751,17 +751,9 @@ class AppArray {
 
   //var offer & promotion list
   var offerAndPromotionList = [
-    {
-      "title":
-          "offer1"
-              .tr
-    },
+    {"title": "offer1".tr},
     {"title": "offer2".tr},
-    {
-      "title":
-          "offer1"
-              .tr
-    },
+    {"title": "offer1".tr},
     {"title": "offer2".tr},
   ];
 
@@ -851,5 +843,13 @@ class AppArray {
       "balance": 00,
       "isLink": false
     }
+  ];
+
+  //notification category
+  var notificationCategory = [
+    {"id": 1,"title": "All".tr},
+    {"id": 2,"title": "Order Info".tr},
+    {"id": 3,"title": "Offers".tr},
+    {"id": 4,"title": "Payment".tr}
   ];
 }

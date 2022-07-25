@@ -1,5 +1,3 @@
-import 'package:multikart/views/order_page/order_history/order_history_layouts/order_rating.dart';
-
 import '../../../../config.dart';
 
 class OrderDaysWise extends StatelessWidget {

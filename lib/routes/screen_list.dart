@@ -20,3 +20,7 @@ export '../views/order_page/order_history/order_history.dart';
 export '../views/order_page/order_detail/order_detail.dart';
 export '../views/checkout/card_balance/card_balance.dart';
 export '../views/pages/profile_setting/profile_setting.dart';
+export '../views/pages/save_address/save_address.dart';
+export '../views/pages/notification/notification.dart';
+export '../views/pages/setting/setting.dart';
+export '../views/pages/terms_condition/terms_condition.dart';

@@ -45,8 +45,16 @@ class ProfileController extends GetxController {
       appCtrl.update();
     } else if (index == 5) {
       Get.toNamed(routeName.cardBalance);
+    } else if (index == 6) {
+      Get.toNamed(routeName.saveAddress);
+    } else if (index == 8) {
+      Get.toNamed(routeName.notification);
+    } else if (index == 9) {
+      Get.toNamed(routeName.setting);
     } else if (index == 10) {
       Get.toNamed(routeName.profileSetting);
+    }else if (index == 11) {
+      Get.toNamed(routeName.termsCondition);
     }
     update();
   }

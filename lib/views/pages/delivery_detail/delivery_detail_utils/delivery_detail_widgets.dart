@@ -31,7 +31,7 @@ class DeliveryDetailWidgets {
     return LatoFontStyle(
         text: text,
         fontWeight: FontWeight.normal,
-        fontSize: FontSizes.f14,
+        fontSize: FontSizes.f13,
         color: appCtrl.appTheme.contentColor);
   }
 

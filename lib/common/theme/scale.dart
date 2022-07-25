@@ -34,6 +34,7 @@ class FontSizes {
   static const double f12 = 12.0 * scale;
   static const double f14 = 14.0 * scale;
   static const double f13 = 13.0 * scale;
+  static const double f15 = 15.0 * scale;
   static const double f16 = 16.0 * scale;
   static const double f18 = 18.0 * scale;
   static const double f20 = 20.0 * scale;

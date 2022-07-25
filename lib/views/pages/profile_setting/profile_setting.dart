@@ -1,8 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/views/pages/profile_setting/profile_layouts/personal_detail_layout.dart';
-import 'package:multikart/views/pages/profile_setting/profile_layouts/security_layout.dart';
-import 'package:multikart/views/pages/profile_setting/profile_layouts/user_image.dart';
-import 'package:multikart/views/pages/profile_setting/profile_utils/profile_widget.dart';
 
 class ProfileSetting extends StatelessWidget {
   final profileCtrl = Get.put(ProfileController());
@@ -38,9 +34,14 @@ class ProfileSetting extends StatelessWidget {
                   const SecurityLayout(),
                   const Space(0, 50),
                 ],
-              ).width(MediaQuery.of(context).size.width).marginOnly(top: Insets.i20,bottom: Insets.i30),
+              )
+                  .width(MediaQuery.of(context).size.width)
+                  .marginOnly(top: Insets.i20, bottom: Insets.i30),
             ),
-            BottomLayout(firstButtonText: ProfileFont().cancel,secondButtonText: ProfileFont().saveDetails,)
+            BottomLayout(
+              firstButtonText: ProfileFont().cancel,
+              secondButtonText: ProfileFont().saveDetails,
+            )
           ],
         ),
       );

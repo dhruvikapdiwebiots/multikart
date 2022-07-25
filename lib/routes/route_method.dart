@@ -8,6 +8,7 @@ RouteName _routeName = RouteName();
 
 class AppRoute {
   final List<GetPage> getPages = [
+
     GetPage(name: _routeName.onBoarding, page: () => const OnBoardingScreen()),
     GetPage(name: _routeName.login, page: () => LoginScreen()),
     GetPage(name: _routeName.signUp, page: () => SignUpScreen()),
@@ -28,6 +29,10 @@ class AppRoute {
     GetPage(name: _routeName.profileSetting, page: () => ProfileSetting()),
     GetPage(name: _routeName.profileSetting, page: () => ProfileSetting()),
     GetPage(name: _routeName.orderHistory, page: () => OrderHistory()),
-    GetPage(name: _routeName.orderDetail, page: () => OrderDetail()),
+    GetPage(name: _routeName.orderDetail, page: () => const OrderDetail()),
+    GetPage(name: _routeName.saveAddress, page: () =>  SaveAddress()),
+    GetPage(name: _routeName.notification, page: () =>  Notification()),
+    GetPage(name: _routeName.setting, page: () =>  Setting()),
+    GetPage(name: _routeName.termsCondition, page: () =>  TermsAndCondition()),
   ];
 }

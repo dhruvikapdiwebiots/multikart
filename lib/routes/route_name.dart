@@ -20,5 +20,9 @@ class RouteName {
   final String profileSetting = '/profileSetting';
   final String orderHistory = '/orderHistory';
   final String orderDetail = '/orderDetail';
+  final String saveAddress = '/saveAddress';
+  final String notification = '/notification';
+  final String setting = '/setting';
+  final String termsCondition = '/termsCondition';
   final noInternet = '/noInternet';
 }

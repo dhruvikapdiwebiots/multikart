@@ -20,11 +20,11 @@ class PaymentMethodCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Image.asset(data['image']!,height: AppScreenUtil().screenHeight(20),),
+                  Image.asset(data['image']!,height: AppScreenUtil().screenHeight(18),),
                   const Space(10, 0),
                   LatoFontStyle(
                     text: data['title'],
-                    fontSize: FontSizes.f16,
+                    fontSize: FontSizes.f14,
                     color: appCtrl.appTheme.blackColor,
                   ),
                 ],

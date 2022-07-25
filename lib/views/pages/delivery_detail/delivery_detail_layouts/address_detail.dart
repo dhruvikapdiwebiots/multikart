@@ -4,9 +4,14 @@ class AddressDetail extends StatelessWidget {
   final AddressList? addressList;
   final int? index;
   final int? selectRadio;
+  final bool isShow;
 
   const AddressDetail(
-      {Key? key, this.selectRadio, this.index, this.addressList})
+      {Key? key,
+      this.selectRadio,
+      this.index,
+      this.addressList,
+      this.isShow = true})
       : super(key: key);
 
   @override
@@ -39,10 +44,11 @@ class AddressDetail extends StatelessWidget {
           DeliveryDetailWidgets().phoneCommonText(addressList!.phone)
         ]),
         const Space(0, 10),
-        RemoveEditLayout(
-          index: index,
-          selectRadio: selectRadio,
-        )
+        if (isShow)
+          RemoveEditLayout(
+            index: index,
+            selectRadio: selectRadio,
+          )
       ]);
     });
   }

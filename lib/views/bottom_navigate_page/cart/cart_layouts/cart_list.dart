@@ -35,7 +35,7 @@ class CartList extends StatelessWidget {
                     const Space(10, 0),
                     DealsOfTheDayContent(
                         data: e.value, isVariantsShow: true, isActionShow: false,firstActionTap: (){
-                          print('dd');
+
                       cartCtrl.bottomSheetLayout(CommonTextFont().moveToWishList);
                     }, secondActionTap:()=> cartCtrl.bottomSheetLayout(CommonTextFont().remove),),
                   ],

@@ -1,5 +1,3 @@
-import 'package:multikart/views/authentication_page/onbaording/dot_indicator.dart';
-
 import '../../../config.dart';
 
 class OnBoardData extends StatelessWidget {
@@ -14,8 +12,7 @@ class OnBoardData extends StatelessWidget {
               child: Column(
                 children: [
                   OnBoardWidget().textLayout(
-                      text: onBoardingCtrl.imgList[onBoardingCtrl.current]
-                              .title
+                      text: onBoardingCtrl.imgList[onBoardingCtrl.current].title
                           .toString()
                           .tr,
                       fontSize: FontSizes.f14,
@@ -27,8 +24,8 @@ class OnBoardData extends StatelessWidget {
                     padding: EdgeInsets.symmetric(
                         horizontal: AppScreenUtil().screenWidth(15)),
                     child: OnBoardWidget().textLayout(
-                        text: onBoardingCtrl.imgList[onBoardingCtrl.current]
-                               .description
+                        text: onBoardingCtrl
+                            .imgList[onBoardingCtrl.current].description
                             .toString()
                             .tr,
                         fontSize: FontSizes.f12,
@@ -37,7 +34,7 @@ class OnBoardData extends StatelessWidget {
                         textDecoration: TextDecoration.none),
                   ),
                   const Space(0, 25),
-                   DotIndicator()
+                  const DotIndicator()
                 ],
               ),
             )

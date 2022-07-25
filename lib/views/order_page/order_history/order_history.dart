@@ -1,5 +1,6 @@
 import 'package:multikart/config.dart';
 
+
 class OrderHistory extends StatelessWidget {
   final orderHistoryCtrl = Get.put(OrderHistoryController());
 
@@ -23,13 +24,7 @@ class OrderHistory extends StatelessWidget {
               OrderHistoryWidget().searchTextBoxAndFilter(
                   controller: orderHistoryCtrl.controller, onTap: () {}),
               const Space(0, 20),
-              ...orderHistoryCtrl.orderHistoryList.asMap().entries.map((e) {
-                return OrderHistoryCard(
-                  index: e.key,
-                  lastIndex: orderHistoryCtrl.orderHistoryList.length - 1,
-                  orderHistoryModel: e.value,
-                ).gestures(onTap: ()=> Get.toNamed(routeName.orderDetail));
-              }).toList()
+           const OrderHistoryLayout()
             ],
           ).width(MediaQuery.of(context).size.width),
         ),

@@ -27,7 +27,7 @@ class FindYourStyleCategoryCard extends StatelessWidget {
                 ? appCtrl.appTheme.primary
                 : appCtrl.appTheme.lightGray,
             borderRadius: BorderRadius.circular(
-                AppScreenUtil().borderRadius(5)),
+                AppScreenUtil().borderRadius(3)),
           ),
           child: LatoFontStyle(
             text: data

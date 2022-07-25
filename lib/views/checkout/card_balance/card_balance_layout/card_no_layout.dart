@@ -1,5 +1,3 @@
-import 'package:multikart/views/checkout/card_balance/card_balance_utils/card_balance_widget.dart';
-
 import '../../../../config.dart';
 
 class CardNoLayout extends StatelessWidget {

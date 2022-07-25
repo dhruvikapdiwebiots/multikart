@@ -18,3 +18,5 @@ export 'order_history_model.dart';
 export 'delivery_detail_model.dart';
 export 'profile_model.dart';
 export 'order_summary_model.dart';
+export 'notification.dart';
+export 'terms_condition_model.dart';

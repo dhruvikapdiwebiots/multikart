@@ -1,5 +1,3 @@
-import 'package:multikart/views/order_page/order_success/order_success_layouts/order_success_card.dart';
-
 import '../../../../config.dart';
 
 class OrderSummary extends StatelessWidget {
@@ -20,8 +18,9 @@ class OrderSummary extends StatelessWidget {
           ...orderSummaryArray.asMap().entries.map((e) {
             return OrderSuccessCard(orderSummaryModel: e.value,index: e.key,);
           }).toList(),
-          const Space(0, 20),
+
           CartOrderDetailLayout(cartModelList: cartList,isDeliveryShow: false,isApplyText: false,),
+          const Space(0, 50),
         ],
       )
           .width(MediaQuery.of(context).size.width)
