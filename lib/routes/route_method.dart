@@ -34,5 +34,8 @@ class AppRoute {
     GetPage(name: _routeName.notification, page: () =>  Notification()),
     GetPage(name: _routeName.setting, page: () =>  Setting()),
     GetPage(name: _routeName.termsCondition, page: () =>  TermsAndCondition()),
+    GetPage(name: _routeName.help, page: () =>  Help()),
+    GetPage(name: _routeName.aboutUs, page: () =>  AboutUs()),
+    GetPage(name: _routeName.pageList, page: () =>  PageList()),
   ];
 }

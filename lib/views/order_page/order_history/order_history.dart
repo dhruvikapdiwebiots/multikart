@@ -13,6 +13,8 @@ class OrderHistory extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: orderHistoryCtrl.appCtrl.appTheme.whiteColor,
           title: Text(OrderHistoryFont().orderHistory),
         ),

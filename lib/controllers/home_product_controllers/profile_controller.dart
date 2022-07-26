@@ -33,8 +33,25 @@ class ProfileController extends GetxController {
     super.onReady();
   }
 
+  //language bottom sheet
+  bottomSheet() {
+    print('dd');
+    Get.bottomSheet(
+      BottomSheetLayout(child:  LanguageBottomSheet()),
+      backgroundColor: Colors.white,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+            topRight: Radius.circular(AppScreenUtil().borderRadius(15)),
+            topLeft: Radius.circular(AppScreenUtil().borderRadius(15))),
+      ),
+    );
+  }
+
   goToPage(index) async {
-    if (index == 3) {
+    if (index == 2) {
+      Get.toNamed(routeName.pageList);
+    } else if (index == 3) {
       Get.toNamed(routeName.orderHistory);
     } else if (index == 4) {
       DashboardController dashboardController = Get.find();
@@ -47,6 +64,8 @@ class ProfileController extends GetxController {
       Get.toNamed(routeName.cardBalance);
     } else if (index == 6) {
       Get.toNamed(routeName.saveAddress);
+    } else if (index == 7) {
+      bottomSheet();
     } else if (index == 8) {
       Get.toNamed(routeName.notification);
     } else if (index == 9) {
@@ -55,6 +74,8 @@ class ProfileController extends GetxController {
       Get.toNamed(routeName.profileSetting);
     }else if (index == 11) {
       Get.toNamed(routeName.termsCondition);
+    }else if (index == 12) {
+      Get.toNamed(routeName.help);
     }
     update();
   }

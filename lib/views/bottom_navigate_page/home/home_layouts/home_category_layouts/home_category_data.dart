@@ -8,7 +8,8 @@ class HomeCategoryData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<AppController>(builder: (appCtrl) {
+    return GetBuilder<HomeController>(builder: (homeCtrl) {
+
       return Padding(
         padding: EdgeInsets.only(
             right: AppScreenUtil().screenWidth(12),
@@ -23,7 +24,7 @@ class HomeCategoryData extends StatelessWidget {
                   Container(
                     width: AppScreenUtil().screenWidth(55),
                     decoration: BoxDecoration(
-                      color: appCtrl.appTheme.homeCategoryColor,
+                      color: homeCtrl.appCtrl.appTheme.homeCategoryColor,
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -36,7 +37,7 @@ class HomeCategoryData extends StatelessWidget {
               ),
             ),
             LatoFontStyle(
-              text: data!.title.toString(),
+              text: data!.title!.tr,
               fontWeight: FontWeight.w600,
               fontSize: FontSizes.f12,
             )

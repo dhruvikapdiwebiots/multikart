@@ -1,4 +1,4 @@
-import 'package:multikart/config.dart';
+
 
 class TermsAndConditionModel {
   String? title;

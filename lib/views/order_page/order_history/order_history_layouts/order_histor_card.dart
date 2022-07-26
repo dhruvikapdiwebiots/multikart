@@ -26,7 +26,9 @@ class OrderHistoryCard extends StatelessWidget {
               index: data.key,
               lastIndex: orderHistoryModel!.daysWiseList!.length - 1,
               daysWiseList: data.value,
-              isRatingShow: orderHistoryModel!.orderDay == "Past Orders" ? true:false,
+              isRatingShow: orderHistoryModel!.orderDay == "Past Orders" || orderHistoryModel!.orderDay =="과거 주문"  || orderHistoryModel!.orderDay =="الطلبات السابقة" ||
+                      orderHistoryModel!.orderDay == "पिछले आदेश"
+                  ? true:false,
             );
           }).toList(),
           const Space(0, 20),

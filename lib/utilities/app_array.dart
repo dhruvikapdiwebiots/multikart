@@ -140,7 +140,7 @@ class AppArray {
       'subTitle': 'Elements & Other Pages'.tr
     },
     {
-      'title': 'Home'.tr,
+      'title': 'home'.tr,
       'icon': svgAssets.homeSvg,
       'subTitle': 'Offers, Top Deals, Top Brands'.tr
     },
@@ -847,9 +847,52 @@ class AppArray {
 
   //notification category
   var notificationCategory = [
-    {"id": 1,"title": "All".tr},
-    {"id": 2,"title": "Order Info".tr},
-    {"id": 3,"title": "Offers".tr},
-    {"id": 4,"title": "Payment".tr}
+    {"id": 1, "title": "All".tr},
+    {"id": 2, "title": "Order Info".tr},
+    {"id": 3, "title": "Offers".tr},
+    {"id": 4, "title": "Payment".tr}
+  ];
+
+  var helpList = [
+    {"title": "I want to track my order".tr, "child": "helpListDec".tr},
+    {"title": "I want to manage my order".tr, "child": "helpListDec".tr},
+    {
+      "title": "I did not receive Instant Cashback (Credit/Debit Card)".tr,
+      "child": "helpListDec".tr
+    },
+    {"title": "I want help with other issues".tr, "child": "helpListDec".tr},
+    {"title": "I am unable to pay using wallet".tr, "child": "helpListDec".tr},
+    {
+      "title": "I want to unsubscribe from promotional emails and SMS".tr,
+      "child": "helpListDec".tr
+    },
+    {
+      "title": "I want help with returns & refunds".tr,
+      "child": "helpListDec".tr
+    }
+  ];
+
+  //language list
+  var languageList = [
+    {
+      'icon': imageAssets.us,
+      'name': 'English'.tr,
+      'locale': const Locale('en', 'US')
+    },
+    {
+      'icon': imageAssets.ar,
+      'name': 'Arabic'.tr,
+      'locale': const Locale('ar', 'AE')
+    },
+    {
+      'icon': imageAssets.inImage,
+      'name': 'Hindi'.tr,
+      'locale': const Locale('hi', 'IN')
+    },
+    {
+      'icon': imageAssets.kr,
+      'name': 'Korean'.tr,
+      'locale': const Locale('ko', 'KR')
+    }
   ];
 }

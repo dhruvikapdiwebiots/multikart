@@ -16,6 +16,8 @@ class Notification extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: notificationCtrl.appCtrl.appTheme.whiteColor,
           title: Text(NotificationFont().notification),
         ),

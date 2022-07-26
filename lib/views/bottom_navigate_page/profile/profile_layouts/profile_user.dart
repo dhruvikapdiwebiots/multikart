@@ -35,7 +35,7 @@ class ProfileUser extends StatelessWidget {
                   const Space(0, 10),
                   CustomButton(
                       title: CommonTextFont().edit,
-                      width: AppScreenUtil().screenWidth(60),
+                      width: AppScreenUtil().screenWidth(100),
                       fontWeight: FontWeight.w600,
                       fontSize: FontSizes.f14,
                       height: AppScreenUtil().screenHeight(25),

@@ -6,4 +6,7 @@ class OrderHistoryFont {
   String deliveryStatus = "deliveryStatus".tr;
   String rateReview = "rateReview".tr;
   String needHelp = "needHelp".tr;
+  String viewDetails = "viewDetails".tr;
+  String size = "size".tr;
+  String qty = "qty".tr;
 }

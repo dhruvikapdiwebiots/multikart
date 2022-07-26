@@ -1,4 +1,4 @@
-import 'package:multikart/common/array/terms_condition_array.dart';
+
 
 import '../../config.dart';
 

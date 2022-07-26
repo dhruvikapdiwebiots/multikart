@@ -15,11 +15,11 @@ class OrderHistorySizeQty extends StatelessWidget {
             fontSize: FontSizes.f14,
             color: appCtrl.appTheme.blackColor),
         Row(children: [
-          OrderHistoryWidget().commonText("Size:"),
+          OrderHistoryWidget().commonText(OrderHistoryFont().size),
           const Space(5, 0),
           OrderHistoryWidget().commonText(daysWiseList!.size),
           const Space(10, 0),
-          OrderHistoryWidget().commonText("Qty:"),
+          OrderHistoryWidget().commonText(OrderHistoryFont().qty),
           const Space(5, 0),
           OrderHistoryWidget().commonText(daysWiseList!.qty.toString()),
         ]),

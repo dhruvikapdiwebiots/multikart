@@ -17,11 +17,12 @@ class CartOrderDetailLayout extends StatelessWidget {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return cartModelList!.orderDetail != null ? Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ...cartModelList!.orderDetail!.map((e) {
-
+print(e.title);
+print(e.value);
           String val;
-          if ((e.title == "Bag savings")) {
+          if ((e.title == "Bag savings" || e.title == "बैग बचत" || e.title == "توفير الحقيبة" || e.title == "가방 절약")) {
             val = "-\$${e.value}";
-          } else if ((e.value == "Apply Coupon")) {
+          } else if ((e.value == "Apply Coupon" ||e.value == "कूपन लागू करें" ||e.value == "쿠폰 적용ं"  ||e.value == "تطبيق القسائم" )) {
             val = e.value;
           } else {
             val = "\$${e.value}";
@@ -29,14 +30,14 @@ class CartOrderDetailLayout extends StatelessWidget {
           return  CartDetail(
             isApplyText: isApplyText,
             totalAmount: cartModelList!.totalAmount.toString(),
-            val: val,
+            val: val.tr,
             orderDetail: e,
           );
         }).toList(),
         Divider(color: appCtrl.appTheme.greyLight25),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           LatoFontStyle(
-              text: CartFont().totalAmount,
+              text: CartFont().totalAmount.tr,
               fontSize: FontSizes.f14,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w600),

@@ -23,7 +23,7 @@ class SearchTextBox extends StatelessWidget {
           controller: controller,
           decoration: InputDecoration(
             filled: true,
-            hintText: hinText,
+            hintText: hinText.tr,
             hintStyle: TextStyle(
               fontSize: FontSizes.f16,
               color: appCtrl.appTheme.contentColor,

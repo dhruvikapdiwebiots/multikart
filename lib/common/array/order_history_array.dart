@@ -8,16 +8,16 @@ var orderHistory = <OrderHistoryModel>[
         name: "Pink Hoodie t-shirt full".tr,
         date: "26th May, 2021".tr,
         image: imageAssets.product14,
-        deliveryStatus: "Dispatched",
-        status: "OnGoing"),
+        deliveryStatus: "Dispatched".tr,
+        status: "OnGoing".tr),
     DaysWiseList(
         qty: 1,
         size: "S",
         name: "Pink Hoodie t-shirt full".tr,
         date: "26th May, 2021".tr,
         image: imageAssets.product15,
-        deliveryStatus: "On the way",
-        status: "OnGoing"),
+        deliveryStatus: "On the way".tr,
+        status: "OnGoing".tr),
   ]),
   OrderHistoryModel(orderDay: "Past Orders".tr, daysWiseList: [
     DaysWiseList(
@@ -26,7 +26,7 @@ var orderHistory = <OrderHistoryModel>[
         name: "Pink Hoodie t-shirt full".tr,
         date: "26th May, 2021".tr,
         image: imageAssets.product13,
-        deliveryStatus: "Delivered",
+        deliveryStatus: "Delivered".tr,
         status: "Delivered"),
     DaysWiseList(
         qty: 1,
@@ -34,7 +34,7 @@ var orderHistory = <OrderHistoryModel>[
         name: "Pink Hoodie t-shirt full".tr,
         date: "26th May, 2021".tr,
         image: imageAssets.dealOfTheDay2,
-        deliveryStatus: "Delivered",
-        status: "Delivered"),
+        deliveryStatus: "Delivered".tr,
+        status: "Delivered".tr),
   ]),
 ];

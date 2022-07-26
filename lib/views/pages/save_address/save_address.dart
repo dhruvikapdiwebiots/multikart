@@ -14,6 +14,8 @@ class SaveAddress extends StatelessWidget {
           appBar: AppBar(
             centerTitle: false,
             elevation: 0,
+            automaticallyImplyLeading: false,
+            leading: const BackArrowButton(),
             backgroundColor: saveAddressCtrl.appCtrl.appTheme.whiteColor,
             title: Text(CommonTextFont().savedAddress),
           ),

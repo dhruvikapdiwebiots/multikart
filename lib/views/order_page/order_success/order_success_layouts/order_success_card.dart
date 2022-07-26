@@ -33,7 +33,7 @@ class OrderSuccessCard extends StatelessWidget {
                     color: appCtrl.appTheme.contentColor),
                 Row(children: [
                   LatoFontStyle(
-                      text: "Size:",
+                      text: OrderHistoryFont().size,
                       fontWeight: FontWeight.w700,
                       fontSize: FontSizes.f13,
                       color: appCtrl.appTheme.contentColor),
@@ -43,8 +43,9 @@ class OrderSuccessCard extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                       fontSize: FontSizes.f13,
                       color: appCtrl.appTheme.greenColor),
+                  const Space(10, 0),
                   LatoFontStyle(
-                      text: "Qty:",
+                      text: OrderHistoryFont().qty,
                       fontWeight: FontWeight.w700,
                       fontSize: FontSizes.f13,
                       color: appCtrl.appTheme.contentColor),

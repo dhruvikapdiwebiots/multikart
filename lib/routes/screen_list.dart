@@ -24,3 +24,6 @@ export '../views/pages/save_address/save_address.dart';
 export '../views/pages/notification/notification.dart';
 export '../views/pages/setting/setting.dart';
 export '../views/pages/terms_condition/terms_condition.dart';
+export '../views/pages/help/help.dart';
+export '../views/pages/about_us/about_us.dart';
+export '../views/pages/page_list/page_list.dart';

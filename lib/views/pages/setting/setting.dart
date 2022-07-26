@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:multikart/config.dart';
 import 'package:multikart/controllers/pages_controller/setting_controller.dart';
 import 'package:multikart/views/pages/setting/setting_card.dart';
@@ -17,6 +18,8 @@ class Setting extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             centerTitle: false,
+            automaticallyImplyLeading: false,
+            leading: const BackArrowButton(),
             elevation: 0,
             backgroundColor: settingCtrl.appCtrl.appTheme.whiteColor,
             title: Text(CommonTextFont().settings),

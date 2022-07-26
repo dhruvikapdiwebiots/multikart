@@ -14,6 +14,8 @@ class CardBalance extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: cardCtrl.appCtrl.appTheme.whiteColor,
           title: Text(CardBalanceFont().payments),
         ),

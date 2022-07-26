@@ -12,6 +12,8 @@ class ProfileSetting extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: profileCtrl.appCtrl.appTheme.whiteColor,
           title: Text(ProfileFont().profileSetting),
         ),

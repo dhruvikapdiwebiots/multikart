@@ -12,8 +12,8 @@ class ExpandableIcon extends StatelessWidget {
           return IconButton(
               icon: Icon(
                 isExpanded!
-                    ? Icons.keyboard_arrow_down
-                    : Icons.keyboard_arrow_up,
+                    ? Icons.keyboard_arrow_up
+                    : Icons.keyboard_arrow_down,
                 color: appCtrl.appTheme.contentColor,
                 size: AppScreenUtil().size(18),
               ),

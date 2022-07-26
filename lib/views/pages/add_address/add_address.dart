@@ -1,6 +1,3 @@
-import 'package:multikart/views/pages/add_address/add_address_layouts/form_text_box.dart';
-import 'package:multikart/views/pages/delivery_detail/delivery_detail_layouts/address_type_layout.dart';
-
 import '../../../config.dart';
 
 class AddAddress extends StatelessWidget {
@@ -14,6 +11,8 @@ class AddAddress extends StatelessWidget {
       return Scaffold(
         appBar: AppBar(
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: addAddressCtrl.appCtrl.appTheme.whiteColor,
           title: Text(AddAddressFont().addANewAddress),
         ),
@@ -32,7 +31,10 @@ class AddAddress extends StatelessWidget {
                 ],
               ).marginOnly(bottom: AppScreenUtil().screenHeight(100)),
             ),
-            BottomLayout(firstButtonText: DeliveryDetailFont().reset,secondButtonText: DeliveryDetailFont().addAddress,)
+            BottomLayout(
+              firstButtonText: DeliveryDetailFont().reset,
+              secondButtonText: DeliveryDetailFont().addAddress,
+            )
           ],
         ),
       );

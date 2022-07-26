@@ -42,10 +42,13 @@ class OrderHistoryWidget {
   //view detail text
   Widget viewDetailText(status, deliveryStatus) {
     return LatoFontStyle(
-        text: "View Details",
+        text: OrderHistoryFont().viewDetails,
         fontWeight: FontWeight.w600,
         fontSize: FontSizes.f13,
-        color: (status == "OnGoing".tr && deliveryStatus == "Dispatched".tr)
+        color: (status == "OnGoing".tr && deliveryStatus == "Dispatched".tr ||
+                status == "चल रहे".tr && deliveryStatus == "भेजा गया".tr ||
+                status == "جاري التنفيذ".tr && deliveryStatus == "أرسل".tr ||
+                status == "전진".tr && deliveryStatus == "파견".tr)
             ? appCtrl.appTheme.primary
             : appCtrl.appTheme.greenColor);
   }

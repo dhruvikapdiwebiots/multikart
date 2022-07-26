@@ -1,0 +1,1 @@
+export 'package:multikart/controllers/pages_controller/page_list_controller.dart';

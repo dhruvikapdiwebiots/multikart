@@ -11,6 +11,8 @@ class ImageAssets {
   final String mapSection = 'assets/image/mapSection.png';
   final String mapSectionBG = 'assets/image/mapSectionBG.png';
   final String setting = 'assets/image/setting.jpeg';
+  final String aboutUs = 'assets/image/aboutUs.jpg';
+  final String help = 'assets/image/help.jpeg';
   final String girl = 'assets/girls.png';
   final String sales = 'assets/sales.png';
   final String noData = 'assets/noData.png';
@@ -101,9 +103,16 @@ class ImageAssets {
   final String wallet2 = 'assets/wallet/cashApp.png';
   final String wallet3 = 'assets/wallet/googleWallet.png';
 
-  // notificaiton
+  // notification
   final String notification1 = 'assets/notification/notification1.png';
   final String notification2 = 'assets/notification/notification2.png';
   final String notification3 = 'assets/notification/notification3.png';
   final String notification4 = 'assets/notification/notification4.png';
+
+  //language
+
+  final String us = 'assets/language/us.png';
+  final String ar = 'assets/language/ar.png';
+  final String inImage = 'assets/language/in.png';
+  final String kr = 'assets/language/kr.png';
 }

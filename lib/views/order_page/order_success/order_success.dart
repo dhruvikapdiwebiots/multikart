@@ -12,6 +12,8 @@ class OrderSuccess extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           elevation: 0,
+          automaticallyImplyLeading: false,
+          leading: const BackArrowButton(),
           backgroundColor: orderSuccessCtrl.appCtrl.appTheme.whiteColor,
           title: Text(OrderSuccessFont().orderPlaced),
         ),

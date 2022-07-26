@@ -39,11 +39,7 @@ class ProfileList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     LatoFontStyle(
-                        text: data!.title == "Mode"
-                            ? appCtrl.isTheme
-                            ? "Dark"
-                            : 'Light'
-                            : data!.title,
+                        text: data!.title,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.w600),
                     LatoFontStyle(
@@ -54,7 +50,7 @@ class ProfileList extends StatelessWidget {
                 )
               ],
             ),
-            if (data!.title == "Mode")
+            if (data!.title == "Mode" ||data!.title == "الوضع" ||data!.title == "तरीका" ||data!.title == "방법" )
               ThemeSwitcher(
                   onToggle: (val) {
                     appCtrl.isTheme = val;
@@ -62,7 +58,7 @@ class ProfileList extends StatelessWidget {
                     ThemeService().switchTheme(val);
                   },
                   status2: appCtrl.isTheme),
-            if (data!.title == "RTL")
+            if (data!.title == "RTL" ||data!.title == "아르 자형티엘"  || data!.title == "आरटीएल"  ||data!.title == "رتيإل" )
               ThemeSwitcher(
                   onToggle: (val) {
                     appCtrl.isRTL = val;

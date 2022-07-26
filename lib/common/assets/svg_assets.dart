@@ -39,5 +39,13 @@ class SvgAssets {
   final String profileSetting = 'assets/svg/profileSetting.svg';
   final String chip = 'assets/svg/chip.svg';
   final String editSquare = 'assets/svg/editSquare.svg';
+  final String users = 'assets/svg/users.svg';
+  final String shop = 'assets/svg/shop.svg';
+  final String delivery = 'assets/svg/delivery.svg';
+  final String diamond = 'assets/svg/diamond.svg';
+  final String us = 'assets/language/us.svg';
+  final String ar = 'assets/language/ar.svg';
+  final String kr = 'assets/language/kr.svg';
+  final String inImage = 'assets/language/in.svg';
 
 }

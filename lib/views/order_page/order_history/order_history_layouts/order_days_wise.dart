@@ -46,7 +46,7 @@ class OrderDaysWise extends StatelessWidget {
                 const Space(15, 0),
                 OrderDateDeliveryStatus(
                     title:OrderHistoryFont().deliveryStatus,
-                    value: daysWiseList!.deliveryStatus)
+                    value: daysWiseList!.deliveryStatus!.tr)
               ],
             )
           ],

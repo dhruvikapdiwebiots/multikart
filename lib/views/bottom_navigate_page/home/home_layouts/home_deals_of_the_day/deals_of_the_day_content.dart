@@ -19,13 +19,13 @@ class DealsOfTheDayContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           LatoFontStyle(
-              text: data!.name,
+              text: data!.name!.tr,
               fontWeight: FontWeight.w700,
               color: appCtrl.appTheme.blackColor,
               fontSize: FontSizes.f12),
           const Space(0, 2),
           LatoFontStyle(
-              text: data!.byWhom,
+              text: data!.byWhom!.tr,
               fontWeight: FontWeight.w500,
               color: appCtrl.appTheme.contentColor,
               fontSize: FontSizes.f12),

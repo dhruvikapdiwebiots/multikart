@@ -43,12 +43,13 @@ class _CartScreenState extends State<CartScreen> {
                           if (cartCtrl.cartModelList != null)
                             CartOrderDetailLayout(
                                 cartModelList: cartCtrl.cartModelList),
+                              const Space(0, 20),
                           const BorderLineLayout(),
                           if (cartCtrl.cartModelList != null)
                             DeliveryInstruction(
                                 deliveryInstruction:
                                     cartCtrl.cartModelList!.deliveryInstruction)
-                        ])),
+                        ]).marginOnly(bottom: AppScreenUtil().screenHeight(50))),
                     if (cartCtrl.cartModelList != null)
                       CartBottomLayout(
                           desc: CartFont().viewDetail,

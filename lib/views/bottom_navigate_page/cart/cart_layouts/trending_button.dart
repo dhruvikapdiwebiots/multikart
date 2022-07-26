@@ -21,7 +21,7 @@ class TrendingButton extends StatelessWidget {
                 AppScreenUtil().borderRadius(3)),
           ),
           child: LatoFontStyle(
-            text: "TRENDING",
+            text: "TRENDING".tr,
             fontSize: FontSizes.f7,
             color: appCtrl.appTheme.white,
             fontWeight: FontWeight.w600,

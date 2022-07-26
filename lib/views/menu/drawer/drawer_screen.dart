@@ -48,7 +48,7 @@ class _DrawerScreenState extends State<DrawerScreen>
                     animationController: _animationController,
                     duration: animationDuration,
                     index: e.key,
-                    lastIndex: dashboardCtrl.drawerList.length - 1,onTap: ()=> Get.back(),);
+                    lastIndex: dashboardCtrl.drawerList.length - 1,onTap: ()=> dashboardCtrl.drawerCtrl.goToPage(e.key),);
               }).toList()
             ],
           ),

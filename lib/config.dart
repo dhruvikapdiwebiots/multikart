@@ -46,4 +46,8 @@ export 'package:multikart/views/pages/profile_setting/profile_page_list.dart';
 export 'package:multikart/views/order_page/order_history/order_history_page_list.dart';
 export 'package:multikart/views/order_page/order_detail/order_detail_page_list.dart';
 export 'package:multikart/views/pages/notification/notification_page_list.dart';
+export 'package:multikart/views/pages/terms_condition/terms_condition_page_list.dart';
+export 'package:multikart/views/pages/help/help_page_list.dart';
+export 'package:multikart/views/pages/about_us/about_us_page_list.dart';
+export 'package:multikart/views/pages/page_list/pages_page_list.dart';
 

@@ -24,5 +24,8 @@ class RouteName {
   final String notification = '/notification';
   final String setting = '/setting';
   final String termsCondition = '/termsCondition';
+  final String help = '/help';
+  final String aboutUs = '/aboutUs';
+  final String pageList = '/pageList';
   final noInternet = '/noInternet';
 }

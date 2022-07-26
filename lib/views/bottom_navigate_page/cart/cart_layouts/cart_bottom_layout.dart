@@ -35,7 +35,7 @@ class CartBottomLayout extends StatelessWidget {
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             SizedBox(
-                width: MediaQuery.of(context).size.width / 2.5,
+                width: MediaQuery.of(context).size.width / 3,
                 height: AppScreenUtil().screenHeight(50),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +58,8 @@ class CartBottomLayout extends StatelessWidget {
             CustomButton(
                 title: buttonName!,
                 height: AppScreenUtil().screenHeight(30),
-                width: AppScreenUtil().screenWidth(180),
+                width: AppScreenUtil().screenWidth(200),
+                fontSize: FontSizes.f14,
                 onTap: onTap,
                 margin: 0)
           ]));

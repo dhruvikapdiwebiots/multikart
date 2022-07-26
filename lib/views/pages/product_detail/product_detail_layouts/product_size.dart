@@ -12,11 +12,11 @@ class ProductSize extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: AppScreenUtil().screenWidth(140),
+            width: AppScreenUtil().screenWidth(160),
             alignment: Alignment.center,
             height: AppScreenUtil().screenHeight(35),
             padding: EdgeInsets.symmetric(
-                horizontal: AppScreenUtil().screenWidth(15)),
+                horizontal: AppScreenUtil().screenWidth(10)),
             margin: EdgeInsets.only(
                 top: AppScreenUtil().screenHeight(15),
                 bottom: AppScreenUtil().screenHeight(10)),
@@ -31,13 +31,13 @@ class ProductSize extends StatelessWidget {
                 LatoFontStyle(
                   text: ProductDetailFont().sizeBought,
                   color: appCtrl.appTheme.blackColor,
-                  fontSize: FontSizes.f14,
+                  fontSize: FontSizes.f13,
                   fontWeight: FontWeight.w600,
                 ),
                 LatoFontStyle(
                   text: " ${reviews!.size}",
                   color: appCtrl.appTheme.contentColor,
-                  fontSize: FontSizes.f14,
+                  fontSize: FontSizes.f13,
                   fontWeight: FontWeight.w600,
                 )
               ],

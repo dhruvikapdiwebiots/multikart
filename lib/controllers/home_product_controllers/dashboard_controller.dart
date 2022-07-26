@@ -1,4 +1,5 @@
 import 'package:get_storage/get_storage.dart';
+import 'package:multikart/controllers/home_product_controllers/drawer_controller.dart';
 
 import '../../config.dart';
 
@@ -8,6 +9,9 @@ class DashboardController extends GetxController {
       : Get.put(AppController());
   AnimationController? drawerSlideController;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  final drawerCtrl = Get.isRegistered<DrawerPageController>()
+      ? Get.find<DrawerPageController>()
+      : Get.put(DrawerPageController());
 
   List drawerList = [];
   final storage = GetStorage();

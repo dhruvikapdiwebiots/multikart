@@ -27,7 +27,7 @@ class DeliveryCharges extends StatelessWidget {
                         : Image.asset(e.icon!,height: AppScreenUtil().screenHeight(25)),
                     const Space(10, 0),
                     LatoFontStyle(
-                      text: e.title,
+                      text: e.title!.tr,
                       fontWeight: FontWeight.w600,
                       color: appCtrl.appTheme.blackColor,
                       fontSize: FontSizes.f12,

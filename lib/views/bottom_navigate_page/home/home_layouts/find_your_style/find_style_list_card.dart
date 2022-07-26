@@ -29,7 +29,7 @@ class FindStyleListCard extends StatelessWidget {
           onRatingUpdate: (val) {},
         ),
         LatoFontStyle(
-          text: data!.name,
+          text: data!.name!.tr,
           fontSize: FontSizes.f14,
           fontWeight: FontWeight.normal,
           color: appCtrl.appTheme.blackColor,
