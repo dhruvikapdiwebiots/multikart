@@ -1,3 +1,5 @@
+
+
 import '../../../../config.dart';
 
 class OtpTextForm extends StatelessWidget {
@@ -22,10 +24,10 @@ class OtpTextForm extends StatelessWidget {
               decoration:  InputDecoration(
                   fillColor: appCtrl.appTheme.lightGray,
                   filled: true,
-                  border: OutlineInputBorder(borderSide: BorderSide(color: appCtrl.appTheme.lightGray)),
-                  focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: appCtrl.appTheme.lightGray)),
-                  disabledBorder: OutlineInputBorder(borderSide: BorderSide(color: appCtrl.appTheme.lightGray)),
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: appCtrl.appTheme.lightGray)),
+                  border: OtpWidget().decoration(),
+                  focusedBorder: OtpWidget().decoration(),
+                  disabledBorder: OtpWidget().decoration(),
+                  enabledBorder: OtpWidget().decoration(),
                   counterText: '',
                   hintStyle: TextStyle(color: appCtrl.appTheme.blackColor, fontSize: 20.0)),
               onChanged: (value) {

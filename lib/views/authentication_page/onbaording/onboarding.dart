@@ -16,42 +16,45 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
     return GetBuilder<OnBoardingController>(builder: (_) {
       return WillPopScope(
         onWillPop: () async {
-          return false;
+          return onBoardingCtrl.isBack ? true : false;
         },
         child: Scaffold(
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            body: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
               SizedBox(
                 height: AppScreenUtil().screenHeight(580),
-                child: Stack(
-                  children: [
-                    AuthenticationAppBar(
-                      onTap: () => onBoardingCtrl.readIntroPage(),
-                      isDone: onBoardingCtrl.current ==
-                              onBoardingCtrl.imgList.length - 1
-                          ? true
-                          : false,
-                    ),
-                    const OnBoardList(),
-                  ],
-                ),
+                child: Stack(children: [
+                  //app bar layout
+                  AuthenticationAppBar(
+                    onTap: () => onBoardingCtrl.readIntroPage(),
+                    isDone: onBoardingCtrl.current ==
+                            onBoardingCtrl.imgList.length - 1
+                        ? true
+                        : false,
+                  ),
+
+                  //on board list layout
+                  const OnBoardList()
+                ]),
               ),
               const Space(0, 5),
+
+              //start shopping button layout
               CustomButton(
                   title: OnBoardFont().startShopping.toUpperCase(),
                   onTap: () => onBoardingCtrl.readIntroPage()),
               const Space(0, 5),
+
+              //already account text layout
               CommonAccountText(
                   text1: CommonTextFont().alreadyAccount,
                   text2: CommonTextFont().signIn,
                   textColor: onBoardingCtrl.appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.w700,
                   onTap: () => onBoardingCtrl.readIntroPage()),
-              const Space(0, 5),
-            ],
-          ),
-        ),
+              const Space(0, 5)
+            ])),
       );
     });
   }

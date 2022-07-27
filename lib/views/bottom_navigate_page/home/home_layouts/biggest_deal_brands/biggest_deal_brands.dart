@@ -14,7 +14,7 @@ class DealsBrands extends StatelessWidget {
             fontSize: FontSizes.f16,
             fontWeight: FontWeight.normal,
             color: homeCtrl.appCtrl.appTheme.blackColor,
-          ).marginOnly(left: AppScreenUtil().screenWidth(15)),
+          ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15) ),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(

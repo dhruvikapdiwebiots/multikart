@@ -35,7 +35,6 @@ class ProfileController extends GetxController {
 
   //language bottom sheet
   bottomSheet() {
-    print('dd');
     Get.bottomSheet(
       BottomSheetLayout(child:  LanguageBottomSheet()),
       backgroundColor: Colors.white,
@@ -48,6 +47,7 @@ class ProfileController extends GetxController {
     );
   }
 
+//go to page index wise
   goToPage(index) async {
     if (index == 2) {
       Get.toNamed(routeName.pageList);

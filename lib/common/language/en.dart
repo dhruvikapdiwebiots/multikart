@@ -379,6 +379,7 @@ final dynamic en = {
   "Apple Pay": "Apple Pay",
   "Brinks": "Brinks",
   "CardFree": "CardFree",
+  "balance": "Balance: ",
 
   //order success font
   "orderPlaced": "Order Placed",
@@ -438,6 +439,9 @@ final dynamic en = {
   "rateReview": "Rate & Review Product",
   "needHelp": "Need Help?",
   "viewDetails": "View Details",
+  "submit": "Submit",
+  "yourRating": "Your Rating: ",
+  "writeReview": "Write Review",
 
   //order detail font
   "shippingDetail": "Shipping Details",
@@ -455,6 +459,12 @@ final dynamic en = {
   "We have got coupons. collect now and save extras !!!":"We have got coupons. collect now and save extras !!!",
   "Payment Failed. You can retry making a payment on order sections.":"Payment Failed. You can retry making a payment on order sections.",
   "Your order is delivered on time. for any further assistance please contact us.":"Your order is delivered on time. for any further assistance please contact us.",
+  "Out For Delivery":"Out For Delivery",
+  "expected delivery on monday":"expected delivery on monday",
+  "In Transit":"In Transit",
+  "10.00 am, 21/05/2020":"10.00 am, 21/05/2020",
+  "Ordered":"Ordered",
+  "20/05/2020":"20/05/2020",
 
   //terms and condition font
   "termsConditionForMultikart":"Terms and Conditions for Multikart",
@@ -505,4 +515,13 @@ final dynamic en = {
   "Korean":"Korean",
   "Search":"Search",
   "Delivered":"Delivered",
+  "title":"Multikart is premier fashion destination for the latest trends and hottest styles.",
+  "+ users":"+ users",
+  "+ stores":"+ stores",
+  "M+ orders":"M+ orders",
+  "+ Brands":"+ Brands",
+  "Multikart have 150+ register users online store":"Multikart have 150+ register users online store",
+  "Multikart have 50+ stores worldwide.":"Multikart have 50+ stores worldwide.",
+  "Multikart has 1.5M+ total orders till now.":"Multikart has 1.5M+ total orders till now.",
+  "Multikart has 100+ brands in our stores.":"Multikart has 100+ brands in our stores.",
 };

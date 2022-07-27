@@ -370,6 +370,7 @@ final dynamic kr = {
   "Apple Pay": "애플 페이",
   "Brinks": "벼랑끝",
   "CardFree": "카드프리",
+  "balance": "균형: ",
 
   //order success font
   "orderPlaced":"주문 완료",
@@ -427,6 +428,9 @@ final dynamic kr = {
   "rateReview": "제품 평가 및 리뷰",
   "needHelp": "도움이 필요하다?",
   "viewDetails": "세부 정보보기",
+  "submit": "제출하다",
+  "yourRating": "당신의 순위: ",
+  "writeReview": "리뷰를 쓰다",
 
   //order detail font
   "shippingDetail": "배송 정보",
@@ -444,6 +448,12 @@ final dynamic kr = {
   "We have got coupons. collect now and save extras !!!":"쿠폰이 있습니다. 지금 수집하고 추가 항목을 저장하십시오 !!!",
   "Payment Failed. You can retry making a payment on order sections.":"결제 실패. 주문 섹션에서 결제를 다시 시도할 수 있습니다.",
   "Your order is delivered on time. for any further assistance please contact us.":"귀하의 주문은 정시에 배달됩니다. 추가 지원이 필요한 경우 당사에 문의하십시오.",
+  "Out For Delivery":"배달 나갔다",
+  "expected delivery on monday":"월요일 배송예정",
+  "In Transit":"운송 중",
+  "10.00 am, 21/05/2020":"2020년 5월 21일 오전 10시",
+  "Ordered":"주문",
+  "20/05/2020":"2020년 5월 20일",
 
   //terms and condition font
   "termsConditionForMultikart":"멀티카트 이용약관",
@@ -494,4 +504,13 @@ final dynamic kr = {
   "Korean":"한국인",
   "Search":"검색",
   "Delivered":"배달됨",
+  "title":"Multikart는 최신 트렌드와 가장 핫한 스타일을 위한 최고의 패션 목적지입니다.",
+  "+ users":"+ 사용자",
+  "+ stores":"+ 백화점",
+  "M+ orders":"중+ 주문",
+  "+ Brands":"+ 브랜드",
+  "Multikart have 150+ register users online store":"Multikart에는 150명 이상의 사용자가 온라인 상점에 등록되어 있습니다.",
+  "Multikart have 50+ stores worldwide.":"Multikart는 전 세계적으로 50개 이상의 매장을 보유하고 있습니다.",
+  "Multikart has 1.5M+ total orders till now.":"Multikart는 지금까지 150만 개 이상의 총 주문을 받았습니다.",
+  "Multikart has 100+ brands in our stores.":"Multikart 매장에는 100개 이상의 브랜드가 있습니다.",
 };

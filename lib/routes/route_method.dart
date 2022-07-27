@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 //app file
+
 import 'route_name.dart';
 import 'screen_list.dart';
 
@@ -37,5 +38,8 @@ class AppRoute {
     GetPage(name: _routeName.help, page: () =>  Help()),
     GetPage(name: _routeName.aboutUs, page: () =>  AboutUs()),
     GetPage(name: _routeName.pageList, page: () =>  PageList()),
+    GetPage(name: _routeName.otp, page: () =>  OtpScreen()),
+    GetPage(name: _routeName.emptyCart, page: () => const EmptyCart()),
+    GetPage(name: _routeName.emptyHistory, page: () => const EmptyHistory()),
   ];
 }

@@ -21,6 +21,7 @@ class AppController extends GetxController {
   bool isCart = true;
   bool isHeart = true;
   bool isShare = false;
+  bool isShimmer = true;
   double rightValue = 15;
   final storage = GetStorage();
   AppTheme get appTheme => _appTheme;

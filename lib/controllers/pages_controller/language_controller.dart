@@ -10,13 +10,10 @@ class LanguageController extends GetxController {
 
   //language selection
   languageSelection(e) async {
-    print(e['name']);
-    print(e['name'] == "انجليزي");
     if (e['name'] == "English" ||
         e['name'] == 'अंग्रेजी' ||
         e['name'] == 'انجليزي' ||
         e['name'] == '영어') {
-      print('en');
       var locale = const Locale("en", 'US');
       Get.updateLocale(locale);
       Get.forceAppUpdate();
@@ -27,7 +24,6 @@ class LanguageController extends GetxController {
         e['name'] == 'अरबी' ||
         e['name'] == 'عربي' ||
         e['name'] == '아랍어') {
-      print('Ar');
       var locale = const Locale("ar", 'AE');
       Get.updateLocale(locale);
       Get.forceAppUpdate();
@@ -38,7 +34,6 @@ class LanguageController extends GetxController {
         e['name'] == 'कोरियाई' ||
         e['name'] == 'كوري' ||
         e['name'] == '한국어') {
-      print('kr');
       var locale = const Locale("ko", 'KR');
       Get.updateLocale(locale);
       Get.forceAppUpdate();
@@ -49,7 +44,6 @@ class LanguageController extends GetxController {
         e['name'] == 'हिंदी' ||
         e['name'] == 'هندي' ||
         e['name'] == '힌디어') {
-      print('hi');
       appCtrl.languageVal = "hi";
       var locale = const Locale("hi", 'IN');
       Get.updateLocale(locale);
@@ -60,11 +54,14 @@ class LanguageController extends GetxController {
     appCtrl.update();
     Get.forceAppUpdate();
     DashboardController dashboardController = Get.find();
+    HomeController homeController = Get.find();
     dashboardController.drawerList = AppArray().drawerList;
     appCtrl.bottomList = AppArray().bottomSheet;
+    homeController.getData();
+    homeController.update();
     dashboardController.update();
     appCtrl.update();
     update();
-   // Get.back();
+    // Get.back();
   }
 }

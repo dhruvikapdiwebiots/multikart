@@ -9,6 +9,7 @@ class OnBoardingController extends GetxController {
       ? Get.find<AppController>()
       : Get.put(AppController());
   int current = 0;
+  bool isBack = false;
   final CarouselController controller = CarouselController();
   CarouselState? carouselState;
   PageController pageController =PageController(initialPage: 0, viewportFraction: 0.8);
@@ -18,6 +19,7 @@ class OnBoardingController extends GetxController {
   @override
   void onReady() async {
     imgList = AppArray().onBoardingList;
+    isBack = Get.arguments ?? false;
     update();
     pageController =
         PageController(initialPage: 0, viewportFraction: 0.8);
@@ -29,5 +31,13 @@ class OnBoardingController extends GetxController {
     await storage.write(Session.isIntro, true);
     update();
     Get.toNamed(routeName.login);
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    pageController.dispose();
+    update();
+    super.dispose();
   }
 }

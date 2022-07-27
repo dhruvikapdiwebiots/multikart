@@ -11,7 +11,8 @@ class MenuRoundedIcon extends StatelessWidget {
     return GetBuilder<AppController>(
       builder: (appCtrl) {
         return Icon(
-          appCtrl.selectedIndex ==0 ?   Icons.menu_rounded : CupertinoIcons.arrow_left,
+          appCtrl.selectedIndex ==0 ?   Icons.menu_rounded : appCtrl.isRTL ||
+              appCtrl.languageVal == "ar" ?CupertinoIcons.arrow_right : CupertinoIcons.arrow_left,
           size: AppScreenUtil().size(25),
           color: appCtrl.appTheme.blackColor,
         ).gestures(onTap: onTap) ;

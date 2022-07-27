@@ -10,6 +10,7 @@ class TermsConditionDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TermsConditionWidget().commonSubTitle(description!.title),
           if (description!.subTitle != null)
@@ -28,7 +29,7 @@ class TermsConditionDescription extends StatelessWidget {
                   const Space(10, 0),
                   Expanded(
                     child: TermsConditionWidget()
-                        .commonSubTitle(description!.title),
+                        .commonSubTitle(e.title),
                   ),
                 ],
               );

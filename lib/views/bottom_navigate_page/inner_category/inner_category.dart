@@ -21,6 +21,7 @@ class _InnerCategoryState extends State<InnerCategory> {
           return true;
         },
         child: Scaffold(
+          //app bar layout
           appBar: HomeProductAppBar(
             onTap: () {
           innerCtrl.appCtrl.isSearch = false;
@@ -37,6 +38,7 @@ class _InnerCategoryState extends State<InnerCategory> {
           body: SingleChildScrollView(
             child: Column(
               children: [
+                //category info. layout
                 if (innerCtrl.categoryModel != null)
                   CategoryCardLayout(
                     categoryModel: innerCtrl.categoryModel,
@@ -47,8 +49,12 @@ class _InnerCategoryState extends State<InnerCategory> {
                 //inner category layout expandable
                 const InnerCategoryLayout(),
                 const Space(0, 10),
+
+                //trending category layout
                 const CommonTrendingCategory(),
                 const Space(0, 10),
+
+                //brands layout
                 const InnerCategoryBrands()
               ],
             ),

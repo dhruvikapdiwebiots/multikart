@@ -5,6 +5,7 @@ class AppArray {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
+
   var onBoardingList = <OnBoardingModel>[
     OnBoardingModel(
         title: 'Welcome to Biggest Online Store'.tr,
@@ -19,6 +20,25 @@ class AppArray {
         image: imageAssets.onBoarding3,
         description: "onBoard3".tr),
   ];
+
+  var orderTrack = [{
+    "title":"Out For Delivery".tr,
+    "date":"expected delivery on monday".tr,
+    "isCompete":false,
+  },{
+    "title":"In Transit".tr,
+    "date":"10.00 am, 21/05/2020".tr,
+    "isCompete":true,
+  },{
+    "title":"Ready To Ship".tr,
+    "date":"10.00 am, 21/05/2020".tr,
+    "isCompete":true,
+  },
+    {
+      "title":"Ordered".tr,
+      "date":"20/05/2020".tr,
+      "isCompete":true,
+    }];
 
   var bottomSheet = [
     {

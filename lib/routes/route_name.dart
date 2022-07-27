@@ -4,6 +4,7 @@ class RouteName {
   final String changeTheme = '/changeTheme';
   final String signUp = '/signUp';
   final String forgotPassword = '/forgotPassword';
+  final String otp = '/otp';
   final String resetPassword = '/resetPassword';
   final String dashboard = '/dashboard';
   final String innerCategory = '/innerCategory';
@@ -27,5 +28,7 @@ class RouteName {
   final String help = '/help';
   final String aboutUs = '/aboutUs';
   final String pageList = '/pageList';
+  final String emptyCart = '/emptyCart';
+  final String emptyHistory = '/emptyHistory';
   final noInternet = '/noInternet';
 }

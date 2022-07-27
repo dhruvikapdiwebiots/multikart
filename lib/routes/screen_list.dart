@@ -27,3 +27,6 @@ export '../views/pages/terms_condition/terms_condition.dart';
 export '../views/pages/help/help.dart';
 export '../views/pages/about_us/about_us.dart';
 export '../views/pages/page_list/page_list.dart';
+export '../views/authentication_page/otp/otp.dart';
+export '../views/bottom_navigate_page/cart/cart_layouts/empty_cart.dart';
+export '../views/order_page/order_history/order_history_layouts/empty_history.dart';

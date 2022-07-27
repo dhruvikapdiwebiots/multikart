@@ -49,7 +49,7 @@ class WalletLayout extends StatelessWidget {
                             Row(
                               children: [
                                 LatoFontStyle(
-                                  text: "Balance: ",
+                                  text: CardBalanceFont().balance,
                                   fontSize: FontSizes.f12,
                                   fontWeight: FontWeight.w600,
                                   color:
@@ -69,7 +69,7 @@ class WalletLayout extends StatelessWidget {
                       ],
                     ),
                     LatoFontStyle(
-                      text: e['isLink'] == true ? "Delink" : "link",
+                      text: e['isLink'] == true ? "delink".tr : "link".tr,
                       color: appCtrl.appTheme.primary,
                       fontWeight: FontWeight.w700,
                       fontSize: FontSizes.f12,

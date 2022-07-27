@@ -8,34 +8,44 @@ class AddAddress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AddAddressController>(builder: (_) {
-      return Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          automaticallyImplyLeading: false,
-          leading: const BackArrowButton(),
-          backgroundColor: addAddressCtrl.appCtrl.appTheme.whiteColor,
-          title: Text(AddAddressFont().addANewAddress),
-        ),
-        body: Stack(
-          alignment: Alignment.bottomCenter,
-          children: [
-            SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  FormTextBox(),
-                  Space(0, 10),
-                  BorderLineLayout(),
-                  Space(0, 20),
-                  AddressTypeLayout()
-                ],
-              ).marginOnly(bottom: AppScreenUtil().screenHeight(100)),
-            ),
-            BottomLayout(
-              firstButtonText: DeliveryDetailFont().reset,
-              secondButtonText: DeliveryDetailFont().addAddress,
-            )
-          ],
+      return Directionality(
+        textDirection: addAddressCtrl.appCtrl.isRTL ||
+            addAddressCtrl.appCtrl.languageVal == "ar"
+            ? TextDirection.rtl
+            : TextDirection.ltr,
+        child: Scaffold(
+          appBar: AppBar(
+            elevation: 0,
+            automaticallyImplyLeading: false,
+            leading: const BackArrowButton(),
+            backgroundColor: addAddressCtrl.appCtrl.appTheme.whiteColor,
+            title: Text(AddAddressFont().addANewAddress),
+          ),
+          body: Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+
+                    //form text box
+                    FormTextBox(),
+                    Space(0, 10),
+                    BorderLineLayout(),
+                    Space(0, 20),
+                    //address list layout
+                    AddressTypeLayout()
+                  ],
+                ).marginOnly(bottom: AppScreenUtil().screenHeight(100)),
+              ),
+              //reset and add address layout
+              BottomLayout(
+                firstButtonText: DeliveryDetailFont().reset,
+                secondButtonText: DeliveryDetailFont().addAddress,
+              )
+            ],
+          ),
         ),
       );
     });

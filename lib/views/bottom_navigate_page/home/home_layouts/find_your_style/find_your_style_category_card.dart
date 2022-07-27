@@ -31,7 +31,7 @@ class FindYourStyleCategoryCard extends StatelessWidget {
           ),
           child: LatoFontStyle(
             text: data
-            ['title'],
+            ['title'].toString().tr,
             color:  selectedStyleCategory == index
                 ? appCtrl.appTheme.whiteColor : appCtrl.appTheme.blackColor,
             fontSize: 14,

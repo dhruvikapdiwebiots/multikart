@@ -21,26 +21,35 @@ class OrderSuccess extends StatelessWidget {
           SingleChildScrollView(
             child: Column(
               children: [
+                //check gif layout
                 Image.asset(gifAssets.checkCircle),
                 const Space(0, 20),
+
+                //order success text layout
                 LatoFontStyle(
-                  text: OrderSuccessFont().orderSuccess,
-                  fontSize: FontSizes.f22,
-                  color: orderSuccessCtrl.appCtrl.appTheme.primary,
-                  fontWeight: FontWeight.w700,
-                ),
+                    text: OrderSuccessFont().orderSuccess,
+                    fontSize: FontSizes.f22,
+                    color: orderSuccessCtrl.appCtrl.appTheme.primary,
+                    fontWeight: FontWeight.w700),
                 const Space(0, 20),
+
+                //order desc layout
                 LatoFontStyle(
-                  text: OrderSuccessFont().orderDesc,
-                  fontSize: FontSizes.f16,
-                  color: orderSuccessCtrl.appCtrl.appTheme.blackColor,
-                  overflow: TextOverflow.clip,
-                  textAlign: TextAlign.center,
-                ).paddingSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
+                        text: OrderSuccessFont().orderDesc,
+                        fontSize: FontSizes.f16,
+                        color: orderSuccessCtrl.appCtrl.appTheme.blackColor,
+                        overflow: TextOverflow.clip,
+                        textAlign: TextAlign.center)
+                    .paddingSymmetric(
+                        horizontal: AppScreenUtil().screenWidth(15)),
                 const Space(0, 30),
+
+                //order success detail layout
                 const OrderSuccessDetail(),
                 const Space(0, 30),
                 const BorderLineLayout(),
+
+                //order summary layout
                 const OrderSummary()
               ],
             ).width(MediaQuery.of(context).size.width),

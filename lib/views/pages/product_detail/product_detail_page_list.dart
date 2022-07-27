@@ -25,3 +25,4 @@ export 'package:multikart/views/pages/product_detail/product_detail_layouts/prod
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_body.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_layouts/similar_product_layout.dart';
 export 'package:multikart/views/pages/product_detail/product_detail_utils/product_detail_constant.dart';
+export 'package:multikart/views/pages/product_detail/product_detail_layouts/product_information.dart';

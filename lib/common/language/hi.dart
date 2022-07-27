@@ -372,6 +372,7 @@ final dynamic hi = {
   "Apple Pay": "सेब भुगतान करना",
   "Brinks": "कगार",
   "CardFree": "कार्डफ्री",
+  "balance": "संतुलन: ",
 
   //order success font
   "orderPlaced":"आदेश रखा",
@@ -428,6 +429,9 @@ final dynamic hi = {
   "rateReview": "दर और समीक्षा उत्पाद",
   "needHelp": "मदद की ज़रूरत है?",
   "viewDetails": "विवरण देखें",
+  "submit": "प्रस्तुत करना",
+  "yourRating": "तुम्हारी रेटिंग: ",
+  "writeReview": "समीक्षा लिखो",
 
   //order detail font
   "shippingDetail": "परिवहन विवरण",
@@ -445,6 +449,12 @@ final dynamic hi = {
   "We have got coupons. collect now and save extras !!!":"हमारे पास कूपन हैं। अभी जमा करें और अतिरिक्त बचत करें !!!",
   "Payment Failed. You can retry making a payment on order sections.":"भुगतान विफल रही। आप आदेश अनुभागों पर भुगतान करने के लिए पुनः प्रयास कर सकते हैं।",
   "Your order is delivered on time. for any further assistance please contact us.":"आपका आदेश समय पर दिया जाता है। किसी और सहायता के लिए कृपया हमसे संपर्क करें।",
+  "Out For Delivery":"डिलिवरी के लिए रवाना",
+  "expected delivery on monday":"सोमवार को अपेक्षित डिलीवरी",
+  "In Transit":"रास्ते में",
+  "10.00 am, 21/05/2020":"सुबह 10.00 बजे, 21/05/2020",
+  "Ordered":"आदेश दिया",
+  "20/05/2020":"20/05/2020",
 
   //terms and condition font
   "termsConditionForMultikart":"मल्टीकार्ट के लिए नियम और शर्तें",
@@ -495,4 +505,13 @@ final dynamic hi = {
   'Korean':'कोरियाई',
   'Search':'खोज',
   "Delivered":"पहुंचा दिया",
+  "title":"मल्टीकार्ट नवीनतम रुझानों और सबसे हॉट स्टाइल के लिए प्रमुख फैशन डेस्टिनेशन है।",
+  "+ users":"+ उपयोगकर्ताओं",
+  "+ stores":"+ स्टोर",
+  "M+ orders":"एम+ आदेश",
+  "+ Brands":"+ ब्रांड्स",
+  "Multikart have 150+ register users online store":"मल्टीकार्ट के पास 150+ रजिस्टर उपयोगकर्ता ऑनलाइन स्टोर हैं",
+  "Multikart have 50+ stores worldwide.":"मल्टीकार्ट के दुनिया भर में 50+ स्टोर हैं।",
+  "Multikart has 1.5M+ total orders till now.":"मल्टीकार्ट के पास अब तक कुल 1.5M+ ऑर्डर हैं।",
+  "Multikart has 100+ brands in our stores.":"मल्टीकार्ट के हमारे स्टोर में 100+ ब्रांड हैं।",
 };

@@ -24,22 +24,27 @@ class Coupons extends StatelessWidget {
                 height: MediaQuery.of(context).size.height,
                 child: Column(
                   children: [
+                    //coupon text box layout
                     const CouponTextBox(
                       isSuffixIcon: false,
                     ),
-                  const Space(0, 10),
-                  CouponList(couponList: couponCtrl.couponList,)
+                    const Space(0, 10),
+
+                    //coupon list layout
+                    CouponList(
+                      couponList: couponCtrl.couponList,
+                    )
                   ],
                 ),
               ),
             ),
-               if (couponCtrl.cartModelList != null)
+            //maximum saving and apply layout
+            if (couponCtrl.cartModelList != null)
               CartBottomLayout(
-                desc: CouponFont().maximumSaving,
-                buttonName: CouponFont().apply,
-                isPrimaryDesc: false,
-                totalAmount: couponCtrl.cartModelList!.totalAmount.toString(),
-              )
+                  desc: CouponFont().maximumSaving,
+                  buttonName: CouponFont().apply,
+                  isPrimaryDesc: false,
+                  totalAmount: couponCtrl.cartModelList!.totalAmount.toString())
           ],
         ),
       );

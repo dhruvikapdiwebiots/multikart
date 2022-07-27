@@ -39,11 +39,11 @@ class ProfileList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     LatoFontStyle(
-                        text: data!.title,
+                        text: data!.title!.tr,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.w600),
                     LatoFontStyle(
-                        text: data!.subTitle,
+                        text: data!.subTitle!.tr,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.normal)
                   ],

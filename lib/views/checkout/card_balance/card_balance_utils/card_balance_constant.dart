@@ -6,4 +6,5 @@ class CardBalanceFont {
   String valid = "valid".tr;
   String back = "back".tr;
   String addNewCard = "addNewCard".tr;
+  String balance = "balance".tr;
 }

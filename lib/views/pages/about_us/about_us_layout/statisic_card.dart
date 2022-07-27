@@ -24,23 +24,25 @@ class StatisticCard extends StatelessWidget {
                 children: [
               Row(children: [
                 SvgPicture.asset(statistic!.image!,
-                    height: AppScreenUtil().screenHeight(22)),
+                    height: AppScreenUtil().screenHeight(20)),
                 const Space(10, 0),
                 LatoFontStyle(
                     text: statistic!.count.toString(),
-                    fontSize: FontSizes.f16,
+                    fontSize: FontSizes.f13,
                     color: appCtrl.appTheme.blackColor,
                     fontWeight: FontWeight.w600),
+                const Space(5, 0),
                 LatoFontStyle(
                     text: statistic!.title.toString(),
-                    fontSize: FontSizes.f14,
+                    fontSize: FontSizes.f10,
+                    overflow: TextOverflow.clip,
                     color: appCtrl.appTheme.blackColor,
                     fontWeight: FontWeight.w600)
               ]),
               const Space(0, 10),
               LatoFontStyle(
                   text: statistic!.desc.toString(),
-                  fontSize: FontSizes.f12,
+                  fontSize: FontSizes.f10,
                   overflow: TextOverflow.clip,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.w600)

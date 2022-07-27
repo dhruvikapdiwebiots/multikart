@@ -17,6 +17,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+
+              //category list
               ...categoryCtrl.categoryList.asMap().entries.map((e) {
                 return CategoryCardLayout(
                   categoryModel: categoryCtrl.categoryList[e.key],

@@ -1,5 +1,3 @@
-
-
 import '../../config.dart';
 
 class PageListController extends GetxController {
@@ -7,12 +5,13 @@ class PageListController extends GetxController {
       ? Get.find<AppController>()
       : Get.put(AppController());
 
+  List<PageListModel> pageListModel = [];
 
   @override
   void onReady() {
     // TODO: implement onReady
     super.onReady();
-
+    pageListModel = pagesList;
     update();
   }
 }

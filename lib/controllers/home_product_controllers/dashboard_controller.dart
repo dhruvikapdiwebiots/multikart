@@ -8,7 +8,7 @@ class DashboardController extends GetxController {
       ? Get.find<AppController>()
       : Get.put(AppController());
   AnimationController? drawerSlideController;
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
   final drawerCtrl = Get.isRegistered<DrawerPageController>()
       ? Get.find<DrawerPageController>()
       : Get.put(DrawerPageController());
@@ -18,6 +18,8 @@ class DashboardController extends GetxController {
 
   @override
   void onReady() async {
+    appCtrl.isShimmer = true;
+    appCtrl.update();
     drawerList = AppArray().drawerList;
     update();
     super.onReady();
@@ -70,15 +72,11 @@ class DashboardController extends GetxController {
 
   //app bar leading action
   appBarLeadingAction() async {
-
-    if (appCtrl.selectedIndex == 0) {
-      scaffoldKey.currentState!.openDrawer();
-    } else {
-      appCtrl.goToHome();
-      await storage.write(Session.selectedIndex, 0);
-      appCtrl.selectedIndex = 0;
-      update();
-    }
+    appCtrl.goToHome();
+    await storage.write(Session.selectedIndex, 0);
+    appCtrl.selectedIndex = 0;
+    update();
   }
+
 
 }

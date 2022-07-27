@@ -9,7 +9,8 @@ class TimeLineContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Padding(
-          padding: const EdgeInsets.only(left: 8.0),
+          padding:  EdgeInsets.only(left: 8.0,right: appCtrl.isRTL ||
+              appCtrl.languageVal == "ar" ? 8.0 :0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -21,7 +22,7 @@ class TimeLineContent extends StatelessWidget {
                       color: appCtrl.appTheme.greyLight25,
                       borderRadius: BorderRadius.circular(50)),
                   child: LatoFontStyle(
-                      text: data['title'].toString(),
+                      text: data['title'].toString().tr,
                       fontSize: FontSizes.f14,
                       fontWeight: FontWeight.w700,
                       color: (data['isCompete'] == true)

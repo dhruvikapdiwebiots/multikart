@@ -27,6 +27,13 @@ class HomeController extends GetxController {
 
   @override
   void onReady() async {
+    getData();
+    super.onReady();
+  }
+
+  getData()async{
+    appCtrl.isShimmer = true;
+    appCtrl.update();
     homeCategoryList = AppArray().homeCategory;
     bannerList = AppArray().homeBanner;
     dealOfTheDayList = AppArray().homeDealOfTheDayList;
@@ -39,9 +46,10 @@ class HomeController extends GetxController {
     loginHeight = 500.w;
     update();
     subCategoryList(0, 1);
-
+    await Future.delayed(Durations.s3);
+    appCtrl.isShimmer = false;
+    appCtrl.update();
     update();
-    super.onReady();
   }
 
   //add to wishlist

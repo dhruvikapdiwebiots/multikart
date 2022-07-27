@@ -25,7 +25,7 @@ var termsAndCondition = <TermsAndConditionModel>[
       ]),
   TermsAndConditionModel(title: "Restrictions".tr, description: [
     Description(
-        title: "You are specifically restricted from all of the following:".tr,
+        title: "intro5".tr,
         subTitle: [
           SubTitle(
               title: "subTitle1".tr),

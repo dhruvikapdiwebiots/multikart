@@ -4,12 +4,13 @@ class OrderDaysWise extends StatelessWidget {
   final DaysWiseList? daysWiseList;
   final int? index, lastIndex;
   final bool isRatingShow;
-
+final GestureTapCallback? onTap;
   const OrderDaysWise(
       {Key? key,
       this.daysWiseList,
       this.lastIndex,
       this.index,
+        this.onTap,
       this.isRatingShow = false})
       : super(key: key);
 
@@ -37,7 +38,7 @@ class OrderDaysWise extends StatelessWidget {
             Image.asset(
               imageAssets.mapSection,
               height: AppScreenUtil().screenHeight(100),
-              fit: BoxFit.fill,
+              fit: BoxFit.fill
             ),
             Row(
               children: [
@@ -47,12 +48,12 @@ class OrderDaysWise extends StatelessWidget {
                 OrderDateDeliveryStatus(
                     title:OrderHistoryFont().deliveryStatus,
                     value: daysWiseList!.deliveryStatus!.tr)
-              ],
-            )
+              ]
+            ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15))
           ],
         ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
         if (isRatingShow)
-          const OrderRating(),
+           OrderRating(onTap: onTap),
         const Space(0, 15),
         if (index != lastIndex)
           Divider(

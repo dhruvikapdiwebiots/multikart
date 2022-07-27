@@ -57,6 +57,7 @@ dependencies:
   timelines: ^0.1.0
   intl: ^0.17.0
   syncfusion_flutter_sliders: ^20.2.36
+  shimmer: ^2.0.0
 
 dev_dependencies:
   flutter_test:

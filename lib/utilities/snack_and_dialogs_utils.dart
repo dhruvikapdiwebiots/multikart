@@ -3,6 +3,9 @@ import 'package:multikart/common/theme/index.dart';
 import 'package:multikart/utilities/general_utils.dart';
 import 'package:get/get.dart';
 
+import '../config.dart';
+import '../routes/screen_list.dart';
+
 snackBar(message, {context, duration}) {
   final snackBar = SnackBar(
     content: Text(
@@ -151,4 +154,28 @@ deleteConfirmation({context, title, message, onConfirm, bool barrierDismissible 
   );
 
   // ex: helper.deleteConfirmation(context, (){ print('clicked'); });
+}
+
+sendOtp() async {
+  Get.generalDialog(
+    pageBuilder: (context, anim1, anim2) {
+      return Align(
+        alignment: Alignment.center,
+        child: Container(
+          height: AppScreenUtil().screenHeight(250),
+          margin: EdgeInsets.symmetric(
+              horizontal: AppScreenUtil().screenWidth(12)),
+          child: OtpScreen(),
+        ),
+      );
+    },
+    transitionBuilder: (context, anim1, anim2, child) {
+      return SlideTransition(
+        position: Tween(begin: const Offset(0, -1), end: const Offset(0, 0))
+            .animate(anim1),
+        child: child,
+      );
+    },
+    transitionDuration: const Duration(milliseconds: 300),
+  );
 }

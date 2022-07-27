@@ -31,10 +31,14 @@ class DeliveryDetail extends StatelessWidget {
                   const Space(0, 30),
                   const BorderLineLayout(),
                   const Space(0, 30),
+
+                  //expected delivery layout
                   const ExpectedDeliveryLayout()
                 ],
               ).marginOnly(bottom: AppScreenUtil().screenHeight(80)),
             ),
+
+            //proceed to payment and view detail layout
             if (deliveryDetailCtrl.deliveryDetail != null)
               CartBottomLayout(
                 desc: CartFont().viewDetail,

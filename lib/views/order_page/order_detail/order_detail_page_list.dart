@@ -9,3 +9,4 @@ export 'package:multikart/views/order_page/order_success/order_success_layouts/o
 export 'package:multikart/views/order_page/order_detail/order_detail_layouts/sliver_background_image.dart';
 export 'package:multikart/views/order_page/order_detail/order_detail_layouts/nested_sliver_app_bar.dart';
 export 'package:multikart/views/order_page/order_detail/order_detail_layouts/order_product.dart';
+export 'package:multikart/views/order_page/order_detail/order_detail_layouts/order_detail_body.dart';

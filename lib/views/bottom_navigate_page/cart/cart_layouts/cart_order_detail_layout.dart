@@ -17,8 +17,7 @@ class CartOrderDetailLayout extends StatelessWidget {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return cartModelList!.orderDetail != null ? Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ...cartModelList!.orderDetail!.map((e) {
-print(e.title);
-print(e.value);
+
           String val;
           if ((e.title == "Bag savings" || e.title == "बैग बचत" || e.title == "توفير الحقيبة" || e.title == "가방 절약")) {
             val = "-\$${e.value}";

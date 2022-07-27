@@ -34,6 +34,7 @@ class ShopPage extends StatelessWidget {
                 IntrinsicHeight(
                   child: Row(
                     children: [
+                      //search text box layout
                       Expanded(
                         child: SearchTextBox(
                           controller: shopCtrl.controller,
@@ -41,6 +42,7 @@ class ShopPage extends StatelessWidget {
                           prefixIcon: SearchWidget().prefixIcon(),
                         ),
                       ),
+                      //filter icon layout
                       const FilterIconLayout().gestures(
                           onTap: () => Navigator.of(context)
                               .push(shopCtrl.createRoute()))
@@ -48,6 +50,7 @@ class ShopPage extends StatelessWidget {
                   ),
                 ),
                 const Space(0, 20),
+                //shop list layout
                 const ShopListLayout()
               ],
             ),

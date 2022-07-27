@@ -1,5 +1,3 @@
-import 'package:multikart/common/array/order_history_array.dart';
-
 import '../../config.dart';
 
 class OrderHistoryController extends GetxController {
@@ -8,7 +6,7 @@ class OrderHistoryController extends GetxController {
       : Get.put(AppController());
 
   TextEditingController controller = TextEditingController();
-  List<OrderHistoryModel> orderHistoryList =[];
+  List<OrderHistoryModel> orderHistoryList = [];
 
   @override
   void onReady() {
@@ -16,5 +14,17 @@ class OrderHistoryController extends GetxController {
     orderHistoryList = orderHistory;
     update();
     super.onReady();
+  }
+
+  //common bottom sheet
+  bottomSheetLayout() {
+    Get.bottomSheet(
+      const RatingReview(),
+      backgroundColor: Colors.white,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(0),
+      ),
+    );
   }
 }

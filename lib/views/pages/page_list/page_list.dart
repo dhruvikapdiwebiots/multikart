@@ -1,3 +1,5 @@
+
+
 import '../../../config.dart';
 
 class PageList extends StatelessWidget {
@@ -9,7 +11,10 @@ class PageList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<PageListController>(builder: (_) {
       return Directionality(
-        textDirection: pageListCtrl.appCtrl.isRTL || pageListCtrl.appCtrl.languageVal == "ar" ? TextDirection.rtl : TextDirection.ltr,
+        textDirection: pageListCtrl.appCtrl.isRTL ||
+                pageListCtrl.appCtrl.languageVal == "ar"
+            ? TextDirection.rtl
+            : TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
             centerTitle: false,
@@ -18,6 +23,16 @@ class PageList extends StatelessWidget {
             elevation: 0,
             backgroundColor: pageListCtrl.appCtrl.appTheme.whiteColor,
             title: Text(CommonTextFont().pages),
+          ),
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                //all page list
+                ...pageListCtrl.pageListModel.map((e) {
+                  return PageListLayout(pageListModel: e,);
+                }).toList()
+              ],
+            ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
           ),
         ),
       );

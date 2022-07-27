@@ -48,6 +48,6 @@ class ProfileWidget {
                 fontWeight: FontWeight.w600,
                 fontSize: FontSizes.f12,
                 color: appCtrl.appTheme.primary)
-            .marginOnly(right: AppScreenUtil().screenWidth(15)));
+            .marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)));
   }
 }

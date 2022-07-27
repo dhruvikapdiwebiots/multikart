@@ -15,12 +15,12 @@ class OrderTimeLineProcess extends StatelessWidget {
         ),
         builder: TimelineTileBuilder.connected(
           connectionDirection: ConnectionDirection.before,
-          itemCount: orderDetailCtrl.data.length,
+          itemCount: AppArray().orderTrack.length,
           contentsBuilder: (_, index) {
-            return TimeLineContent(data: orderDetailCtrl.data[index]);
+            return TimeLineContent(data: AppArray().orderTrack[index]);
           },
           indicatorBuilder: (_, index) {
-            if (orderDetailCtrl.data[index]['isCompete'] == true) {
+            if (AppArray().orderTrack[index]['isCompete'] == true) {
               return OrderDetailWidget().dotIndicator();
             } else {
               return const OutlinedDotIndicator(borderWidth: 2.5);
@@ -29,7 +29,7 @@ class OrderTimeLineProcess extends StatelessWidget {
           connectorBuilder: (_, index, ___) {
             return SolidLineConnector(
                 thickness: 1,
-                color: (orderDetailCtrl.data[index - 1]['isCompete'] == true)
+                color: (AppArray().orderTrack[index - 1]['isCompete'] == true)
                     ? orderDetailCtrl.appCtrl.appTheme.primary
                     : orderDetailCtrl.appCtrl.appTheme.borderColor);
           },

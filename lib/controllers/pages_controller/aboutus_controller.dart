@@ -1,4 +1,4 @@
-import 'package:multikart/common/array/about_us_array.dart';
+
 
 import '../../config.dart';
 

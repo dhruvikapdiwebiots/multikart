@@ -19,12 +19,16 @@ class LanguageBottomSheet extends StatelessWidget {
                 child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+
+                //select language text layout
                 LatoFontStyle(
                   text: CommonTextFont().selectLanguage,
                   fontSize: FontSizes.f16,
                   color: languageCtrl.appCtrl.appTheme.blackColor,
                 ),
                 const Space(0, 20),
+
+                //language list
                 ...AppArray().languageList.map((e) {
                   return Padding(
                     padding: EdgeInsets.symmetric(

@@ -8,7 +8,7 @@ class LoginController extends GetxController {
 
   TextEditingController txtEmail = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
-  GlobalKey<FormState> loginformKey = GlobalKey<FormState>();
+  bool isBack = false;
   final FocusNode emailFocus = FocusNode();
   final FocusNode passwordFocus = FocusNode();
   bool passwordVisible = true;
@@ -26,7 +26,20 @@ class LoginController extends GetxController {
     } else {
       log('No Valid');
     }*/
-    Get.toNamed(routeName.dashboard);
+    FocusScopeNode currentFocus = FocusScope.of(Get.context!);
+    if (!currentFocus.hasPrimaryFocus) {
+      currentFocus.unfocus();
+    }
+    Get.offAllNamed(routeName.dashboard);
+  }
+
+  @override
+  void onReady() {
+    // TODO: implement onReady
+    isBack = Get.arguments ?? false;
+
+    update();
+    super.onReady();
   }
 
 }

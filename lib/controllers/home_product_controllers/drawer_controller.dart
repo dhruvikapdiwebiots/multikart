@@ -9,7 +9,7 @@ class DrawerPageController extends GetxController {
 
 //language bottom sheet
   bottomSheet() {
-    print('dd');
+
     Get.bottomSheet(
       BottomSheetLayout(child: LanguageBottomSheet()),
       backgroundColor: Colors.white,
@@ -64,8 +64,9 @@ class DrawerPageController extends GetxController {
       update();
     } else if (index == 8) {
       Get.back();
-
       bottomSheet();
+      appCtrl.update();
+      update();
     } else if (index == 9) {
       Get.back();
       Get.toNamed(routeName.notification);

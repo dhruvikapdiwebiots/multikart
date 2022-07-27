@@ -10,24 +10,30 @@ class SaveAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<SaveAddressController>(
       builder: (_) {
-        return Scaffold(
-          appBar: AppBar(
-            centerTitle: false,
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            leading: const BackArrowButton(),
-            backgroundColor: saveAddressCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(CommonTextFont().savedAddress),
-          ),
-          body: SingleChildScrollView(
-            child: Column(
-              children: [
-                //address list layout
-                if (saveAddressCtrl.deliveryDetail != null)
-                   const SaveAddressList(),
-                //add new address button layout
-                const AddAddressButton(),
-              ],
+        return Directionality(
+          textDirection: saveAddressCtrl.appCtrl.isRTL ||
+              saveAddressCtrl.appCtrl.languageVal == "ar"
+              ? TextDirection.rtl
+              : TextDirection.ltr,
+          child: Scaffold(
+            appBar: AppBar(
+              centerTitle: false,
+              elevation: 0,
+              automaticallyImplyLeading: false,
+              leading: const BackArrowButton(),
+              backgroundColor: saveAddressCtrl.appCtrl.appTheme.whiteColor,
+              title: Text(CommonTextFont().savedAddress),
+            ),
+            body: SingleChildScrollView(
+              child: Column(
+                children: [
+                  //address list layout
+                  if (saveAddressCtrl.deliveryDetail != null)
+                     const SaveAddressList(),
+                  //add new address button layout
+                  const AddAddressButton(),
+                ],
+              ),
             ),
           ),
         );

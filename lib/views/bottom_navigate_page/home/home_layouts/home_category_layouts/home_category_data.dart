@@ -37,7 +37,7 @@ class HomeCategoryData extends StatelessWidget {
               ),
             ),
             LatoFontStyle(
-              text: data!.title!.tr,
+              text: data!.title,
               fontWeight: FontWeight.w600,
               fontSize: FontSizes.f12,
             )

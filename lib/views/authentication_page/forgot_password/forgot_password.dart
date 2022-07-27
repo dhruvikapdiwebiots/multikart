@@ -8,38 +8,47 @@ class ForgotPassWordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ForgotPasswordController>(builder: (_) {
-      return Scaffold(
-        body: SingleChildScrollView(
-            child: Column(
-          children: [
-             AuthenticationAppBar(
-              isDone: false,
-               onTap: ()=> Get.toNamed(routeName.dashboard),
-            ),
-            const Space(0, 20),
-            ForgotPasswordWidget().loginLayout(
-                child: AuthenticationTitleText(
+      return Directionality(
+        textDirection: forgotPasswordCtrl.appCtrl.isRTL ||
+                forgotPasswordCtrl.appCtrl.languageVal == "ar"
+            ? TextDirection.rtl
+            : TextDirection.ltr,
+        child: Scaffold(
+            body: SingleChildScrollView(
+                child: Column(children: [
+          //app bar layout
+          AuthenticationAppBar(
+            isDone: false,
+            onTap: () => Get.toNamed(routeName.dashboard),
+          ),
+          const Space(0, 20),
+
+          //title and description text layout
+          ForgotPasswordWidget().loginLayout(
+              child: AuthenticationTitleText(
                   text1: ForgotPasswordFont().forgotPasswordTitle,
-                  isTextShow: false,
-                ),
-                context: context),
-            const Space(0, 35),
-            const ForgotPasswordEmailTextForm(),
-            const Space(0, 30),
-            CustomButton(
+                  isTextShow: false),
+              context: context),
+          const Space(0, 35),
+
+          //email text box filed
+          const ForgotPasswordEmailTextForm(),
+          const Space(0, 30),
+
+          //button layout
+          CustomButton(
               title: ForgotPasswordFont().sendOtp.toUpperCase(),
-              onTap: () => forgotPasswordCtrl.sendOtp(),
-            ),
-            const Space(0, 30),
-            CommonAccountText(
+              onTap: () => forgotPasswordCtrl.sendOtp()),
+          const Space(0, 30),
+
+          //back and sign in button layout
+          CommonAccountText(
               text1: ForgotPasswordFont().backTo,
               text2: ForgotPasswordFont().signIn,
               textColor: forgotPasswordCtrl.appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.normal,
-              onTap: () => Get.back(),
-            ),
-          ],
-        )),
+              onTap: () => Get.back())
+        ]))),
       );
     });
   }

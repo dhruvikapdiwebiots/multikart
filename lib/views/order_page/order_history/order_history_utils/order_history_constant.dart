@@ -9,4 +9,7 @@ class OrderHistoryFont {
   String viewDetails = "viewDetails".tr;
   String size = "size".tr;
   String qty = "qty".tr;
+  String submit = "submit".tr;
+  String yourRating = "yourRating".tr;
+  String writeReview = "writeReview".tr;
 }

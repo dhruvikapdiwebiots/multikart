@@ -31,6 +31,7 @@ class AddAddressController extends GetxController{
     update();
   }
 
+  //text editing controllers
   TextEditingController txtCountry = TextEditingController();
   TextEditingController txtFullName = TextEditingController();
   TextEditingController txtMobileNumber = TextEditingController();
@@ -41,6 +42,8 @@ class AddAddressController extends GetxController{
   TextEditingController txtTownCity = TextEditingController();
   TextEditingController txtStateProvinceRegion = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  //focus node
   final FocusNode countryFocus = FocusNode();
   final FocusNode fullNameFocus = FocusNode();
   final FocusNode mobileNumberFocus = FocusNode();

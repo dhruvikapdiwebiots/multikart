@@ -10,3 +10,5 @@ export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/delivery_
 export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/empty_layout.dart';
 export 'package:multikart/models/cart_model.dart';
 export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/cart_detail.dart';
+export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/empty_cart.dart';
+export 'package:multikart/views/bottom_navigate_page/cart/cart_layouts/cart_body.dart';

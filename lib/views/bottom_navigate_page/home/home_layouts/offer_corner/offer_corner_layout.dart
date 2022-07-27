@@ -28,7 +28,7 @@ class OfferCornerLayout extends StatelessWidget {
                       color: homeCtrl.appCtrl.appTheme.whiteColor)
                       : Image.asset(imageAssets.offerCornerBG),
                   LatoFontStyle(
-                    text: homeCtrl.offerCornerList[index]['title'],
+                    text: homeCtrl.offerCornerList[index]['title'].toString().tr,
                     color: homeCtrl.appCtrl.appTheme.blackColor,
                     fontSize: 14,
                     fontWeight: FontWeight.w600,

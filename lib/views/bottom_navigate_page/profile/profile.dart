@@ -24,7 +24,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
           body: SingleChildScrollView(
             child: Column(
               children: [
+                //user profile layout
                 const ProfileUser(),
+
+                //menu page list
                 ...profileCtrl.drawerList.asMap().entries.map((e) {
                   return ProfileCard(
                     data: e.value,
@@ -33,6 +36,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     onTap: () => profileCtrl.goToPage(e.key),
                   );
                 }).toList(),
+
+                //logout button layout
                 Container(
                   alignment: Alignment.center,
                   padding: EdgeInsets.symmetric(vertical: AppScreenUtil().screenHeight(10)),

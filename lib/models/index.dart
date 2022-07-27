@@ -22,3 +22,5 @@ export 'notification.dart';
 export 'terms_condition_model.dart';
 export 'statistic_model.dart';
 export 'about_us_model.dart';
+export 'page_list_model.dart';
+export 'page_list.dart';

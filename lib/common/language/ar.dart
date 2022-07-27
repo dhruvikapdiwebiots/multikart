@@ -381,6 +381,7 @@ final dynamic ar = {
   "Apple Pay": "تفاحة يدفع",
   "Brinks": "برينكس",
   "CardFree": "بطاقة مجانية",
+  "balance": "الرصيد: ",
 
   //order success font
   "orderPlaced": "تم الطلب",
@@ -440,6 +441,9 @@ final dynamic ar = {
   "rateReview": "تقييم ومراجعة المنتج",
   "needHelp": "تحتاج مساعدة؟",
   "viewDetails": "عرض التفاصيل",
+  "submit": "يُقدِّم",
+  "yourRating": "تقييمك: ",
+  "writeReview": "أكتب مراجعة",
 
   //order detail font
   "shippingDetail": "تفاصيل الشحن",
@@ -457,6 +461,12 @@ final dynamic ar = {
   "We have got coupons. collect now and save extras !!!":"لدينا كوبونات. اجمع الآن وحفظ الإضافات !!!",
   "Payment Failed. You can retry making a payment on order sections.":"عملية الدفع فشلت. يمكنك إعادة محاولة إجراء الدفع على أقسام الطلب.",
   "Your order is delivered on time. for any further assistance please contact us.":"يتم تسليم طلبك في الوقت المحدد. لمزيد من المساعدة يرجى الاتصال بنا.",
+  "Out For Delivery":"خارج للتوصيل",
+  "expected delivery on monday":"التسليم المتوقع يوم الاثنين",
+  "In Transit":"في مرحلة انتقالية",
+  "10.00 am, 21/05/2020":"10.00 صباحًا ، 21/05/2020",
+  "Ordered":"أمر",
+  "20/05/2020":"20/05/2020",
 
   //terms and condition font
   "termsConditionForMultikart":"الشروط والأحكام الخاصة بـ Multikart",
@@ -507,4 +517,13 @@ final dynamic ar = {
   'Korean':'كوري',
   'Search':'يبحث',
   "Delivered":"تم التوصيلा",
+  "title":"Multikart هي وجهة أزياء رائدة لأحدث الاتجاهات وأحدث الأساليب.",
+  "+ users":"+ المستخدمين",
+  "+ stores":"+ مخازن",
+  "M+ orders":"أوامر M +",
+  "+ Brands":"+ العلامات التجارية",
+  "Multikart have 150+ register users online store":"دى Multikart أكثر من 150 مستخدمًا للتسجيل في المتجر الإلكتروني",
+  "Multikart have 50+ stores worldwide.":"تمتلك Multikart أكثر من 50 متجرًا حول العالم.",
+  "Multikart has 1.5M+ total orders till now.":"يحتوي Multikart على 1.5 مليون + إجمالي الطلبات حتى الآن.",
+  "Multikart has 100+ brands in our stores.":"تمتلك Multikart أكثر من 100 علامة تجارية في متاجرنا.",
 };

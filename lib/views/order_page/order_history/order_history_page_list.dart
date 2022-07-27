@@ -4,3 +4,5 @@ export 'package:multikart/views/order_page/order_history/order_history_utils/ord
 export 'package:multikart/views/order_page/order_history/order_history_layouts/date_delivery_status.dart';
 export 'package:multikart/views/order_page/order_history/order_history_layouts/order_history_size_qty.dart';
 export 'package:multikart/views/order_page/order_history/order_history_layouts/order_history_layout.dart';
+export 'package:multikart/views/order_page/order_history/order_history_layouts/empty_history.dart';
+export 'package:multikart/common/array/order_history_array.dart';

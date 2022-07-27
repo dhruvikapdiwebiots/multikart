@@ -2,7 +2,7 @@ import 'package:multikart/config.dart';
 
 var aboutUs = AboutUsModel(
     title:
-        "Multikart is premier fashion destination for the latest trends and hottest styles."
+        "title"
             .tr,
     desc1: "helpListDec".tr,
     desc2: "aboutDesc".tr,
@@ -23,7 +23,7 @@ var aboutUs = AboutUsModel(
           count: 1.5,
           title: "M+ orders".tr,
           image: svgAssets.delivery,
-          desc: "Multikart has 1.5M+ total orders till now. ".tr),
+          desc: "Multikart has 1.5M+ total orders till now.".tr),
       Statistic(
           count: 100,
           title: "+ Brands".tr,
