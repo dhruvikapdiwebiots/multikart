@@ -1,3 +1,5 @@
+import 'package:multikart/views/authentication_page/onbaording/dot_indicator.dart';
+
 import '../../../config.dart';
 
 class OnBoardData extends StatelessWidget {
@@ -34,7 +36,7 @@ class OnBoardData extends StatelessWidget {
                         textDecoration: TextDecoration.none),
                   ),
                   const Space(0, 25),
-                  const DotIndicator()
+                  OnBoardDotIndicator()
                 ],
               ),
             )

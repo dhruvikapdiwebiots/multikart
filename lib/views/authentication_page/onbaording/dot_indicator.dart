@@ -1,9 +1,9 @@
 import '../../../config.dart';
 
-class DotIndicator extends StatelessWidget {
+class OnBoardDotIndicator extends StatelessWidget {
   final controller = PageController(viewportFraction: 0.8, keepPage: true);
 
-  DotIndicator({Key? key}) : super(key: key);
+  OnBoardDotIndicator({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

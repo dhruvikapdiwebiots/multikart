@@ -27,8 +27,10 @@ class DashboardController extends GetxController {
 
   //bottom change
   bottomNavigationChange(val, context) async {
+
     appCtrl.selectedIndex = val;
     appCtrl.isLoading = true;
+    appCtrl.isShimmer = true;
     appCtrl.update();
 
     await storage.write(Session.selectedIndex, val);
@@ -66,6 +68,11 @@ class DashboardController extends GetxController {
       appCtrl.isNotification = false;
     }
     appCtrl.isLoading = false;
+
+
+    update();
+    await Future.delayed(Durations.s3);
+    appCtrl.isShimmer = false;
     appCtrl.update();
     update();
   }

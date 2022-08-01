@@ -10,8 +10,19 @@ class CategoryController extends GetxController {
   @override
   void onReady() {
     // TODO: implement onReady
-    categoryList = AppArray().categoryList;
-    update();
+    getData();
     super.onReady();
+  }
+
+  getData()async{
+    appCtrl.isShimmer = true;
+    appCtrl.update();
+    categoryList = AppArray().categoryList;
+
+    update();
+    await Future.delayed(Durations.s3);
+    appCtrl.isShimmer = false;
+    appCtrl.update();
+    update();
   }
 }

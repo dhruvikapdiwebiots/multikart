@@ -12,6 +12,7 @@ class CategoryCardLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.height);
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Container(
         width: MediaQuery.of(context).size.width,
@@ -26,7 +27,7 @@ class CategoryCardLayout extends StatelessWidget {
               categoryModel: categoryModel,
             ),
             Positioned(
-              top: -4,
+              top: MediaQuery.of(context).size.height > 850 ? -4 : 16,
               child: Hero(
                 tag: index.toString(),
                 child: Image.asset(categoryModel!.image.toString(),
