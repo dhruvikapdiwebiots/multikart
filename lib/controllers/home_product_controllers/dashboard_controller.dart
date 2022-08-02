@@ -75,6 +75,7 @@ class DashboardController extends GetxController {
     appCtrl.isShimmer = false;
     appCtrl.update();
     update();
+    Get.forceAppUpdate();
   }
 
   //app bar leading action

@@ -1,4 +1,5 @@
 import 'package:multikart/controllers/home_product_controllers/wishlist_controller.dart';
+import 'package:multikart/shimmer_layouts/wishlist_shimmer/wishlist_shimmer.dart';
 import 'package:multikart/views/bottom_navigate_page/wishlist/widget_layouts/wish_list_card.dart';
 
 import '../../../config.dart';
@@ -17,7 +18,7 @@ class _WishlistScreenState extends State<WishlistScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GetBuilder<WishlistController>(builder: (_) {
-        return ListView.builder(
+        return wishListCtrl.appCtrl.isShimmer ? const WishListShimmer() : ListView.builder(
           itemCount: wishListCtrl.wishlist.length,
           itemBuilder: (context, index) {
             return WishListCard(

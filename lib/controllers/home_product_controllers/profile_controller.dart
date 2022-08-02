@@ -49,6 +49,8 @@ class ProfileController extends GetxController {
 
 //go to page index wise
   goToPage(index) async {
+    appCtrl.isShimmer =true;
+    appCtrl.update();
     if (index == 2) {
       Get.toNamed(routeName.pageList);
     } else if (index == 3) {
@@ -78,5 +80,9 @@ class ProfileController extends GetxController {
       Get.toNamed(routeName.help);
     }
     update();
+    await Future.delayed(Durations.s3);
+    appCtrl.isShimmer =false;
+    appCtrl.update();
+    Get.forceAppUpdate();
   }
 }

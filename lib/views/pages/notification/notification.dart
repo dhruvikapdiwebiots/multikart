@@ -1,3 +1,5 @@
+
+
 import '../../../config.dart';
 
 class Notification extends StatelessWidget {
@@ -22,7 +24,7 @@ class Notification extends StatelessWidget {
             backgroundColor: notificationCtrl.appCtrl.appTheme.whiteColor,
             title: Text(NotificationFont().notification),
           ),
-          body: SingleChildScrollView(
+          body: notificationCtrl.appCtrl.isShimmer ? const NotificationShimmer() : SingleChildScrollView(
             child: Column(
               children: [
                 //notification type layout

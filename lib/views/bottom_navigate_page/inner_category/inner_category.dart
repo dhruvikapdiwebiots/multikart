@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/shimmer_layouts/category_shimmer/inner_category_shimmer.dart';
 
 class InnerCategory extends StatefulWidget {
   const InnerCategory({Key? key}) : super(key: key);
@@ -14,37 +15,46 @@ class _InnerCategoryState extends State<InnerCategory> {
   Widget build(BuildContext context) {
     return GetBuilder<InnerCategoryController>(builder: (_) {
       return WillPopScope(
-        onWillPop: ()async{
+        onWillPop: () async {
           innerCtrl.appCtrl.isSearch = false;
           innerCtrl.appCtrl.update();
           Get.back();
           return true;
         },
         child: Scaffold(
-          //app bar layout
-          appBar: HomeProductAppBar(
-            onTap: () {
-          innerCtrl.appCtrl.isSearch = false;
-          innerCtrl.appCtrl.update();
-              Get.back();},
-            titleChild: CommonAppBarTitle(
-              title: DashboardFont().categories,
-              desc: innerCtrl.categoryModel != null
-                  ? innerCtrl.categoryModel!.title
-                  : "",
-              isColumn: false,
+            //app bar layout
+            appBar: HomeProductAppBar(
+              onTap: () {
+                innerCtrl.appCtrl.isSearch = false;
+                innerCtrl.appCtrl.update();
+                Get.back();
+              },
+              titleChild: CommonAppBarTitle(
+                title: DashboardFont().categories,
+                desc: innerCtrl.categoryModel != null
+                    ? innerCtrl.categoryModel!.title
+                    : "",
+                isColumn: false,
+              ),
             ),
-          ),
-          body: SingleChildScrollView(
-            child: Column(
-              children: [
+            body: innerCtrl.appCtrl.isShimmer ? const InnerCategoryShimmer(): SingleChildScrollView(
+              child: Column(children: [
                 //category info. layout
                 if (innerCtrl.categoryModel != null)
                   CategoryCardLayout(
                     categoryModel: innerCtrl.categoryModel,
                     index: innerCtrl.index,
                     isEven: true,
-                    onTap: () => innerCtrl.goToShopPage(innerCtrl.categoryModel!.title.toString()),
+                    onTap: () async{
+                      innerCtrl.appCtrl.isShimmer = true;
+                      innerCtrl.appCtrl.update();
+                      innerCtrl.goToShopPage(
+                          innerCtrl.categoryModel!.title.toString());
+                      await Future.delayed(Durations.s2);
+                      innerCtrl.appCtrl.isShimmer = false;
+                      innerCtrl.appCtrl.update();
+                      Get.forceAppUpdate();
+                    },
                   ),
                 //inner category layout expandable
                 const InnerCategoryLayout(),
@@ -56,10 +66,8 @@ class _InnerCategoryState extends State<InnerCategory> {
 
                 //brands layout
                 const InnerCategoryBrands()
-              ],
-            ),
-          ),
-        ),
+              ]),
+            )),
       );
     });
   }

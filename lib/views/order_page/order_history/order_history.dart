@@ -1,5 +1,5 @@
 import 'package:multikart/config.dart';
-
+import 'package:multikart/shimmer_layouts/order_history_shimmer/order_history_shimmer.dart';
 
 class OrderHistory extends StatelessWidget {
   final orderHistoryCtrl = Get.put(OrderHistoryController());
@@ -9,9 +9,9 @@ class OrderHistory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<OrderHistoryController>(builder: (_) {
-      return  Directionality(
+      return Directionality(
         textDirection: orderHistoryCtrl.appCtrl.isRTL ||
-            orderHistoryCtrl.appCtrl.languageVal == "ar"
+                orderHistoryCtrl.appCtrl.languageVal == "ar"
             ? TextDirection.rtl
             : TextDirection.ltr,
         child: Scaffold(
@@ -32,7 +32,9 @@ class OrderHistory extends StatelessWidget {
                     controller: orderHistoryCtrl.controller, onTap: () {}),
                 const Space(0, 20),
 
-             //order history layout
+                //order history layout
+                orderHistoryCtrl.appCtrl.isShimmer ?
+                const OrderHistoryShimmer() :
              const OrderHistoryLayout()
               ],
             ).width(MediaQuery.of(context).size.width),

@@ -14,6 +14,7 @@ class HelpWidget{
       child: Image.asset(
         image,
         fit: BoxFit.cover,
+        width: MediaQuery.of(Get.context!).size.width,
         height: AppScreenUtil().screenHeight(180),
         alignment: Alignment.center,
       ));

@@ -1,3 +1,5 @@
+import 'package:multikart/shimmer_layouts/cart_shimmer/cart_shimmer.dart';
+
 import '../../../config.dart';
 
 class CartScreen extends StatefulWidget {
@@ -14,7 +16,8 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<CartController>(builder: (_) {
       return Scaffold(
-          body: cartCtrl.cartModelList != null
+          body: cartCtrl.appCtrl.isShimmer ? const CartShimmer()
+              : cartCtrl.cartModelList != null
               ? Stack(alignment: Alignment.bottomCenter, children: [
                   const SingleChildScrollView(child: CartBody()),
                   if (cartCtrl.cartModelList != null)

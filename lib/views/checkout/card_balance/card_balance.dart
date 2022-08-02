@@ -22,7 +22,7 @@ class CardBalance extends StatelessWidget {
             automaticallyImplyLeading: false,
             leading: const BackArrowButton(),
             backgroundColor: cardCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(CardBalanceFont().payments),
+            title: Text(CardBalanceFont().payment),
           ),
           body:  Stack(
             alignment: Alignment.bottomCenter,

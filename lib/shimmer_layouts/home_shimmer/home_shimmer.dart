@@ -58,7 +58,7 @@ class HomerShimmer extends StatelessWidget {
                 borderColor: appCtrl.appTheme.lightGray.withOpacity(.3),
               ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
               const Space(0, 30),
-              const GridViewShimmer(),
+              const GridViewShimmer(crossAxisCount: 2, count: 4),
             ],
           ),
         ),

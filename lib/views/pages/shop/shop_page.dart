@@ -1,4 +1,5 @@
 import 'package:multikart/config.dart';
+import 'package:multikart/shimmer_layouts/category_shimmer/shop_shimmer.dart';
 import 'package:multikart/views/pages/shop/shop_list_layout.dart';
 
 class ShopPage extends StatelessWidget {
@@ -29,35 +30,33 @@ class ShopPage extends StatelessWidget {
             ),
           ),
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                IntrinsicHeight(
-                  child: Row(
-                    children: [
-                      //search text box layout
-                      Expanded(
-                        child: SearchTextBox(
-                          controller: shopCtrl.controller,
-                          suffixIcon: SearchWidget().suffixIcon(),
-                          prefixIcon: SearchWidget().prefixIcon(),
-                        ),
-                      ),
-                      //filter icon layout
-                      const FilterIconLayout().gestures(
-                          onTap: () => Navigator.of(context)
-                              .push(shopCtrl.createRoute()))
-                    ],
+              child: Column(children: [
+            IntrinsicHeight(
+              child: Row(
+                children: [
+                  //search text box layout
+                  Expanded(
+                    child: SearchTextBox(
+                      controller: shopCtrl.controller,
+                      suffixIcon: SearchWidget().suffixIcon(),
+                      prefixIcon: SearchWidget().prefixIcon(),
+                    ),
                   ),
-                ),
-                const Space(0, 20),
-                //shop list layout
-                const ShopListLayout()
-              ],
+                  //filter icon layout
+                  const FilterIconLayout().gestures(
+                      onTap: () =>
+                          Navigator.of(context).push(shopCtrl.createRoute()))
+                ],
+              ),
             ),
-          ),
+            const Space(0, 20),
+            //shop list layout
+            shopCtrl.appCtrl.isShimmer
+                ? const ShopShimmer()
+                : const ShopListLayout()
+          ])),
           bottomNavigationBar: CommonBottomNavigation(
-            onTap: (val) => shopCtrl.bottomNavigationChange(val, context),
-          ),
+              onTap: (val) => shopCtrl.bottomNavigationChange(val, context)),
         ),
       );
     });

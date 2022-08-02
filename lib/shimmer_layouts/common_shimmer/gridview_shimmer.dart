@@ -1,7 +1,9 @@
 import '../../config.dart';
 
 class GridViewShimmer extends StatelessWidget {
-  const GridViewShimmer({Key? key}) : super(key: key);
+  final int? count;
+  final int? crossAxisCount;
+  const GridViewShimmer({Key? key,this.count,this.crossAxisCount}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +13,7 @@ class GridViewShimmer extends StatelessWidget {
           padding: EdgeInsets.zero,
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
-          itemCount: 4,
+          itemCount: count,
           itemBuilder: (context, index) {
             return CommonShimmer(
               height: 40,
@@ -36,7 +38,7 @@ class GridViewShimmer extends StatelessWidget {
             );
           },
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+            crossAxisCount: crossAxisCount!,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
             childAspectRatio: MediaQuery.of(context).size.width /

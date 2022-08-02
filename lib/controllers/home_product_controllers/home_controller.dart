@@ -46,9 +46,6 @@ class HomeController extends GetxController {
     loginHeight = 500.w;
     update();
     subCategoryList(0, 1);
-    await Future.delayed(Durations.s3);
-    appCtrl.isShimmer = false;
-    appCtrl.update();
     update();
   }
 
