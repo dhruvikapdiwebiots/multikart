@@ -1,7 +1,8 @@
 import '../../config.dart';
 
 class CommonTitleText extends StatelessWidget {
-  const CommonTitleText({Key? key}) : super(key: key);
+  final double width;
+  const CommonTitleText({Key? key ,this.width =100}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class CommonTitleText extends StatelessWidget {
       builder: (appCtrl) {
         return CommonShimmer(
           height: 10,
-          width: 100,
+          width: width,
           borderRadius: 2,
           color: appCtrl.appTheme.lightGray.withOpacity(.3),
           borderColor: appCtrl.appTheme.lightGray.withOpacity(.3),

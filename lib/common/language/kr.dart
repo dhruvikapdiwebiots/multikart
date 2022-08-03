@@ -498,6 +498,7 @@ final dynamic kr = {
   "ourBrand":"각 브랜드는 독특한 개성과 독특한 디자인을 가지고 있습니다. 그들은 적절한 매력을 만들어내는 스타일과 의복을 자유롭게 개발할 수 있습니다. 그리고 우리의 모든 브랜드는 하나입니다.",
   "ourBrandTitle":"우리 브랜드",
   "selectLanguage":"언어 선택",
+  "selectCurrency":"통화 선택",
   "English":"영어",
   "Arabic":"아라비아 말",
   "Hindi":"힌디 어",
@@ -513,4 +514,11 @@ final dynamic kr = {
   "Multikart have 50+ stores worldwide.":"Multikart는 전 세계적으로 50개 이상의 매장을 보유하고 있습니다.",
   "Multikart has 1.5M+ total orders till now.":"Multikart는 지금까지 150만 개 이상의 총 주문을 받았습니다.",
   "Multikart has 100+ brands in our stores.":"Multikart 매장에는 100개 이상의 브랜드가 있습니다.",
+
+  //currency font
+  "Indian rupee":"인도 루피",
+  "United States dollar":"미국 달러",
+  "Euro":"유로",
+  "Australian dollar":"호주 달러",
+  "North Korean won":"북한 원",
 };

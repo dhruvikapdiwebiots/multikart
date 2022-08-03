@@ -22,6 +22,9 @@ class DashboardController extends GetxController {
     appCtrl.update();
     drawerList = AppArray().drawerList;
     update();
+    appCtrl.isShimmer = false;
+    appCtrl.update();
+    Get.forceAppUpdate();
     super.onReady();
   }
 

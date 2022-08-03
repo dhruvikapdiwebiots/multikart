@@ -511,6 +511,7 @@ final dynamic ar = {
   "ourBrand":"كل علامة تجارية لها شخصية فريدة وتصميم حصري. لديهم الحرية في تطوير الأنماط والملابس التي تخلق الجاذبية المناسبة - وجميع علاماتنا التجارية متحدة",
   "ourBrandTitle":"علاماتنا التجارية",
   "selectLanguage":"اختار اللغة",
+  "selectCurrency":"اختر العملة",
   'English':'انجليزي',
   'Arabic':'عربي',
   'Hindi':'هندي',
@@ -526,4 +527,11 @@ final dynamic ar = {
   "Multikart have 50+ stores worldwide.":"تمتلك Multikart أكثر من 50 متجرًا حول العالم.",
   "Multikart has 1.5M+ total orders till now.":"يحتوي Multikart على 1.5 مليون + إجمالي الطلبات حتى الآن.",
   "Multikart has 100+ brands in our stores.":"تمتلك Multikart أكثر من 100 علامة تجارية في متاجرنا.",
+
+  //currency font
+  "Indian rupee":"روبية هندية",
+  "United States dollar":"دولار الولايات المتحدة",
+  "Euro":"اليورو",
+  "Australian dollar":"دولار استرالي",
+  "North Korean won":"وون كوريا الشمالية",
 };

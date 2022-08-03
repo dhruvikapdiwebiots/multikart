@@ -10,24 +10,30 @@ class OtpScreen extends StatelessWidget {
     return GetBuilder<OtpController>(builder: (_) {
       return Scaffold(
         resizeToAvoidBottomInset: false,
-        body: SingleChildScrollView(
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+        body: Directionality(
+          textDirection: otpCtrl.appCtrl.isRTL ||
+              otpCtrl.appCtrl.languageVal == "ar"
+              ? TextDirection.rtl
+              : TextDirection.ltr,
+          child: SingleChildScrollView(
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
 
-                  //body layout
-              const OtpBody(),
+                    //body layout
+                const OtpBody(),
 
-              // done button layout
-              CustomButton(
-                  title: OtpFont().done.toUpperCase(),
-                  onTap: () {
-                    Get.back();
-                    Get.toNamed(routeName.resetPassword);
-                  })
-            ])),
+                // done button layout
+                CustomButton(
+                    title: OtpFont().done.toUpperCase(),
+                    onTap: () {
+                      Get.back();
+                      Get.toNamed(routeName.resetPassword);
+                    })
+              ])),
+        ),
       );
     });
   }

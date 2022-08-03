@@ -1,4 +1,5 @@
 import 'package:get_storage/get_storage.dart';
+import 'package:multikart/views/pages/currency.dart';
 
 import '../../config.dart';
 
@@ -34,9 +35,9 @@ class ProfileController extends GetxController {
   }
 
   //language bottom sheet
-  bottomSheet() {
+  bottomSheet(isLanguage) {
     Get.bottomSheet(
-      BottomSheetLayout(child:  LanguageBottomSheet()),
+      BottomSheetLayout(child: isLanguage? LanguageBottomSheet(): CurrencyBottomSheet()),
       backgroundColor: Colors.white,
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -67,16 +68,18 @@ class ProfileController extends GetxController {
     } else if (index == 6) {
       Get.toNamed(routeName.saveAddress);
     } else if (index == 7) {
-      bottomSheet();
-    } else if (index == 8) {
-      Get.toNamed(routeName.notification);
+      bottomSheet(true);
+    }  else if (index == 8) {
+      bottomSheet(false);
     } else if (index == 9) {
-      Get.toNamed(routeName.setting);
+      Get.toNamed(routeName.notification);
     } else if (index == 10) {
+      Get.toNamed(routeName.setting);
+    } else if (index == 11) {
       Get.toNamed(routeName.profileSetting);
-    }else if (index == 11) {
-      Get.toNamed(routeName.termsCondition);
     }else if (index == 12) {
+      Get.toNamed(routeName.termsCondition);
+    }else if (index == 13) {
       Get.toNamed(routeName.help);
     }
     update();

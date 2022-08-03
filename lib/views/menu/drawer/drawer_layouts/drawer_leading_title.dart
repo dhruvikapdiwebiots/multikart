@@ -18,7 +18,7 @@ class DrawerLeadingTitle extends StatelessWidget {
                 children: <Widget>[
                   data['icon'] == "assets/svg/flags.svg"
                       ? SvgPicture.asset(svgAssets.flags, fit: BoxFit.fill)
-                      : SvgPicture.asset(data['icon'],
+                      :data['icon'] == "assets/svg/currency.svg" ?const Icon(Icons.money) :  SvgPicture.asset(data['icon'],
                           color: appCtrl.appTheme.blackColor)
                 ]),
             const Space(20, 0),

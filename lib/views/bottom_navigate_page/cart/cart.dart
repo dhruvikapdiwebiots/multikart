@@ -15,25 +15,31 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<CartController>(builder: (_) {
-      return Scaffold(
-          body: cartCtrl.appCtrl.isShimmer ? const CartShimmer()
-              : cartCtrl.cartModelList != null
-              ? Stack(alignment: Alignment.bottomCenter, children: [
-                  const SingleChildScrollView(child: CartBody()),
-                  if (cartCtrl.cartModelList != null)
-                    CartBottomLayout(
-                        desc: CartFont().viewDetail,
-                        buttonName: CartFont().placeOrder,
-                        totalAmount:
-                            cartCtrl.cartModelList!.totalAmount.toString(),
-                        onTap: () {
-                          cartCtrl.appCtrl.isHeart = false;
-                          cartCtrl.update();
-                          Get.toNamed(routeName.deliveryDetail,
-                              arguments: cartCtrl.cartModelList!.totalAmount);
-                        })
-                ])
-              : const EmptyCart());
+      return Directionality(
+        textDirection: cartCtrl.appCtrl.isRTL ||
+            cartCtrl.appCtrl.languageVal == "ar"
+            ? TextDirection.rtl
+            : TextDirection.ltr,
+        child: Scaffold(
+            body: cartCtrl.appCtrl.isShimmer ? const CartShimmer()
+                : cartCtrl.cartModelList != null
+                ? Stack(alignment: Alignment.bottomCenter, children: [
+                    const SingleChildScrollView(child: CartBody()),
+                    if (cartCtrl.cartModelList != null)
+                      CartBottomLayout(
+                          desc: CartFont().viewDetail,
+                          buttonName: CartFont().placeOrder,
+                          totalAmount:
+                              cartCtrl.cartModelList!.totalAmount.toString(),
+                          onTap: () {
+                            cartCtrl.appCtrl.isHeart = false;
+                            cartCtrl.update();
+                            Get.toNamed(routeName.deliveryDetail,
+                                arguments: cartCtrl.cartModelList!.totalAmount);
+                          })
+                  ])
+                : const EmptyCart()),
+      );
     });
   }
 }

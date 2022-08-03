@@ -9,7 +9,7 @@ class HomeCategoryData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
-
+print(MediaQuery.of(context).size.width);
       return Padding(
         padding: EdgeInsets.only(
             right: AppScreenUtil().screenWidth(12),
@@ -28,11 +28,14 @@ class HomeCategoryData extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                   ),
-                  FadeInImageLayout(
-                      image: data!.image.toString(),
-                      height: AppScreenUtil().screenHeight(60),
-                      width: AppScreenUtil().screenWidth(60),
-                      fit: BoxFit.fill),
+                  Positioned(
+                    top: MediaQuery.of(context).size.width > 400 ? MediaQuery.of(context).size.height /100: 0,
+                    child: FadeInImageLayout(
+                        image: data!.image.toString(),
+                        height: AppScreenUtil().screenHeight(60),
+                        width: AppScreenUtil().screenWidth(60),
+                        fit: BoxFit.fill),
+                  ),
                 ],
               ),
             ),

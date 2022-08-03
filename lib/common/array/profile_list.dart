@@ -9,6 +9,7 @@ var profileList = <ProfileModel>[
   ProfileModel(icon: svgAssets.wallet,title: 'Payment'.tr,subTitle: 'Saved Cards, Wallets'.tr),
   ProfileModel(icon: svgAssets.location,title: 'Saved Address'.tr,subTitle: 'Home, office.. '.tr),
   ProfileModel(icon: svgAssets.flags,title: 'Language'.tr,subTitle: 'Select your Language here..'.tr),
+  ProfileModel(icon: svgAssets.currency,title: 'Currency Change'.tr,subTitle: 'Select your Currency here..'.tr),
   ProfileModel(icon: svgAssets.notification,title: 'Notification'.tr,subTitle: 'Offers, Order tracking messages..'.tr),
   ProfileModel(icon: svgAssets.setting,title: 'Settings'.tr,subTitle: 'App settings, Dark mode'.tr),
   ProfileModel(icon: svgAssets.profileSetting,title: 'Profile setting'.tr,subTitle: 'Full Name, Password..'.tr),

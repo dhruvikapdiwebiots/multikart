@@ -13,14 +13,13 @@ class LinkHeartIcon extends StatelessWidget {
       builder: (appCtrl) {
         return Container(
           width: AppScreenUtil().screenWidth(25),
-          height: AppScreenUtil().screenHeight(23),
+          height: AppScreenUtil().screenHeight(25),
           padding: EdgeInsets.symmetric(
               horizontal: AppScreenUtil().size(5),
               vertical: AppScreenUtil().size(5)),
           decoration: BoxDecoration(
               color: appCtrl.appTheme.bgColor,
-              borderRadius: BorderRadius.circular(
-                  AppScreenUtil().borderRadius(50))),
+              shape: BoxShape.circle,),
           child: LikeButton(
             likeCountPadding: EdgeInsets.zero,
             isLiked: isLiked,

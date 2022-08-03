@@ -8,44 +8,50 @@ class Coupons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<CouponsController>(builder: (_) {
-      return Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          automaticallyImplyLeading: false,
-          leading: const BackArrowButton(),
-          backgroundColor: couponCtrl.appCtrl.appTheme.whiteColor,
-          title: Text(CouponFont().couponTitle),
-        ),
-        body: Stack(
-          alignment: Alignment.bottomCenter,
-          children: [
-            SingleChildScrollView(
-              child: SizedBox(
-                height: MediaQuery.of(context).size.height,
-                child: Column(
-                  children: [
-                    //coupon text box layout
-                    const CouponTextBox(
-                      isSuffixIcon: false,
-                    ),
-                    const Space(0, 10),
+      return Directionality(
+        textDirection: couponCtrl.appCtrl.isRTL ||
+            couponCtrl.appCtrl.languageVal == "ar"
+            ? TextDirection.rtl
+            : TextDirection.ltr,
+        child: Scaffold(
+          appBar: AppBar(
+            elevation: 0,
+            automaticallyImplyLeading: false,
+            leading: const BackArrowButton(),
+            backgroundColor: couponCtrl.appCtrl.appTheme.whiteColor,
+            title: Text(CouponFont().couponTitle),
+          ),
+          body: Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              SingleChildScrollView(
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.height,
+                  child: Column(
+                    children: [
+                      //coupon text box layout
+                      const CouponTextBox(
+                        isSuffixIcon: false,
+                      ),
+                      const Space(0, 10),
 
-                    //coupon list layout
-                    CouponList(
-                      couponList: couponCtrl.couponList,
-                    )
-                  ],
+                      //coupon list layout
+                      CouponList(
+                        couponList: couponCtrl.couponList,
+                      )
+                    ],
+                  ),
                 ),
               ),
-            ),
-            //maximum saving and apply layout
-            if (couponCtrl.cartModelList != null)
-              CartBottomLayout(
-                  desc: CouponFont().maximumSaving,
-                  buttonName: CouponFont().apply,
-                  isPrimaryDesc: false,
-                  totalAmount: couponCtrl.cartModelList!.totalAmount.toString())
-          ],
+              //maximum saving and apply layout
+              if (couponCtrl.cartModelList != null)
+                CartBottomLayout(
+                    desc: CouponFont().maximumSaving,
+                    buttonName: CouponFont().apply,
+                    isPrimaryDesc: false,
+                    totalAmount: couponCtrl.cartModelList!.totalAmount.toString())
+            ],
+          ),
         ),
       );
     });

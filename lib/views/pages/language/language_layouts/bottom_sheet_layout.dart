@@ -15,7 +15,7 @@ class BottomSheetLayout extends StatelessWidget {
               topRight: Radius.circular(AppScreenUtil().borderRadius(15)),
               topLeft: Radius.circular(AppScreenUtil().borderRadius(15))),
         ),
-        height: MediaQuery.of(context).size.height / 2.2,
+        height: MediaQuery.of(context).size.height / 2,
         child: child);
   }
 }

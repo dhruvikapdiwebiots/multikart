@@ -1,5 +1,6 @@
 import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
+import 'package:multikart/views/pages/currency.dart';
 
 class DrawerPageController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
@@ -8,10 +9,10 @@ class DrawerPageController extends GetxController {
   final storage = GetStorage();
 
 //language bottom sheet
-  bottomSheet() {
+  bottomSheet(isLanguage) {
 
     Get.bottomSheet(
-      BottomSheetLayout(child: LanguageBottomSheet()),
+      BottomSheetLayout(child: isLanguage?  LanguageBottomSheet(): CurrencyBottomSheet()),
       backgroundColor: Colors.white,
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -64,19 +65,24 @@ class DrawerPageController extends GetxController {
       update();
     } else if (index == 8) {
       Get.back();
-      bottomSheet();
+      bottomSheet(true);
       appCtrl.update();
       update();
     } else if (index == 9) {
       Get.back();
-      Get.toNamed(routeName.notification);
+      bottomSheet(false);
+      appCtrl.update();
+      update();
     } else if (index == 10) {
       Get.back();
-      Get.toNamed(routeName.setting);
+      Get.toNamed(routeName.notification);
     } else if (index == 11) {
       Get.back();
-      Get.toNamed(routeName.aboutUs);
+      Get.toNamed(routeName.setting);
     } else if (index == 12) {
+      Get.back();
+      Get.toNamed(routeName.aboutUs);
+    } else if (index == 13) {
       Get.back();
       Get.toNamed(routeName.help);
     }

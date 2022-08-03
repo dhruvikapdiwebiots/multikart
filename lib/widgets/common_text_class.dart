@@ -36,6 +36,7 @@ class CommonTextFont{
   String termsCondition = "termsCondition".tr;
   String termsConditionForMultikart = "termsConditionForMultikart".tr;
   String selectLanguage = "selectLanguage".tr;
+  String selectCurrency = "selectCurrency".tr;
   String pages = "Pages".tr;
 
 

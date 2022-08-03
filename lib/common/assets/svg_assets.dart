@@ -24,6 +24,7 @@ class SvgAssets {
   final String call = 'assets/svg/call.svg';
   final String camera = 'assets/svg/camera.svg';
   final String closeSquare = 'assets/svg/closeSquare.svg';
+  final String currency = 'assets/svg/currency.svg';
   final String clock = 'assets/svg/clock.svg';
   final String thumbsUp = 'assets/svg/thumbsUp.svg';
   final String thumbsDown = 'assets/svg/thumbsDown.svg';
@@ -47,5 +48,10 @@ class SvgAssets {
   final String ar = 'assets/language/ar.svg';
   final String kr = 'assets/language/kr.svg';
   final String inImage = 'assets/language/in.svg';
+  final String kpw = 'assets/svg/kpw.svg';
+  final String inr = 'assets/svg/inr.svg';
+  final String usd = 'assets/svg/usd.svg';
+  final String aud = 'assets/svg/aud.svg';
+  final String eur = 'assets/svg/eur.svg';
 
 }

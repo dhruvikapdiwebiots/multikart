@@ -25,6 +25,8 @@ class AppController extends GetxController {
   double rightValue = 15;
   final storage = GetStorage();
   AppTheme get appTheme => _appTheme;
+  double rateValue = 0.0;
+  String priceSymbol = "₹";
 
 //list of bottommost page
   List<Widget> widgetOptions = <Widget>[

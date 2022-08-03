@@ -20,12 +20,12 @@ class ProfileCard extends StatelessWidget {
           ProfileList(
             data: data,
           ),
-          if (index == 10)
+          if (index == 11)
             Container(
               height: 10,
               color: appCtrl.appTheme.lightGray,
             ),
-          if (index != lastIndex && index != 10)
+          if (index != lastIndex && index != 11)
             Divider(
               thickness: 1,
               color: appCtrl.appTheme.greyLight25,

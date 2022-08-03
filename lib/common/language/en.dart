@@ -509,6 +509,7 @@ final dynamic en = {
   "ourBrand":"Each Brands have a unique personality and exclusive design. They have the freedom to develop the styles and garments that create the right appeal – and all our Brands are united",
   "ourBrandTitle":"Our Brands",
   "selectLanguage":"Select Language",
+  "selectCurrency":"Select Currency",
   "English":"English",
   "Arabic":"Arabic",
   "Hindi":"Hindi",
@@ -524,4 +525,11 @@ final dynamic en = {
   "Multikart have 50+ stores worldwide.":"Multikart have 50+ stores worldwide.",
   "Multikart has 1.5M+ total orders till now.":"Multikart has 1.5M+ total orders till now.",
   "Multikart has 100+ brands in our stores.":"Multikart has 100+ brands in our stores.",
+
+  //currency font
+  "Indian rupee":"Indian rupee",
+  "United States dollar":"United States dollar",
+  "Euro":"Euro",
+  "Australian dollar":"Australian dollar",
+  "North Korean won":"North Korean won",
 };

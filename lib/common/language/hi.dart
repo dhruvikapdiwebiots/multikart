@@ -499,6 +499,7 @@ final dynamic hi = {
   "ourBrand":"प्रत्येक ब्रांड का एक अद्वितीय व्यक्तित्व और विशिष्ट डिजाइन होता है। उन्हें सही अपील पैदा करने वाली शैलियों और परिधानों को विकसित करने की स्वतंत्रता है - और हमारे सभी ब्रांड एकजुट हैं",
   "ourBrandTitle":"हमारे ब्रांड्स",
   "selectLanguage":"भाषा चुने",
+  "selectCurrency":"मुद्रा चुनें",
   'English':'अंग्रेजी',
   'Arabic':'अरबी',
   'Hindi':'हिंदी',
@@ -514,4 +515,11 @@ final dynamic hi = {
   "Multikart have 50+ stores worldwide.":"मल्टीकार्ट के दुनिया भर में 50+ स्टोर हैं।",
   "Multikart has 1.5M+ total orders till now.":"मल्टीकार्ट के पास अब तक कुल 1.5M+ ऑर्डर हैं।",
   "Multikart has 100+ brands in our stores.":"मल्टीकार्ट के हमारे स्टोर में 100+ ब्रांड हैं।",
+
+  //currency font
+  "Indian rupee":"भारतीय रुपया",
+  "United States dollar":"यूनाइटेड स्टेट का डॉलर",
+  "Euro":"यूरो",
+  "Australian dollar":"ऑस्ट्रलियन डॉलर",
+  "North Korean won":"उत्तर कोरियाई वोन",
 };

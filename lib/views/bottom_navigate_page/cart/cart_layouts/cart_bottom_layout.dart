@@ -15,11 +15,12 @@ class CartBottomLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.width);
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Container(
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.symmetric(
-              vertical: AppScreenUtil().screenHeight(5),
+              vertical: AppScreenUtil().screenHeight(MediaQuery.of(context).size.width > 400 ? 10:5),
               horizontal: AppScreenUtil().screenWidth(15)),
           decoration: BoxDecoration(
             color: appCtrl.appTheme.whiteColor,
@@ -36,7 +37,7 @@ class CartBottomLayout extends StatelessWidget {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             SizedBox(
                 width: MediaQuery.of(context).size.width / 3,
-                height: AppScreenUtil().screenHeight(50),
+                height: AppScreenUtil().screenHeight(MediaQuery.of(context).size.width >400 ? 60:50),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -57,7 +58,7 @@ class CartBottomLayout extends StatelessWidget {
                     ])),
             CustomButton(
                 title: buttonName!,
-                height: AppScreenUtil().screenHeight(30),
+                height: AppScreenUtil().screenHeight(MediaQuery.of(context).size.width >400 ? 50:30),
                 width: AppScreenUtil().screenWidth(200),
                 fontSize: FontSizes.f14,
                 onTap: onTap,

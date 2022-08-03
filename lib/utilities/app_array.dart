@@ -21,24 +21,28 @@ class AppArray {
         description: "onBoard3".tr),
   ];
 
-  var orderTrack = [{
-    "title":"Out For Delivery".tr,
-    "date":"expected delivery on monday".tr,
-    "isCompete":false,
-  },{
-    "title":"In Transit".tr,
-    "date":"10.00 am, 21/05/2020".tr,
-    "isCompete":true,
-  },{
-    "title":"Ready To Ship".tr,
-    "date":"10.00 am, 21/05/2020".tr,
-    "isCompete":true,
-  },
+  var orderTrack = [
     {
-      "title":"Ordered".tr,
-      "date":"20/05/2020".tr,
-      "isCompete":true,
-    }];
+      "title": "Out For Delivery".tr,
+      "date": "expected delivery on monday".tr,
+      "isCompete": false,
+    },
+    {
+      "title": "In Transit".tr,
+      "date": "10.00 am, 21/05/2020".tr,
+      "isCompete": true,
+    },
+    {
+      "title": "Ready To Ship".tr,
+      "date": "10.00 am, 21/05/2020".tr,
+      "isCompete": true,
+    },
+    {
+      "title": "Ordered".tr,
+      "date": "20/05/2020".tr,
+      "isCompete": true,
+    }
+  ];
 
   var bottomSheet = [
     {
@@ -188,6 +192,11 @@ class AppArray {
       'title': 'Language'.tr,
       'icon': svgAssets.flags,
       'subTitle': 'Select your Language here..'.tr
+    },
+    {
+      'title': 'Currency Change'.tr,
+      'icon': svgAssets.currency,
+      'subTitle': 'Select your Currency here..'.tr
     },
     {
       'title': 'Notification'.tr,
@@ -914,5 +923,63 @@ class AppArray {
       'name': 'Korean'.tr,
       'locale': const Locale('ko', 'KR')
     }
+  ];
+
+  var currencyList = [
+    {
+      'icon': svgAssets.kpw,
+      'title': 'Indian rupee'.tr,
+      'code': 'INR',
+      'symbol': '₹',
+      'KPW': 0.013,
+      'USD': 16.56,
+      'AUD': 0.018,
+      'EUR': 0.012,
+      'INR': 1
+    },
+    {
+      'icon': svgAssets.usd,
+      'title': 'United States dollar'.tr,
+      'code': 'USD',
+      'symbol': '\$',
+      'KPW': 1311.26,
+      'USD': 1,
+      'AUD': 1.44,
+      'EUR': 0.98,
+      'INR': 79.14
+    },
+    {
+      'icon': svgAssets.eur,
+      'title': 'Euro'.tr,
+      'code': 'EUR',
+      'symbol': '€',
+      'KPW': 1334.87,
+      'USD': 1.02,
+      'AUD': 1.47,
+      'EUR': 1,
+      'INR': 80.63
+    },
+    {
+      'icon': svgAssets.aud,
+      'title': 'Australian dollar'.tr,
+      'code': 'AUD',
+      'symbol': 'A\$',
+      'KPW': 909.45,
+      'USD': 0.69,
+      'AUD': 1,
+      'EUR': 0.68,
+      'INR':54.92
+    },
+    {
+      'icon': svgAssets.kpw,
+      'title': 'North Korean won'.tr,
+      'code': 'KPW',
+      'symbol': '₩',
+      'KPW': 1,
+      'USD': 0.00076,
+      'AUD': 0.0011,
+      'EUR': 0.00075,
+      'INR':0.060
+    },
   ];
 }

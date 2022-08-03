@@ -8,7 +8,7 @@ class PaymentWidget {
   //offer and promotion card
   Widget offerPromotionCard(text) {
     return Container(
-        height: AppScreenUtil().screenHeight(50),
+        height: AppScreenUtil().screenHeight(60),
         alignment: Alignment.centerLeft,
         decoration: BoxDecoration(color: appCtrl.appTheme.greyLight25,borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(5))),
         margin: const EdgeInsets.only(bottom: Insets.i15),
