@@ -18,7 +18,7 @@ class CartDetail extends StatelessWidget {
                 fontSize: FontSizes.f14,
                 color: appCtrl.appTheme.contentColor),
             LatoFontStyle(
-                text:orderDetail!.title == "Coupon Discount" ? isApplyText!? val : "-\$20.0" :val,
+                text:orderDetail!.title == "Coupon Discount" ? isApplyText!? val : "-${appCtrl.priceSymbol}20.0" :val,
                 fontSize: FontSizes.f14,
                 color: orderDetail!.title == "Bag savings"
                     ? appCtrl.appTheme.greenColor

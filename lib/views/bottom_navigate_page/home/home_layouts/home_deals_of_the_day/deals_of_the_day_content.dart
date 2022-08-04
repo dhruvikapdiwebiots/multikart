@@ -14,6 +14,7 @@ class DealsOfTheDayContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
+
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -33,13 +34,13 @@ class DealsOfTheDayContent extends StatelessWidget {
           Row(
             children: [
               LatoFontStyle(
-                  text: '\$${data!.mrp}',
+                  text: '${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.blackColor,
                   fontSize: FontSizes.f12),
               const Space(8, 0),
               LatoFontStyle(
-                  text: '\$${data!.totalPrice}',
+                  text:'${appCtrl.priceSymbol} ${(data!.totalPrice! * appCtrl.rateValue).toStringAsFixed(2)}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.contentColor,
                   fontSize: FontSizes.f12,

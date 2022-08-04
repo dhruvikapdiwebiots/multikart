@@ -57,7 +57,7 @@ class WalletLayout extends StatelessWidget {
                                 ),
 
                                 LatoFontStyle(
-                                  text: "\$${e['balance'].toString()}",
+                                  text: "${appCtrl.priceSymbol}${(double.parse(e['balance'].toString()) * appCtrl.rateValue)}",
                                   fontSize: FontSizes.f14,
                                   fontWeight: FontWeight.w700,
                                   color: appCtrl.appTheme.blackColor,

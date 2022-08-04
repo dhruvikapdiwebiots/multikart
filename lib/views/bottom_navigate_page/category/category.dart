@@ -36,7 +36,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                             var data = {'data': e.value, 'index': e.key};
 
                             Get.toNamed(routeName.innerCategory, arguments: data);
-                            await Future.delayed(Durations.s2);
+                            await Future.delayed(Durations.s1);
                             categoryCtrl.appCtrl.isShimmer = false;
                             categoryCtrl.appCtrl.update();
                             Get.forceAppUpdate();

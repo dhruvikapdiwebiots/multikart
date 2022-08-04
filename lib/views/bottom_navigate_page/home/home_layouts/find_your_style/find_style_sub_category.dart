@@ -20,7 +20,7 @@ class FindStyleSubCategory extends StatelessWidget {
           },
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            crossAxisSpacing: 15,
+            crossAxisSpacing: 5,
             mainAxisSpacing: 5,
             childAspectRatio: MediaQuery.of(context).size.width /
                 (MediaQuery.of(context).size.height / (1.2)),

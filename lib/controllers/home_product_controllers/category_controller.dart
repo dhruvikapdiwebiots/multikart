@@ -20,7 +20,7 @@ class CategoryController extends GetxController {
     categoryList = AppArray().categoryList;
 
     update();
-    await Future.delayed(Durations.s3);
+    await Future.delayed(Durations.s1);
     appCtrl.isShimmer = false;
     appCtrl.update();
     update();

@@ -228,8 +228,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 0.5),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -237,8 +237,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -246,8 +246,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 1.2),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -255,8 +255,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 4),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -264,8 +264,8 @@ class AppArray {
         categoryId: '2',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -273,8 +273,8 @@ class AppArray {
         categoryId: '2',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 4),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -282,8 +282,8 @@ class AppArray {
         categoryId: '3',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 2)
   ];
 
@@ -356,8 +356,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 0.5),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -365,8 +365,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -374,8 +374,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 1.2),
   ];
 
@@ -387,8 +387,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 0.5),
     HomeFindStyleCategoryModel(
         name: 'Party Wear Jumpshuit'.tr,
@@ -396,8 +396,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -405,8 +405,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 1.2),
   ];
 
@@ -578,8 +578,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: true,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 1.2),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -587,8 +587,8 @@ class AppArray {
         categoryId: '1',
         discount: '20%',
         isFav: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 4),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -597,8 +597,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 0.5),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -607,8 +607,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: true,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -617,8 +617,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 3),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -627,8 +627,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 4),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -637,8 +637,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 5.00,
         rating: 2),
     HomeFindStyleCategoryModel(
         name: 'Blue Denim Jacket'.tr,
@@ -647,8 +647,8 @@ class AppArray {
         discount: '20%',
         isFav: false,
         isNew: false,
-        mrp: '32.00',
-        totalPrice: "35.00",
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 2)
   ];
 
@@ -927,12 +927,12 @@ class AppArray {
 
   var currencyList = [
     {
-      'icon': svgAssets.kpw,
+      'icon': svgAssets.inr,
       'title': 'Indian rupee'.tr,
       'code': 'INR',
       'symbol': '₹',
-      'KPW': 0.013,
-      'USD': 16.56,
+      'KPW': 16.50,
+      'USD': 0.013,
       'AUD': 0.018,
       'EUR': 0.012,
       'INR': 1
@@ -942,11 +942,11 @@ class AppArray {
       'title': 'United States dollar'.tr,
       'code': 'USD',
       'symbol': '\$',
-      'KPW': 1311.26,
+      'KPW': 1311.35,
       'USD': 1,
       'AUD': 1.44,
       'EUR': 0.98,
-      'INR': 79.14
+      'INR': 79.46
     },
     {
       'icon': svgAssets.eur,
@@ -972,7 +972,7 @@ class AppArray {
     },
     {
       'icon': svgAssets.kpw,
-      'title': 'North Korean won'.tr,
+      'title': 'South Korean won'.tr,
       'code': 'KPW',
       'symbol': '₩',
       'KPW': 1,

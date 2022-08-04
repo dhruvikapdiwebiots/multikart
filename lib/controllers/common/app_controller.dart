@@ -40,6 +40,7 @@ class AppController extends GetxController {
   @override
   void onReady() async {
     bottomList = AppArray().bottomSheet;
+    rateValue = double.parse(AppArray().currencyList[0]['INR'].toString());
   getData();
     super.onReady();
   }

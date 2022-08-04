@@ -13,27 +13,35 @@ class OfferCornerLayout extends StatelessWidget {
           shrinkWrap: true,
           itemCount: homeCtrl.offerCornerList.length,
           itemBuilder: (context, index) {
-            return Container(
-              alignment: Alignment.center,
-              height: AppScreenUtil().screenHeight(10),
-              decoration: BoxDecoration(
-                borderRadius:
-                BorderRadius.circular(AppScreenUtil().borderRadius(3)),
-              ),
-              child: Stack(
+            return InkWell(
+              onTap: () {
+                homeCtrl.appCtrl.isSearch = false;
+                homeCtrl.appCtrl.selectedIndex = 1;
+                homeCtrl.appCtrl.update();
+                Get.toNamed(routeName.shopPage, arguments: "All");
+              },
+              child: Container(
                 alignment: Alignment.center,
-                children: [
-                  homeCtrl.appCtrl.isTheme
-                      ? Image.asset(imageAssets.offerCornerBG,
-                      color: homeCtrl.appCtrl.appTheme.whiteColor)
-                      : Image.asset(imageAssets.offerCornerBG),
-                  LatoFontStyle(
-                    text: homeCtrl.offerCornerList[index]['title'].toString().tr,
-                    color: homeCtrl.appCtrl.appTheme.blackColor,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ],
+                height: AppScreenUtil().screenHeight(10),
+                decoration: BoxDecoration(
+                  borderRadius:
+                  BorderRadius.circular(AppScreenUtil().borderRadius(3)),
+                ),
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    homeCtrl.appCtrl.isTheme
+                        ? Image.asset(imageAssets.offerCornerBG,
+                        color: homeCtrl.appCtrl.appTheme.whiteColor)
+                        : Image.asset(imageAssets.offerCornerBG),
+                    LatoFontStyle(
+                      text: homeCtrl.offerCornerList[index]['title'].toString().tr,
+                      color: homeCtrl.appCtrl.appTheme.blackColor,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ],
+                ),
               ),
             );
           },

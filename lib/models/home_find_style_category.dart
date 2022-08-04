@@ -2,8 +2,8 @@ class HomeFindStyleCategoryModel {
   String? name;
   String? image;
   String? categoryId;
-  String? mrp;
-  String? totalPrice;
+  double? mrp;
+  double? totalPrice;
   String? discount;
   bool? isFav;
   bool isNew;
@@ -16,8 +16,8 @@ class HomeFindStyleCategoryModel {
       name: json['name'] as String?,
       image: json['image'] as String?,
       categoryId: json['categoryId'] as String?,
-      totalPrice: json['totalPrice'] as String?,
-      mrp: json['mrp'] as String?,
+      totalPrice: json['totalPrice'] as double?,
+      mrp: json['mrp'] as double?,
       discount: json['discount'] as String?,
       isFav: json['isFav'] as bool?,
       isNew: json['isNew'] as bool,

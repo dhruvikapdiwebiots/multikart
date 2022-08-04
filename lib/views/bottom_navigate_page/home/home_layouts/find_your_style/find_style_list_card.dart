@@ -11,36 +11,39 @@ class FindStyleListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(builder: (appCtrl) {
-      return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Stack(alignment: Alignment.topLeft, children: [
-          Stack(alignment: Alignment.topRight, children: [
-            ProductImage(image: data!.image.toString(), isFit: isFit),
-            LinkHeartIcon(
-              isLiked: data!.isFav,
-            ).paddingOnly(
-                top: AppScreenUtil().screenHeight(15),
-                right: AppScreenUtil().screenWidth(15))
+      return InkWell(
+          onTap: ()=> appCtrl.goToProductDetail(),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Stack(alignment: Alignment.topLeft, children: [
+            Stack(alignment: Alignment.topRight, children: [
+              ProductImage(image: data!.image.toString(), isFit: isFit),
+              LinkHeartIcon(
+                isLiked: data!.isFav,
+              ).paddingOnly(
+                  top: AppScreenUtil().screenHeight(15),
+                  right: AppScreenUtil().screenWidth(15))
+            ]),
+            if (data!.isNew) const NewLayout()
           ]),
-          if (data!.isNew) const NewLayout()
+          const Space(0, 5),
+          Rating(
+            val: double.parse(data!.rating.toString()),
+            onRatingUpdate: (val) {},
+          ),
+          LatoFontStyle(
+            text: data!.name!.tr,
+            fontSize: FontSizes.f14,
+            fontWeight: FontWeight.normal,
+            color: appCtrl.appTheme.blackColor,
+          ).paddingOnly(left: AppScreenUtil().screenWidth(5)),
+          const Space(0, 5),
+          PriceLayout(
+              totalPrice:'${appCtrl.priceSymbol} ${(data!.totalPrice! * appCtrl.rateValue).toStringAsFixed(2)}',
+              mrp:'${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',
+              discount: data!.discount,fontSize: FontSizes.f10,
+              isDiscountShow: isDiscountShow)
         ]),
-        const Space(0, 5),
-        Rating(
-          val: double.parse(data!.rating.toString()),
-          onRatingUpdate: (val) {},
-        ),
-        LatoFontStyle(
-          text: data!.name!.tr,
-          fontSize: FontSizes.f14,
-          fontWeight: FontWeight.normal,
-          color: appCtrl.appTheme.blackColor,
-        ).paddingOnly(left: AppScreenUtil().screenWidth(5)),
-        const Space(0, 5),
-        PriceLayout(
-            totalPrice: data!.totalPrice,
-            mrp: data!.mrp,
-            discount: data!.discount,
-            isDiscountShow: isDiscountShow)
-      ]);
+      );
     });
   }
 }

@@ -10,6 +10,7 @@ class ShopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ShopController>(builder: (_) {
+
       return Directionality(
         textDirection: shopCtrl.appCtrl.isRTL ||
             shopCtrl.appCtrl.languageVal == "ar"

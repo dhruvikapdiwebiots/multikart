@@ -83,7 +83,7 @@ class ProfileController extends GetxController {
       Get.toNamed(routeName.help);
     }
     update();
-    await Future.delayed(Durations.s3);
+    await Future.delayed(Durations.s1);
     appCtrl.isShimmer =false;
     appCtrl.update();
     Get.forceAppUpdate();

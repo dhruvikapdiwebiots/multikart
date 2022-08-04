@@ -20,7 +20,7 @@ class ShopController extends GetxController {
   @override
   void onReady() {
     // TODO: implement onReady
-    name = Get.arguments;
+    name = Get.arguments ?? "All";
     categoryList = AppArray().categoryList;
     homeShopPageList = AppArray().homeShopPageList;
     update();

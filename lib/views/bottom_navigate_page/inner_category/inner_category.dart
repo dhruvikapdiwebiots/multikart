@@ -55,7 +55,7 @@ class _InnerCategoryState extends State<InnerCategory> {
                         innerCtrl.appCtrl.update();
                         innerCtrl.goToShopPage(
                             innerCtrl.categoryModel!.title.toString());
-                        await Future.delayed(Durations.s2);
+                        await Future.delayed(Durations.s1);
                         innerCtrl.appCtrl.isShimmer = false;
                         innerCtrl.appCtrl.update();
                         Get.forceAppUpdate();

@@ -32,17 +32,20 @@ class OfferTimeLayout extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               child: const OfferTimeData(),
             ),
-            Transform(
-                alignment: Alignment.center,
-                transform: homeCtrl.appCtrl.isRTL ||
-                        homeCtrl.appCtrl.languageVal == "ar"
-                    ? Matrix4.rotationY(math.pi)
-                    : Matrix4.rotationX(math.pi),
-                child: Image.asset(
-                  imageAssets.girl,
-                  fit: BoxFit.cover,
-                  height: AppScreenUtil().size(180),
-                ))
+            homeCtrl.appCtrl.isRTL || homeCtrl.appCtrl.languageVal == "ar"
+                ? Transform(
+                    alignment: Alignment.center,
+                    transform: Matrix4.rotationY(math.pi),
+                    child: Image.asset(
+                      imageAssets.girl,
+                      fit: BoxFit.cover,
+                      height: AppScreenUtil().size(180),
+                    ))
+                : Image.asset(
+                    imageAssets.girl,
+                    fit: BoxFit.cover,
+                    height: AppScreenUtil().size(180),
+                  )
           ],
         ),
       );

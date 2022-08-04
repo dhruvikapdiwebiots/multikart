@@ -47,7 +47,7 @@ class HomeController extends GetxController {
     update();
     subCategoryList(0, 1);
     update();
-    await Future.delayed(Durations.s3);
+    await Future.delayed(Durations.s1);
     appCtrl.isShimmer = false;
     appCtrl.update();
     Get.forceAppUpdate();

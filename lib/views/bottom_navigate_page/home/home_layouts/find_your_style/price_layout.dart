@@ -13,14 +13,14 @@ class PriceLayout extends StatelessWidget {
         return Row(
           children: [
             LatoFontStyle(
-              text: '\$$totalPrice',
+              text: mrp,
               fontSize: fontSize,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.blackColor,
             ),
             const Space(5, 0),
             LatoFontStyle(
-              text: '\$$mrp',
+              text: totalPrice,
               fontSize: fontSize,
               fontWeight: FontWeight.normal,
               color: appCtrl.appTheme.contentColor,
