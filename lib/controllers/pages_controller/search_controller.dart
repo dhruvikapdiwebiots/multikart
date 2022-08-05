@@ -6,7 +6,7 @@ class SearchController extends GetxController {
       : Get.put(AppController());
 
   TextEditingController controller = TextEditingController();
-
+  int selectRecommended = 0;
   List recentSearchList = [];
   List recommendedList = [];
   List innerCategoryProduct = [];
@@ -22,10 +22,9 @@ class SearchController extends GetxController {
   }
 
   //go to shop page
-  goToShopPage(name){
+  goToShopPage(name) {
     appCtrl.isNotification = true;
     appCtrl.update();
-    Get.toNamed(routeName.shopPage,arguments: name);
+    Get.toNamed(routeName.shopPage, arguments: name);
   }
-
 }

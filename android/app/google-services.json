@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713436851366",
+    "project_id": "multikart-e57bb",
+    "storage_bucket": "multikart-e57bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713436851366:android:80d13de334b0892e391867",
+        "android_client_info": {
+          "package_name": "com.multikart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713436851366-4ichl1husbkip4cjqspksbf339gcfjja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbvBvc7KGR_r_HeUN44e99KMfNAPB2Yks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713436851366-4ichl1husbkip4cjqspksbf339gcfjja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

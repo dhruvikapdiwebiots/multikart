@@ -3,8 +3,9 @@ import '../../config.dart';
 class GridviewThreeLayout extends StatelessWidget {
   final dynamic data;
   final int? index;
+  final int? selectIndex;
   final GestureTapCallback? onTap;
-  const GridviewThreeLayout({Key? key,this.onTap,this.data,this.index}) : super(key: key);
+  const GridviewThreeLayout({Key? key,this.onTap,this.data,this.index,this.selectIndex}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class GridviewThreeLayout extends StatelessWidget {
             top: AppScreenUtil().screenHeight(10),
           ),
           decoration: BoxDecoration(
-            color: data['isSelected'] ? appCtrl.appTheme.primary :appCtrl.appTheme.greyLight25,
+            color: index == selectIndex ? appCtrl.appTheme.primary :appCtrl.appTheme.greyLight25,
             borderRadius: BorderRadius.circular(AppScreenUtil()
                 .borderRadius(AppScreenUtil().borderRadius(5))),
           ),

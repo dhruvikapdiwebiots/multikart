@@ -9,41 +9,44 @@ class CategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<AppController>(
         builder: (appCtrl) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: AppScreenUtil().screenHeight(120),
-                child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    Container(
-                      height: AppScreenUtil().screenHeight(100),
-                      width: AppScreenUtil().screenWidth(110),
+          return InkWell(
+            onTap: ()=> appCtrl.goToProductDetail(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: AppScreenUtil().screenHeight(120),
+                  child: Stack(
+                    alignment: Alignment.bottomCenter,
+                    children: [
+                      Container(
+                        height: AppScreenUtil().screenHeight(100),
+                        width: AppScreenUtil().screenWidth(110),
 
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(
-                            AppScreenUtil().borderRadius(5)),
-                        color: appCtrl.appTheme.lightGray,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(
+                              AppScreenUtil().borderRadius(5)),
+                          color: appCtrl.appTheme.lightGray,
+                        ),
                       ),
-                    ),
-                    Image.asset(
-                      data['image'],
-                      fit: BoxFit.fill,
-                      height: AppScreenUtil().screenHeight(120),
-                    )
-                  ],
+                      Image.asset(
+                        data['image'],
+                        fit: BoxFit.fill,
+                        height: AppScreenUtil().screenHeight(120),
+                      )
+                    ],
+                  ),
+                ).gestures(
+                    onTap: onTap
                 ),
-              ).gestures(
-                  onTap: onTap
-              ),
-              const Space(0, 10),
-              LatoFontStyle(
-                text: data['title'],
-                fontSize: 14,
+                const Space(0, 10),
+                LatoFontStyle(
+                  text: data['title'],
+                  fontSize: 14,
 
-              )
-            ],
+                )
+              ],
+            ),
           );
         }
     );

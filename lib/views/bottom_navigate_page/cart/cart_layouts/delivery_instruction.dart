@@ -23,12 +23,11 @@ class DeliveryInstruction extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(20)),
                             height: AppScreenUtil().screenHeight(50),
-                            width: AppScreenUtil().screenWidth(55),
+                            width: AppScreenUtil().screenWidth(50),
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
                                 color: appCtrl.appTheme.greyLight25,
-                                borderRadius: BorderRadius.circular(
-                                    AppScreenUtil().borderRadius(50))),
+                                shape: BoxShape.circle),
                             child: (e.icon!.contains("svg"))
                                 ? SvgPicture.asset(e.icon!)
                                 : Image.asset(e.icon!),

@@ -1,4 +1,5 @@
 import '../../../../config.dart';
+import 'dart:io' show Platform;
 
 class AddressListCard extends StatelessWidget {
   final AddressList? addressList;
@@ -24,25 +25,27 @@ class AddressListCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomRadio(
-
-                      index: index,
-                      selectRadio: selectRadio,
-                      onTap: onTap),
+                      index: index, selectRadio: selectRadio, onTap: onTap),
                   const Space(10, 0),
                   AddressDetail(
-                    addressList: addressList,
-                    index: index,
-                    selectRadio: selectRadio,
-                  ),
+                      addressList: addressList,
+                      index: index,
+                      selectRadio: selectRadio)
                 ],
               ),
-              CustomButton(
-                title: addressList!.addressType.toString(),
-                width: AppScreenUtil().screenWidth(45),
-                height: AppScreenUtil().screenHeight(15),
-                fontSize: FontSizes.f8,
-                radius: 2,
-              )
+              Container(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: AppScreenUtil().screenWidth(5),
+                      vertical: AppScreenUtil().screenHeight(2)),
+                  decoration: BoxDecoration(
+                      color: appCtrl.appTheme.primary,
+                      borderRadius: BorderRadius.circular(
+                          AppScreenUtil().borderRadius(2))),
+                  child: LatoFontStyle(
+                      text: addressList!.addressType.toString(),
+                      fontSize: FontSizes.f10,
+                      fontWeight: FontWeight.w600,
+                      color: appCtrl.appTheme.white))
             ],
           ),
         ],

@@ -15,9 +15,9 @@ class SizeLayout extends StatelessWidget {
           return GridviewThreeLayout(
             data: filterCtrl.sizeList[index],
             index: index,
+            selectIndex: filterCtrl.selectSize,
             onTap: () {
-              filterCtrl.sizeList[index]['isSelected'] =
-                  !filterCtrl.sizeList[index]['isSelected'];
+              filterCtrl.selectSize = index;
               filterCtrl.update();
             },
           );

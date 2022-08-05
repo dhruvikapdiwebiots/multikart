@@ -33,13 +33,26 @@ class ProfileUser extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                       color: appCtrl.appTheme.contentColor),
                   const Space(0, 10),
-                  CustomButton(
+                /*  CustomButton(
                       title: CommonTextFont().edit,
                       width: AppScreenUtil().screenWidth(100),
                       fontWeight: FontWeight.w600,
                       fontSize: FontSizes.f14,
                       height: AppScreenUtil().screenHeight(25),
-                      margin: 0)
+                      margin: 0)*/
+                  Container(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: AppScreenUtil().screenWidth(5),
+                          vertical: AppScreenUtil().screenHeight(2)),
+                      decoration: BoxDecoration(
+                          color: appCtrl.appTheme.primary,
+                          borderRadius: BorderRadius.circular(
+                              AppScreenUtil().borderRadius(2))),
+                      child: LatoFontStyle(
+                          text: CommonTextFont().edit,
+                          fontSize: FontSizes.f10,
+                          fontWeight: FontWeight.w600,
+                          color: appCtrl.appTheme.white))
                 ]),
           ]));
     });

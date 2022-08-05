@@ -14,6 +14,7 @@ class FilterController extends GetxController {
   int selectedBrand = 0;
   int selectedOccasion = 0;
   int selectedColor = 0;
+  int selectSize =0;
   var data = [
     {"val": "0.0"},
     {"val": "10.0"},
