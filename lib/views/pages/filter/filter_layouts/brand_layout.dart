@@ -27,7 +27,7 @@ class BrandLayout extends StatelessWidget {
             childAspectRatio: MediaQuery.of(context).size.width /
                 (MediaQuery.of(context).size.height / (6.5)),
           ),
-        );
+        ).marginOnly(bottom: AppScreenUtil().screenHeight(20));
       }
     );
   }

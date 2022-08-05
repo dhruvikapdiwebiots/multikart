@@ -10,7 +10,12 @@ class SearchIcon extends StatelessWidget {
         return SvgPicture.asset(
           svgAssets.search,
           color: appCtrl.appTheme.blackColor,
-        ).gestures(onTap: ()=> Get.toNamed(routeName.search));
+        ).gestures(onTap: (){
+          appCtrl.selectedIndex =1;
+          appCtrl.update();
+          Get.forceAppUpdate();
+          Get.toNamed(routeName.search);
+        });
       }
     );
   }

@@ -19,7 +19,7 @@ class SortByLayout extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 horizontal: AppScreenUtil().screenWidth(25)),
             child: const SortByDropDown()),
-      );
+      ).marginOnly(bottom: AppScreenUtil().screenHeight(20));
     });
   }
 }

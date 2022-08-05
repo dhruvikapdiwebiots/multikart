@@ -1,5 +1,3 @@
-import 'package:multikart/shimmer_layouts/cart_shimmer/cart_shimmer.dart';
-
 import '../../../config.dart';
 
 class CartScreen extends StatefulWidget {

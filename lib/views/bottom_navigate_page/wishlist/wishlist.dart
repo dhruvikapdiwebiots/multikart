@@ -1,5 +1,4 @@
 import 'package:multikart/controllers/home_product_controllers/wishlist_controller.dart';
-import 'package:multikart/shimmer_layouts/wishlist_shimmer/wishlist_shimmer.dart';
 import 'package:multikart/views/bottom_navigate_page/wishlist/widget_layouts/wish_list_card.dart';
 
 import '../../../config.dart';

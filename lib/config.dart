@@ -51,6 +51,6 @@ export 'package:multikart/views/pages/help/help_page_list.dart';
 export 'package:multikart/views/pages/about_us/about_us_page_list.dart';
 export 'package:multikart/views/pages/page_list/pages_page_list.dart';
 export 'package:multikart/widgets/common/common_shimmer.dart';
-export 'package:multikart/shimmer_layouts/home_shimmer/home_shimmer_page_list.dart';
 export 'package:multikart/shimmer_layouts/category_shimmer/category_shimmer.dart';
+export 'package:multikart/shimmer_layouts/shimmer_page_list.dart';
 export 'package:shimmer/shimmer.dart';

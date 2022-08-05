@@ -41,8 +41,7 @@ class _ColorLayoutState extends State<ColorLayout>with TickerProviderStateMixin 
                 width: AppScreenUtil().screenWidth(35),
                 decoration: BoxDecoration(
                     color: e.value['color'],
-                    borderRadius: BorderRadius.circular(
-                        AppScreenUtil().borderRadius(60))),
+                    shape: BoxShape.circle),
                 child: Container(
                     padding: EdgeInsets.all(AppScreenUtil().size(8)),
                     child: filterCtrl.selectedColor == e.key

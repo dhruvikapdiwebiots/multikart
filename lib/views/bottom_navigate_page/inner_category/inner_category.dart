@@ -1,5 +1,4 @@
 import 'package:multikart/config.dart';
-import 'package:multikart/shimmer_layouts/category_shimmer/inner_category_shimmer.dart';
 
 class InnerCategory extends StatefulWidget {
   const InnerCategory({Key? key}) : super(key: key);

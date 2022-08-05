@@ -15,6 +15,7 @@ class HomeProductAppBar extends StatelessWidget with PreferredSizeWidget {
         leading: MenuRoundedIcon(
           onTap: onTap,
         ),
+        centerTitle: false,
         backgroundColor: appCtrl.appTheme.whiteColor,
         titleSpacing: 0,
         title: titleChild,

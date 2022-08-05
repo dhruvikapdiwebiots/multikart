@@ -17,3 +17,10 @@ export 'package:multikart/controllers/pages_controller/save_address_controller.d
 export 'package:multikart/shimmer_layouts/address_list_shimmer/address_list_shimmer.dart';
 export 'package:multikart/views/pages/save_address/save_address_list.dart';
 export 'package:multikart/shimmer_layouts/home_shimmer/notification_shimmer/notification_shimmer.dart';
+export 'package:multikart/views/pages/add_address/add_address_layouts/make_default_address.dart';
+
+//shimmer main page route
+export 'package:multikart/shimmer_layouts/cart_shimmer/cart_shimmer.dart';
+export 'package:multikart/shimmer_layouts/home_shimmer/home_shimmer.dart';
+export 'package:multikart/shimmer_layouts/category_shimmer/inner_category_shimmer.dart';
+export 'package:multikart/shimmer_layouts/wishlist_shimmer/wishlist_shimmer.dart';

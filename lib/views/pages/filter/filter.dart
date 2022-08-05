@@ -9,10 +9,10 @@ class Filter extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<FilterController>(builder: (_) {
       return Directionality(
-        textDirection: filterCtrl.appCtrl.isRTL ||
-            filterCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+        textDirection:
+            filterCtrl.appCtrl.isRTL || filterCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
         child: Scaffold(
             appBar: AppBar(
                 elevation: 0,
@@ -20,24 +20,21 @@ class Filter extends StatelessWidget {
                 backgroundColor: Colors.white,
                 automaticallyImplyLeading: false,
                 actions: const [CloseSquareIcon()]),
-            body: Stack(
-              alignment: Alignment.bottomCenter,
-              children: [
-                SingleChildScrollView(
-                    child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+            body: Stack(alignment: Alignment.bottomCenter, children: [
+              SingleChildScrollView(
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                     FilterWidget().titleText(FilterFont().shortBy),
                     const Space(0, 20),
 
                     //short by layout
                     const SortByLayout(),
-                    const Space(0, 20),
 
                     FilterWidget().titleText(FilterFont().brandsFilter),
                     //brand layout
                     const BrandLayout(),
-                    const Space(0, 20),
+
                     FilterWidget().titleText(FilterFont().size),
                     // size layout
                     const SizeLayout(),
@@ -59,11 +56,12 @@ class Filter extends StatelessWidget {
                     //color layout
                     const ColorLayout(),
                     const Space(0, 20)
-                  ],
-                ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15))),
-                 BottomLayout(firstButtonText: FilterFont().reset,secondButtonText: FilterFont().applyFilter,)
-              ],
-            )),
+                  ]).marginSymmetric(
+                      horizontal: AppScreenUtil().screenWidth(15))),
+              BottomLayout(
+                  firstButtonText: FilterFont().reset,
+                  secondButtonText: FilterFont().applyFilter)
+            ])),
       );
     });
   }

@@ -39,10 +39,7 @@ class ShopController extends GetxController {
         var tween =
             Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
-        return SlideTransition(
-          position: animation.drive(tween),
-          child: child,
-        );
+        return SlideTransition(position: animation.drive(tween), child: child);
       },
     );
   }
@@ -52,5 +49,15 @@ class ShopController extends GetxController {
     Get.back();
     Get.back();
     dashboardCtrl.bottomNavigationChange(val, context);
+  }
+
+  //go back to home page
+  goToHomePage() async {
+    appCtrl.goToHome();
+    await storage.write(Session.selectedIndex, 0);
+    appCtrl.selectedIndex = 0;
+    update();
+    appCtrl.update();
+    Get.back();
   }
 }

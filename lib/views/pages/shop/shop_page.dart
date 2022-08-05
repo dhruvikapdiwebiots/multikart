@@ -10,25 +10,21 @@ class ShopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ShopController>(builder: (_) {
-
       return Directionality(
-        textDirection: shopCtrl.appCtrl.isRTL ||
-            shopCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+        textDirection:
+            shopCtrl.appCtrl.isRTL || shopCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
         child: WillPopScope(
           onWillPop: () async {
-            shopCtrl.appCtrl.isNotification = false;
-            shopCtrl.appCtrl.update();
-            Get.back();
+            shopCtrl.goToHomePage();
+
             return true;
           },
           child: Scaffold(
             appBar: HomeProductAppBar(
-              onTap: () {
-                shopCtrl.appCtrl.isNotification = false;
-                shopCtrl.appCtrl.update();
-                Get.back();
+              onTap: () async {
+                shopCtrl.goToHomePage();
               },
               titleChild: CommonAppBarTitle(
                 title: "${shopCtrl.name} ${ShopFont().collection}",
