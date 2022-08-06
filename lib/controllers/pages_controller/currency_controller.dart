@@ -11,17 +11,10 @@ class CurrencyController extends GetxController {
 
 //currency change
   currencyChange(val, code) async {
-    print(val);
-    print(code);
     currencyVal = storage.read('currencyVal') ?? AppArray().currencyList[0];
-
-    print("currencyVal : $currencyVal");
-    print(" val[code] : ${ currencyVal[code]}");
-
     appCtrl.priceSymbol = val['symbol'];
 
     appCtrl.rateValue = currencyVal[code];
-    print("rate ${appCtrl.rateValue}");
     appCtrl.update();
     update();
     Get.forceAppUpdate();

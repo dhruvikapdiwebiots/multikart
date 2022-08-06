@@ -41,7 +41,7 @@ class HomeCategoryData extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: MediaQuery.of(context).size.width > 400 ? MediaQuery.of(context).size.height /100: 0,
+                      top: MediaQuery.of(context).size.width > 400 ? MediaQuery.of(context).size.height /100: MediaQuery.of(context).size.width <380 ?5 : 0,
                       child: FadeInImageLayout(
                           image: data!.image.toString(),
                           height: AppScreenUtil().screenHeight(60),

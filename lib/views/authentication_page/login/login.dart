@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Scaffold(
               body: Form(
                   key: loginformKey,
-                  child: const SingleChildScrollView(child: LoginBody())),
+                  child:  SingleChildScrollView(child: LoginBody(formKey: loginformKey,))),
             ),
           ),
         ),

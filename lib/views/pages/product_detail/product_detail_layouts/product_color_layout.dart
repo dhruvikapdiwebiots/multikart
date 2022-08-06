@@ -38,12 +38,11 @@ class _ProductColorLayoutState extends State<ProductColorLayout>
               margin: EdgeInsets.only(
                   right: AppScreenUtil().screenWidth(10),
                   top: AppScreenUtil().screenHeight(10)),
-              height: AppScreenUtil().screenHeight(32),
+              height: AppScreenUtil().screenHeight(35),
               width: AppScreenUtil().screenWidth(35),
               decoration: BoxDecoration(
                   color: e.value.color,
-                  borderRadius:
-                      BorderRadius.circular(AppScreenUtil().borderRadius(60))),
+                 shape: BoxShape.circle),
               child: Container(
                   padding: EdgeInsets.all(AppScreenUtil().size(8)),
                   child: productCtrl.selectedColor == e.key

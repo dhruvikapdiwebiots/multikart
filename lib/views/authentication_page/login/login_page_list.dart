@@ -4,3 +4,6 @@ export 'package:multikart/views/authentication_page/login/login_layouts/login_pa
 export 'package:multikart/views/authentication_page/login/login_utils/login_constant.dart';
 export 'package:multikart/views/authentication_page/login/login_utils/login_widget.dart';
 export 'package:multikart/views/authentication_page/login/login_layouts/login_body.dart';
+
+export 'package:multikart/views/authentication_page/login/login_layouts/sign_in_button.dart';
+export 'package:multikart/views/authentication_page/login/login_layouts/sign_up_text.dart';

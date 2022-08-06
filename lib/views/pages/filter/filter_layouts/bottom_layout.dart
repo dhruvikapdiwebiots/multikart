@@ -33,13 +33,15 @@ class BottomLayout extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width / 2.5,
-              child: LatoFontStyle(
-                text: firstButtonText,
-                fontSize: FontSizes.f14,
-                textAlign: TextAlign.center,
-              ).gestures(onTap: () => Get.back()),
+            Expanded(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width / 2.5,
+                child: LatoFontStyle(
+                  text: firstButtonText,
+                  fontSize: FontSizes.f14,
+                  textAlign: TextAlign.center,
+                ).gestures(onTap: () => Get.back()),
+              ),
             ),
             isBorderButton
                 ? CustomButton(
@@ -49,10 +51,11 @@ class BottomLayout extends StatelessWidget {
                     onTap: () => Get.back())
                 : CustomButton(
                     title: secondButtonText!,
-                    height:MediaQuery.of(context).size.width >400 ?50: 35,
-                    width: 160,
+                    height:MediaQuery.of(context).size.width >400 ? 50: 35,
+                    width: MediaQuery.of(context).size.width >380 ? 160:140,
                     onTap: () => Get.back(),
                     color: appCtrl.appTheme.whiteColor,
+                    fontSize: FontSizes.f14,
                     border: Border.all(color: appCtrl.appTheme.primary),
                     fontColor: appCtrl.appTheme.primary)
           ],

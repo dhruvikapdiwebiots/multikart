@@ -1,7 +1,3 @@
-
-
-import 'package:flutter/cupertino.dart';
-
 import '../../config.dart';
 
 class AddressCardShimmer extends StatelessWidget {
@@ -40,7 +36,6 @@ class AddressCardShimmer extends StatelessWidget {
                 ).marginOnly(left: AppScreenUtil().screenWidth(15))
               ],
             ),
-
           ],
         ).marginSymmetric(
             horizontal: AppScreenUtil().screenWidth(15),

@@ -1,4 +1,7 @@
 
+import 'dart:developer';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
 
@@ -28,11 +31,19 @@ final storage = GetStorage();
     //#endregion
 
     bool isIntro = storage.read(Session.isIntro) ?? false;
-
-    if(isIntro == false) {
+    final FirebaseAuth auth = FirebaseAuth.instance;
+    final User? user = auth.currentUser;
+log(isIntro.toString());
+    if (isIntro.toString() == "false") {
       Get.toNamed(routeName.onBoarding);
-    }else{
-      Get.toNamed(routeName.login);
+    } else {
+      log(user.toString());
+      if (user == null) {
+        // Checking if user is already login or not
+        Get.toNamed(routeName.login);
+      } else {
+        Get.toNamed(routeName.dashboard);
+      }
     }
   }
 }

@@ -1,8 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:multikart/common/theme/index.dart';
-import 'package:multikart/utilities/general_utils.dart';
-import 'package:get/get.dart';
-
 import '../config.dart';
 import '../routes/screen_list.dart';
 
@@ -45,7 +40,7 @@ snackBarWithAction(message, context) {
 
 dialogMessage(
   String message, {
-  String title = "Care Rocket",
+  String title = "Multikart",
   required VoidCallback onConfirm,
   VoidCallback? onCancel,
   bool barrierDismissible = true,

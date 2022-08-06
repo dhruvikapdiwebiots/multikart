@@ -8,13 +8,13 @@ class ProductPrice extends StatelessWidget {
   Widget build(BuildContext context) {
     return  GetBuilder<AppController>(
       builder: (appCtrl) {
-        return  PriceLayout(
-            totalPrice: product!.discountPrice.toString(),
-            mrp: product!.price.toString(),
+        return product !=null ? PriceLayout(
+            totalPrice: '${appCtrl.priceSymbol} ${(product!.discountPrice ??0 * appCtrl.rateValue).toStringAsFixed(2)}',
+            mrp: '${appCtrl.priceSymbol} ${(product!.price ?? 0 * appCtrl.rateValue)}',
             discount: product!.discount,
             fontSize: FontSizes.f16,
             isDiscountShow: true).marginOnly(
-            left: AppScreenUtil().screenWidth(10),);
+            left: AppScreenUtil().screenWidth(10),): Container();
       }
     );
   }

@@ -1,5 +1,4 @@
 import '../../../../config.dart';
-import 'dart:io' show Platform;
 
 class AddressListCard extends StatelessWidget {
   final AddressList? addressList;

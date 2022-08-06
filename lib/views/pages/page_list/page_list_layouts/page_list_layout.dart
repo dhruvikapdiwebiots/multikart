@@ -47,7 +47,6 @@ class PageListLayout extends StatelessWidget {
                     sendOtp();
                   } else if(page.routeName == "/dashboard"){
                     DashboardController dashboardCtrl = Get.find();
-                    print(page.pageName == "categories".tr);
                     if(page.pageName == "categories".tr || page.pageName == "فئات".tr || page.pageName == "श्रेणियाँ".tr || page.pageName == "श्रेणियाँ""카테고리".tr){
                       appCtrl.selectedIndex == 1;
                       appCtrl.update();

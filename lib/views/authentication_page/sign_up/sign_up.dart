@@ -55,7 +55,7 @@ class SignUpScreen extends StatelessWidget {
                 const Space(0, 20),
 
                 //social login layout
-                const SocialLoginLayout(),
+                 SocialLoginLayout(),
                 const Space(0, 30),
 
                 //already account and sign in layout

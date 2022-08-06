@@ -5,19 +5,19 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 import '../../config.dart';
 
-class LoginController extends GetxController{
-  bool _isLoading = false;
+class SocialLoginController extends GetxController{
+  bool isLoading = false;
   final storage = GetStorage();
 
   //show loader
   void showLoading() {
-    _isLoading = true;
+    isLoading = true;
     update();
   }
 
   //hide loader
   void hideLoading() {
-    _isLoading = false;
+    isLoading = false;
     update();
   }
 
