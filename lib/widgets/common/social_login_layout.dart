@@ -24,7 +24,7 @@ class SocialLoginLayout extends StatelessWidget {
               const Space(15, 0),
               SocialButtonLayout(
                 image: iconAssets.fb,
-              ).gestures(onTap: (){}),
+              ).gestures(onTap: ()=>loginCtrl.facebookLogin()),
               const Space(15, 0),
               SocialButtonLayout(
                 image: iconAssets.apple,

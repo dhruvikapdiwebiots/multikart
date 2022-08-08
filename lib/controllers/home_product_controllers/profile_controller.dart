@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:multikart/views/pages/currency.dart';
 
@@ -7,7 +8,7 @@ class ProfileController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
-
+  var auth = FirebaseAuth.instance;
   final storage = GetStorage();
   CartModel? cartModelList;
   List<ProfileModel> drawerList = [];

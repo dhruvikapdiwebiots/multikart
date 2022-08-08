@@ -1,6 +1,5 @@
 import 'package:multikart/views/bottom_navigate_page/profile/profile_layouts/profile_card.dart';
 import 'package:multikart/views/bottom_navigate_page/profile/profile_layouts/profile_user.dart';
-
 import '../../../config.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -17,40 +16,48 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<ProfileController>(builder: (_) {
       return Directionality(
-        textDirection: profileCtrl.appCtrl.isRTL
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+        textDirection:
+            profileCtrl.appCtrl.isRTL ? TextDirection.rtl : TextDirection.ltr,
         child: Scaffold(
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                //user profile layout
-                const ProfileUser(),
+              child: Column(children: [
+            //user profile layout
+            const ProfileUser(),
 
-                //menu page list
-                ...profileCtrl.drawerList.asMap().entries.map((e) {
-                  return ProfileCard(
-                    data: e.value,
-                    index: e.key,
-                    lastIndex: profileCtrl.drawerList.length -1,
-                    onTap: () => profileCtrl.goToPage(e.key),
-                  );
-                }).toList(),
+            //menu page list
+            ...profileCtrl.drawerList.asMap().entries.map((e) {
+              return ProfileCard(
+                  data: e.value,
+                  index: e.key,
+                  lastIndex: profileCtrl.drawerList.length - 1,
+                  onTap: () => profileCtrl.goToPage(e.key));
+            }).toList(),
 
-                //logout button layout
-                Container(
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.symmetric(vertical: AppScreenUtil().screenHeight(10)),
-                  margin: EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(15),vertical: AppScreenUtil().screenHeight(15)),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: profileCtrl.appCtrl.appTheme.contentColor,width: 1.5),
-                    borderRadius: BorderRadius.circular(AppScreenUtil().borderRadius(5))
-                  ),
-                  child: LatoFontStyle(text: CommonTextFont().logOut,fontSize: FontSizes.f16,),
-                )
-              ],
-            ),
-          ),
+            //logout button layout
+            InkWell(
+                onTap: () {
+                  profileCtrl.appCtrl.selectedIndex = 0;
+                  profileCtrl.auth.signOut();
+                  profileCtrl.storage.erase();
+                  Get.offAllNamed(routeName.login);
+                },
+                child: Container(
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.symmetric(
+                        vertical: AppScreenUtil().screenHeight(10)),
+                    margin: EdgeInsets.symmetric(
+                        horizontal: AppScreenUtil().screenWidth(15),
+                        vertical: AppScreenUtil().screenHeight(15)),
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                            color: profileCtrl.appCtrl.appTheme.contentColor,
+                            width: 1.5),
+                        borderRadius: BorderRadius.circular(
+                            AppScreenUtil().borderRadius(5))),
+                    child: LatoFontStyle(
+                        text: CommonTextFont().logOut,
+                        fontSize: FontSizes.f16)))
+          ])),
         ),
       );
     });

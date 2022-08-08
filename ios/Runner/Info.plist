@@ -45,7 +45,6 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
-
 	<key>NSAppTransportSecurity</key>
             <dict>
                 <key>NSAllowsArbitraryLoads</key>
@@ -68,7 +67,7 @@
                 		<array>
                 			<!-- TODO Replace this value: -->
                 			<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
-
+                			<string>com.googleusercontent.apps.713436851366-kcggbd0mfns071i98cok44uhh4dhvhpv</string>
                 		</array>
                 	</dict>
             </array>

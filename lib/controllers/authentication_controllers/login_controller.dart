@@ -1,10 +1,16 @@
-
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:multikart/config.dart';
+import 'package:multikart/controllers/common/social_login_controller.dart';
 
 class LoginController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
+
+  final socialLoginCtrl = Get.isRegistered<SocialLoginController>()
+      ? Get.find<SocialLoginController>()
+      : Get.put(SocialLoginController());
 
   TextEditingController txtEmail = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
@@ -12,6 +18,8 @@ class LoginController extends GetxController {
   final FocusNode emailFocus = FocusNode();
   final FocusNode passwordFocus = FocusNode();
   bool passwordVisible = true;
+  var auth = FirebaseAuth.instance;
+  final storage = GetStorage();
 
   // Toggle Between Password show
   toggle() {
@@ -19,18 +27,38 @@ class LoginController extends GetxController {
     update();
   }
 
-  //sign in
-  signIn() async {
-    /*if (loginformKey.currentState!.validate()) {
-      log('Validation');
-    } else {
-      log('No Valid');
-    }*/
-    FocusScopeNode currentFocus = FocusScope.of(Get.context!);
-    if (!currentFocus.hasPrimaryFocus) {
-      currentFocus.unfocus();
+  //firebase login with email and password
+  login() async {
+    socialLoginCtrl.showLoading();
+    update();
+    try {
+      var user = await auth.signInWithEmailAndPassword(
+          email: txtEmail.text, password: txtPassword.text);
+      await user.user!.getIdToken();
+      final User? currentUser = auth.currentUser;
+      assert(user.user!.uid == currentUser!.uid);
+      await storage.write('id', user.user!.uid);
+      socialLoginCtrl.hideLoading();
+      update();
+      txtEmail.text = "";
+      txtPassword.text = "";
+      socialLoginCtrl.saveData(user.user!.uid);
+      Get.toNamed(routeName.dashboard);
+    } on FirebaseAuthException catch (e) {
+      socialLoginCtrl.hideLoading();
+      update();
+      if (e.code == 'wrong-password') {
+        socialLoginCtrl.showToast('Incorrect Password');
+      } else if (e.code == 'user-not-found') {
+        socialLoginCtrl.showToast('Email is not Found');
+      }
+    } catch (e) {
+      socialLoginCtrl.hideLoading();
+      update();
+    } finally {
+      socialLoginCtrl.hideLoading();
+      update();
     }
-    Get.offAllNamed(routeName.dashboard);
   }
 
   @override
@@ -41,5 +69,4 @@ class LoginController extends GetxController {
     update();
     super.onReady();
   }
-
 }

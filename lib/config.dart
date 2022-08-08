@@ -3,6 +3,7 @@ export 'package:multikart/common/config.dart';
 export 'package:multikart/common/theme/index.dart';
 export 'package:multikart/common/array/index.dart';
 export 'package:multikart/controllers/common/app_controller.dart';
+export 'package:multikart/controllers/common/social_login_controller.dart';
 export 'package:multikart/env.dart';
 export 'package:multikart/routes/index.dart';
 export 'package:multikart/routes/index.dart';

@@ -41,7 +41,16 @@ class LoginBody extends StatelessWidget {
 
         //button layout
         SignInButton(onTap: () {
-          loginCtrl.signIn();
+          FocusScopeNode currentFocus = FocusScope.of(Get.context!);
+          if (!currentFocus.hasPrimaryFocus) {
+            currentFocus.unfocus();
+          }
+          if (formKey!.currentState!.validate()) {
+            loginCtrl.login();
+          } else {
+            log('No Valid');
+          }
+
         }),
         const Space(0, 20),
 
