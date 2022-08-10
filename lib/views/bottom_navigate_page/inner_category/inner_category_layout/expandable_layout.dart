@@ -2,6 +2,7 @@ import '../../../../config.dart';
 
 class ExpandableListView extends StatelessWidget {
   final int? index;
+  final int? childLength;
   final String? title;
   final bool? isExpanded;
   final VoidCallback? onPressed;
@@ -10,6 +11,7 @@ class ExpandableListView extends StatelessWidget {
   const ExpandableListView(
       {Key? key,
       this.index,
+      this.childLength,
       this.child,
       this.title,
       this.onPressed,
@@ -18,6 +20,7 @@ class ExpandableListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
       children: <Widget>[
         InkWell(
@@ -42,7 +45,7 @@ class ExpandableListView extends StatelessWidget {
         ),
         ChildExpandable(
             collapsedHeight: 0.0,
-            expandedHeight: 280,
+            expandedHeight:childLength! >= 10 ? 330 : childLength! >= 5 ? 180 : childLength! <= 3 ? 150 :200,
             expanded: isExpanded,
             child: child)
       ],

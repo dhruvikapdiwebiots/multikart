@@ -26,10 +26,10 @@ class ThemeSwitcher extends StatelessWidget {
           width: 2.0,
         ),
         onToggle: onToggle!,
-        activeIcon: Text("Yes",style: TextStyle(color:appCtrl.appTheme.white ),),
+        activeIcon: Text("Yes",style: TextStyle(color:appCtrl.appTheme.white ,fontFamily: GoogleFonts.lato().fontFamily),),
         activeToggleColor: appCtrl.appTheme.primary,
         inactiveToggleColor: appCtrl.appTheme.contentColor,
-        inactiveIcon: Text("NO",style: TextStyle(color:appCtrl.appTheme.white )),
+        inactiveIcon: Text("NO",style: TextStyle(color:appCtrl.appTheme.white,fontFamily: GoogleFonts.lato().fontFamily )),
       );
     });
   }

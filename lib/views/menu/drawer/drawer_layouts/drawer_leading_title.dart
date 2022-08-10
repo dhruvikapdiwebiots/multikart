@@ -2,8 +2,8 @@ import '../../../../config.dart';
 
 class DrawerLeadingTitle extends StatelessWidget {
   final dynamic data;
-
-  const DrawerLeadingTitle({Key? key, this.data}) : super(key: key);
+final int? index;
+  const DrawerLeadingTitle({Key? key, this.data,this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +29,7 @@ class DrawerLeadingTitle extends StatelessWidget {
                     text: data['title'],
                     fontSize: FontSizes.f12,
                     fontWeight: FontWeight.w600),
+                if(index != 0 && index !=1)
                 LatoFontStyle(
                     text: data['subTitle'],
                     fontSize: FontSizes.f12,

@@ -22,7 +22,7 @@ class OfferCornerLayout extends StatelessWidget {
               },
               child: Container(
                 alignment: Alignment.center,
-                height: AppScreenUtil().screenHeight(10),
+
                 decoration: BoxDecoration(
                   borderRadius:
                   BorderRadius.circular(AppScreenUtil().borderRadius(3)),
@@ -47,9 +47,10 @@ class OfferCornerLayout extends StatelessWidget {
           },
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            crossAxisSpacing: 15,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 0,
             childAspectRatio: MediaQuery.of(context).size.width /
-                (MediaQuery.of(context).size.height / (4.5)),
+                (MediaQuery.of(context).size.height / (6)),
           ),
         );
       }

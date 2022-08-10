@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Your App Name here.</string>
+    <string name="app_name">Multikart</string>
 
     <!-- Replace "000000000000" with your Facebook App ID here. -->
-    <string name="facebook_app_id">295754236075508</string>
+    <string name="facebook_app_id">458373292817759</string>
 
     <!--
       Replace "000000000000" with your Facebook App ID here.
       **NOTE**: The scheme needs to start with `fb` and then your ID.
     -->
-    <string name="fb_login_protocol_scheme">fb295754236075508</string>
-    <string name="facebook_client_token">1cc6f9f8508357c99a131a470fa7a577</string>
+    <string name="fb_login_protocol_scheme">fb458373292817759</string>
+    <string name="facebook_client_token">e88a87f073af59f2a054d3cd0807a60d</string>
 </resources>

@@ -17,6 +17,7 @@ class DrawerCard extends StatelessWidget {
         children: [
           DrawerLeadingTitle(
             data: data,
+            index: index,
           ),
           if (index == 10)
             Container(
@@ -32,7 +33,7 @@ class DrawerCard extends StatelessWidget {
               indent: 15,
             )
         ],
-      ).gestures(onTap: onTap);
+      ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(8)).gestures(onTap: onTap);
     });
   }
 }

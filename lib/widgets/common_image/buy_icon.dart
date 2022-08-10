@@ -12,9 +12,12 @@ class BuyIcon extends StatelessWidget {
           svgAssets.buy,
           color: color ?? appCtrl.appTheme.blackColor,
         ).gestures(onTap: (){
-          appCtrl.selectedIndex =3;
-          appCtrl.isHeart = false;
-          appCtrl.isCart = true;
+          if(appCtrl.selectedIndex != 0) {
+            Get.back();
+            appCtrl.selectedIndex = 2;
+          }
+          appCtrl.isHeart = true;
+          appCtrl.isCart = false;
           appCtrl.isShare = false;
           appCtrl.isSearch = false;
           appCtrl.isNotification = false;

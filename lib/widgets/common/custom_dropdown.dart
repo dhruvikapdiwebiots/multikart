@@ -76,7 +76,7 @@ class CustomDropDown extends StatelessWidget {
         items: dropDownOptions.map<DropdownMenuItem<dynamic>>((dynamic val) {
           return DropdownMenuItem<dynamic>(
             value: val,
-            child: Text(displayKey, style: AppCss.body2, overflow: TextOverflow.ellipsis),
+            child: Text(displayKey, style: AppCss.body2, overflow: TextOverflow.ellipsis,),
           );
         }).toList(),
       ),

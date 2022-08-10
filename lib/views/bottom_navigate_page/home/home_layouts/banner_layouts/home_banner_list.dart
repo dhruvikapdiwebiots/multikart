@@ -16,7 +16,7 @@ class HomeBannerList extends StatelessWidget {
               options: CarouselOptions(
                   autoPlay: true,
                   aspectRatio: 2.05,
-                  viewportFraction: 1,
+                  viewportFraction: 0.92,
                   enlargeStrategy: CenterPageEnlargeStrategy.height,
                   onPageChanged: (index, reason) {
                     homeCtrl.current = index;

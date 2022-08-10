@@ -13,6 +13,7 @@ class ProductPrice extends StatelessWidget {
             mrp: '${appCtrl.priceSymbol} ${(product!.price ?? 0 * appCtrl.rateValue)}',
             discount: product!.discount,
             fontSize: FontSizes.f16,
+            isBold: false,
             isDiscountShow: true).marginOnly(
             left: AppScreenUtil().screenWidth(10),): Container();
       }

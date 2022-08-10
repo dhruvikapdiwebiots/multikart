@@ -31,6 +31,7 @@ class CommonAppBarTitle extends StatelessWidget {
               ],
             )
           : Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 LatoFontStyle(
                   text: title,
@@ -41,11 +42,11 @@ class CommonAppBarTitle extends StatelessWidget {
                 Icon(
                   Icons.arrow_forward_ios_outlined,
                   color: appCtrl.appTheme.contentColor,
-                  size: AppScreenUtil().size(14),
-                ),
+                  size: AppScreenUtil().size(12),
+                ).marginOnly(bottom: AppScreenUtil().screenHeight(2)),
                 LatoFontStyle(
                   text: desc,
-                  fontSize: FontSizes.f14,
+                  fontSize: FontSizes.f16,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.normal,
                 ),

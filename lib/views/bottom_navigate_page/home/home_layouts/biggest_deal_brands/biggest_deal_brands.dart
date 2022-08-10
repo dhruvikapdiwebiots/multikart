@@ -56,7 +56,7 @@ class DealsBrands extends StatelessWidget {
               ))
         ],
       ).marginOnly(
-          top: AppScreenUtil().screenHeight(40),
+          top: AppScreenUtil().screenHeight(20),
           bottom: AppScreenUtil().screenHeight(20));
     });
   }

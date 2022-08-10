@@ -26,4 +26,14 @@ class OrderSuccessWidget{
       ],
     );
   }
+
+  //order summary image
+  Widget orderSummaryImage(image)=>   ClipRRect(
+      borderRadius:
+      BorderRadius.circular(AppScreenUtil().borderRadius(5)),
+      child: FadeInImageLayout(
+          image: image,
+          height: AppScreenUtil().screenHeight(70),
+          width: AppScreenUtil().screenWidth(80),
+          fit: BoxFit.cover));
 }

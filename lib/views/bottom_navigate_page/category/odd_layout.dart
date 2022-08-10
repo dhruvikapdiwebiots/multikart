@@ -27,7 +27,7 @@ class CategoryCardLayout extends StatelessWidget {
               categoryModel: categoryModel,
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height > 850 ? -4 : 16,
+              top: MediaQuery.of(context).size.width < 370 ? 17 :MediaQuery.of(context).size.width < 385 ? 12 :MediaQuery.of(context).size.width >400 ?13 : -3,
               child: Hero(
                 tag: index.toString(),
                 child: Image.asset(categoryModel!.image.toString(),

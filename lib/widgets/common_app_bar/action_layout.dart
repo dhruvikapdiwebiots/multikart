@@ -26,7 +26,23 @@ class AppBarActionLayout extends StatelessWidget {
           if (appCtrl.isHeart)
             HeartIcon(
               color: appCtrl.appTheme.blackColor,
-            ).paddingSymmetric(
+            ).gestures(onTap: (){
+              if( appCtrl.selectedIndex != 0) {
+                Get.back();
+              }else if(appCtrl.selectedIndex == 1){
+                Get.back();
+                Get.back();
+              }
+              appCtrl.selectedIndex = 3;
+              appCtrl.isHeart = false;
+              appCtrl.isCart = true;
+              appCtrl.isShare = false;
+              appCtrl.isSearch = false;
+              appCtrl.isNotification = false;
+
+              appCtrl.update();
+              Get.forceAppUpdate();
+            }).paddingSymmetric(
                 horizontal: AppScreenUtil()
                     .screenWidth(appCtrl.isHeart && appCtrl.isCart ? 0 : 10)),
           if (appCtrl.isCart)

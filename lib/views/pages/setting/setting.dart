@@ -21,7 +21,10 @@ class Setting extends StatelessWidget {
             leading: const BackArrowButton(),
             elevation: 0,
             backgroundColor: settingCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(CommonTextFont().settings),
+            title: LatoFontStyle(
+              text: CommonTextFont().settings,
+              color: settingCtrl.appCtrl.appTheme.blackColor,
+            ),
           ),
           body: SingleChildScrollView(
             child: Column(

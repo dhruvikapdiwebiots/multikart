@@ -36,7 +36,7 @@ class KidsCorner extends StatelessWidget {
                     children: homeCtrl.homeKidsCornerList.asMap().entries.map((e){
                       return FindStyleListCard(
                         data: homeCtrl.homeKidsCornerList[e.key],
-                        isFit: false,
+                        isFit: true,isDiscountShow: false,
                       ).paddingOnly(right: AppScreenUtil().screenWidth(10));
                     }).toList(),
                   ),

@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_login_facebook/flutter_login_facebook.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -9,7 +9,6 @@ import '../../config.dart';
 class SocialLoginController extends GetxController {
   bool isLoading = false;
   final storage = GetStorage();
-  final fb = FacebookLogin();
 
   //show loader
   void showLoading() {
@@ -24,50 +23,24 @@ class SocialLoginController extends GetxController {
   }
 
   //facebook login function
-  Future<Resource?> facebookLogin() async {
+
+  Future<UserCredential> facebookLogin() async {
     // Trigger the sign-in flow
-    var firebaseAuth = FirebaseAuth.instance;
-    try {
-      final res = await fb.logIn(permissions: [
-        FacebookPermission.publicProfile,
-        FacebookPermission.email,
-      ]);
+    showLoading();
+    update();
+    final LoginResult loginResult = await FacebookAuth.instance.login();
 
-      // Check result status
-      switch (res.status) {
-        case FacebookLoginStatus.success:
-        // Logged in
+    // Create a credential from the access token
+    final OAuthCredential facebookAuthCredential = FacebookAuthProvider.credential(loginResult.accessToken!.token);
+    hideLoading();
+    update();
+  /*  saveData(facebookAuthCredential!.id);
+    Get.toNamed(routeName.dashboard);*/
+    // Once signed in, return the UserCredential
+    return FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);
 
-        // Send access token to server for validation and auth
-          final FacebookAccessToken? accessToken = res.accessToken;
-          print('Access token: ${accessToken?.token}');
-          final facebookAuthCred =
-          FacebookAuthProvider.credential(accessToken!.token);
-          // Get profile data
-          final profile = await fb.getUserProfile();
-          print('Hello, ${profile?.name}! You ID: ${profile?.userId}');
-
-          final user =
-              (await firebaseAuth.signInWithCredential(facebookAuthCred)).user;
-          saveData(user!.uid);
-
-          break;
-        case FacebookLoginStatus.cancel:
-        // User cancel log in
-
-          break;
-        case FacebookLoginStatus.error:
-        // Log in failed
-          print('Error while log in: ${res.error}');
-          break;
-      }
-    } on FirebaseAuthException catch (e) {
-      isLoading = false;
-
-      rethrow;
-    }
-    return null;
   }
+
 
   //google Login function
   googleLogin() async {

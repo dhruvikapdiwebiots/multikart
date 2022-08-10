@@ -13,6 +13,7 @@ class ProductDetailController extends GetxController {
   int currentLast = 0;
   bool isNotData = false;
   int selectedColor = 0;
+  int selectedSize = 0;
   final CarouselController sliderController = CarouselController();
   List<HomeFindStyleCategoryModel> similarList = [];
   int colorSelected = 1;

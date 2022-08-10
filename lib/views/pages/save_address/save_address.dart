@@ -20,7 +20,7 @@ class SaveAddress extends StatelessWidget {
             automaticallyImplyLeading: false,
             leading: const BackArrowButton(),
             backgroundColor: saveAddressCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(CommonTextFont().savedAddress),
+            title: LatoFontStyle(text: CommonTextFont().savedAddress,color: saveAddressCtrl.appCtrl.appTheme.blackColor,),
           ),
           body: SingleChildScrollView(
             child: saveAddressCtrl.appCtrl.isShimmer

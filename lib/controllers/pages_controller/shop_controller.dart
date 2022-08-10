@@ -23,6 +23,8 @@ class ShopController extends GetxController {
     name = Get.arguments ?? "All";
     categoryList = AppArray().categoryList;
     homeShopPageList = AppArray().homeShopPageList;
+    appCtrl.isNotification = true;
+    appCtrl.update();
     update();
     super.onReady();
   }
@@ -53,9 +55,16 @@ class ShopController extends GetxController {
 
   //go back to home page
   goToHomePage() async {
-    appCtrl.goToHome();
-    await storage.write(Session.selectedIndex, 0);
-    appCtrl.selectedIndex = 0;
+    if(name == "All") {
+      appCtrl.goToHome();
+
+      await storage.write(Session.selectedIndex, 0);
+      appCtrl.selectedIndex = 0;
+    }else{
+      appCtrl.isNotification = false;
+      await storage.write(Session.selectedIndex, 1);
+      appCtrl.selectedIndex = 1;
+    }
     update();
     appCtrl.update();
     Get.back();

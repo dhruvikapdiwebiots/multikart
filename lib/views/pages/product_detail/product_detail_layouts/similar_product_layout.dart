@@ -15,6 +15,7 @@ class SimilarProductLayout extends StatelessWidget {
           return FindStyleListCard(
             data: data![e.key],
             isFit: true,
+            isDiscountShow: false,
           ).paddingOnly(right: AppScreenUtil().screenWidth(10));
         }).toList(),
       ),

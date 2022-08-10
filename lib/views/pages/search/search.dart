@@ -23,12 +23,15 @@ class Search extends StatelessWidget {
               ...searchCtrl.recentSearchList.map((e) {
                 return RecentSearchCard(data: e);
               }).toList(),
+              const Space(0,20),
               SearchWidget().commonText(SearchFont().recommended),
               //recommended list layout
               const RecommendedLayout(),
+                  const Space(0,20),
               SearchWidget().commonText(SearchFont().trendingCategory),
               //trending category layout
               const CommonTrendingCategory(),
+                  const Space(0,20),
               SearchWidget().commonText(SearchFont().topBrandForMultikart),
 
               //brand list layout

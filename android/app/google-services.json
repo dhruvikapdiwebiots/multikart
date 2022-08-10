@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:713436851366:android:80d13de334b0892e391867",
+        "mobilesdk_app_id": "1:713436851366:android:8f7d0b7ea6cd9665391867",
         "android_client_info": {
-          "package_name": "com.multikart"
+          "package_name": "com.example.multikart"
         }
       },
       "oauth_client": [
@@ -29,6 +29,65 @@
             {
               "client_id": "713436851366-4ichl1husbkip4cjqspksbf339gcfjja.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "713436851366-0dv22l1uscs8f82m0ulbph5li85e51if.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multikart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713436851366:android:80d13de334b0892e391867",
+        "android_client_info": {
+          "package_name": "com.multikart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713436851366-q4euk4ukjhb2ad53rr5d6bpolnkon7ad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multikart",
+            "certificate_hash": "fb5a3c26c9ff2957c6b303200a10944f632e5c5f"
+          }
+        },
+        {
+          "client_id": "713436851366-tcv09s3nd6i52ktfcvvoph6r4t8fpdhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multikart",
+            "certificate_hash": "5dc4eefd147741939978bcd403f44d9c88856294"
+          }
+        },
+        {
+          "client_id": "713436851366-4ichl1husbkip4cjqspksbf339gcfjja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbvBvc7KGR_r_HeUN44e99KMfNAPB2Yks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713436851366-4ichl1husbkip4cjqspksbf339gcfjja.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "713436851366-0dv22l1uscs8f82m0ulbph5li85e51if.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multikart"
+              }
             }
           ]
         }

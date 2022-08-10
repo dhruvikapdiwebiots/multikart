@@ -16,13 +16,14 @@ class OrderHistory extends StatelessWidget {
             : TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
-            centerTitle: false,
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            leading: const BackArrowButton(),
-            backgroundColor: orderHistoryCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(OrderHistoryFont().orderHistory),
-          ),
+              centerTitle: false,
+              elevation: 0,
+              automaticallyImplyLeading: false,
+              leading: const BackArrowButton(),
+              backgroundColor: orderHistoryCtrl.appCtrl.appTheme.whiteColor,
+              title: LatoFontStyle(
+                  text: OrderHistoryFont().orderHistory,
+                  color: orderHistoryCtrl.appCtrl.appTheme.blackColor)),
           body: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,9 +34,9 @@ class OrderHistory extends StatelessWidget {
                 const Space(0, 20),
 
                 //order history layout
-                orderHistoryCtrl.appCtrl.isShimmer ?
-                const OrderHistoryShimmer() :
-             const OrderHistoryLayout()
+                orderHistoryCtrl.appCtrl.isShimmer
+                    ? const OrderHistoryShimmer()
+                    : const OrderHistoryLayout()
               ],
             ).width(MediaQuery.of(context).size.width),
           ),

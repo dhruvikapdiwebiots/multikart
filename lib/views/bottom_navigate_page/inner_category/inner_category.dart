@@ -1,5 +1,6 @@
 import 'package:multikart/config.dart';
 
+
 class InnerCategory extends StatefulWidget {
   const InnerCategory({Key? key}) : super(key: key);
 
@@ -41,37 +42,15 @@ class _InnerCategoryState extends State<InnerCategory> {
                   isColumn: false,
                 ),
               ),
-              body: innerCtrl.appCtrl.isShimmer ? const InnerCategoryShimmer(): SingleChildScrollView(
-                child: Column(children: [
-                  //category info. layout
-                  if (innerCtrl.categoryModel != null)
-                    CategoryCardLayout(
-                      categoryModel: innerCtrl.categoryModel,
-                      index: innerCtrl.index,
-                      isEven: true,
-                      onTap: () async{
-                        innerCtrl.appCtrl.isShimmer = true;
-                        innerCtrl.appCtrl.update();
-                        innerCtrl.goToShopPage(
-                            innerCtrl.categoryModel!.title.toString());
-                        await Future.delayed(Durations.s1);
-                        innerCtrl.appCtrl.isShimmer = false;
-                        innerCtrl.appCtrl.update();
-                        Get.forceAppUpdate();
-                      },
-                    ),
-                  //inner category layout expandable
-                  const InnerCategoryLayout(),
-                  const Space(0, 10),
-
-                  //trending category layout
-                  const CommonTrendingCategory(),
-                  const Space(0, 10),
-
-                  //brands layout
-                  const InnerCategoryBrands()
-                ]),
-              )),
+              bottomNavigationBar: GetBuilder<DashboardController>(builder: (dashboardCtrl) {
+                return CommonBottomNavigation(
+                  onTap: (val) {
+                    Get.back();
+                    dashboardCtrl.bottomNavigationChange(val, context);
+                  },
+                );
+              }),
+              body: innerCtrl.appCtrl.isShimmer ? const InnerCategoryShimmer(): const InnerCategoryBody()),
         ),
       );
     });

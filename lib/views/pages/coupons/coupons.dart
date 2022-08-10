@@ -9,18 +9,19 @@ class Coupons extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<CouponsController>(builder: (_) {
       return Directionality(
-        textDirection: couponCtrl.appCtrl.isRTL ||
-            couponCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+        textDirection:
+            couponCtrl.appCtrl.isRTL || couponCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            leading: const BackArrowButton(),
-            backgroundColor: couponCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(CouponFont().couponTitle),
-          ),
+              elevation: 0,
+              automaticallyImplyLeading: false,
+              leading: const BackArrowButton(),
+              backgroundColor: couponCtrl.appCtrl.appTheme.whiteColor,
+              title: LatoFontStyle(
+                  text: CouponFont().couponTitle,
+                  color: couponCtrl.appCtrl.appTheme.blackColor)),
           body: Stack(
             alignment: Alignment.bottomCenter,
             children: [
@@ -49,7 +50,8 @@ class Coupons extends StatelessWidget {
                     desc: CouponFont().maximumSaving,
                     buttonName: CouponFont().apply,
                     isPrimaryDesc: false,
-                    totalAmount: couponCtrl.cartModelList!.totalAmount.toString())
+                    totalAmount:
+                        couponCtrl.cartModelList!.totalAmount.toString())
             ],
           ),
         ),

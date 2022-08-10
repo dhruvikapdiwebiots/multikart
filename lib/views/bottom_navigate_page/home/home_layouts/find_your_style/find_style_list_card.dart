@@ -40,7 +40,7 @@ class FindStyleListCard extends StatelessWidget {
           PriceLayout(
               totalPrice:'${appCtrl.priceSymbol} ${(data!.totalPrice! * appCtrl.rateValue).toStringAsFixed(2)}',
               mrp:'${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',
-              discount: data!.discount,fontSize: FontSizes.f10,
+              discount: data!.discount,fontSize:isDiscountShow ? FontSizes.f10: FontSizes.f12,
               isDiscountShow: isDiscountShow)
         ]),
       );

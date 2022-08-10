@@ -1,4 +1,4 @@
-package com.multikart
+package com.example.multikart
 
 import io.flutter.embedding.android.FlutterActivity
 

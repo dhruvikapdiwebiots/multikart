@@ -22,7 +22,7 @@ class LatoFontStyle extends StatelessWidget {
         child: Text(text!,
             overflow: overflow,
             textAlign: textAlign,
-            style: GoogleFonts.mulish(
+            style: GoogleFonts.lato(
               color: color,
               fontSize: AppScreenUtil().fontSize(fontSize),
               fontWeight: fontWeight,

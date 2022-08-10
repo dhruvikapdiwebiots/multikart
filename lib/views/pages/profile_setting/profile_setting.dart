@@ -8,20 +8,21 @@ class ProfileSetting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ProfileController>(builder: (_) {
-      return   Directionality(
-        textDirection: profileCtrl.appCtrl.isRTL ||
-            profileCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+      return Directionality(
+        textDirection:
+            profileCtrl.appCtrl.isRTL || profileCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
         child: Scaffold(
           appBar: AppBar(
-            centerTitle: false,
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            leading: const BackArrowButton(),
-            backgroundColor: profileCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(ProfileFont().profileSetting),
-          ),
+              centerTitle: false,
+              elevation: 0,
+              automaticallyImplyLeading: false,
+              leading: const BackArrowButton(),
+              backgroundColor: profileCtrl.appCtrl.appTheme.whiteColor,
+              title: LatoFontStyle(
+                  text: ProfileFont().profileSetting,
+                  color: profileCtrl.appCtrl.appTheme.blackColor)),
           body: Stack(
             alignment: Alignment.bottomCenter,
             children: [
@@ -51,7 +52,8 @@ class ProfileSetting extends StatelessWidget {
               //cancel and save detail layout
               BottomLayout(
                 firstButtonText: ProfileFont().cancel,
-                secondButtonText: ProfileFont().saveDetails,
+                secondButtonText: ProfileFont().saveDetails,firstTap: ()=>Get.back(),
+                  secondTap: ()=>Get.back()
               )
             ],
           ),

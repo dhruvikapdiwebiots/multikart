@@ -19,7 +19,7 @@ class AddAddress extends StatelessWidget {
             automaticallyImplyLeading: false,
             leading: const BackArrowButton(),
             backgroundColor: addAddressCtrl.appCtrl.appTheme.whiteColor,
-            title: Text(AddAddressFont().addANewAddress),
+            title: LatoFontStyle(text: AddAddressFont().addANewAddress,color: addAddressCtrl.appCtrl.appTheme.blackColor,),
           ),
           body: Stack(
             alignment: Alignment.bottomCenter,
@@ -43,6 +43,8 @@ class AddAddress extends StatelessWidget {
               BottomLayout(
                 firstButtonText: DeliveryDetailFont().reset,
                 secondButtonText: DeliveryDetailFont().addAddress,
+                firstTap: ()=>Get.back(),
+                secondTap: ()=>Get.back(),
               )
             ],
           ),

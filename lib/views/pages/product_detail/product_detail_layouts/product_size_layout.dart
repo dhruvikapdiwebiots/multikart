@@ -7,7 +7,7 @@ class ProductSizeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<AppController>(builder: (appCtrl) {
+    return GetBuilder<ProductDetailController>(builder: (productCtrl) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -19,20 +19,27 @@ class ProductSizeLayout extends StatelessWidget {
               ProductDetailWidget().sizeChart("Size Chart"),
             ],
           ),
-          if(product!.size != null)
-          SingleChildScrollView(
-            child:  Row(
-              children: [
-                ...product!.size!.asMap().entries.map((e) {
-                  return SizeCard(
-                    sizeModel: e.value,
-                  );
-                }).toList()
-              ],
-            ),
-          ).marginOnly(
-              left: AppScreenUtil().screenWidth(15),
-              top: AppScreenUtil().screenHeight(15))
+          if (product!.size != null)
+            SingleChildScrollView(
+              child: Row(
+                children: [
+                  ...product!.size!.asMap().entries.map((e) {
+                    return SizeCard(
+                        sizeModel: e.value,
+                        index: e.key,
+                        selectSize: productCtrl.selectedSize,
+                        onTap: () {
+                          if(e.value.isAvailable!) {
+                            productCtrl.selectedSize = e.key;
+                            productCtrl.update();
+                          }
+                        });
+                  }).toList()
+                ],
+              ),
+            ).marginOnly(
+                left: AppScreenUtil().screenWidth(15),
+                top: AppScreenUtil().screenHeight(15))
         ],
       );
     });

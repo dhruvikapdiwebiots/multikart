@@ -29,8 +29,7 @@ class RecommendedLayout extends StatelessWidget {
               (MediaQuery.of(context).size.height / (4.5)),
         ),
       ).marginSymmetric(
-          horizontal: AppScreenUtil().screenWidth(15),
-          vertical: AppScreenUtil().screenHeight(5));
+          horizontal: AppScreenUtil().screenWidth(15),);
     });
   }
 }

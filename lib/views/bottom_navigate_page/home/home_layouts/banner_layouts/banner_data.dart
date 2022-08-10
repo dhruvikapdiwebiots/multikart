@@ -11,14 +11,15 @@ class HomeBannerData extends StatelessWidget {
       return InkWell(
         onTap: (){
           appCtrl.isSearch = false;
-          appCtrl.isNotification = false;
+          appCtrl.isNotification = true;
           appCtrl.selectedIndex = 1;
           appCtrl.update();
+          Get.forceAppUpdate();
           Get.toNamed(routeName.shopPage,arguments: "All");
         },
         child: Container(
           margin:
-              EdgeInsets.symmetric(horizontal: AppScreenUtil().screenWidth(18)),
+              EdgeInsets.only(right: AppScreenUtil().screenWidth(18)),
           decoration: BoxDecoration(
               borderRadius:
                   BorderRadius.circular(AppScreenUtil().borderRadius(10))),

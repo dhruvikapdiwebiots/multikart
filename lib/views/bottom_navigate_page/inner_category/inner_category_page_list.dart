@@ -7,3 +7,4 @@ export 'package:multikart/views/bottom_navigate_page/inner_category/inner_catego
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/brand_card.dart';
 export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_brand.dart';
 export 'package:multikart/views/pages/shop/shop_constant.dart';
+export 'package:multikart/views/bottom_navigate_page/inner_category/inner_category_layout/inner_category_body.dart';
