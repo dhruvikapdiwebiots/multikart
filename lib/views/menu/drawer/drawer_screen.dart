@@ -49,7 +49,9 @@ class _DrawerScreenState extends State<DrawerScreen>
                     duration: animationDuration,
                     index: e.key,
                     lastIndex: dashboardCtrl.drawerList.length - 1,onTap: ()=> dashboardCtrl.drawerCtrl.goToPage(e.key),);
-              }).toList()
+              }).toList(),
+              //logout button layout
+              const LogoutButton()
             ],
           ),
         );

@@ -982,4 +982,20 @@ class AppArray {
       'INR':0.060
     },
   ];
+
+  //order type
+  var orderType = [
+    {"title": "All Orders".tr},
+    {"title": "Open Orders".tr},
+    {"title": "Return Orders".tr},
+    {"title": "Cancelled Orders".tr},
+  ];
+
+  //Time Filter type
+  var timeFilterType = [
+    {"title": "Last 30 Days".tr},
+    {"title": "Last 6 Months".tr},
+    {"title": "2021".tr},
+    {"title": "2021".tr},
+  ];
 }

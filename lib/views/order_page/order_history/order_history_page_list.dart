@@ -6,3 +6,6 @@ export 'package:multikart/views/order_page/order_history/order_history_layouts/o
 export 'package:multikart/views/order_page/order_history/order_history_layouts/order_history_layout.dart';
 export 'package:multikart/views/order_page/order_history/order_history_layouts/empty_history.dart';
 export 'package:multikart/common/array/order_history_array.dart';
+export 'package:multikart/views/order_page/order_history/order_history_layouts/order_history_filter.dart';
+export 'package:multikart/views/order_page/order_history/order_history_layouts/status_layout.dart';
+export 'package:multikart/views/order_page/order_history/order_history_layouts/order_history_filter_layout.dart';

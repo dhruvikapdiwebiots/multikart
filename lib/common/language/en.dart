@@ -414,7 +414,7 @@ final dynamic en = {
 
   //profile and drawer page font
   "RTL": "RTL",
-    "Pages": "Pages",
+  "Pages": "Pages",
   "Payment": "Payment",
   "Saved Address": "Saved Address",
   "Profile setting": "Profile setting",
@@ -442,94 +442,128 @@ final dynamic en = {
   "submit": "Submit",
   "yourRating": "Your Rating: ",
   "writeReview": "Write Review",
+  "timeFilters": "Time Filter",
 
   //order detail font
   "shippingDetail": "Shipping Details",
   "downloadInvoice": "Download Invoice",
   "priceDetails": "Price Details",
-  "All":"All",
-  "Order Info":"Order Info",
-  "Offers":"Offers",
-  "10 July, 2021":"10 July, 2021",
-  "5 July, 2021":"5 July, 2021",
-  "20 April, 2021":"20 April, 2021",
-  "5 June, 2021":"5 June, 2021",
-  "Exclusive Brand Day Sale!! HURRY, LIMITED period offer!":"Exclusive Brand Day Sale!! HURRY, LIMITED period offer!",
-  "Order Placed successfully. It will be delivered on Mon 15 July, 2021":"Order Placed successfully. It will be delivered on Mon 15 July, 2021",
-  "We have got coupons. collect now and save extras !!!":"We have got coupons. collect now and save extras !!!",
-  "Payment Failed. You can retry making a payment on order sections.":"Payment Failed. You can retry making a payment on order sections.",
-  "Your order is delivered on time. for any further assistance please contact us.":"Your order is delivered on time. for any further assistance please contact us.",
-  "Out For Delivery":"Out For Delivery",
-  "expected delivery on monday":"expected delivery on monday",
-  "In Transit":"In Transit",
-  "10.00 am, 21/05/2020":"10.00 am, 21/05/2020",
-  "Ordered":"Ordered",
-  "20/05/2020":"20/05/2020",
+  "All": "All",
+  "Order Info": "Order Info",
+  "Offers": "Offers",
+  "10 July, 2021": "10 July, 2021",
+  "5 July, 2021": "5 July, 2021",
+  "20 April, 2021": "20 April, 2021",
+  "5 June, 2021": "5 June, 2021",
+  "Exclusive Brand Day Sale!! HURRY, LIMITED period offer!":
+      "Exclusive Brand Day Sale!! HURRY, LIMITED period offer!",
+  "Order Placed successfully. It will be delivered on Mon 15 July, 2021":
+      "Order Placed successfully. It will be delivered on Mon 15 July, 2021",
+  "We have got coupons. collect now and save extras !!!":
+      "We have got coupons. collect now and save extras !!!",
+  "Payment Failed. You can retry making a payment on order sections.":
+      "Payment Failed. You can retry making a payment on order sections.",
+  "Your order is delivered on time. for any further assistance please contact us.":
+      "Your order is delivered on time. for any further assistance please contact us.",
+  "Out For Delivery": "Out For Delivery",
+  "expected delivery on monday": "expected delivery on monday",
+  "In Transit": "In Transit",
+  "10.00 am, 21/05/2020": "10.00 am, 21/05/2020",
+  "Ordered": "Ordered",
+  "20/05/2020": "20/05/2020",
 
   //terms and condition font
-  "termsConditionForMultikart":"Terms and Conditions for Multikart",
-  "termsCondition":"Terms & Condition",
-  "Introduction":"Introduction",
-  "Intellectual Property Rights":"Intellectual Property Rights",
-  "Restrictions":"Restrictions",
-  "Your Content":"Your Content",
-  "intro1":"These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, multikart accessible at www.multikart.com.",
-  "intro2":"These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. These Terms and Conditions have been generated with the help of the Terms And Conditions Sample Generator.",
-  "intro3":"Other than the content you own, under these Terms, Multikart and/or its licensors own all the intellectual property rights and materials contained in this Website.",
-  "intro4":"You are granted limited license only for purposes of viewing the material contained on this Website.",
-  "intro5":"You are specifically restricted from all of the following:",
-  "intro6":"Certain areas of this Website are restricted from being access by you and Multikart may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well..",
-  "intro7":"In these Website Standard Terms and Conditions, 'Your Content' shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Multikart a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.",
-  "intro8":"Your Content must be your own and must not be invading any third-party’s rights. Multikart reserves the right to remove any of Your Content from this Website at any time without notice.",
-  "subTitle1":"Publishing any Website material in any other media",
-  "subTitle2":"Selling, sublicensing and/or otherwise any Website material;",
-  "subTitle3":"Publicly performing and/or showing any Website material;",
-  "subTitle4":"Using this Website in any way that is or may be damaging to this Website;",
-  "subTitle5":"Using this Website in any way that impacts user access to this Website;",
-  "subTitle6":"Using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;",
-  "subTitle7":"Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;",
-  "subTitle8":"Using this Website to engage in any advertising or marketing.",
+  "termsConditionForMultikart": "Terms and Conditions for Multikart",
+  "termsCondition": "Terms & Condition",
+  "Introduction": "Introduction",
+  "Intellectual Property Rights": "Intellectual Property Rights",
+  "Restrictions": "Restrictions",
+  "Your Content": "Your Content",
+  "intro1":
+      "These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, multikart accessible at www.multikart.com.",
+  "intro2":
+      "These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. These Terms and Conditions have been generated with the help of the Terms And Conditions Sample Generator.",
+  "intro3":
+      "Other than the content you own, under these Terms, Multikart and/or its licensors own all the intellectual property rights and materials contained in this Website.",
+  "intro4":
+      "You are granted limited license only for purposes of viewing the material contained on this Website.",
+  "intro5": "You are specifically restricted from all of the following:",
+  "intro6":
+      "Certain areas of this Website are restricted from being access by you and Multikart may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well..",
+  "intro7":
+      "In these Website Standard Terms and Conditions, 'Your Content' shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Multikart a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.",
+  "intro8":
+      "Your Content must be your own and must not be invading any third-party’s rights. Multikart reserves the right to remove any of Your Content from this Website at any time without notice.",
+  "subTitle1": "Publishing any Website material in any other media",
+  "subTitle2": "Selling, sublicensing and/or otherwise any Website material;",
+  "subTitle3": "Publicly performing and/or showing any Website material;",
+  "subTitle4":
+      "Using this Website in any way that is or may be damaging to this Website;",
+  "subTitle5":
+      "Using this Website in any way that impacts user access to this Website;",
+  "subTitle6":
+      "Using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;",
+  "subTitle7":
+      "Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;",
+  "subTitle8": "Using this Website to engage in any advertising or marketing.",
 
   //help font
-  "helpCenter":"Help Center",
-  "helpDesc":"Please get in touch and we will be happy to help you. Get quick customer support by selecting your item",
-  "I want to track my order":"I want to track my order",
-  "I want to manage my order":"I want to manage my order",
-  "I did not receive Instant Cashback (Credit/Debit Card)":"I did not receive Instant Cashback (Credit/Debit Card)",
-  "I want help with other issues":"I want help with other issues",
-  "I am unable to pay using wallet":"I am unable to pay using wallet",
-  "I want to unsubscribe from promotional emails and SMS":"I want to unsubscribe from promotional emails and SMS",
-  "I want help with returns & refunds":"I want help with returns & refunds",
-  "helpListDec":"The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+  "helpCenter": "Help Center",
+  "helpDesc":
+      "Please get in touch and we will be happy to help you. Get quick customer support by selecting your item",
+  "I want to track my order": "I want to track my order",
+  "I want to manage my order": "I want to manage my order",
+  "I did not receive Instant Cashback (Credit/Debit Card)":
+      "I did not receive Instant Cashback (Credit/Debit Card)",
+  "I want help with other issues": "I want help with other issues",
+  "I am unable to pay using wallet": "I am unable to pay using wallet",
+  "I want to unsubscribe from promotional emails and SMS":
+      "I want to unsubscribe from promotional emails and SMS",
+  "I want help with returns & refunds": "I want help with returns & refunds",
+  "helpListDec":
+      "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
 
   //about us font
-  "aboutUs":"About Us",
-  "introduction":"Introduction",
-  "aboutDesc":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, ",
-  "ourBrand":"Each Brands have a unique personality and exclusive design. They have the freedom to develop the styles and garments that create the right appeal – and all our Brands are united",
-  "ourBrandTitle":"Our Brands",
-  "selectLanguage":"Select Language",
-  "selectCurrency":"Select Currency",
-  "English":"English",
-  "Arabic":"Arabic",
-  "Hindi":"Hindi",
-  "Korean":"Korean",
-  "Search":"Search",
-  "Delivered":"Delivered",
-  "title":"Multikart is premier fashion destination for the latest trends and hottest styles.",
-  "+ users":"+ users",
-  "+ stores":"+ stores",
-  "M+ orders":"M+ orders",
-  "+ Brands":"+ Brands",
-  "Multikart have 150+ register users online store":"Multikart have 150+ register users online store",
-  "Multikart have 50+ stores worldwide.":"Multikart have 50+ stores worldwide.",
-  "Multikart has 1.5M+ total orders till now.":"Multikart has 1.5M+ total orders till now.",
-  "Multikart has 100+ brands in our stores.":"Multikart has 100+ brands in our stores.",
+  "aboutUs": "About Us",
+  "introduction": "Introduction",
+  "aboutDesc":
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, ",
+  "ourBrand":
+      "Each Brands have a unique personality and exclusive design. They have the freedom to develop the styles and garments that create the right appeal – and all our Brands are united",
+  "ourBrandTitle": "Our Brands",
+  "selectLanguage": "Select Language",
+  "selectCurrency": "Select Currency",
+  "English": "English",
+  "Arabic": "Arabic",
+  "Hindi": "Hindi",
+  "Korean": "Korean",
+  "Search": "Search",
+  "Delivered": "Delivered",
+  "title":
+      "Multikart is premier fashion destination for the latest trends and hottest styles.",
+  "+ users": "+ users",
+  "+ stores": "+ stores",
+  "M+ orders": "M+ orders",
+  "+ Brands": "+ Brands",
+  "Multikart have 150+ register users online store":
+      "Multikart have 150+ register users online store",
+  "Multikart have 50+ stores worldwide.":
+      "Multikart have 50+ stores worldwide.",
+  "Multikart has 1.5M+ total orders till now.":
+      "Multikart has 1.5M+ total orders till now.",
+  "Multikart has 100+ brands in our stores.":
+      "Multikart has 100+ brands in our stores.",
 
   //currency font
-  "Indian rupee":"Indian rupee",
-  "United States dollar":"United States dollar",
-  "Euro":"Euro",
-  "Australian dollar":"Australian dollar",
-  "North Korean won":"North Korean won",
+  "Indian rupee": "Indian rupee",
+  "United States dollar": "United States dollar",
+  "Euro": "Euro",
+  "Australian dollar": "Australian dollar",
+  "North Korean won": "North Korean won",
+
+  //pages list
+  "Home&Product": "Home & Product",
+  "InnerCategories": "Inner Categories",
+  "ForgotPassword": "Forgot Password",
+
 };

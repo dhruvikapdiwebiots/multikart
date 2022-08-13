@@ -38,11 +38,12 @@ class LoginController extends GetxController {
       final User? currentUser = auth.currentUser;
       assert(user.user!.uid == currentUser!.uid);
       await storage.write('id', user.user!.uid);
-      socialLoginCtrl.hideLoading();
-      update();
+
       txtEmail.text = "";
       txtPassword.text = "";
       socialLoginCtrl.saveData(user.user!.uid);
+      socialLoginCtrl.hideLoading();
+      update();
       Get.toNamed(routeName.dashboard);
     } on FirebaseAuthException catch (e) {
       socialLoginCtrl.hideLoading();

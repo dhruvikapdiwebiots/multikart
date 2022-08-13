@@ -34,7 +34,7 @@ class ProfileCard extends StatelessWidget {
               indent: 15,
             )
         ],
-      ).gestures(onTap: onTap);
+      ).gestures(onTap: onTap).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15));
     });
   }
 }

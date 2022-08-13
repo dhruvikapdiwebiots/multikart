@@ -30,7 +30,7 @@ class OrderHistory extends StatelessWidget {
               children: [
                 //search text box and filter
                 OrderHistoryWidget().searchTextBoxAndFilter(
-                    controller: orderHistoryCtrl.controller, onTap: () {}),
+                    controller: orderHistoryCtrl.controller, onTap: () => orderHistoryCtrl.historyFilterBottomSheet()),
                 const Space(0, 20),
 
                 //order history layout

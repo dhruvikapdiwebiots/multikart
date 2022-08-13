@@ -53,17 +53,14 @@ class OrderHistoryWidget {
             : appCtrl.appTheme.greenColor);
   }
 
-  //status layout
-  Widget statusLayout(title) {
-    return CustomButton(
-        padding: 0,
-        margin: 0,
-        height: AppScreenUtil().screenHeight(20),
-        width: AppScreenUtil().screenWidth(75),
-        title: title,
-        color: appCtrl.appTheme.greyLight25,
-        fontSize: FontSizes.f8,
-        fontColor: appCtrl.appTheme.blackColor,
-        fontWeight: FontWeight.w700);
+  //filter layout
+  Widget orderHistoryFilterTitle(title) {
+    return LatoFontStyle(
+        text: title,
+        color: appCtrl.appTheme.blackColor,
+        fontWeight: FontWeight.w600)
+        .marginOnly(
+        left: AppScreenUtil().screenWidth(20),
+        bottom: AppScreenUtil().screenHeight(10));
   }
 }
