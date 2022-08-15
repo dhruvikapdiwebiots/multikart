@@ -32,7 +32,12 @@ class SignUpController extends GetxController {
   //sign in
   signIn() async {
     if (signupFormKey.currentState!.validate()) {
-      signInClick();
+      txtName.text = "";
+      txtEmail.text = "";
+      txtPassword.text = "";
+      FocusScope.of(Get.context!).requestFocus(FocusNode());
+      update();
+      Get.back();
     } else {
       log('No Valid');
     }

@@ -46,7 +46,7 @@ class LoginBody extends StatelessWidget {
             currentFocus.unfocus();
           }
           if (formKey!.currentState!.validate()) {
-            loginCtrl.login();
+            Get.toNamed(routeName.dashboard);
           } else {
             log('No Valid');
           }
