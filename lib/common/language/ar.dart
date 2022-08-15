@@ -345,6 +345,12 @@ final dynamic ar = {
   "Office": "مكتب",
   "Others": "آحرون",
   "savedAddress": "العنوان المحفوظ",
+  "Select state": "اختر ولايه",
+  "Gujarat": "ولاية غوجارات",
+  "Punjab": "البنجاب",
+  "New Zealand": "نيوزيلاندا",
+  "Australia": "أستراليا",
+  "India": "الهند",
 
   //payment font
   "paymentDetails": "بيانات الدفع",
@@ -385,6 +391,9 @@ final dynamic ar = {
   "Brinks": "برينكس",
   "CardFree": "بطاقة مجانية",
   "balance": "الرصيد: ",
+  "Choose Bank...": "اختر البنك ...",
+  "ICICI": "ICICI",
+  "BOB": "بوب",
 
   //order success font
   "orderPlaced": "تم الطلب",

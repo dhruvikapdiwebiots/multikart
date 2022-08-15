@@ -29,7 +29,7 @@ class OrderDaysWise extends StatelessWidget {
                   OrderHistorySizeQty(daysWiseList: daysWiseList)
                 ],
               ),
-              StatusLayout(title: daysWiseList!.status!.toUpperCase())
+              StatusLayout(title: daysWiseList!.status!.tr.toUpperCase())
             ]).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),
         const Space(0, 20),
         Stack(

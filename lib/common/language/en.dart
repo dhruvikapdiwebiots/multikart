@@ -383,6 +383,9 @@ final dynamic en = {
   "Brinks": "Brinks",
   "CardFree": "CardFree",
   "balance": "Balance: ",
+  "Choose Bank...": "Choose Bank...",
+  "ICICI": "ICICI",
+  "BOB": "BOB",
 
   //order success font
   "orderPlaced": "Order Placed",

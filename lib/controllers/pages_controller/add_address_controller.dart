@@ -12,12 +12,14 @@ class AddAddressController extends GetxController{
   bool isChecked = false;
   String value = "home";
 
+  //state list
   var state = [
     "Select state",
     "Gujarat",
     "Punjab",
   ];
 
+  //country list
   var country = [
     "New Zealand",
     "Australia",

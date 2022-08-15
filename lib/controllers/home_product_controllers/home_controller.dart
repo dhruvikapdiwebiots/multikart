@@ -31,6 +31,7 @@ class HomeController extends GetxController {
     super.onReady();
   }
 
+//get data list
   getData()async{
     appCtrl.isShimmer = true;
     appCtrl.update();
@@ -60,6 +61,7 @@ class HomeController extends GetxController {
     return dealOfTheDayList[index].isFav;
   }
 
+  //sub category list by category id
   subCategoryList(index, categoryId) async {
     loginWidth = 40.0;
     loginHeight = 40.0;

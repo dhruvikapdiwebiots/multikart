@@ -13,7 +13,6 @@ class OrderHistoryWidget {
       Expanded(
           child: SearchTextBox(
               controller: controller,
-              suffixIcon: SearchWidget().suffixIcon(),
               prefixIcon: SearchWidget().prefixIcon())),
       const FilterIconLayout().gestures(onTap: onTap)
     ]));

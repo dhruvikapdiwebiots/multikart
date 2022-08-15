@@ -32,8 +32,7 @@ class _CartScreenState extends State<CartScreen> {
                                   (double.parse(cartCtrl
                                               .cartModelList!.totalAmount
                                               .toString()) *
-                                          cartCtrl.appCtrl.rateValue)
-                                      .toString(),
+                                          cartCtrl.appCtrl.rateValue).toStringAsFixed(2),
                               onTap: () {
                                 cartCtrl.appCtrl.isHeart = false;
                                 cartCtrl.update();

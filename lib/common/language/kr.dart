@@ -337,6 +337,12 @@ final dynamic kr = {
   "Office": "사무실",
   "Others": "기타",
   "savedAddress": "저장된 주소",
+  "Select state": "상태 선택",
+  "Gujarat": "구자라트",
+  "Punjab": "펀자브어",
+  "New Zealand": "뉴질랜드",
+  "Australia": "호주",
+  "India": "인도",
 
   //payment font
   "paymentDetails": "지불 세부 사항",
@@ -376,6 +382,9 @@ final dynamic kr = {
   "Brinks": "벼랑끝",
   "CardFree": "카드프리",
   "balance": "균형: ",
+  "Choose Bank...": "은행 선택...",
+  "ICICI": "ICICI",
+  "BOB": "BOB",
 
   //order success font
   "orderPlaced": "주문 완료",

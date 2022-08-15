@@ -54,14 +54,11 @@ class LanguageController extends GetxController {
     appCtrl.update();
 
     DashboardController dashboardController = Get.find();
-    ProfileController profileController = Get.find();
     HomeController homeController = Get.find();
     dashboardController.drawerList = AppArray().drawerList;
-    profileController.drawerList = profileList;
     appCtrl.bottomList = AppArray().bottomSheet;
     homeController.getData();
     homeController.update();
-    profileController.update();
     dashboardController.update();
     appCtrl.update();
     update();

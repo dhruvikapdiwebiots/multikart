@@ -38,11 +38,8 @@ class SocialLoginController extends GetxController {
     // Once signed in, return the UserCredential
     final UserCredential authResult =
     await auth.signInWithCredential(facebookAuthCredential);
-    print('facebookAuthCredential : $facebookAuthCredential');
     final User? users = authResult.user;
     final UserInfo user = users!.providerData[0];
-    print('user : $user');
-
     saveData(user.uid);
     hideLoading();
     update();

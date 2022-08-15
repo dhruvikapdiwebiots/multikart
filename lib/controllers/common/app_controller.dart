@@ -73,7 +73,7 @@ class AppController extends GetxController {
     update();
   }
 
-
+//get data from storage
   getData()async{
     String? languageCode = storage.read(Session.languageCode);
     languageVal = storage.read(Session.languageCode) ?? 'en';
@@ -103,6 +103,7 @@ class AppController extends GetxController {
     await storage.read('isDarkMode');
   }
 
+  //update theme
   updateTheme(theme) {
     _appTheme = theme;
     Get.forceAppUpdate();

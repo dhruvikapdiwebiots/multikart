@@ -26,13 +26,13 @@ class PageListLayout extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 LatoFontStyle(
-                    text: pageListModel!.title!.toUpperCase(),
+                    text: pageListModel!.title!.tr.toUpperCase(),
                     fontSize: FontSizes.f15,
                     fontWeight: FontWeight.w700,
                     color: appCtrl.appTheme.blackColor),
                 const Space(0, 5),
                 LatoFontStyle(
-                    text: pageListModel!.desc,
+                    text: pageListModel!.desc!.tr,
                     fontSize: FontSizes.f12,
                     fontWeight: FontWeight.w500,
                     color: appCtrl.appTheme.contentColor),

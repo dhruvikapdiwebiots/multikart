@@ -38,20 +38,20 @@ class DealsOfTheDayContent extends StatelessWidget {
                   text: '${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.blackColor,
-                  fontSize: FontSizes.f12),
+                  fontSize: FontSizes.f13),
               const Space(8, 0),
               LatoFontStyle(
                   text:'${appCtrl.priceSymbol} ${(data!.totalPrice! * appCtrl.rateValue).toStringAsFixed(2)}',
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.contentColor,
-                  fontSize: FontSizes.f12,
+                  fontSize: FontSizes.f13,
                   textDecoration: TextDecoration.lineThrough),
               const Space(8, 0),
               LatoFontStyle(
                   text: data!.discount,
                   fontWeight: FontWeight.w400,
                   color: appCtrl.appTheme.primary,
-                  fontSize: FontSizes.f12)
+                  fontSize: FontSizes.f13)
             ],
           ),
           const Space(0, 10),

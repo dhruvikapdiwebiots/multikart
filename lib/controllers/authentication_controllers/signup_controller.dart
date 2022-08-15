@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:multikart/config.dart';
-import 'package:multikart/controllers/common/social_login_controller.dart';
 
 class SignUpController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()

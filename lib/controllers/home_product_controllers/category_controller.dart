@@ -14,6 +14,7 @@ class CategoryController extends GetxController {
     super.onReady();
   }
 
+  //get data list
   getData()async{
     appCtrl.isShimmer = true;
     appCtrl.update();

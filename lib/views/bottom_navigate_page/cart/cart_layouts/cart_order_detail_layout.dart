@@ -20,11 +20,11 @@ class CartOrderDetailLayout extends StatelessWidget {
 
           String val;
           if ((e.title == "Bag savings" || e.title == "बैग बचत" || e.title == "توفير الحقيبة" || e.title == "가방 절약")) {
-            val = "-${appCtrl.priceSymbol}${(e.value * appCtrl.rateValue)}";
+            val = "-${appCtrl.priceSymbol}${(e.value * appCtrl.rateValue).toStringAsFixed(2)}";
           } else if ((e.value == "Apply Coupon" ||e.value == "कूपन लागू करें" ||e.value == "쿠폰 적용ं"  ||e.value == "تطبيق القسائم" )) {
             val = e.value;
           } else {
-            val = "${appCtrl.priceSymbol}${(e.value * appCtrl.rateValue)}";
+            val = "${appCtrl.priceSymbol}${(e.value * appCtrl.rateValue).toStringAsFixed(2)}";
           }
           return  CartDetail(
             isApplyText: isApplyText,
@@ -41,7 +41,7 @@ class CartOrderDetailLayout extends StatelessWidget {
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w600),
           LatoFontStyle(
-              text: "${appCtrl.priceSymbol}${(cartModelList!.totalAmount! * appCtrl.rateValue)}",
+              text: "${appCtrl.priceSymbol}${(cartModelList!.totalAmount! * appCtrl.rateValue).toStringAsFixed(2)}",
               fontSize: FontSizes.f14,
               color: appCtrl.appTheme.blackColor,
               fontWeight: FontWeight.w600)

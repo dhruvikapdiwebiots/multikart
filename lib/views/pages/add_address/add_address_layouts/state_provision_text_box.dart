@@ -58,7 +58,7 @@ class StateProvisionTextBox extends StatelessWidget {
                   },
                   items: addAddressCtrl.state.map((String value) {
                     return DropdownMenuItem<String>(
-                        value: value, child: Text(value));
+                        value: value, child: Text(value,style: TextStyle(fontFamily: GoogleFonts.lato().fontFamily),));
                   }).toList(),
                 )));
           },

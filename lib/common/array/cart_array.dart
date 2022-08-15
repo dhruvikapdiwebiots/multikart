@@ -3,27 +3,27 @@ import '../../config.dart';
 var cartList = CartModel(
     cartList: [
       HomeDealOfTheDayModel(
-          name: "Pink Hoodie t-shirt full".tr,
+          name: "Pink Hoodie t-shirt full",
           image: imageAssets.product16,
-          byWhom: "by Mango".tr,
+          byWhom: "by Mango",
           discount: "20%",
           isFav: true,
           mrp: 32.00,
           totalPrice: 35.00,
           isTrending: true),
       HomeDealOfTheDayModel(
-          name: "Pink Hoodie t-shirt full".tr,
+          name: "Pink Hoodie t-shirt full",
           image: imageAssets.product14,
-          byWhom: "by Mango".tr,
+          byWhom: "by Mango",
           discount: "20%",
           isFav: true,
           mrp: 32.00,
           totalPrice: 35.00,
           isTrending: false),
       HomeDealOfTheDayModel(
-          name: "Pink Hoodie t-shirt full".tr,
+          name: "Pink Hoodie t-shirt full",
           image: imageAssets.product15,
-          byWhom: "by Mango".tr,
+          byWhom: "by Mango",
           discount: "20%",
           isFav: true,
           mrp: 32.00,

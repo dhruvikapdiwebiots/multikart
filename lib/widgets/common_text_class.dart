@@ -38,6 +38,7 @@ class CommonTextFont{
   String selectLanguage = "selectLanguage".tr;
   String selectCurrency = "selectCurrency".tr;
   String pages = "Pages".tr;
+  String multikart = "Multikart".tr;
 
 
 }

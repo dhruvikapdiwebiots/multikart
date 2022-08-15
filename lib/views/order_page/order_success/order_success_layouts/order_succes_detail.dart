@@ -1,4 +1,3 @@
-import 'package:multikart/views/order_page/order_success/order_success_utils/order_success_widget.dart';
 
 import '../../../../config.dart';
 

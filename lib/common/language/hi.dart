@@ -344,6 +344,12 @@ final dynamic hi = {
   "Office": "कार्यालय",
   "Others": "अन्य",
   "savedAddress": "सहेजा गया पता",
+  "Select state": "राज्य चुनें",
+  "Gujarat": "गुजरात",
+  "Punjab": "पंजाब",
+  "New Zealand": "न्यूजीलैंड",
+  "Australia": "ऑस्ट्रेलिया",
+  "India": "भारत",
 
   //payment font
   "paymentDetails": "भुगतान विवरण",
@@ -384,6 +390,9 @@ final dynamic hi = {
   "Brinks": "कगार",
   "CardFree": "कार्डफ्री",
   "balance": "संतुलन: ",
+  "Choose Bank...": "बैंक चुनें...",
+  "ICICI": "आईसीआईसीआई",
+  "BOB": "बीओबी",
 
   //order success font
   "orderPlaced": "आदेश रखा",

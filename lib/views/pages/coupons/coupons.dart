@@ -38,7 +38,7 @@ class Coupons extends StatelessWidget {
 
                       //coupon list layout
                       CouponList(
-                        couponList: couponCtrl.couponList,
+                        couponList: couponsList,
                       )
                     ],
                   ),
