@@ -1,5 +1,9 @@
 import '../../config.dart';
 
+final appCtrl = Get.isRegistered<AppController>()
+    ? Get.find<AppController>()
+    : Get.put(AppController());
+
 var productList = Product(
     name: "Floral Print Skirt With White Top".tr,
     title: "Floral Skirts".tr,
@@ -93,7 +97,7 @@ var productList = Product(
         description: "Enter Pincode to check delivery date / pickup option".tr,
         deliveryOffer: [
           DeliveryOffer(
-              title: 'Free Delivery on order above \$200.00'.tr,
+              title: 'Free Delivery on order above ${appCtrl.priceSymbol}200.00'.tr,
               icon: svgAssets.truck),
           DeliveryOffer(
               title: "Cash On delivery Available".tr,

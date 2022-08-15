@@ -14,6 +14,7 @@ class ProductDetailController extends GetxController {
   bool isNotData = false;
   int selectedColor = 0;
   int selectedSize = 0;
+  bool isCartPage = false;
   final CarouselController sliderController = CarouselController();
   List<HomeFindStyleCategoryModel> similarList = [];
   int colorSelected = 1;

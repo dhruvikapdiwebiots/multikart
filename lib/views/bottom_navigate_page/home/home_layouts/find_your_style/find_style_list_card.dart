@@ -20,7 +20,7 @@ class FindStyleListCard extends StatelessWidget {
               LinkHeartIcon(
                 isLiked: data!.isFav,
               ).paddingOnly(
-                  top: AppScreenUtil().screenHeight(15),
+                  top: AppScreenUtil().screenHeight(10),
                   right: AppScreenUtil().screenWidth(15))
             ]),
             if (data!.isNew) const NewLayout()
@@ -40,7 +40,7 @@ class FindStyleListCard extends StatelessWidget {
           PriceLayout(
               totalPrice:'${appCtrl.priceSymbol} ${(data!.totalPrice! * appCtrl.rateValue).toStringAsFixed(2)}',
               mrp:'${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',
-              discount: data!.discount,fontSize:isDiscountShow ? FontSizes.f10: FontSizes.f12,
+              discount: data!.discount, fontSize:isDiscountShow ? MediaQuery.of(context).size.width >400 ?FontSizes.f11 : FontSizes.f12: FontSizes.f12,
               isDiscountShow: isDiscountShow)
         ]),
       );

@@ -53,5 +53,7 @@ class SvgAssets {
   final String usd = 'assets/svg/usd.svg';
   final String aud = 'assets/svg/aud.svg';
   final String eur = 'assets/svg/eur.svg';
+  final String mode = 'assets/svg/mode.svg';
+  final String rtl = 'assets/svg/rtl.svg';
 
 }

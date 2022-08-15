@@ -27,33 +27,55 @@ class ProductBottom extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Row(
-                  children: [
-                    HeartIcon(
-                      color: appCtrl.appTheme.blackColor,
-                    ),
-                    const Space(10, 0),
-                     LatoFontStyle(
-                      text: ProductDetailFont().wishList,
-                      fontWeight: FontWeight.w600,
-                      fontSize: FontSizes.f14,
-                    )
-                  ],
+                InkWell(
+                  onTap: ()async{
+                    appCtrl.isShimmer = true;
+                    appCtrl.selectedIndex = 3;
+                    appCtrl.goToHome();
+                    Get.toNamed(routeName.dashboard);
+                    await Future.delayed(Durations.s1);
+                    appCtrl.isShimmer = false;
+                    Get.forceAppUpdate();
+                  },
+                  child: Row(
+                    children: [
+                      HeartIcon(
+                        color: appCtrl.appTheme.blackColor,
+                      ),
+                      const Space(10, 0),
+                       LatoFontStyle(
+                        text: ProductDetailFont().wishList,
+                        fontWeight: FontWeight.w600,
+                        fontSize: FontSizes.f14,
+                      )
+                    ],
+                  ),
                 ),
                 VerticalDivider(color: appCtrl.appTheme.greyLight25 ,),
-                Row(
-                  children: [
-                    BuyIcon(
-                      color: appCtrl.appTheme.primary,
-                    ),
-                    const Space(10, 0),
-                    LatoFontStyle(
-                      text: ProductDetailFont().addToBag,
-                      fontWeight: FontWeight.w600,
-                      color: appCtrl.appTheme.primary,
-                      fontSize: FontSizes.f14,
-                    )
-                  ],
+                InkWell(
+                  onTap: ()async{
+                    appCtrl.isShimmer = true;
+                    appCtrl.selectedIndex = 2;
+                    appCtrl.goToHome();
+                    Get.toNamed(routeName.dashboard);
+                    await Future.delayed(Durations.s1);
+                    appCtrl.isShimmer = false;
+                    Get.forceAppUpdate();
+                  },
+                  child: Row(
+                    children: [
+                      BuyIcon(
+                        color: appCtrl.appTheme.primary,
+                      ),
+                      const Space(10, 0),
+                      LatoFontStyle(
+                        text: ProductDetailFont().addToBag,
+                        fontWeight: FontWeight.w600,
+                        color: appCtrl.appTheme.primary,
+                        fontSize: FontSizes.f14,
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),

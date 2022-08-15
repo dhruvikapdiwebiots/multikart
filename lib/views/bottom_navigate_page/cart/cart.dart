@@ -28,7 +28,7 @@ class _CartScreenState extends State<CartScreen> {
                           CartBottomLayout(
                               desc: CartFont().viewDetail,
                               buttonName: CartFont().placeOrder,
-                              totalAmount: cartCtrl.appCtrl.priceSymbol +
+                              totalAmount:
                                   (double.parse(cartCtrl
                                               .cartModelList!.totalAmount
                                               .toString()) *

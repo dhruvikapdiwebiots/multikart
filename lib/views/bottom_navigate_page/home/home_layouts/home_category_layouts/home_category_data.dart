@@ -12,7 +12,11 @@ class HomeCategoryData extends StatelessWidget {
 
       return InkWell(
         onTap: ()async{
-
+          homeCtrl.appCtrl.isHeart = true;
+          homeCtrl.appCtrl.isCart = true;
+          homeCtrl.appCtrl.isShare = false;
+          homeCtrl.appCtrl.isSearch = false;
+          homeCtrl.appCtrl.isNotification = false;
           homeCtrl.appCtrl.selectedIndex =1;
           homeCtrl.appCtrl.update();
           homeCtrl.appCtrl.isShimmer = true;

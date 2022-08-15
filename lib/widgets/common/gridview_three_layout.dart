@@ -30,7 +30,7 @@ class GridviewThreeLayout extends StatelessWidget {
           child: LatoFontStyle(
             text: data['title'],
             fontSize: 14,
-            color: data['isSelected'] ? appCtrl.appTheme.white :appCtrl.appTheme.blackColor,
+            color: index == selectIndex ? appCtrl.appTheme.white :appCtrl.appTheme.blackColor,
           ),
         ).gestures(onTap: onTap);
       }

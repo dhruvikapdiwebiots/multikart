@@ -12,6 +12,7 @@ class PriceLayout extends StatelessWidget {
     return  GetBuilder<AppController>(
       builder: (appCtrl) {
         return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LatoFontStyle(
               text: mrp,

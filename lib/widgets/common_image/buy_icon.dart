@@ -11,18 +11,22 @@ class BuyIcon extends StatelessWidget {
         return SvgPicture.asset(
           svgAssets.buy,
           color: color ?? appCtrl.appTheme.blackColor,
-        ).gestures(onTap: (){
-          if(appCtrl.selectedIndex != 0) {
-            Get.back();
-            appCtrl.selectedIndex = 2;
-          }
+        ).gestures(onTap: ()async{
+          appCtrl.isShimmer = true;
+
+          appCtrl.selectedIndex = 2;
           appCtrl.isHeart = true;
           appCtrl.isCart = false;
           appCtrl.isShare = false;
           appCtrl.isSearch = false;
           appCtrl.isNotification = false;
+          Get.toNamed(routeName.dashboard);
+          await Future.delayed(Durations.s1);
+          appCtrl.isShimmer = false;
           appCtrl.update();
+
           Get.forceAppUpdate();
+
         });
       }
     );

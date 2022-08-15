@@ -120,6 +120,7 @@ final dynamic ar = {
   'Notification': 'تنبيه',
   'Settings': 'إعدادات',
   'About us': 'معلومات عنا',
+  'Currency Change': 'تغيير العملة',
   'Help/Customer Care': 'المساعدة / رعاية العملاء',
   'Offers, Top Deals, Top Brands':
       'العروض ، أفضل الصفقات ، أفضل العلامات التجارية',
@@ -133,6 +134,7 @@ final dynamic ar = {
   'App settings, Dark mode': 'إعدادات التطبيق ، الوضع الداكن',
   'About Multikart': 'حول Multikart',
   'Customer Support, FAQs': 'دعم العملاء ، أسئلة وأجوبة',
+  'Select your Currency here..': 'اختر عملتك هنا ..',
   'Mode': 'الوضع',
 
   //category font
@@ -181,6 +183,7 @@ final dynamic ar = {
   "colors": ":الألوان",
   "price": ":سعر",
   "recommended": "مُستَحسَن",
+  "recommendedForYou": "موصى به لك",
   "popularity": "شعبية",
   "whatsNew": "ما هو الجديد",
   "highToLow": "السعر الاعلى الى الادنى",
@@ -560,7 +563,7 @@ final dynamic ar = {
   "United States dollar": "دولار الولايات المتحدة",
   "Euro": "اليورو",
   "Australian dollar": "دولار استرالي",
-  "North Korean won": "وون كوريا الشمالية",
+  "South Korean won": "وون كوريا الجنوبية",
 
   //pages list
   "Home&Product": "المنزل والمنتج",

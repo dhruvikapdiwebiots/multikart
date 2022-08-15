@@ -119,6 +119,7 @@ final dynamic kr = {
   'Notification': 'Notification',
   'Settings': 'Settings',
   'About us': 'About us',
+  'Currency Change': '통화 변경',
   'Help/Customer Care': 'Help/Customer Care',
   'Offers, Top Deals, Top Brands': 'Offers, Top Deals, Top Brands',
   'Men, Women, Kids, Beauty..': 'Men, Women, Kids, Beauty..',
@@ -130,6 +131,7 @@ final dynamic kr = {
   'App settings, Dark mode': 'App settings, Dark mode',
   'About Multikart': 'About Multikart',
   'Customer Support, FAQs': 'Customer Support, FAQs',
+  'Select your Currency here..': '여기에서 통화를 선택하십시오..',
   'Mode': '방법',
 
   //category font
@@ -178,6 +180,7 @@ final dynamic kr = {
   "colors": "그림 물감:",
   "price": "가격:",
   "recommended": "추천",
+  "recommendedForYou": "당신을 위해 추천 된",
   "popularity": "인기",
   "whatsNew": "새로운 소식",
   "highToLow": "가격: 높음에서 낮음",
@@ -543,7 +546,7 @@ final dynamic kr = {
   "United States dollar": "미국 달러",
   "Euro": "유로",
   "Australian dollar": "호주 달러",
-  "North Korean won": "북한 원",
+  "South Korean won": "한국 원",
 
   //pages list
   "Home&Product": "홈 & 제품",

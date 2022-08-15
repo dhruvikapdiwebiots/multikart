@@ -121,6 +121,7 @@ final dynamic hi = {
   'Notification': 'अधिसूचना',
   'Settings': 'समायोजन',
   'About us': 'हमारे बारे में',
+  'Currency Change': 'تमुद्रा परिवर्तन',
   'Help/Customer Care': 'सहायता/ग्राहक सेवा',
   'Offers, Top Deals, Top Brands': 'ऑफ़र, शीर्ष सौदे, शीर्ष ब्रांड',
   'Men, Women, Kids, Beauty..': 'पुरुष, महिला, बच्चे, सौंदर्य ..',
@@ -132,6 +133,7 @@ final dynamic hi = {
   'App settings, Dark mode': 'ऐप सेटिंग, डार्क मोड',
   'About Multikart': 'मल्टीकार्ट के बारे में',
   'Customer Support, FAQs': 'ग्राहक सहायता, अक्सर पूछे जाने वाले प्रश्न',
+  'Select your Currency here..': 'यहां अपनी मुद्रा चुनें..',
   'Mode': 'तरीका',
 
   //category font
@@ -180,6 +182,7 @@ final dynamic hi = {
   "colors": "रंग:",
   "price": "कीमत:",
   "recommended": "अनुशंसित",
+  "recommendedForYou": "आप के लिए अनुशंसित",
   "popularity": "लोकप्रियता",
   "whatsNew": "नया क्या है",
   "highToLow": "कीमत: ऊॅंचा से नीचा",
@@ -563,7 +566,7 @@ final dynamic hi = {
   "United States dollar": "यूनाइटेड स्टेट का डॉलर",
   "Euro": "यूरो",
   "Australian dollar": "ऑस्ट्रलियन डॉलर",
-  "North Korean won": "उत्तर कोरियाई वोन",
+  "South Korean won": "दक्षिण कोरियाई वोन",
 
   //pages list
   "Home&Product": "घर और उत्पाद",

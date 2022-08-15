@@ -19,7 +19,7 @@ class LoginEmailTextForm extends StatelessWidget {
             LoginWidget().fieldFocusChange(
                 context, loginCtrl.emailFocus, loginCtrl.passwordFocus);
           },
-          validator: (value) => CommonValidation().checkIDValidation(value),
+          validator: (value) => CommonValidation().checkEmailValidation(value),
         ),
       );
     });

@@ -10,12 +10,12 @@ class ProductDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<ProductDetailController>(builder: (_) {
       return Directionality(
-        textDirection: productCtrl.appCtrl.isRTL ||
-            productCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+        textDirection:
+            productCtrl.appCtrl.isRTL || productCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
         child: WillPopScope(
-          onWillPop: ()async{
+          onWillPop: () async {
             productCtrl.appCtrl.goToHome();
             Get.back();
             return true;
@@ -38,7 +38,11 @@ class ProductDetail extends StatelessWidget {
                   text: productCtrl.product.title ?? "",
                   fontSize: FontSizes.f16,
                   fontWeight: FontWeight.w700),
-              actions: const [AppBarActionLayout()],
+              actions: const[
+                AppBarActionLayout(
+
+                )
+              ],
             ),
             body: Stack(
               alignment: Alignment.bottomCenter,

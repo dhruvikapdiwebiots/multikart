@@ -32,6 +32,7 @@ class DealsOfTheDayContent extends StatelessWidget {
               fontSize: FontSizes.f12),
           const Space(0, 5),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               LatoFontStyle(
                   text: '${appCtrl.priceSymbol} ${(data!.mrp! * appCtrl.rateValue)}',

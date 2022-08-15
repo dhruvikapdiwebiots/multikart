@@ -14,7 +14,7 @@ class FilterController extends GetxController {
   int selectedBrand = 0;
   int selectedOccasion = 0;
   int selectedColor = 0;
-  int selectSize =0;
+  int selectSize = 0;
   var data = [
     {"val": "0.0"},
     {"val": "10.0"},
@@ -37,11 +37,20 @@ class FilterController extends GetxController {
 
   //select occasion
   selectOccasionFunction(index) {
-    selectedOccasion   = index;
+    selectedOccasion = index;
     update();
   }
 
-
+  //reset
+  resetFilter() {
+    dropDownVal = "Recommended".tr;
+    selectedBrand = 0;
+    selectedOccasion = 0;
+    selectedColor = 0;
+    selectSize = 0;
+    currentRangeValues = const RangeValues(0, 100);
+    update();
+  }
 
   @override
   void onReady() {

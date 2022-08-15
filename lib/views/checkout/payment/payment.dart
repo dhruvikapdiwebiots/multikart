@@ -50,7 +50,7 @@ class Payment extends StatelessWidget {
                   desc: CartFont().viewDetail,
                   buttonName: PaymentFont().payNow,
                  // totalAmount: paymentCtrl.totalAmount.toString(),
-                  totalAmount: paymentCtrl.appCtrl.priceSymbol +
+                  totalAmount:
                       (double.parse(paymentCtrl.totalAmount.toString()) *
                           paymentCtrl.appCtrl.rateValue)
                           .toString(),

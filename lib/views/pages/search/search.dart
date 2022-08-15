@@ -24,10 +24,10 @@ class Search extends StatelessWidget {
                 return RecentSearchCard(data: e);
               }).toList(),
               const Space(0,20),
-              SearchWidget().commonText(SearchFont().recommended),
+              SearchWidget().commonText(SearchFont().recommendedForYou),
               //recommended list layout
               const RecommendedLayout(),
-                  const Space(0,20),
+                  const Space(0,30),
               SearchWidget().commonText(SearchFont().trendingCategory),
               //trending category layout
               const CommonTrendingCategory(),

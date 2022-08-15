@@ -60,7 +60,7 @@ class Filter extends StatelessWidget {
                       horizontal: AppScreenUtil().screenWidth(15))),
               BottomLayout(
                   firstButtonText: FilterFont().reset,
-                  secondButtonText: FilterFont().applyFilter,firstTap: ()=>Get.back(),
+                  secondButtonText: FilterFont().applyFilter,firstTap: ()=>filterCtrl.resetFilter(),
                   secondTap: ()=>Get.back())
             ])),
       );

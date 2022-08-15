@@ -156,8 +156,8 @@ class AppArray {
   ];
 
   var drawerList = [
-    {'title': 'Mode'.tr, 'icon': svgAssets.setting, 'subTitle': ''},
-    {'title': 'RTL'.tr, 'icon': svgAssets.setting, 'subTitle': ''},
+    {'title': 'Mode'.tr, 'icon': svgAssets.mode, 'subTitle': ''},
+    {'title': 'RTL'.tr, 'icon': svgAssets.rtl, 'subTitle': ''},
     {
       'title': 'Pages'.tr,
       'icon': svgAssets.order,

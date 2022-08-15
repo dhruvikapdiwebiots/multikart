@@ -120,6 +120,7 @@ final dynamic en = {
   'Notification': 'Notification',
   'Settings': 'Settings',
   'About us': 'About us',
+  'Currency Change': 'Currency Change',
   'Help/Customer Care': 'Help/Customer Care',
   'Offers, Top Deals, Top Brands': 'Offers, Top Deals, Top Brands',
   'Men, Women, Kids, Beauty..': 'Men, Women, Kids, Beauty..',
@@ -131,6 +132,7 @@ final dynamic en = {
   'App settings, Dark mode': 'App settings, Dark mode',
   'About Multikart': 'About Multikart',
   'Customer Support, FAQs': 'Customer Support, FAQs',
+  'Select your Currency here..': 'Select your Currency here..',
   'Mode': 'Mode',
 
   //category font
@@ -179,6 +181,7 @@ final dynamic en = {
   "colors": "Colors:",
   "price": "Price:",
   "recommended": "Recommended",
+  "recommendedForYou": "Recommended For You",
   "popularity": "Popularity",
   "whatsNew": "What's New",
   "highToLow": "Price: High to Low",
@@ -559,7 +562,7 @@ final dynamic en = {
   "United States dollar": "United States dollar",
   "Euro": "Euro",
   "Australian dollar": "Australian dollar",
-  "North Korean won": "North Korean won",
+  "South Korean won": "South Korean won",
 
   //pages list
   "Home&Product": "Home & Product",

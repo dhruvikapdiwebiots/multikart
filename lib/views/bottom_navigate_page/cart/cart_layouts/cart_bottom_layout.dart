@@ -43,7 +43,7 @@ class CartBottomLayout extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       LatoFontStyle(
-                              text: "$totalAmount",
+                              text: "${appCtrl.priceSymbol} $totalAmount",
                               fontSize: FontSizes.f14,
                               textAlign: TextAlign.center)
                           .gestures(onTap: () => Get.back()),

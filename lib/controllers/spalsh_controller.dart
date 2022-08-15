@@ -22,6 +22,7 @@ final storage = GetStorage();
     //#region set Language
     String? languageCode = storage.read(Session.languageCode);
     String? countryCode = storage.read(Session.countryCode);
+    bool? isLogin = storage.read(Session.isLogin);
     if (languageCode != null && countryCode != null) {
       var locale = Locale(languageCode, countryCode);
       Get.updateLocale(locale);
@@ -38,7 +39,7 @@ log(isIntro.toString());
       Get.toNamed(routeName.onBoarding);
     } else {
       log(user.toString());
-      if (user == null) {
+      if (isLogin == false) {
         // Checking if user is already login or not
         Get.toNamed(routeName.login);
       } else {

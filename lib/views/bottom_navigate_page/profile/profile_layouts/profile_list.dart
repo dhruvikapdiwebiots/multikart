@@ -7,7 +7,7 @@ class ProfileList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<AppController>(builder: (appCtrl) {
+    return GetBuilder<ProfileController>(builder: (profileCtrl) {
       return DrawerContainer(
           child:
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
@@ -39,11 +39,11 @@ class ProfileList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     LatoFontStyle(
-                        text: data!.title!.tr,
+                        text: data!.title!.toString().tr,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.w600),
                     LatoFontStyle(
-                        text: data!.subTitle!.tr,
+                        text: data!.subTitle!.toString().tr,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.normal)
                   ],
