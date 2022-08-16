@@ -48,7 +48,7 @@ class _ProductColorLayoutState extends State<ProductColorLayout>
                   child: productCtrl.selectedColor == e.key
                       ? AnimatedCheck(
                           progress: _animation!,
-                          color: productCtrl.appCtrl.appTheme.blackColor,
+                          color: appCtrl.isTheme ? productCtrl.appCtrl.appTheme.whiteColor: productCtrl.appCtrl.appTheme.blackColor,
                           size: 40,
                           strokeWidth: 1.2,
                         )

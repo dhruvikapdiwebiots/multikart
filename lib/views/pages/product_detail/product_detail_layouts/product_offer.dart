@@ -20,7 +20,7 @@ class ProductOffer extends StatelessWidget {
                 LatoFontStyle(text:text ,fontSize: FontSizes.f12,color: appCtrl.appTheme.blackColor,)
               ],
             ),
-            ProductDetailWidget().descriptionText("Tap to copy"),
+            ProductDetailWidget().descriptionText(ProductDetailFont().tapToCopy),
           ],
         ).marginSymmetric(
             horizontal: AppScreenUtil().screenWidth(15),

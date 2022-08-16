@@ -25,3 +25,8 @@ List arrayFilter(List val) {
 
   //ex : helper.array_filter(data);
 }
+
+getSymbol(){
+  var priceSymbol = loadingCtrl.priceSymbol;
+  return priceSymbol;
+}

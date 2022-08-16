@@ -15,7 +15,7 @@ class ReviewNameDate extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 LatoFontStyle(
-                  text: reviews!.name,
+                  text: reviews!.name.toString().tr,
                   fontWeight: FontWeight.normal,
                   fontSize: FontSizes.f14,
                   color: appCtrl.appTheme.blackColor,
@@ -27,7 +27,7 @@ class ReviewNameDate extends StatelessWidget {
                   color: appCtrl.appTheme.blackColor,
                 ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(10)),
                 LatoFontStyle(
-                  text: reviews!.date,
+                  text: reviews!.date.toString().tr,
                   fontWeight: FontWeight.normal,
                   fontSize: FontSizes.f14,
                   color: appCtrl.appTheme.blackColor,
@@ -39,7 +39,7 @@ class ReviewNameDate extends StatelessWidget {
               onRatingUpdate: (val) {},
             )
           ],
-        ).marginOnly(left: AppScreenUtil().screenWidth(15));
+        ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15));
       }
     );
   }

@@ -27,7 +27,7 @@ class CommonBottomNavigation extends StatelessWidget {
                 image: appCtrl.selectedIndex == e.key
                     ? e.value['selectedIcon']
                     : e.value['unSelectedIcon'],
-                title: e.value['title'].toUpperCase());
+                title: e.value['title'].toString().tr.toUpperCase());
           }).toList()
         ],
         currentIndex: appCtrl.selectedIndex,

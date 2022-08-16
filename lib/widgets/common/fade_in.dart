@@ -10,6 +10,7 @@ class FadeInImageLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return FadeInImage(placeholder: AssetImage(gifAssets.loading,), image:AssetImage(image!), fit: fit,
       height:height,
+
       alignment: Alignment.center,
       placeholderFit: BoxFit.cover,
       width:width,);

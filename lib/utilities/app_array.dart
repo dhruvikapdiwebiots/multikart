@@ -6,6 +6,7 @@ class AppArray {
       ? Get.find<AppController>()
       : Get.put(AppController());
 
+
   var onBoardingList = <OnBoardingModel>[
     OnBoardingModel(
         title: 'Welcome to Biggest Online Store'.tr,
@@ -46,27 +47,27 @@ class AppArray {
 
   var bottomSheet = [
     {
-      'title': 'home'.tr,
+      'title': 'home',
       'selectedIcon': svgAssets.homeColor,
       'unSelectedIcon': svgAssets.homeSvg
     },
     {
-      'title': 'category'.tr,
+      'title': 'category',
       'selectedIcon': svgAssets.categoryColor,
       'unSelectedIcon': svgAssets.category
     },
     {
-      'title': 'cart'.tr,
+      'title': 'cart',
       'selectedIcon': svgAssets.buyColor,
       'unSelectedIcon': svgAssets.buy
     },
     {
-      'title': 'wishlist'.tr,
+      'title': 'wishlist',
       'selectedIcon': svgAssets.heartColor,
       'unSelectedIcon': svgAssets.heart
     },
     {
-      'title': 'profile'.tr,
+      'title': 'profile',
       'selectedIcon': svgAssets.profileColor,
       'unSelectedIcon': svgAssets.profile
     }
@@ -284,6 +285,24 @@ class AppArray {
         isFav: false,
         mrp: 32.00,
         totalPrice: 35.00,
+        rating: 2),
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle4,
+        categoryId: '4',
+        discount: '20%',
+        isFav: false,
+        mrp: 32.00,
+        totalPrice: 35.00,
+        rating: 4),
+    HomeFindStyleCategoryModel(
+        name: 'Blue Denim Jacket'.tr,
+        image: imageAssets.findStyle3,
+        categoryId: '5',
+        discount: '20%',
+        isFav: false,
+        mrp: 32.00,
+        totalPrice: 35.00,
         rating: 2)
   ];
 
@@ -332,11 +351,11 @@ class AppArray {
   var offerCornerList = [
     {
       'id': 1,
-      'title': 'UNDER \$50.00'.tr,
+      'title': 'UNDER ${getSymbol()}50.00'.tr,
     },
     {
       'id': 2,
-      'title': 'Flat \$20 OFF'.tr,
+      'title': 'Flat ${getSymbol()}20 OFF'.tr,
     },
     {
       'id': 3,
@@ -413,39 +432,39 @@ class AppArray {
   //category list
   var categoryList = <CategoryModel>[
     CategoryModel(
-        title: "Sale".tr,
+        title: "Sale",
         image: imageAssets.category1,
-        description: "upto 50% off on all products".tr,
+        description: "upto 50% off on all products",
         bgColor: const Color(0xFFEDEFF4)),
     CategoryModel(
-        title: "Women".tr,
+        title: "Women",
         image: imageAssets.category2,
-        description: "t-shirts, tops,  bottoms..".tr,
+        description: "t-shirts, tops,  bottoms..",
         bgColor: const Color(0xFFDEDEDE)),
     CategoryModel(
-        title: "Men".tr,
+        title: "Men",
         image: imageAssets.category3,
-        description: "jackets, jeans, denims..".tr,
+        description: "jackets, jeans, denims..",
         bgColor: const Color(0xFFEDEFF4)),
     CategoryModel(
-        title: "Kids".tr,
+        title: "Kids",
         image: imageAssets.category4,
-        description: "clothing, toys, books..".tr,
+        description: "clothing, toys, books..",
         bgColor: const Color(0xFFD6CBC9)),
     CategoryModel(
-        title: "Beauty".tr,
+        title: "Beauty",
         image: imageAssets.category5,
-        description: "skincare, haircare, makeup..".tr,
+        description: "skincare, haircare, makeup..",
         bgColor: const Color(0xFFEDEFF4)),
     CategoryModel(
-        title: "Footwear".tr,
+        title: "Footwear",
         image: imageAssets.category6,
-        description: "shoes, sandal, activewear..".tr,
+        description: "shoes, sandal, activewear..",
         bgColor: const Color(0xFFA8A9AB).withOpacity(.5)),
     CategoryModel(
-        title: "Jewellery".tr,
+        title: "Jewellery",
         image: imageAssets.category7,
-        description: "necklace, chains, earrings..".tr,
+        description: "necklace, chains, earrings..",
         bgColor: const Color(0xFFEDEFF4)),
   ];
 
@@ -798,7 +817,7 @@ class AppArray {
       'child': 'form'
     },
     {
-      "title": "Wallets".tr,
+      "title": "wallets".tr,
       "image": iconAssets.wallet,
       'child': [
         {'title': 'Industrial & Commercial Bank'.tr, 'isSelect': false},

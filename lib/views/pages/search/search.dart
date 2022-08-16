@@ -9,10 +9,10 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<SearchController>(builder: (_) {
       return Directionality(
-        textDirection: searchCtrl.appCtrl.isRTL ||
-            searchCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
+          textDirection: searchCtrl.appCtrl.isRTL ||
+              searchCtrl.appCtrl.languageVal == "ar"
+              ? TextDirection.rtl
+              : TextDirection.ltr,
         child: Scaffold(
           body: SingleChildScrollView(
             child:
@@ -36,7 +36,6 @@ class Search extends StatelessWidget {
 
               //brand list layout
               const CommonBrandLayout()
-                  .marginSymmetric(horizontal: AppScreenUtil().screenWidth(15))
             ]),
           ),
         ),

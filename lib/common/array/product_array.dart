@@ -5,11 +5,11 @@ final appCtrl = Get.isRegistered<AppController>()
     : Get.put(AppController());
 
 var productList = Product(
-    name: "Floral Print Skirt With White Top".tr,
-    title: "Floral Skirts".tr,
+    name: "Floral Print Skirt With White Top",
+    title: "Floral Skirts",
     description:
         "productDescription"
-            .tr,
+            ,
     rating: 4.5,
     ratingPoints: 20,
     price: 35,
@@ -19,12 +19,12 @@ var productList = Product(
     totalReview: 24,
     policy:
         "policy"
-            .tr,
+            ,
     size: [
-      SizeModel(title: "S".tr, isAvailable: true),
-      SizeModel(title: "M".tr, isAvailable: true),
-      SizeModel(title: "L".tr, isAvailable: true),
-      SizeModel(title: "XL".tr, isAvailable: false),
+      SizeModel(title: "S", isAvailable: true),
+      SizeModel(title: "M", isAvailable: true),
+      SizeModel(title: "L", isAvailable: true),
+      SizeModel(title: "XL", isAvailable: false),
     ],
     color: [
       ColorModel(id: 1, color: const Color(0xFFE6E6FA), isAvailable: true),
@@ -49,60 +49,60 @@ var productList = Product(
     ],
     detail: [
       Detail(
-          title: "Product Details".tr,
+          title: "Product Details",
           description:
               "productDescription"
-                  .tr),
+                  ),
       Detail(
-          title: "Model Size & Fit".tr,
-          description: "The model (height 5'8) is wearing a size 28".tr),
+          title: "Model Size & Fit",
+          description: "The model (height 5'8) is wearing a size 28"),
       Detail(
-          title: "Material & Care".tr,
-          description: "100% polyester, Machine-wash".tr),
-      Detail(title: "Product Code".tr, description: "460356366_floral".tr),
+          title: "Material & Care",
+          description: "100% polyester, Machine-wash"),
+      Detail(title: "Product Code", description: "460356366_floral"),
     ],
     reviews: [
       Reviews(
-          name: "Mark Jacob".tr,
+          name: "Mark Jacob",
           description:
               "reviewDesc"
-                  .tr,
-          size: "L".tr,
+                  ,
+          size: "L",
           rating: 4,
           disLike: 20,
           like: 2,
-          date: "20 Aug, 2021".tr,
+          date: "20 Aug, 2021",
           image: imageAssets.avtar),
       Reviews(
-          name: "Mark Jacob".tr,
+          name: "Mark Jacob",
           description:
               "Wow.. but it should have more flairs. mind-blowing purchase..🤗"
-                  .tr,
-          size: "XL".tr,
+                  ,
+          size: "XL",
           rating: 4,
           disLike: 20,
           like: 2,
-          date: "20 Aug, 2021".tr,
+          date: "20 Aug, 2021",
           image: imageAssets.avtar1)
     ],
     offer: Offer(
-      title: "Use code MULTIKART10 to get flat 10%".tr,
-      code: "MULTIKART10".tr,
+      title: "Use code MULTIKART10 to get flat 10%",
+      code: "MULTIKART10",
       desc:
           "productOffer"
-              .tr,
+              ,
     ),
     deliverOfferModel: DeliverOfferModel(
-        title: "Check Delivery".tr,
-        description: "Enter Pincode to check delivery date / pickup option".tr,
+        title: "Check Delivery",
+        description: "Enter Pincode to check delivery date / pickup option",
         deliveryOffer: [
           DeliveryOffer(
-              title: 'Free Delivery on order above ${appCtrl.priceSymbol}200.00'.tr,
+              title: 'Free Delivery on order above ${appCtrl.priceSymbol}200.00',
               icon: svgAssets.truck),
           DeliveryOffer(
-              title: "Cash On delivery Available".tr,
+              title: "Cash On delivery Available",
               icon: svgAssets.payment),
           DeliveryOffer(
-              title: "Easy 21 days returns and exchanges".tr,
+              title: "Easy 21 days returns and exchanges",
               icon: svgAssets.refund)
         ]));

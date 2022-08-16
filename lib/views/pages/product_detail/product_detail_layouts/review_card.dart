@@ -25,7 +25,7 @@ class ReviewCard extends StatelessWidget {
             ],
           ).marginSymmetric(vertical: AppScreenUtil().screenHeight(15)),
           LatoFontStyle(
-            text: reviews!.description,
+            text: reviews!.description.toString().tr,
             fontWeight: FontWeight.normal,
             fontSize: FontSizes.f14,
             color: appCtrl.appTheme.contentColor,

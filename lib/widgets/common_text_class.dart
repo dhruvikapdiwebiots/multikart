@@ -39,6 +39,10 @@ class CommonTextFont{
   String selectCurrency = "selectCurrency".tr;
   String pages = "Pages".tr;
   String multikart = "Multikart".tr;
+  String off = "off".tr;
+  String on = "on".tr;
+  String yes = "yes".tr;
+  String no = "no".tr;
 
 
 }

@@ -7,13 +7,16 @@ class DrawerPageController extends GetxController {
       ? Get.find<AppController>()
       : Get.put(AppController());
   final storage = GetStorage();
+  final pageCtrl = Get.isRegistered<PageListController>()
+      ? Get.find<PageListController>()
+      : Get.put(PageListController());
 
 //language bottom sheet
   bottomSheet(isLanguage) {
 
     Get.bottomSheet(
       BottomSheetLayout(child: isLanguage?  LanguageBottomSheet(): CurrencyBottomSheet()),
-      backgroundColor: Colors.white,
+      backgroundColor: appCtrl.appTheme.whiteColor,
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
@@ -27,6 +30,9 @@ class DrawerPageController extends GetxController {
   goToPage(index) async {
     if (index == 2) {
       Get.back();
+      pageCtrl.pageListModel = pagesList;
+      pageCtrl.update();
+      Get.forceAppUpdate();
       Get.toNamed(routeName.pageList);
     } else if (index == 3) {
       Get.back();

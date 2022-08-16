@@ -14,9 +14,9 @@ class ProductInformation extends StatelessWidget {
             //image list
             const ImageListLayout(),
             ProductDetailWidget().commonText(
-                text: productCtrl.product.name.toString(), fontSize: FontSizes.f16),
+                text: productCtrl.product.name.toString().tr, fontSize: FontSizes.f16),
             ProductDetailWidget()
-                .descriptionText(productCtrl.product.description.toString()),
+                .descriptionText(productCtrl.product.description.toString().tr),
             //rating layout
             const RatingLayout(),
 
@@ -49,7 +49,7 @@ class ProductInformation extends StatelessWidget {
                 ? OfferByYou(offer: productCtrl.product.offer)
                 : Container(),
             const BorderLineLayout(),
-            PolicyLayout(text: productCtrl.product.policy ?? '')
+            PolicyLayout(text:productCtrl.product.policy!=null? productCtrl.product.policy.toString().tr : '')
                 .marginOnly(bottom: AppScreenUtil().screenHeight(10)),
             const BorderLineLayout(),
 

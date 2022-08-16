@@ -27,7 +27,7 @@ class ShopPage extends StatelessWidget {
                 shopCtrl.goToHomePage();
               },
               titleChild: CommonAppBarTitle(
-                title: "${shopCtrl.name} ${ShopFont().collection}",
+                title: "${shopCtrl.name.tr} ${ShopFont().collection}",
                 desc: "2050 ${ShopFont().products}",
               ),
             ),

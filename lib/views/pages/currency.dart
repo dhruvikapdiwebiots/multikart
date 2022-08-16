@@ -40,6 +40,7 @@ class CurrencyBottomSheet extends StatelessWidget {
                           e['icon'].toString(),
                           height: AppScreenUtil().screenHeight(25),
                           fit: BoxFit.contain,
+                          color: appCtrl.appTheme.blackColor,
                         ),
                         const Space(10, 0),
                         LatoFontStyle(

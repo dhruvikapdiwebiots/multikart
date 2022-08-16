@@ -31,7 +31,7 @@ class AddressTypeLayout extends StatelessWidget {
                             addAddressCtrl.selectAddressType(e.value, e.key)),
                     const Space(10, 0),
                     LatoFontStyle(
-                      text: e.value['title'],
+                      text: e.value['title'].toString().tr,
                       color: addAddressCtrl.appCtrl.appTheme.contentColor,
                       fontWeight: FontWeight.w600,
                       fontSize: FontSizes.f16,

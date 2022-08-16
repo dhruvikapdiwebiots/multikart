@@ -13,10 +13,10 @@ class DeliveryOfferLayout extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ProductDetailWidget().commonText(
-              text: deliverOfferModel!.title ?? '',
+              text:deliverOfferModel!.title!= null ? deliverOfferModel!.title.toString().tr : '',
               fontSize: FontSizes.f16),
           ProductDetailWidget()
-              .descriptionText(deliverOfferModel!.description ?? ''),
+              .descriptionText(deliverOfferModel!.description != null ? deliverOfferModel!.description.toString().tr : ''),
           const Space(0, 15),
           SizedBox(
             height: AppScreenUtil().screenHeight(45),
@@ -43,7 +43,7 @@ class DeliveryOfferLayout extends StatelessWidget {
                 suffixIcon: LatoFontStyle(
                   text: ProductDetailFont().check,
                   color: appCtrl.appTheme.primary,
-                ).marginOnly(right: AppScreenUtil().screenWidth(15)),
+                ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15) ),
                 fillColor: appCtrl.appTheme.greyLight25.withOpacity(.6),
               ),
             ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15)),

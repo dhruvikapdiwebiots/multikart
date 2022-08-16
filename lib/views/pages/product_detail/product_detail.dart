@@ -35,7 +35,7 @@ class ProductDetail extends StatelessWidget {
                 Get.back();
               }),
               title: LatoFontStyle(
-                  text: productCtrl.product.title ?? "",
+                  text: productCtrl.product.title != null? productCtrl.product.title.toString().tr :"",
                   fontSize: FontSizes.f16,
                   fontWeight: FontWeight.w700),
               actions: const[

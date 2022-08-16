@@ -27,6 +27,7 @@ class SearchWidget {
       ],
     ).marginOnly(
         left: AppScreenUtil().screenWidth(15),
+        right: AppScreenUtil().screenWidth(15),
         top: AppScreenUtil().screenHeight(40),
         bottom: AppScreenUtil().screenHeight(20));
   }
@@ -41,6 +42,7 @@ class SearchWidget {
       fontWeight: FontWeight.w700,
     ).marginOnly(
         left: AppScreenUtil().screenWidth(15),
+        right: AppScreenUtil().screenWidth(15),
         bottom: AppScreenUtil().screenHeight(10));
   }
 }

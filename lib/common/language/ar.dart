@@ -1,3 +1,5 @@
+import '../array/product_array.dart';
+
 final dynamic ar = {
   //onboard fonts
   "alreadyAccount": 'هل لديك حساب؟ ',
@@ -100,8 +102,8 @@ final dynamic ar = {
   'theKidsCorner': "ركن الأطفال",
   'clothingForYourLilOne': "ملابس من أجل Li’l One",
   'offerCorner': "ركن العرض",
-  'UNDER \$50.00': "تحت \$ 50.00 دولار",
-  'Flat \$20 OFF': "شقة \$ خصم 20 دولار",
+  'UNDER ${appCtrl.priceSymbol}50.00': "تحت ${appCtrl.priceSymbol} 50.00 دولار",
+  'Flat ${appCtrl.priceSymbol}20 OFF': "شقة ${appCtrl.priceSymbol} خصم 20 دولار",
   'buy 1 get 1': "أشتري 1 و أحصل على 1",
   'upto 50% off': "خصم بنسبة تصل إلى 50",
   "categories": "فئات",
@@ -255,8 +257,8 @@ final dynamic ar = {
   "Easy 21 days returns and exchanges":
       "سهولة في الإرجاع والاستبدال لمدة 21 يومًا",
   "Cash On delivery Available": "الدفع عند الاستلام متاح",
-  'Free Delivery on order above \$200.00':
-      'توصيل مجاني للطلبات التي تزيد عن 200.00 دولار',
+  'Free Delivery on order above ${appCtrl.priceSymbol}200.00':
+      'توصيل مجاني للطلبات التي تزيد عن ${appCtrl.priceSymbol}200.00 دولار',
   "Enter Pincode to check delivery date / pickup option":
       "أدخل الرمز السري للتحقق من تاريخ التسليم / خيار الاستلام",
   "MULTIKART10": "MULTIKART10",
@@ -394,6 +396,8 @@ final dynamic ar = {
   "Choose Bank...": "اختر البنك ...",
   "ICICI": "ICICI",
   "BOB": "بوب",
+  "cVV": "جفف",
+  "expiryDate": "تاريخ إنتهاء الصلاحية",
 
   //order success font
   "orderPlaced": "تم الطلب",
@@ -578,4 +582,33 @@ final dynamic ar = {
   "Home&Product": "المنزل والمنتج",
   "InnerCategories": "الفئات الداخلية",
   "ForgotPassword": "هل نسيت كلمة السر",
+  "OnBoarding": "على متن الطائرة",
+  "Login": "تسجيل الدخول",
+  "Otp": "سرص",
+  "Shop": "محل",
+  "EmptyCart": "عربة فارغة",
+  "Order Success": "طلب النجاح",
+  "Order Track": "تتبع الطلب",
+  "No Order": "لا طلب",
+  "Other Pages": "صفحات أخرى",
+  "Terms Condition": "شروط الشرط",
+  "Help": "مساعدة",
+  "Listing of Other Inner Pages": "قائمة الصفحات الداخلية الأخرى",
+  "Registration & Splash Screens": "شاشات التسجيل والسبلاش",
+  "Find Products, Banner, Sale": "البحث عن المنتجات ، لافتة ، بيع",
+  "Cart, Order & Payment": "عربة التسوق والطلب والدفع",
+  "Add your Products & Placed Order": "أضف منتجاتك وطلباتك المقدمة",
+  "Check Order History, tracking pages..": "تحقق من سجل الطلبات ، صفحات التتبع ..",
+  "deliveryBy": "التوصيل بواسطه",
+  "off": "إيقاف",
+  "ratings": "التقييمات",
+  "selectSize": "أختر الحجم:",
+  "sizeChart": "حجم الرسم البياني",
+  "tapToCopy": "انقر للنسخ",
+  "Male": "ذكر",
+  "Female": "أنثى",
+  "Other": "آخر",
+  "on": "على",
+  "yes": "yes",
+  "no": "رقم",
 };

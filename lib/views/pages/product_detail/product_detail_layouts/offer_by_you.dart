@@ -13,12 +13,13 @@ class OfferByYou extends StatelessWidget {
         ProductDetailWidget().commonText(
             text: ProductDetailFont().offersForYou,
             fontSize: FontSizes.f14),
+
         ProductDetailWidget().commonText(
-            text: offer!.title ?? '',
+            text: offer!.title!=null ? offer!.title.toString().tr : '',
             fontSize: FontSizes.f14),
-        ProductDetailWidget().descriptionText(offer!.desc ?? ''),
+        ProductDetailWidget().descriptionText(offer!.desc != null ? offer!.desc.toString().tr : ''),
         ProductOffer(
-          text: offer!.code ?? '',
+          text: offer!.code != null ? offer!.code.toString().tr : '',
         ).marginOnly(bottom: AppScreenUtil().screenHeight(10))
       ],
     );

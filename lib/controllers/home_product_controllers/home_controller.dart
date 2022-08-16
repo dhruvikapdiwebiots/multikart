@@ -42,7 +42,7 @@ class HomeController extends GetxController {
     findStyleCategoryList = AppArray().homeFindStyleCategoryList;
     biggestDealBrandList = AppArray().biggestDealBrandList;
     homeKidsCornerList = AppArray().homeKidsCornerList;
-    offerCornerList = AppArray().offerCornerList;
+      offerCornerList = AppArray().offerCornerList;
     loginWidth = ScreenUtil().screenWidth;
     loginHeight = 500.w;
     update();

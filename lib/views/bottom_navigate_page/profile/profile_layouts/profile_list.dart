@@ -42,6 +42,7 @@ class ProfileList extends StatelessWidget {
                         text: data!.title!.toString().tr,
                         fontSize: FontSizes.f12,
                         fontWeight: FontWeight.w600),
+                    if(data!.subTitle != "")
                     LatoFontStyle(
                         text: data!.subTitle!.toString().tr,
                         fontSize: FontSizes.f12,

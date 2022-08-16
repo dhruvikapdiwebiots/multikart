@@ -19,7 +19,7 @@ class SettingCard extends StatelessWidget {
                 LatoFontStyle(text: profileModel!.subTitle,fontSize: FontSizes.f12,color: appCtrl.appTheme.contentColor)
               ],
             ),
-            if (profileModel!.title == "Mode")
+              if (profileModel!.title == "Mode" ||profileModel!.title == "الوضع" ||profileModel!.title == "तरीका" ||profileModel!.title == "방법" )
               ThemeSwitcher(
                   onToggle: (val) {
                     appCtrl.isTheme = val;
@@ -27,7 +27,10 @@ class SettingCard extends StatelessWidget {
                     ThemeService().switchTheme(val);
                   },
                   status2: appCtrl.isTheme),
-            if (profileModel!.title == "RTL")
+            if (profileModel!.title == "RTL" ||
+                profileModel!.title == "아르 자형티엘" ||
+                profileModel!.title == "आरटीएल" ||
+                profileModel!.title == "رتيإل")
               ThemeSwitcher(
                   onToggle: (val) {
                     appCtrl.isRTL = val;
@@ -35,7 +38,7 @@ class SettingCard extends StatelessWidget {
                     Get.forceAppUpdate();
                   },
                   status2: appCtrl.isRTL),
-            if (profileModel!.title == "Notification")
+              if (profileModel!.title == "Notification" ||profileModel!.title == "공고"  || profileModel!.title == "अधिसूचना"  ||profileModel!.title == "تنبيه" )
               ThemeSwitcher(
                   onToggle: (val) {
                     appCtrl.isNotificationShow = val;

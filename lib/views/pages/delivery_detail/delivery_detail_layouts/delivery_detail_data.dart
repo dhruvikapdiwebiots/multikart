@@ -21,20 +21,20 @@ class DeliveryDetailData extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LatoFontStyle(
-                text: expectedDelivery!.name,
+                text: expectedDelivery!.name.toString().tr,
                 fontWeight: FontWeight.w600,
                 fontSize: FontSizes.f14,
                 color: appCtrl.appTheme.contentColor),
             Row(
               children: [
                 LatoFontStyle(
-                    text: "Delivery by",
+                    text: DeliveryDetailFont().deliveryBy,
                     fontWeight: FontWeight.w700,
                     fontSize: FontSizes.f13,
                     color: appCtrl.appTheme.blackColor),
                 const Space(5, 0),
                 LatoFontStyle(
-                    text: expectedDelivery!.date,
+                    text: expectedDelivery!.date.toString().tr,
                     fontWeight: FontWeight.w700,
                     fontSize: FontSizes.f13,
                     color: appCtrl.appTheme.greenColor)

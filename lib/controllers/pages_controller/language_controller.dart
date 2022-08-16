@@ -6,7 +6,19 @@ class LanguageController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());
+  final pageCtrl = Get.isRegistered<PageListController>()
+      ? Get.find<PageListController>()
+      : Get.put(PageListController());
   final storage = GetStorage();
+  final productCtrl = Get.isRegistered<ProductDetailController>()
+      ? Get.find<ProductDetailController>()
+      : Get.put(ProductDetailController());
+  final categoryCtrl = Get.isRegistered<CategoryController>()
+      ? Get.find<CategoryController>()
+      : Get.put(CategoryController());
+  final saveAddressCtrl = Get.isRegistered<SaveAddressController>()
+      ? Get.find<SaveAddressController>()
+      : Get.put(SaveAddressController());
 
   //language selection
   languageSelection(e) async {
@@ -56,9 +68,20 @@ class LanguageController extends GetxController {
     DashboardController dashboardController = Get.find();
     HomeController homeController = Get.find();
     dashboardController.drawerList = AppArray().drawerList;
+    pageCtrl.pageListModel = pagesList;
+    productCtrl.product = productList;
     appCtrl.bottomList = AppArray().bottomSheet;
     homeController.getData();
+    homeController.offerCornerList = AppArray().offerCornerList;
+    categoryCtrl.categoryList = AppArray().categoryList;
+    saveAddressCtrl.deliveryDetail = deliveryDetailArray;
     homeController.update();
+    Get.forceAppUpdate();
+    pageCtrl.update();
+    categoryCtrl.update();
+    saveAddressCtrl.update();
+    productCtrl.update();
+    Get.forceAppUpdate();
     dashboardController.update();
     appCtrl.update();
     update();

@@ -9,15 +9,14 @@ class HomeCategoryData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(builder: (homeCtrl) {
-
       return InkWell(
-        onTap: ()async{
+        onTap: () async {
           homeCtrl.appCtrl.isHeart = true;
           homeCtrl.appCtrl.isCart = true;
           homeCtrl.appCtrl.isShare = false;
           homeCtrl.appCtrl.isSearch = false;
           homeCtrl.appCtrl.isNotification = false;
-          homeCtrl.appCtrl.selectedIndex =1;
+          homeCtrl.appCtrl.selectedIndex = 1;
           homeCtrl.appCtrl.update();
           homeCtrl.appCtrl.isShimmer = true;
           homeCtrl.update();
@@ -45,7 +44,11 @@ class HomeCategoryData extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: MediaQuery.of(context).size.width > 400 ? MediaQuery.of(context).size.height /100: MediaQuery.of(context).size.width <380 ?5 : 0,
+                      top: MediaQuery.of(context).size.width > 400
+                          ? MediaQuery.of(context).size.height / 100
+                          : MediaQuery.of(context).size.width < 380
+                              ? 5
+                              : 0,
                       child: FadeInImageLayout(
                           image: data!.image.toString(),
                           height: AppScreenUtil().screenHeight(60),

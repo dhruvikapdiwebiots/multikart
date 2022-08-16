@@ -23,7 +23,7 @@ class SizeCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(
                       AppScreenUtil().borderRadius(5))),
               child: LatoFontStyle(
-                text: sizeModel!.title.toString(),
+                text: sizeModel!.title.toString().tr,
                 fontSize: FontSizes.f16,
                 color:  sizeModel!.isAvailable! ? selectSize == index? appCtrl.appTheme.whiteColor : appCtrl.appTheme.blackColor: appCtrl.appTheme.borderColor,
                 textDecoration: sizeModel!.isAvailable! ? TextDecoration.none : TextDecoration.lineThrough,

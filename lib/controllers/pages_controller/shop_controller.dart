@@ -20,7 +20,7 @@ class ShopController extends GetxController {
   @override
   void onReady() {
     // TODO: implement onReady
-    name = Get.arguments ?? "All";
+    name = Get.arguments ?? "All".tr;
     categoryList = AppArray().categoryList;
     homeShopPageList = AppArray().homeShopPageList;
     appCtrl.isNotification = true;
@@ -55,7 +55,7 @@ class ShopController extends GetxController {
 
   //go back to home page
   goToHomePage() async {
-    if(name == "All") {
+    if(name == "All".tr) {
       appCtrl.goToHome();
 
       await storage.write(Session.selectedIndex, 0);

@@ -37,7 +37,7 @@ class _InnerCategoryState extends State<InnerCategory> {
                 titleChild: CommonAppBarTitle(
                   title: DashboardFont().categories,
                   desc: innerCtrl.categoryModel != null
-                      ? innerCtrl.categoryModel!.title
+                      ? innerCtrl.categoryModel!.title.toString().tr
                       : "",
                   isColumn: false,
                 ),

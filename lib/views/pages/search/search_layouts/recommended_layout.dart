@@ -28,8 +28,7 @@ class RecommendedLayout extends StatelessWidget {
           childAspectRatio: MediaQuery.of(context).size.width /
               (MediaQuery.of(context).size.height / (4.5)),
         ),
-      ).marginSymmetric(
-          horizontal: AppScreenUtil().screenWidth(15),);
+      );
     });
   }
 }

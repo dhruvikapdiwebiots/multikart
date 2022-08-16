@@ -15,4 +15,8 @@ class ProductDetailFont {
   String similarProducts = "similarProducts".tr;
   String wishList = "wishList".tr;
   String addToBag = "addToBag".tr;
+  String selectSize = "selectSize".tr;
+  String sizeChart = "sizeChart".tr;
+  String tapToCopy = "tapToCopy".tr;
+  String ratings = "ratings".tr;
 }

@@ -14,6 +14,7 @@ class ProductDetailWidget {
       color: appCtrl.appTheme.blackColor,
     ).marginOnly(
         left: AppScreenUtil().screenWidth(15),
+        right: AppScreenUtil().screenWidth(15),
         top: AppScreenUtil().screenHeight(20));
   }
 
@@ -49,7 +50,7 @@ class ProductDetailWidget {
       fontWeight: FontWeight.w600,
       fontSize: FontSizes.f12,
       color: appCtrl.appTheme.greenColor,
-    ).marginOnly(left: AppScreenUtil().screenWidth(15),top: AppScreenUtil().screenHeight(5),bottom: AppScreenUtil().screenHeight(25));
+    ).marginOnly(left: AppScreenUtil().screenWidth(15),top: AppScreenUtil().screenHeight(5),bottom: AppScreenUtil().screenHeight(25),right: AppScreenUtil().screenWidth(15));
   }
 
   //size chart
@@ -61,6 +62,7 @@ class ProductDetailWidget {
       color: appCtrl.appTheme.primary,
     ).marginOnly(
         right: AppScreenUtil().screenWidth(15),
+        left: AppScreenUtil().screenWidth(15),
         top: AppScreenUtil().screenHeight(20));
   }
 }

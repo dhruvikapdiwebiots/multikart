@@ -27,7 +27,7 @@ class DeliveryOfferCard extends StatelessWidget {
                 ),
                 const Space(10, 0),
                 LatoFontStyle(
-                  text: e.title,
+                  text: e.title.toString().tr,
                   fontSize: FontSizes.f14,
                   color: appCtrl.appTheme.contentColor,
                   fontWeight: FontWeight.w600,
@@ -36,7 +36,7 @@ class DeliveryOfferCard extends StatelessWidget {
             ).marginOnly(bottom: AppScreenUtil().screenHeight(10));
           }).toList()
         ],
-      ).marginOnly(left: AppScreenUtil().screenWidth(15));
+      ).marginSymmetric(horizontal: AppScreenUtil().screenWidth(15));
     });
   }
 }

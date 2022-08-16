@@ -10,7 +10,7 @@ class OrderHistorySizeQty extends StatelessWidget {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         LatoFontStyle(
-            text: daysWiseList!.name,
+            text: daysWiseList!.name.toString().tr,
             fontWeight: FontWeight.w600,
             fontSize: FontSizes.f14,
             color: appCtrl.appTheme.blackColor),

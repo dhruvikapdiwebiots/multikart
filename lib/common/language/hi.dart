@@ -1,3 +1,5 @@
+import '../array/product_array.dart';
+
 final dynamic hi = {
   //onboard fonts
   "alreadyAccount": 'क्या आपके पास पहले से ही एक खाता है? ',
@@ -101,8 +103,8 @@ final dynamic hi = {
   'theKidsCorner': "द किड्स कॉर्नर",
   'clothingForYourLilOne': "आपके Li'l One's के लिए वस्त्र",
   'offerCorner': "ऑफर कॉर्नर",
-  'UNDER \$50.00': "\$50.00 के तहत",
-  'Flat \$20 OFF': "फ्लैट \$20 की छूट",
+  'UNDER ${appCtrl.priceSymbol}50.00': "${appCtrl.priceSymbol}50.00 के तहत",
+  'Flat ${appCtrl.priceSymbol}20 OFF': "फ्लैट ${appCtrl.priceSymbol}20 की छूट",
   'buy 1 get 1': "एक खरीदें, दूसरी मुफ़्त पाएं",
   'upto 50% off': "50% तक की छूट",
   "categories": "श्रेणियाँ",
@@ -239,7 +241,7 @@ final dynamic hi = {
       "यह उत्पाद रिटर्न और आकार बदलने के लिए योग्य है। कृपया डिलीवरी के 7 दिनों के भीतर ऐप में 'माई ऑर्डर' सेक्शन से रिटर्न/प्रतिस्थापन शुरू करें। कृपया सुनिश्चित करें कि उत्पाद संलग्न सभी टैग के साथ अपनी मूल स्थिति में है।",
   "S": "एस",
   "M": "एम",
-  "L": "ली",
+  "L": "ऐल",
   "Product Details": "उत्पाद विवरण",
   "Model Size & Fit": "मॉडल आकार और फ़िट",
   "The model (height 5'8) is wearing a size 28":
@@ -253,8 +255,8 @@ final dynamic hi = {
   "Check Delivery": "डिलीवरी की जाँच करें",
   "Easy 21 days returns and exchanges": "आसान 21 दिनों का रिटर्न और एक्सचेंज",
   "Cash On delivery Available": "कैश ऑन डिलीवरी उपलब्ध",
-  'Free Delivery on order above \$200.00':
-      '\$200.00 . से ऊपर के ऑर्डर पर मुफ़्त डिलीवरी',
+  'Free Delivery on order above ${appCtrl.priceSymbol}200.00':
+      '${appCtrl.priceSymbol}200.00 . से ऊपर के ऑर्डर पर मुफ़्त डिलीवरी',
   "Enter Pincode to check delivery date / pickup option":
       "डिलीवरी की तारीख / पिकअप विकल्प की जांच के लिए पिनकोड दर्ज करें",
   "MULTIKART10": "MULTIKART10",
@@ -393,6 +395,8 @@ final dynamic hi = {
   "Choose Bank...": "बैंक चुनें...",
   "ICICI": "आईसीआईसीआई",
   "BOB": "बीओबी",
+  "cVV": "सीवीवी",
+  "expiryDate": "समाप्ति तिथि",
 
   //order success font
   "orderPlaced": "आदेश रखा",
@@ -581,4 +585,33 @@ final dynamic hi = {
   "Home&Product": "घर और उत्पाद",
   "InnerCategories": "आंतरिक श्रेणियाँ",
   "ForgotPassword": "पासवर्ड भूल गए",
+  "OnBoarding": "ज्ञानप्राप्ति",
+  "Login": "लॉग इन करें",
+  "Otp": "ओटीपी",
+  "Shop": "दुकान",
+  "EmptyCart": "खाली गाड़ी",
+  "Order Success": "आदेश सफलता",
+  "Order Track": "ऑर्डर ट्रैक",
+  "No Order": "कोई आदेश नहीं",
+  "Other Pages": "अन्य पेज",
+  "Terms Condition": "नियम व शर्त",
+  "Help": "मदद करना",
+  "Listing of Other Inner Pages": "अन्य आंतरिक पृष्ठों की सूची",
+  "Registration & Splash Screens": "पंजीकरण और स्पलैश स्क्रीन",
+  "Find Products, Banner, Sale": "उत्पाद, बैनर, बिक्री खोजें",
+  "Cart, Order & Payment": "कार्ट, ऑर्डर और भुगतान",
+  "Add your Products & Placed Order": "अपने उत्पाद जोड़ें और ऑर्डर दिया",
+  "Check Order History, tracking pages..": "ऑर्डर हिस्ट्री, ट्रैकिंग पेज चेक करें।",
+  "deliveryBy": "के द्वारा डिलिवरी",
+  "off": "बंद",
+  "ratings": "रेटिंग्स",
+  "selectSize": "चुनिंदा आकार:",
+  "sizeChart": "आकार चार्ट",
+  "tapToCopy": "कॉपी करने के लिए टैप करें",
+  "Male": "पुरुष",
+  "Female": "महिला",
+  "Other": "अन्य",
+  "on": "पर",
+  "yes": "हां",
+  "no": "नहीं",
 };

@@ -1,8 +1,8 @@
 import 'package:multikart/config.dart';
 
 var profileList = <ProfileModel>[
-  ProfileModel(icon: svgAssets.setting,title: 'Mode',subTitle: ''),
-  ProfileModel(icon: svgAssets.setting,title: 'RTL',subTitle: ''),
+  ProfileModel(icon: svgAssets.mode,title: 'Mode',subTitle: ''),
+  ProfileModel(icon: svgAssets.rtl,title: 'RTL',subTitle: ''),
   ProfileModel(icon: svgAssets.order,title: 'Pages',subTitle: 'Elements & Other Pages'),
   ProfileModel(icon: svgAssets.order,title: 'Orders',subTitle: 'Ongoing Orders, Recent Orders..'),
   ProfileModel(icon: svgAssets.heart,title: 'Your Wishlist',subTitle: 'Your Save Products'),

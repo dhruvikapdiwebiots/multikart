@@ -30,28 +30,28 @@ class CommonAppBarTitle extends StatelessWidget {
                 ),
               ],
             )
-          : Row(
-        crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                LatoFontStyle(
-                  text: title,
-                  fontSize: FontSizes.f16,
-                  color: appCtrl.appTheme.blackColor,
-                  fontWeight: FontWeight.w700,
-                ),
-                Icon(
-                  Icons.arrow_forward_ios_outlined,
-                  color: appCtrl.appTheme.contentColor,
-                  size: AppScreenUtil().size(12),
-                ).marginOnly(bottom: AppScreenUtil().screenHeight(2)),
-                LatoFontStyle(
-                  text: desc,
-                  fontSize: FontSizes.f16,
-                  color: appCtrl.appTheme.contentColor,
-                  fontWeight: FontWeight.normal,
-                ),
-              ],
-            );
+          :Row(
+        children: [
+          LatoFontStyle(
+            text: title,
+            fontSize: FontSizes.f16,
+            color: appCtrl.appTheme.blackColor,
+            fontWeight: FontWeight.w700,
+          ),
+          const Space(5, 0),
+          Icon(
+            Icons.arrow_forward_ios_outlined,
+            color: appCtrl.appTheme.contentColor,
+            size: AppScreenUtil().size(14)),
+          LatoFontStyle(
+            text: desc,
+            textAlign: TextAlign.end,
+            fontSize: FontSizes.f16,
+            color: appCtrl.appTheme.contentColor,
+            fontWeight: FontWeight.normal,
+          ),
+        ],
+      );
     });
   }
 }

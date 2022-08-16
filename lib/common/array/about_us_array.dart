@@ -1,32 +1,30 @@
 import 'package:multikart/config.dart';
 
 var aboutUs = AboutUsModel(
-    title:
-        "title"
-            .tr,
-    desc1: "helpListDec".tr,
-    desc2: "aboutDesc".tr,
-    desc3: "aboutDesc".tr,
-    ourBrand: "ourBrand".tr,
+    title: "title",
+    desc1: "helpListDec",
+    desc2: "aboutDesc",
+    desc3: "aboutDesc",
+    ourBrand: "ourBrand",
     statistic: [
       Statistic(
-        count: 150,
-          title: "+ users".tr,
+          count: 150,
+          title: "+ users",
           image: svgAssets.users,
-          desc: "Multikart have 150+ register users online store".tr),
+          desc: "Multikart have 150+ register users online store"),
       Statistic(
           count: 50,
-          title: "+ stores".tr,
+          title: "+ stores",
           image: svgAssets.shop,
-          desc: "Multikart have 50+ stores worldwide.".tr),
+          desc: "Multikart have 50+ stores worldwide."),
       Statistic(
           count: 1.5,
-          title: "M+ orders".tr,
+          title: "M+ orders",
           image: svgAssets.delivery,
-          desc: "Multikart has 1.5M+ total orders till now.".tr),
+          desc: "Multikart has 1.5M+ total orders till now."),
       Statistic(
           count: 100,
-          title: "+ Brands".tr,
+          title: "+ Brands",
           image: svgAssets.diamond,
-          desc: "Multikart has 100+ brands in our stores.".tr),
+          desc: "Multikart has 100+ brands in our stores."),
     ]);

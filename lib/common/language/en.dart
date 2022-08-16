@@ -1,3 +1,5 @@
+import '../array/product_array.dart';
+
 final dynamic en = {
   //onboard fonts
   "alreadyAccount": 'Already have an account?',
@@ -100,8 +102,8 @@ final dynamic en = {
   'theKidsCorner': "The Kids Corner",
   'clothingForYourLilOne': "Clothing for your Li’l One’s ",
   'offerCorner': "Offer Corner",
-  'UNDER \$50.00': "UNDER \$50.00",
-  'Flat \$20 OFF': "Flat \$20 OFF",
+  'UNDER ${appCtrl.priceSymbol}50.00': "UNDER ${appCtrl.priceSymbol}50.00",
+  'Flat ${appCtrl.priceSymbol}20 OFF': "Flat ${appCtrl.priceSymbol}20 OFF",
   'buy 1 get 1': "buy 1 get 1",
   'upto 50% off': "upto 50% off",
   "categories": "Categories",
@@ -252,8 +254,8 @@ final dynamic en = {
   "Check Delivery": "Check Delivery",
   "Easy 21 days returns and exchanges": "Easy 21 days returns and exchanges",
   "Cash On delivery Available": "Cash On delivery Available",
-  'Free Delivery on order above \$200.00':
-      'Free Delivery on order above \$200.00',
+  'Free Delivery on order above ${appCtrl.priceSymbol}200.00':
+      'Free Delivery on order above ${appCtrl.priceSymbol}200.00',
   "Enter Pincode to check delivery date / pickup option":
       "Enter Pincode to check delivery date / pickup option",
   "MULTIKART10": "MULTIKART10",
@@ -303,8 +305,8 @@ final dynamic en = {
   "apply": "APPLY",
   "couponTitle": "Coupons",
   "couponText":
-      "Use code WELCOME to get flat 10% off on minimum order of \$200.00. Offer valid for first time users only",
-  "Save \$20.00": "Save \$20.00",
+      "Use code WELCOME to get flat 10% off on minimum order of ${appCtrl.priceSymbol}200.00. Offer valid for first time users only",
+  "Save ${appCtrl.priceSymbol}20.00": "Save ${appCtrl.priceSymbol}20.00",
 
   //delivery detail font
   "deliveryDetails": "Delivery Details",
@@ -386,6 +388,8 @@ final dynamic en = {
   "Choose Bank...": "Choose Bank...",
   "ICICI": "ICICI",
   "BOB": "BOB",
+  "cVV": "CVV",
+  "expiryDate": "Expiration Date",
 
   //order success font
   "orderPlaced": "Order Placed",
@@ -571,5 +575,34 @@ final dynamic en = {
   "Home&Product": "Home & Product",
   "InnerCategories": "Inner Categories",
   "ForgotPassword": "Forgot Password",
+  "OnBoarding": "On Boarding",
+  "Login": "Login",
+  "Otp": "Otp",
+  "Shop": "Shop",
+  "EmptyCart": "Empty Cart",
+  "Order Success": "Order Success",
+  "Order Track": "Order Track",
+  "No Order": "No Order",
+  "Other Pages": "Other Pages",
+  "Terms Condition": "TermsCondition",
+  "Help": "Help",
+  "Listing of Other Inner Pages": "Listing of Other Inner Pages",
+  "Registration & Splash Screens": "Registration & Splash Screens",
+  "Find Products, Banner, Sale": "Find Products, Banner, Sale",
+  "Cart, Order & Payment": "Cart, Order & Payment",
+  "Add your Products & Placed Order": "Add your Products & Placed Order",
+  "Check Order History, tracking pages..": "Check Order History, tracking pages..",
+  "deliveryBy": "Delivery By",
+  "off": "off",
+  "ratings": "ratings",
+  "selectSize": "Select Size:",
+  "sizeChart": "Size Chart",
+  "tapToCopy": "Tap to copy",
+  "Male": "Male",
+  "Female": "Female",
+  "Other": "Other",
+  "on": "ON",
+  "yes": "yes",
+  "no": "no",
 
 };

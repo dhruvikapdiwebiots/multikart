@@ -17,6 +17,8 @@ class SelectCardList extends StatelessWidget {
             itemBuilder: (BuildContext context, int indexs) {
               return LatoFontStyle(
                 text: data[indexs]["name"],
+                textAlign: appCtrl.isRTL ||
+                    appCtrl.languageVal == "ar"  ?TextAlign.right :TextAlign.left,
                 fontSize: 14,
               )
                   .paddingSymmetric(

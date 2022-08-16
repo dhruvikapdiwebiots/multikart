@@ -15,8 +15,8 @@ class ProductSizeLayout extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ProductDetailWidget()
-                  .commonText(text: "Select Size:", fontSize: 14),
-              ProductDetailWidget().sizeChart("Size Chart"),
+                  .commonText(text: ProductDetailFont().selectSize, fontSize: 14),
+              ProductDetailWidget().sizeChart(ProductDetailFont().sizeChart),
             ],
           ),
           if (product!.size != null)

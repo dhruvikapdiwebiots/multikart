@@ -15,7 +15,7 @@ class RatingLayout extends StatelessWidget {
           ),
           const Space(5, 0),
           LatoFontStyle(
-            text: "(${rating.round()} ratings)".toString(),
+            text: "(${rating.round()} ${ProductDetailFont().ratings})".toString(),
             fontSize: 12,
             fontWeight: FontWeight.normal,
             color: productCtrl.appCtrl.appTheme.contentColor,

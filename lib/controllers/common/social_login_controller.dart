@@ -29,15 +29,18 @@ class SocialLoginController extends GetxController {
     showLoading();
     update();
     final FirebaseAuth auth = FirebaseAuth.instance;
-
+print("auth : $auth");
     final LoginResult loginResult = await FacebookAuth.instance.login();
-
+    print("loginResult : $loginResult");
     // Create a credential from the access token
     final OAuthCredential facebookAuthCredential = FacebookAuthProvider.credential(loginResult.accessToken!.token);
+    print("facebookAuthCredential : $facebookAuthCredential");
 
     // Once signed in, return the UserCredential
     final UserCredential authResult =
     await auth.signInWithCredential(facebookAuthCredential);
+    hideLoading();
+    update();
     final User? users = authResult.user;
     final UserInfo user = users!.providerData[0];
     saveData(user.uid);

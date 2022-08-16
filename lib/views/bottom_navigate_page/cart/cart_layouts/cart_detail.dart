@@ -18,11 +18,11 @@ class CartDetail extends StatelessWidget {
                 fontSize: FontSizes.f14,
                 color: appCtrl.appTheme.contentColor),
             LatoFontStyle(
-                text:orderDetail!.title == "Coupon Discount" ? isApplyText!? val : "-${appCtrl.priceSymbol}20.0" :val,
+                text:orderDetail!.title == "Coupon Discount"  || orderDetail!.title == "خصم القسيمة"|| orderDetail!.title == "कूपन छूट"|| orderDetail!.title == "쿠폰 할인"? isApplyText!? val : "-${appCtrl.priceSymbol}20.0" :val,
                 fontSize: FontSizes.f14,
                 color: orderDetail!.title == "Bag savings"
                     ? appCtrl.appTheme.greenColor
-                    : orderDetail!.title == "Coupon Discount"
+                    : orderDetail!.title == "Coupon Discount"  || orderDetail!.title == "خصم القسيمة"|| orderDetail!.title == "कूपन छूट"|| orderDetail!.title == "쿠폰 할인"
                     ? isApplyText! ? appCtrl.appTheme.primary : appCtrl.appTheme.contentColor
                     : appCtrl.appTheme.contentColor)
                 .gestures(onTap: () {

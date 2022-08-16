@@ -12,4 +12,5 @@ class DeliveryDetailFont {
   String typeOfAddress = "typeOfAddress".tr;
   String reset = "reset".tr;
   String addAddress = "addAddress".tr;
+  String deliveryBy = "deliveryBy".tr;
 }

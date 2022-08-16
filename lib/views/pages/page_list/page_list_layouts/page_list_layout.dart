@@ -7,9 +7,7 @@ class PageListLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
-    return GetBuilder<AppController>(builder: (appCtrl) {
+    return GetBuilder<PageListController>(builder: (pagesCtrl) {
       return Column(
         children: [
           Container(
@@ -26,7 +24,7 @@ class PageListLayout extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 LatoFontStyle(
-                    text: pageListModel!.title!.tr.toUpperCase(),
+                    text: pageListModel!.title!.tr,
                     fontSize: FontSizes.f15,
                     fontWeight: FontWeight.w700,
                     color: appCtrl.appTheme.blackColor),
@@ -45,26 +43,37 @@ class PageListLayout extends StatelessWidget {
                 onTap: () {
                   if (page.routeName == "/otp") {
                     sendOtp();
-                  } else if(page.routeName == "/dashboard"){
+                  } else if (page.routeName == "/dashboard") {
                     DashboardController dashboardCtrl = Get.find();
-                    if(page.pageName == "categories".tr || page.pageName == "فئات".tr || page.pageName == "श्रेणियाँ".tr || page.pageName == "श्रेणियाँ""카테고리".tr){
+                    if (page.pageName == "categories".tr ||
+                        page.pageName == "فئات".tr ||
+                        page.pageName == "श्रेणियाँ".tr ||
+                        page.pageName == "श्रेणियाँ" "카테고리".tr) {
                       appCtrl.selectedIndex == 1;
                       appCtrl.update();
-                    }else if(page.pageName == "cart".tr|| page.pageName == "कार्ट".tr || page.pageName == "장바구니".tr || page.pageName == "عربة التسوق".tr ){
+                    } else if (page.pageName == "cart".tr ||
+                        page.pageName == "कार्ट".tr ||
+                        page.pageName == "장바구니".tr ||
+                        page.pageName == "عربة التسوق".tr) {
                       appCtrl.selectedIndex == 2;
                       appCtrl.update();
-                    }else if(page.pageName == "wishlist".tr || page.pageName == "قائمة الرغبات".tr || page.pageName == "इच्छा सूची".tr || page.pageName == "위시리스트".tr ){
+                    } else if (page.pageName == "wishlist".tr ||
+                        page.pageName == "قائمة الرغبات".tr ||
+                        page.pageName == "इच्छा सूची".tr ||
+                        page.pageName == "위시리스트".tr) {
                       appCtrl.selectedIndex == 3;
                       appCtrl.update();
-                    }else if(page.pageName == "profile".tr || page.pageName == "प्रोफाइल".tr || page.pageName == "프로필".tr || page.pageName == "الملف الشخصي".tr ){
-
+                    } else if (page.pageName == "profile".tr ||
+                        page.pageName == "प्रोफाइल".tr ||
+                        page.pageName == "프로필".tr ||
+                        page.pageName == "الملف الشخصي".tr) {
                       appCtrl.selectedIndex == 4;
                       appCtrl.update();
                     }
                     dashboardCtrl.update();
                     Get.forceAppUpdate();
                     Get.toNamed(page.routeName.toString());
-                  }else {
+                  } else {
                     Get.toNamed(page.routeName.toString(),
                         arguments: page.routeName == "/onBoarding" ||
                                 page.routeName == '/login'

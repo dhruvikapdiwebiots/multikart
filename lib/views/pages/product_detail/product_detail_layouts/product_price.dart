@@ -15,7 +15,7 @@ class ProductPrice extends StatelessWidget {
             fontSize: FontSizes.f16,
             isBold: false,
             isDiscountShow: true).marginOnly(
-            left: AppScreenUtil().screenWidth(10),): Container();
+            left: AppScreenUtil().screenWidth(10),right:AppScreenUtil().screenWidth(10) ): Container();
       }
     );
   }

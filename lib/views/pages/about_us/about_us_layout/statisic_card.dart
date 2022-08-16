@@ -33,7 +33,7 @@ class StatisticCard extends StatelessWidget {
                     fontWeight: FontWeight.w600),
                 const Space(5, 0),
                 LatoFontStyle(
-                    text: statistic!.title.toString(),
+                    text: statistic!.title.toString().tr,
                     fontSize: FontSizes.f10,
                     overflow: TextOverflow.clip,
                     color: appCtrl.appTheme.blackColor,
@@ -41,7 +41,7 @@ class StatisticCard extends StatelessWidget {
               ]),
               const Space(0, 10),
               LatoFontStyle(
-                  text: statistic!.desc.toString(),
+                  text: statistic!.desc.toString().tr,
                   fontSize: FontSizes.f10,
                   overflow: TextOverflow.clip,
                   color: appCtrl.appTheme.contentColor,

@@ -39,7 +39,7 @@ class ProfileController extends GetxController {
   bottomSheet(isLanguage) {
     Get.bottomSheet(
       BottomSheetLayout(child: isLanguage? LanguageBottomSheet(): CurrencyBottomSheet()),
-      backgroundColor: Colors.white,
+      backgroundColor: appCtrl.appTheme.whiteColor,
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(

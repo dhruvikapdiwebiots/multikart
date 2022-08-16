@@ -1,4 +1,4 @@
-export 'package:dartx/dartx.dart' hide ListExtension;
+
 
 export 'extensions/spacing.dart';
 export 'extensions/text_extension.dart';

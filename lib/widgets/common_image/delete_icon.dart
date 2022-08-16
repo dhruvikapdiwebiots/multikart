@@ -8,6 +8,7 @@ class DeleteIcon extends StatelessWidget {
     return SvgPicture.asset(
       svgAssets.delete,
       height: AppScreenUtil().screenHeight(18),
+      color: appCtrl.isTheme ? appCtrl.appTheme.blackColor : appCtrl.appTheme.whiteColor,
     );
   }
 }

@@ -15,7 +15,7 @@ class PageListCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               LatoFontStyle(
-                  text: pageList!.pageName!.toUpperCase(),
+                  text: pageList!.pageName!.tr.toUpperCase(),
                   fontSize: FontSizes.f15,
                   fontWeight: FontWeight.w700,
                   color: appCtrl.appTheme.blackColor),

@@ -29,7 +29,7 @@ class WalletListLayout extends StatelessWidget {
                 ),
                 const Space(20, 0),
                 LatoFontStyle(
-                  text: e.value['title'],
+                  text: e.value['title'].toString().tr,
                   fontSize: FontSizes.f12,
                   color: paymentCtrl.appCtrl.appTheme.blackColor,
                 )

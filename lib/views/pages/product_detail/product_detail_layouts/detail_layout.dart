@@ -15,10 +15,10 @@ class DetailLayout extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       ProductDetailWidget().commonText(
-                          text: e.title,
+                          text: e.title.toString().tr,
                           fontSize: FontSizes.f14),
                       LatoFontStyle(
-                        text: e.description,
+                        text: e.description.toString().tr,
                         fontSize: FontSizes.f14,
                         fontWeight: FontWeight.normal,
                         color: productCtrl.appCtrl.appTheme.contentColor,

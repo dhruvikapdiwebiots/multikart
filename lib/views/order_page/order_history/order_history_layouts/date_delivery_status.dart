@@ -12,13 +12,13 @@ class OrderDateDeliveryStatus extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LatoFontStyle(
-              text:title,
+              text:title.toString().tr,
               fontWeight: FontWeight.w600,
               fontSize: FontSizes.f12,
               color: appCtrl.appTheme.contentColor,
             ),
             LatoFontStyle(
-              text: value,
+              text: value.toString().tr,
               fontWeight: FontWeight.w600,
               fontSize: FontSizes.f12,
               color: appCtrl.appTheme.blackColor,

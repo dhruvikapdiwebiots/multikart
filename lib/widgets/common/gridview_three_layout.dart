@@ -19,7 +19,11 @@ class GridviewThreeLayout extends StatelessWidget {
             horizontal: AppScreenUtil().screenWidth(15),
           ),
           margin: EdgeInsets.only(
-            right: AppScreenUtil().screenWidth(index != 2 ? 15 : 0),
+            left: AppScreenUtil().screenWidth(appCtrl.isRTL ||
+                appCtrl.languageVal == "ar"
+                ? index == 2 ?15: 0 :15),
+            right: AppScreenUtil().screenWidth(appCtrl.isRTL ||
+                appCtrl.languageVal == "ar" ? 15:  index == 2 ?15 :0),
             top: AppScreenUtil().screenHeight(10),
           ),
           decoration: BoxDecoration(

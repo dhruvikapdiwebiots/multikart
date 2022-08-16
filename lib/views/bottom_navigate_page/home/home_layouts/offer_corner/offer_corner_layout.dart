@@ -11,7 +11,7 @@ class OfferCornerLayout extends StatelessWidget {
           padding: EdgeInsets.zero,
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
-          itemCount: homeCtrl.offerCornerList.length,
+          itemCount: AppArray().offerCornerList.length,
           itemBuilder: (context, index) {
             return InkWell(
               onTap: () {
@@ -35,7 +35,7 @@ class OfferCornerLayout extends StatelessWidget {
                         color: homeCtrl.appCtrl.appTheme.whiteColor)
                         : Image.asset(imageAssets.offerCornerBG),
                     LatoFontStyle(
-                      text: homeCtrl.offerCornerList[index]['title'].toString().tr,
+                      text: AppArray().offerCornerList[index]['title'].toString().tr,
                       color: homeCtrl.appCtrl.appTheme.blackColor,
                       fontSize: 14,
                       fontWeight: FontWeight.w600,

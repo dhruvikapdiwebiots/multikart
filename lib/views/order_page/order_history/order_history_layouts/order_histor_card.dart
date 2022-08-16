@@ -17,7 +17,7 @@ final GestureTapCallback? onTap;
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LatoFontStyle(
-              text: orderHistoryModel!.orderDay,
+              text: orderHistoryModel!.orderDay.toString().tr,
               fontWeight: FontWeight.w700,
               fontSize: FontSizes.f16,
               color: appCtrl.appTheme.blackColor,
