@@ -1,13 +1,13 @@
 import 'package:multikart/config.dart';
 
 class Search extends StatelessWidget {
-  final searchCtrl = Get.put(SearchController());
+  final searchCtrl = Get.put(SearchScreenController());
 
   Search({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<SearchController>(builder: (_) {
+    return GetBuilder<SearchScreenController>(builder: (_) {
       return Directionality(
           textDirection: searchCtrl.appCtrl.isRTL ||
               searchCtrl.appCtrl.languageVal == "ar"

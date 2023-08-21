@@ -1,6 +1,6 @@
 import '../../config.dart';
 
-class HomeProductAppBar extends StatelessWidget with PreferredSizeWidget {
+class HomeProductAppBar extends StatelessWidget implements PreferredSizeWidget {
   final GestureTapCallback? onTap;
   final Widget? titleChild;
 
