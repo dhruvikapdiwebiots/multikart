@@ -1,6 +1,6 @@
 import '../../config.dart';
 
-class SearchController extends GetxController {
+class SearchScreenController extends GetxController {
   final appCtrl = Get.isRegistered<AppController>()
       ? Get.find<AppController>()
       : Get.put(AppController());

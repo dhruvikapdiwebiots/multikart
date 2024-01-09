@@ -5,7 +5,7 @@ class RecommendedLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<SearchController>(builder: (searchCtrl) {
+    return GetBuilder<SearchScreenController>(builder: (searchCtrl) {
       return GridView.builder(
         padding: EdgeInsets.zero,
         physics: const NeverScrollableScrollPhysics(),
