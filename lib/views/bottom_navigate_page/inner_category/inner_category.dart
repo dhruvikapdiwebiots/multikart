@@ -1,6 +1,5 @@
 import 'package:multikart/config.dart';
 
-
 class InnerCategory extends StatefulWidget {
   const InnerCategory({Key? key}) : super(key: key);
 
@@ -15,16 +14,17 @@ class _InnerCategoryState extends State<InnerCategory> {
   Widget build(BuildContext context) {
     return GetBuilder<InnerCategoryController>(builder: (_) {
       return Directionality(
-        textDirection: innerCtrl.appCtrl.isRTL ||
-            innerCtrl.appCtrl.languageVal == "ar"
-            ? TextDirection.rtl
-            : TextDirection.ltr,
-        child: WillPopScope(
-          onWillPop: () async {
+        textDirection:
+            innerCtrl.appCtrl.isRTL || innerCtrl.appCtrl.languageVal == "ar"
+                ? TextDirection.rtl
+                : TextDirection.ltr,
+        child: PopScope(
+          canPop: false,
+          onPopInvoked: (canPop) async {
             innerCtrl.appCtrl.isSearch = false;
             innerCtrl.appCtrl.update();
             Get.back();
-            return true;
+            return Future(() => true);
           },
           child: Scaffold(
               //app bar layout
@@ -42,7 +42,8 @@ class _InnerCategoryState extends State<InnerCategory> {
                   isColumn: false,
                 ),
               ),
-              bottomNavigationBar: GetBuilder<DashboardController>(builder: (dashboardCtrl) {
+              bottomNavigationBar:
+                  GetBuilder<DashboardController>(builder: (dashboardCtrl) {
                 return CommonBottomNavigation(
                   onTap: (val) {
                     Get.back();
@@ -50,7 +51,9 @@ class _InnerCategoryState extends State<InnerCategory> {
                   },
                 );
               }),
-              body: innerCtrl.appCtrl.isShimmer ? const InnerCategoryShimmer(): const InnerCategoryBody()),
+              body: innerCtrl.appCtrl.isShimmer
+                  ? const InnerCategoryShimmer()
+                  : const InnerCategoryBody()),
         ),
       );
     });

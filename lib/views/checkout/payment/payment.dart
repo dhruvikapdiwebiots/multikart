@@ -49,11 +49,10 @@ class Payment extends StatelessWidget {
               CartBottomLayout(
                   desc: CartFont().viewDetail,
                   buttonName: PaymentFont().payNow,
-                 // totalAmount: paymentCtrl.totalAmount.toString(),
-                  totalAmount:
-                      (double.parse(paymentCtrl.totalAmount.toString()) *
+                  totalAmount: paymentCtrl.totalAmount.toString(),
+                     /* (double.parse(paymentCtrl.totalAmount.toString()) *
                           paymentCtrl.appCtrl.rateValue)
-                          .toString(),
+                          .toString(),*/
                   onTap: () {
                     Get.toNamed(routeName.orderSuccess,
                         arguments: paymentCtrl.totalAmount.toString());

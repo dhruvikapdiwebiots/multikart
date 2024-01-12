@@ -20,7 +20,7 @@ class InnerCategoryBody extends StatelessWidget {
                   innerCtrl.appCtrl.update();
                   innerCtrl.goToShopPage(
                       innerCtrl.categoryModel!.title.toString());
-                  await Future.delayed(Durations.s1);
+                  await Future.delayed(DurationsClass.s1);
                   innerCtrl.appCtrl.isShimmer = false;
                   innerCtrl.appCtrl.update();
                   Get.forceAppUpdate();

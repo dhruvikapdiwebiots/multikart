@@ -33,7 +33,7 @@ class ProductBottom extends StatelessWidget {
                     appCtrl.selectedIndex = 3;
                     appCtrl.goToHome();
                     Get.toNamed(routeName.dashboard);
-                    await Future.delayed(Durations.s1);
+                    await Future.delayed(DurationsClass.s1);
                     appCtrl.isShimmer = false;
                     Get.forceAppUpdate();
                   },
@@ -58,7 +58,7 @@ class ProductBottom extends StatelessWidget {
                     appCtrl.selectedIndex = 2;
                     appCtrl.goToHome();
                     Get.toNamed(routeName.dashboard);
-                    await Future.delayed(Durations.s1);
+                    await Future.delayed(DurationsClass.s1);
                     appCtrl.isShimmer = false;
                     Get.forceAppUpdate();
                   },

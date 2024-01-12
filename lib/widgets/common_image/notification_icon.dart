@@ -9,10 +9,13 @@ class NotificationIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.notification,
-          color: appCtrl.appTheme.blackColor,
+
+          colorFilter: ColorFilter.mode(
+              appCtrl.appTheme.blackColor, BlendMode.srcIn),
           fit: BoxFit.contain,
           height: AppScreenUtil().size(20),
         ).gestures(onTap: ()=> Get.toNamed(routeName.notification));
+
       }
     );
   }

@@ -25,9 +25,9 @@ class AddAddress extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             children: [
               SingleChildScrollView(
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
 
                     //form text box
                     FormTextBox(),

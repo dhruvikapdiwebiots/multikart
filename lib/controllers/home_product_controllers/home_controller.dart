@@ -48,7 +48,7 @@ class HomeController extends GetxController {
     update();
     subCategoryList(0, 1);
     update();
-    await Future.delayed(Durations.s1);
+    await Future.delayed(DurationsClass.s1);
     appCtrl.isShimmer = false;
     appCtrl.update();
     Get.forceAppUpdate();
@@ -67,7 +67,7 @@ class HomeController extends GetxController {
     loginHeight = 40.0;
 
     update();
-    await Future.delayed(Durations.s1);
+    await Future.delayed(DurationsClass.s1);
     selected = !selected;
     findStyleCategoryCategoryWiseList = [];
     selectedStyleCategory = index;

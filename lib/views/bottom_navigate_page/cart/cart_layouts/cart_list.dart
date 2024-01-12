@@ -41,7 +41,7 @@ class CartList extends StatelessWidget {
                                         cartCtrl.bottomSheetLayout(
                                             CommonTextFont().remove))
                               ]).marginSymmetric(
-                              horizontal: AppScreenUtil().screenWidth(15),
+                              horizontal: AppScreenUtil().screenWidth(14),
                               vertical: AppScreenUtil().screenHeight(15)),
                           const BorderLineLayout()
                         ],

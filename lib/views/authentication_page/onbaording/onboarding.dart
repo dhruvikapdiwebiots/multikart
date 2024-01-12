@@ -14,13 +14,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
   @override
   Widget build(BuildContext context) {
     return GetBuilder<OnBoardingController>(builder: (_) {
-      return WillPopScope(
-        onWillPop: () async {
-          return onBoardingCtrl.isBack ? true : false;
+      return PopScope(
+        canPop: false,
+        onPopInvoked: (canPop) async {
+          return Future(() => onBoardingCtrl.isBack ? true : false);
         },
-        child:  Directionality(
+        child: Directionality(
           textDirection: onBoardingCtrl.appCtrl.isRTL ||
-              onBoardingCtrl.appCtrl.languageVal == "ar"
+                  onBoardingCtrl.appCtrl.languageVal == "ar"
               ? TextDirection.rtl
               : TextDirection.ltr,
           child: Scaffold(

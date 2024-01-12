@@ -10,7 +10,8 @@ class BuyIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.buy,
-          color: color ?? appCtrl.appTheme.blackColor,
+          colorFilter: ColorFilter.mode(
+              color ?? appCtrl.appTheme.blackColor, BlendMode.srcIn),
         ).gestures(onTap: ()async{
           appCtrl.isShimmer = true;
 
@@ -21,7 +22,7 @@ class BuyIcon extends StatelessWidget {
           appCtrl.isSearch = false;
           appCtrl.isNotification = false;
           Get.toNamed(routeName.dashboard);
-          await Future.delayed(Durations.s1);
+          await Future.delayed(DurationsClass.s1);
           appCtrl.isShimmer = false;
           appCtrl.update();
 

@@ -24,21 +24,21 @@ class SocialLoginController extends GetxController {
 
   //facebook login function
 
-   facebookLogin() async {
+  facebookLogin() async {
     // Trigger the sign-in flow
     showLoading();
     update();
     final FirebaseAuth auth = FirebaseAuth.instance;
-print("auth : $auth");
+
     final LoginResult loginResult = await FacebookAuth.instance.login();
-    print("loginResult : $loginResult");
+
     // Create a credential from the access token
-    final OAuthCredential facebookAuthCredential = FacebookAuthProvider.credential(loginResult.accessToken!.token);
-    print("facebookAuthCredential : $facebookAuthCredential");
+    final OAuthCredential facebookAuthCredential =
+        FacebookAuthProvider.credential(loginResult.accessToken!.token);
 
     // Once signed in, return the UserCredential
     final UserCredential authResult =
-    await auth.signInWithCredential(facebookAuthCredential);
+        await auth.signInWithCredential(facebookAuthCredential);
     hideLoading();
     update();
     final User? users = authResult.user;
@@ -49,7 +49,6 @@ print("auth : $auth");
     Get.toNamed(routeName.dashboard);
     update();
   }
-
 
   //google Login function
   googleLogin() async {
@@ -94,17 +93,11 @@ print("auth : $auth");
   showToast(error) {
     Fluttertoast.showToast(msg: error);
   }
-
 }
 
-class Resource{
-
+class Resource {
   final Status status;
   Resource({required this.status});
 }
 
-enum Status {
-  success,
-  error,
-  cancelled
-}
+enum Status { success, error, cancelled }

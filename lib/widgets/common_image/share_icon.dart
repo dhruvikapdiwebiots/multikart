@@ -8,7 +8,8 @@ class ShareIcon extends StatelessWidget {
     return GetBuilder<AppController>(builder: (appCtrl) {
       return SvgPicture.asset(
         svgAssets.share,
-        color: appCtrl.appTheme.blackColor,
+        colorFilter: ColorFilter.mode(
+            appCtrl.appTheme.blackColor, BlendMode.srcIn),
       );
     });
   }
