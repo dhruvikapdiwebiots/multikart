@@ -15,11 +15,11 @@ class ShopPage extends StatelessWidget {
             shopCtrl.appCtrl.isRTL || shopCtrl.appCtrl.languageVal == "ar"
                 ? TextDirection.rtl
                 : TextDirection.ltr,
-        child: WillPopScope(
-          onWillPop: () async {
+        child: PopScope(
+          canPop: false,
+          onPopInvoked: (canPop) async {
             shopCtrl.goToHomePage();
-
-            return true;
+            return Future(() => true);
           },
           child: Scaffold(
             appBar: HomeProductAppBar(

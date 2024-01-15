@@ -46,9 +46,9 @@ class CartShimmer extends StatelessWidget {
                 const Space(0, 20),
                 const BorderLineLayout(),
                 const Space(0, 20),
-                Row(
+                const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
+                    children: [
                       CommonCircle(),
                       CommonCircle(),
                       CommonCircle()

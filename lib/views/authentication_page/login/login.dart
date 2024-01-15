@@ -15,9 +15,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<LoginController>(builder: (_) {
-      return WillPopScope(
-        onWillPop: () async {
-          return loginCtrl.isBack ? true : false;
+      return PopScope(
+        canPop: false,
+        onPopInvoked: (canPop) async {
+          return Future(() => loginCtrl.isBack ? true : false);
         },
         child: Directionality(
           textDirection:
@@ -28,7 +29,10 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Scaffold(
               body: Form(
                   key: loginformKey,
-                  child:  SingleChildScrollView(child: LoginBody(formKey: loginformKey,))),
+                  child: SingleChildScrollView(
+                      child: LoginBody(
+                    formKey: loginformKey,
+                  ))),
             ),
           ),
         ),

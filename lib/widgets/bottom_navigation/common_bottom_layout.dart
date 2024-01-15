@@ -7,7 +7,8 @@ class BottomNavigationWidget{
       backgroundColor: bgColor,
       icon: Padding(
         padding: EdgeInsets.only(bottom: AppScreenUtil().screenHeight(2)),
-        child: SvgPicture.asset( image!,color: color ,),
+        child: SvgPicture.asset( image!, colorFilter: ColorFilter.mode(
+            color, BlendMode.srcIn),),
       ),
       label: title!,
     );

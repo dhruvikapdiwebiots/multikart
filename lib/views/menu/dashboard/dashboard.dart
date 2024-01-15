@@ -27,10 +27,8 @@ class _DashboardState extends State<Dashboard>
   @override
   Widget build(BuildContext context) {
     return GetBuilder<DashboardController>(builder: (_) {
-      return WillPopScope(
-        onWillPop: () async {
-          return false;
-        },
+      return PopScope(
+        canPop: false,
         child: Directionality(
           textDirection: dashboardCtrl.appCtrl.isRTL ||
                   dashboardCtrl.appCtrl.languageVal == "ar"

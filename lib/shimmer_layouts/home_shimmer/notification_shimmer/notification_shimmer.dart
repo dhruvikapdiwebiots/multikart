@@ -34,10 +34,10 @@ class NotificationShimmer extends StatelessWidget {
                         ).paddingSymmetric(
                             horizontal: AppScreenUtil().screenWidth(10),
                             vertical: AppScreenUtil().screenHeight(10)),
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             CommonTitleText(width: 180),
                             Space(0, 5),
                             CommonTitleText(width: 150),

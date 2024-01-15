@@ -10,7 +10,8 @@ class HeartIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.heart,
-          color: color ?? appCtrl.appTheme.contentColor,
+          colorFilter: ColorFilter.mode(
+              color ?? appCtrl.appTheme.contentColor, BlendMode.srcIn),
         );
       }
     );

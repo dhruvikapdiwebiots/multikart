@@ -20,7 +20,7 @@ class HomeCategoryData extends StatelessWidget {
           homeCtrl.appCtrl.update();
           homeCtrl.appCtrl.isShimmer = true;
           homeCtrl.update();
-          await Future.delayed(Durations.s1);
+          await Future.delayed(DurationsClass.s1);
           homeCtrl.appCtrl.isShimmer = false;
           homeCtrl.appCtrl.update();
           Get.forceAppUpdate();

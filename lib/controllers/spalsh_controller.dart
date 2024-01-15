@@ -10,10 +10,10 @@ class SplashController extends GetxController {
 final storage = GetStorage();
   @override
   void onInit() async {
-    await Future.delayed(Durations.s3);
+    await Future.delayed(DurationsClass.s3);
     isTapped = true;
     update();
-    await Future.delayed(Durations.s1);
+    await Future.delayed(DurationsClass.s1);
     checkLogin();
     super.onInit();
   }

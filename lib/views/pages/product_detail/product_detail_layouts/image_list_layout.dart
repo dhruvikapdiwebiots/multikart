@@ -6,9 +6,9 @@ class ImageListLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ProductDetailController>(builder: (productCtrl) {
-      return Column(
+      return const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [ImageList(), ImageSliderDot()],
+        children: [ImageList(), ImageSliderDot()],
       );
     });
   }

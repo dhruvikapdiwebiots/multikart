@@ -14,11 +14,12 @@ class ProductDetail extends StatelessWidget {
             productCtrl.appCtrl.isRTL || productCtrl.appCtrl.languageVal == "ar"
                 ? TextDirection.rtl
                 : TextDirection.ltr,
-        child: WillPopScope(
-          onWillPop: () async {
+        child: PopScope(
+          canPop: false,
+          onPopInvoked: (canPop) async {
             productCtrl.appCtrl.goToHome();
             Get.back();
-            return true;
+            return Future(() => true);
           },
           child: Scaffold(
             backgroundColor: productCtrl.appCtrl.appTheme.whiteColor,
@@ -44,9 +45,9 @@ class ProductDetail extends StatelessWidget {
                 )
               ],
             ),
-            body: Stack(
+            body: const Stack(
               alignment: Alignment.bottomCenter,
-              children: const [ProductBody(), ProductBottom()],
+              children: [ProductBody(), ProductBottom()],
             ),
           ),
         ),

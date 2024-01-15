@@ -36,7 +36,7 @@ class AppBarActionLayout extends StatelessWidget {
               appCtrl.isNotification = false;
               appCtrl.update();
               Get.toNamed(routeName.dashboard);
-              await Future.delayed(Durations.s1);
+              await Future.delayed(DurationsClass.s1);
               appCtrl.isShimmer = false;
               Get.forceAppUpdate();
 

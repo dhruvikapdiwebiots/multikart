@@ -27,8 +27,8 @@ class AddressCardShimmer extends StatelessWidget {
                 const Space(0, 10),
                 const CommonTitleText(),
                 const Space(0, 10),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     AddressButton(),
                     Space(10, 0),
                     AddressButton(),

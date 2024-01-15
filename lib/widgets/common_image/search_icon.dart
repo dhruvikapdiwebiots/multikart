@@ -9,7 +9,8 @@ class SearchIcon extends StatelessWidget {
       builder: (appCtrl) {
         return SvgPicture.asset(
           svgAssets.search,
-          color: appCtrl.appTheme.blackColor,
+          colorFilter: ColorFilter.mode(
+              appCtrl.appTheme.blackColor, BlendMode.srcIn),
         ).gestures(onTap: (){
           appCtrl.selectedIndex =1;
           appCtrl.update();

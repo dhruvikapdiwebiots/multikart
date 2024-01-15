@@ -7,8 +7,8 @@ class PaymentController extends GetxController {
 
   String totalAmount = "0";
   bool seeAll = false;
-  int selectRadio = 0;
-  int selectWallet = 0;
+  int? selectRadio = 0;
+  int? selectWallet = 0;
   String value = "";
   bool expand = false;
   int? tapped = 0;
